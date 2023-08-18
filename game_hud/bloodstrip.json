@@ -1,0 +1,173 @@
+[
+	{
+		"RelativePath": "game_hud/bloodstrip/橘色血条.png",
+		"CompressType": 0,
+		"X": 107,
+		"Y": 228,
+		"Width": 104,
+		"Height": 9,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/称号底框.png",
+		"CompressType": 0,
+		"X": 1,
+		"Y": 1,
+		"Width": 200,
+		"Height": 45,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/等级底框.png",
+		"CompressType": 0,
+		"X": 1,
+		"Y": 93,
+		"Width": 184,
+		"Height": 38,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/等级底框_1.png",
+		"CompressType": 0,
+		"X": 1,
+		"Y": 48,
+		"Width": 183,
+		"Height": 43,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/红色血条.png",
+		"CompressType": 0,
+		"X": 107,
+		"Y": 195,
+		"Width": 104,
+		"Height": 16,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/红色血条_2.png",
+		"CompressType": 0,
+		"X": 1,
+		"Y": 177,
+		"Width": 208,
+		"Height": 16,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/绿色血条.png",
+		"CompressType": 0,
+		"X": 1,
+		"Y": 213,
+		"Width": 104,
+		"Height": 16,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/蓝色血条.png",
+		"CompressType": 0,
+		"X": 1,
+		"Y": 195,
+		"Width": 104,
+		"Height": 16,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/血条底框_1.png",
+		"CompressType": 0,
+		"X": 107,
+		"Y": 213,
+		"Width": 108,
+		"Height": 13,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/血条底框_2.png",
+		"CompressType": 0,
+		"X": 1,
+		"Y": 155,
+		"Width": 108,
+		"Height": 20,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/血条底框_3.png",
+		"CompressType": 0,
+		"X": 1,
+		"Y": 133,
+		"Width": 216,
+		"Height": 20,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/血条隔断.png",
+		"CompressType": 0,
+		"X": 219,
+		"Y": 1,
+		"Width": 2,
+		"Height": 9,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/底框.png",
+		"CompressType": 0,
+		"X": 0,
+		"Y": 0,
+		"Width": 260,
+		"Height": 32,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/血条_红.png",
+		"CompressType": 0,
+		"X": 0,
+		"Y": 0,
+		"Width": 211,
+		"Height": 19,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/血条_蓝.png",
+		"CompressType": 0,
+		"X": 0,
+		"Y": 0,
+		"Width": 211,
+		"Height": 19,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/血条_绿色.png",
+		"CompressType": 0,
+		"X": 0,
+		"Y": 0,
+		"Width": 211,
+		"Height": 19,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/能量_红.png",
+		"CompressType": 0,
+		"X": 0,
+		"Y": 0,
+		"Width": 211,
+		"Height": 7,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/能量_黄.png",
+		"CompressType": 0,
+		"X": 0,
+		"Y": 0,
+		"Width": 211,
+		"Height": 7,
+		"HasAlpha": true
+	},
+	{
+		"RelativePath": "game_hud/bloodstrip/能量_蓝.png",
+		"CompressType": 0,
+		"X": 0,
+		"Y": 0,
+		"Width": 211,
+		"Height": 7,
+		"HasAlpha": true
+	}
+]

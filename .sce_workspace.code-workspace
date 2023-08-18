@@ -1,0 +1,125 @@
+{
+    "folders": [
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Urho/vs_bgfx_editor/bin/User/debug/simple/",
+            "name": "@simple",
+            "package_name": "@simple"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/script_libs/lib_plotdialogue",
+            "name": "@lib_plotdialogue",
+            "package_name": "@lib_plotdialogue"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/script_libs/lib_region",
+            "name": "@lib_region",
+            "package_name": "@lib_region"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/script_libs/lib_control",
+            "name": "@lib_control",
+            "package_name": "@lib_control"
+        },
+        {
+            "name": "@server_common",
+            "packet_name": "@common",
+            "support_part": "server",
+            "path": "C:/NE/Urho/vs_bgfx_editor/bin/Res//maps//server_common"
+        },
+        {
+            "name": "@common",
+            "packet_name": "@common",
+            "support_part": "client",
+            "path": "C:/NE/Urho/vs_bgfx_editor/bin/Res//Script//Common"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Urho/vs_bgfx_editor/bin/Res//maps/script_libs/lib_reborn",
+            "name": "@lib_reborn",
+            "package_name": "@lib_reborn"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/ai_templates/lib_common_ai",
+            "name": "@lib_common_ai",
+            "package_name": "@lib_common_ai"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/defaultui",
+            "name": "@defaultui",
+            "package_name": "@defaultui"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/default_units_ts",
+            "name": "@default_units_ts",
+            "package_name": "@default_units_ts"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/User/debug/single_simple/",
+            "name": "@single_simple",
+            "package_name": "@single_simple"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/User/debug/single_simple_ts/",
+            "name": "@single_simple_ts",
+            "package_name": "@single_simple_ts"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/script_libs/lib_game_options",
+            "name": "@lib_game_options",
+            "package_name": "@lib_game_options"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/script_libs/smallcard_inventory",
+            "name": "@smallcard_inventory",
+            "package_name": "@smallcard_inventory"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/script_libs/lib_common_sounds",
+            "name": "@lib_common_sounds",
+            "package_name": "@lib_common_sounds"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/script_libs/smallcard_get_items",
+            "name": "@smallcard_get_items",
+            "package_name": "@smallcard_get_items"
+        },
+        {
+            "server_script_path": "script",
+            "client_script_path": "ui/script",
+            "path": "C:/NE/Res//maps/script_libs/smallcard_mail",
+            "name": "@smallcard_mail",
+            "package_name": "@smallcard_mail"
+        }
+    ],
+    "sce_info": {
+        "sce_port": 6325,
+        "sce_host": "127.0.0.1"
+    }
+}

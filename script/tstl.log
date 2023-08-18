@@ -1,0 +1,28 @@
+395.66990000009537:	{"globalClasses":["Array","Present","IEventNotify","Coroutine","Actor","Team","Timer","Snapshot","EffectParamShared","TriggerParamTable","Item","Region","ScreenPos","Target","UnitTable","EffectParam","Point","Mover","Unit","Buff","HealInstance","TriggerEvent","DamageInstance","Slot","Skill","Inventory","Player","Trigger","Line","UnitGroup","Sight","DataCache","AISearcher","ScoreCommitter","ScoreObjData","ScoreGetParam","UserID","ScoreData","ScoreSetParam","ScoreAddParam","ScoreMoneyData","ScoreListAddParam","ScoreListModifyParam","ScoreListDeleteParam","ScoreListData","ScoreMsgSendParam","ScoreMsgQueryParam","ScoreNameNewParam","ScoreNameSearchParam","ScoreChannelMsgData","ScoreGetRankListParam","ScoreGetUserRankParam","ScoreGetRankListData","ScoreGetUserRankData","ScoreGetRankTotalData","ScoreGetRankTotalParam","ScoreMsgData","ScoreListID","ScoreID","ScoreNameData","ScoreMsgID","ScoreMoneyParam","os","DateTime","UnitBuff","autotest_log","ScoreRankSetParam","ScoreRankAddParam","UnitPropertyBonus","SceneObject","Quest","QuestCondition","RegionRect","RegionCircle","Cast"],"globalModules":["coroutine","_G","log","base"]}
+1980.7705000042915:	Loaded 0 plugins
+1981.6272000074387:	Parsing project settings
+1986.4300000071526:	Transforming D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main_1.ts
+1988.9730000048876:	moduleName:
+1988.978900000453:	busiyixiantu_5n1b
+1989.587700009346:	exportScope:
+1989.592500001192:	true
+1991.252900004387:	Printing D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main_1.ts
+2002.5720999985933:	Transforming D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main.ts
+2005.636399999261:	Printing D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main.ts
+2019.838100001216:	Transforming D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_validator.ts
+2020.8730999976397:	moduleName:
+2020.9563000053167:	validator
+2022.8648000061512:	exportScope:
+2022.8747000098228:	true
+2586.6886000037193:	Printing D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_validator.ts
+2672.325200006366:	Constructing emit plan
+2672.9945999979973:	Resolving dependencies for D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main_1.ts
+2673.486600011587:	Resolving dependencies for D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main.ts
+2674.1018000096083:	Resolving "./trigger_module_main_1" from D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main.ts
+2674.7636000066996:	Resolved ./trigger_module_main_1 to D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main_1.ts
+2676.088500007987:	Resolving dependencies for D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_validator.ts
+2677.146099999547:	Emitting output
+2677.4531000107527:	Emitting D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main_1.lua
+2678.6057000011206:	Emitting D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_module_main.lua
+2679.5236999988556:	Emitting D:/星火编辑器/Res/maps/BuSiYiXianTu/script/trigger_validator.lua
+2680.803200006485:	Emit finished!

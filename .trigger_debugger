@@ -1,0 +1,13 @@
+[root]
+'client'={
+'bks'={
+},
+'watch'={
+},
+}
+'server'={
+'bks'={
+},
+'watch'={
+},
+}

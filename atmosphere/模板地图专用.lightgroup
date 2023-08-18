@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<node id="5982">
+	<component type="Zone" id="4510">
+		<attribute name="Bounding Box Min" value="-100000.00 -100000.00 -100000.00" />
+		<attribute name="Bounding Box Max" value="100000.00 100000.00 100000.00" />
+		<attribute name="Ambient Color" value="0 0.007 0.065 1" />
+		<attribute name="Fog Color" value="0.152 0.249 0.394 1" />
+		<attribute name="Depth Fog Density" value="1" />
+		<attribute name="Depth Fog Start" value="2000" />
+		<attribute name="Depth Fog End" value="100000" />
+		<attribute name="Height Fog Density" value="1" />
+		<attribute name="Height Fog Falloff" value="0.085" />
+		<attribute name="Height Fog Height" value="-2300" />
+		<attribute name="Using EnvCube" value="true" />
+		<attribute name="Env Diff Texture" value="TextureX;cube/day/daydiffusehdr.dds" />
+		<attribute name="Env Spec Texture" value="TextureX;cube/day/dayspecularhdr.dds" />
+		<attribute name="Env texture diff intensity" value="0.2" />
+		<attribute name="Env Cube Angle" value="180" />
+		<attribute name="Bloom Threshold" value="0.3" />
+		<attribute name="Bloom Weight" value="0.3" />
+	</component>
+	<node id="5983">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0.00 0.00 0.00" />
+		<attribute name="Rotation" value="0.165611 -0.052217 -0.939228 -0.296137" />
+		<attribute name="Scale" value="1.00 1.00 1.00" />
+		<attribute name="Variables" />
+		<component type="Light" id="4511">
+			<attribute name="Light Type" value="Directional" />
+			<attribute name="Brightness Multiplier" value="1.6" />
+			<attribute name="Use Temperature" value="true" />
+			<attribute name="Range" value="0" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Shadow Intensity" value="0.2" />
+			<attribute name="Shadow Resolution" value="0.6" />
+			<attribute name="CSM Splits" value="100 1000 5000 32000" />
+			<attribute name="CSM Fade Start" value="1" />
+			<attribute name="Depth Constant Bias" value="0.00025" />
+			<attribute name="Depth Slope Bias" value="5" />
+			<attribute name="Max Extrusion" value="5000" />
+			<attribute name="Ignore Ray" value="true" />
+			<attribute name="Auto Shadow Cascade" value="true" />
+			<attribute name="Num Auto Shadow Cascade" value="4" />
+		</component>
+		<component type="LightGroupTransListener" id="4512" />
+	</node>
+</node>

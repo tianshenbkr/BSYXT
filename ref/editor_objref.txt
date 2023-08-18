@@ -1,0 +1,674 @@
+@busiyixiantu_5n1b/image/icons/01_q_1.png
+@default_units_ts/image/09_t.png
+@default_units_ts/image/108_t.png
+@default_units_ts/image/37.png
+@default_units_ts/image/ScrollsAndBooks_add_003_t.png
+@default_units_ts/image/icons/sunshangxiang_q.png
+@default_units_ts/image/icons/三火球 (2).png
+@default_units_ts/image/icons/不死鸟灼伤 (1).png
+@default_units_ts/image/icons/不死鸟灼伤 (2).png
+@default_units_ts/image/icons/修理 (1).png
+@default_units_ts/image/icons/元素凝聚 (1).png
+@default_units_ts/image/icons/免疫伤害 (1).png
+@default_units_ts/image/icons/冲锋陷阵 (1).png
+@default_units_ts/image/icons/净化 (1).png
+@default_units_ts/image/icons/刀光 (1).png
+@default_units_ts/image/icons/刀光 (2).png
+@default_units_ts/image/icons/刀光 (5).png
+@default_units_ts/image/icons/刀扇 (1).png
+@default_units_ts/image/icons/剑刃风暴 (3).png
+@default_units_ts/image/icons/劈砍 (1).png
+@default_units_ts/image/icons/劈砍 (2).png
+@default_units_ts/image/icons/占据 (1).png
+@default_units_ts/image/icons/反噬 (1).png
+@default_units_ts/image/icons/召唤水元素 (1).png
+@default_units_ts/image/icons/后撤步.png
+@default_units_ts/image/icons/吞噬魔法 (1).png
+@default_units_ts/image/icons/吸血光环 (1).png
+@default_units_ts/image/icons/咆哮.png
+@default_units_ts/image/icons/嘲讽 (1).png
+@default_units_ts/image/icons/回春.png
+@default_units_ts/image/icons/圣光斗篷 (1).png
+@default_units_ts/image/icons/圣光术 (2).png
+@default_units_ts/image/icons/地震 (1).png
+@default_units_ts/image/icons/坚韧光环 (1).png
+@default_units_ts/image/icons/复活 (1).png
+@default_units_ts/image/icons/天神下凡.png
+@default_units_ts/image/icons/寄生虫 (1).png
+@default_units_ts/image/icons/巫毒狂舞 (1).png
+@default_units_ts/image/icons/弱化之锤 (1).png
+@default_units_ts/image/icons/弹无虚发 (1).png
+@default_units_ts/image/icons/心灵之火 (1).png
+@default_units_ts/image/icons/怒吼 (1).png
+@default_units_ts/image/icons/感应地雷 (2).png
+@default_units_ts/image/icons/战争践踏 (1).png
+@default_units_ts/image/icons/戳刺 (1).png
+@default_units_ts/image/icons/控制魔法.png
+@default_units_ts/image/icons/放逐 (1).png
+@default_units_ts/image/icons/旋风斩 (1).png
+@default_units_ts/image/icons/无敌 (1).png
+@default_units_ts/image/icons/无敌圣盾 (1).png
+@default_units_ts/image/icons/暴风雪 (2).png
+@default_units_ts/image/icons/横扫 (1).png
+@default_units_ts/image/icons/沙地穿刺.png
+@default_units_ts/image/icons/治疗术 (1).png
+@default_units_ts/image/icons/治疗波 (1).png
+@default_units_ts/image/icons/治疗结界 (1).png
+@default_units_ts/image/icons/火球 (2).png
+@default_units_ts/image/icons/火球术 (1).png
+@default_units_ts/image/icons/炉石 (1).png
+@default_units_ts/image/icons/生命虹吸 (1).png
+@default_units_ts/image/icons/盾击 (2).png
+@default_units_ts/image/icons/硬化体肤 (1).png
+@default_units_ts/image/icons/祝福圣光.png
+@default_units_ts/image/icons/移形换影 (2).png
+@default_units_ts/image/icons/群体减速 (1).png
+@default_units_ts/image/icons/肉钩 (3).png
+@default_units_ts/image/icons/虔诚光环 (1).png
+@default_units_ts/image/icons/蛇棒攻击 (1).png
+@default_units_ts/image/icons/血焰之剑 (1).png
+@default_units_ts/image/icons/诅咒 (1).png
+@default_units_ts/image/icons/诱捕 (1).png
+@default_units_ts/image/icons/迷雾 (1).png
+@default_units_ts/image/icons/邪恶狂热 (1).png
+@default_units_ts/image/icons/重生 (1).png
+@default_units_ts/image/icons/野蛮跳跃 (1).png
+@default_units_ts/image/icons/钩锁 (1).png
+@default_units_ts/image/icons/镜像 (1).png
+@default_units_ts/image/icons/闪现.png
+@default_units_ts/image/icons/闪电之盾 (3).png
+@default_units_ts/image/icons/闪电箭 (1).png
+@default_units_ts/image/icons/闪电链 (1).png
+@default_units_ts/image/icons/防反 (2).png
+@default_units_ts/image/icons/隐身术 (1).png
+@default_units_ts/image/icons/雷暴 (1).png
+@default_units_ts/image/icons/雷霆一击 (1).png
+@default_units_ts/image/icons/震荡波 (1).png
+@default_units_ts/image/icons/霜甲术 (1).png
+@default_units_ts/image/icons/静滞陷阱.png
+@default_units_ts/image/icons/风暴之锤 (3).png
+@default_units_ts/image/icons/驱散魔法 (1).png
+@default_units_ts/image/icons/魔法侦测 (1).png
+@default_units_ts/image/icons/魔法免疫 (1).png
+@default_units_ts/image/icons/魔法防御.png
+@defaultui/image/control/Bar_ingame_shifatiao.png
+@defaultui/image/control/Bar_ingame_shifatiaodi.png
+@defaultui/image/control/冷却.png
+@defaultui/image/control/取消施法区域.png
+@defaultui/image/control/开启技能框.png
+@defaultui/image/control/技能_等级.png
+@defaultui/image/control/施法摇杆.png
+@defaultui/image/control/施法轮盘.png
+@defaultui/image/control/点击技能框.png
+@defaultui/image/control/禁止施法.png
+@defaultui/image/control/禁用技能框.png
+@defaultui/image/control/锁定技能框.png
+@defaultui/image/control/默认技能框2.png
+@defaultui/image/panel/底框_快捷键.png
+@lib_control/image/control/Bth_ingame_gongjidi.png
+@smallcard_choose_one/image/Gedang.png
+@smallcard_choose_one/image/Gongjitisheng.png
+@smallcard_choose_one/image/Guangyu.png
+@smallcard_choose_one/image/品质框=橙色.png
+@smallcard_choose_one/image/品质框=紫色.png
+@smallcard_choose_one/image/品质框=蓝色.png
+@smallcard_choose_one/image/治疗.png
+@smallcard_inventory/image/品质框=橙色.png
+@smallcard_inventory/image/品质框=灰色.png
+@smallcard_inventory/image/品质框=紫色.png
+@smallcard_inventory/image/品质框=红色.png
+@smallcard_inventory/image/品质框=绿色.png
+@smallcard_inventory/image/品质框=蓝色.png
+@smallcard_unit_attr_panel/image/属性=魔法.png
+@smallcard_unit_attr_panel/image/属性icon (1).png
+@smallcard_unit_attr_panel/image/属性icon (2).png
+@smallcard_unit_attr_panel/image/属性icon.png
+Attack
+Spell
+Spellcast
+Spellcast_1
+Spellcast_2
+Spellcast_5
+anim/human/barehanded_anim/dart_01/throw_03.ani
+anim/human/barehanded_anim/hand_05/blink_01.ani
+anim/human/barehanded_anim/hand_05/casting_01.ani
+anim/human/barehanded_anim/hand_05/skill_01.ani
+anim/human/barehanded_anim/hand_05/skill_011.ani
+anim/human/barehanded_anim/hand_05/skill_012.ani
+anim/human/barehanded_anim/hand_05/skill_013.ani
+anim/human/barehanded_anim/hand_05/skill_015.ani
+anim/human/barehanded_anim/hand_05/skill_016.ani
+anim/human/barehanded_anim/hand_05/skill_018.ani
+anim/human/barehanded_anim/hand_05/skill_02.ani
+anim/human/barehanded_anim/hand_05/skill_023.ani
+anim/human/barehanded_anim/hand_05/skill_024.ani
+anim/human/barehanded_anim/hand_05/skill_025.ani
+anim/human/barehanded_anim/hand_05/skill_027.ani
+anim/human/barehanded_anim/hand_05/skill_028.ani
+anim/human/barehanded_anim/hand_05/skill_029.ani
+anim/human/barehanded_anim/hand_05/skill_03.ani
+anim/human/barehanded_anim/hand_05/skill_030.ani
+anim/human/barehanded_anim/hand_05/skill_031.ani
+anim/human/barehanded_anim/hand_05/skill_05.ani
+anim/human/barehanded_anim/hand_05/skill_07.ani
+anim/human/barehanded_anim/hand_05/skill_08.ani
+anim/human/barehanded_anim/hand_05/skill_09.ani
+anim/human/barehanded_anim/hand_05/skill_blizzard_logic.ani
+anim/human/barehanded_anim/hand_05/skill_dafengche.ani
+anim/human/barehanded_anim/hand_07/skill_01.ani
+anim/human/barehanded_anim/hand_07/skill_02.ani
+anim/human/blade_anim/doublehold_02/attack_02.ani
+anim/human/blade_anim/doublehold_02/attack_03.ani
+anim/human/blade_anim/twohand_01/attack_01.ani
+anim/human/blade_anim/twohand_01/attack_02.ani
+anim/human/blade_anim/twohand_01/attack_03.ani
+anim/human/gun_anim/qiangxiezhanshi/skill_01.ani
+anim/human/gun_anim/qiangxiezhanshi/skill_02.ani
+anim/human/gun_anim/qiangxiezhanshi/skill_03.ani
+anim/human/gun_anim/qiangxiezhanshi/skill_04.ani
+anim/human/magic_anim/MoFaShi/skill_01.ani
+anim/human/magic_anim/MoFaShi/skill_02.ani
+anim/human/magic_anim/MoFaShi/skill_03.ani
+anim/human/magic_anim/MoFaShi/skill_04.ani
+anim/human/sword_anim/DaJianZhanShi/skill_02.ani
+anim/human/sword_anim/DaJianZhanShi/skill_03.ani
+anim/human/sword_anim/DaJianZhanShi/skill_04.ani
+anim/human/sword_anim/dajianzhanshi/skill_01.ani
+anim/human/sword_anim/twohand_04/attack_01.ani
+anim/human/sword_anim/twohand_04/attack_04.ani
+born
+characters/Monster/SK_Spider_Burrow_S/model.prefab
+characters/effectanim/xh_model/model.prefab
+characters/general/sk_basic2/model.prefab
+characters/general/sk_gangster/model.prefab
+characters/general/sk_worker/model.prefab
+characters/monster/sk_ghost/model.prefab
+characters/monster/sk_spider_burrow/model.prefab
+characters/monster/sk_spider_burrow_s/model.prefab
+characters/monster/sk_uav/model.prefab
+characters/monster/sk_vulture_bird/model.prefab
+characters/monster/sk_werewolf/model.prefab
+characters/monster/sk_wild_boar/model.prefab
+characters/monster/sm_huolong/model.prefab
+characters/monster/undeadbird/model.prefab
+characters/monster/undeadbird_egg/model.prefab
+characters/tramcar_td/jinbi/model.prefab
+characters1/jiangziya_e49b/model.prefab
+characters1/linghunfashi_rmhb/model.prefab
+deco/NDG/SM_Book01_A/model.prefab
+deco/chinoiserie/sm_dh_diaolou_a/model.prefab
+deco/engine/SM_Plane_A01/model.prefab
+deco/engine/SM_Plane_A02/model.prefab
+deco/engine/SM_Plane_A03/model.prefab
+deco/engine/fake_shadow/model.prefab
+deco/handpaintedvol2_campsite/sm_backpack_01_base/model.prefab
+deco/prop/sm_xuanyuntuteng_a/model.prefab
+deco/prop/sm_zhiliaotuteng_a/model.prefab
+deco/ts/sm_mine_a/model.prefab
+effect/SampleSpells/Blizzard/Blizzard_Shard/particle.effect
+effect/SampleSpells/Blizzard/Blizzard_circle/particle.effect
+effect/SampleSpells/Healing/HealingAura_Aoe/particle.effect
+effect/SampleSpells/HolyLight/HolyLight_Caster/particle.effect
+effect/SampleSpells/HolyLight/HolyLight_Target/particle.effect
+effect/SampleSpells/Hook/Hook_Hit/particle.effect
+effect/SampleSpells/Slow/Slow_Target/particle.effect
+effect/SampleSpells/Stormbolt/Stormbolt_Attachments/particle.effect
+effect/SampleSpells/Stormbolt/Stormbolt_Impact/particle.effect
+effect/SampleSpells/Stormbolt/Stormbolt_Target/particle.effect
+effect/SampleSpells/Thunder/ThunderClap/particle.effect
+effect/SampleSpells/Thunder/ThunderClap_Hit/particle.effect
+effect/SampleSpells/Thunder/thunderclap_aoe/particle.effect
+effect/SampleSpells/innerfire/InnerFire_Target1/particle.effect
+effect/bp/shandain_dandao/shandiandandao_2/particle.effect
+effect/bp/yuan/ps_zhishi_1/particle.effect
+effect/bp/yuan/ps_zhishi_5/particle.effect
+effect/bp/yuan/ps_zhishi_7/particle.effect
+effect/bp/yuan/ps_zhishi_8/particle.effect
+effect/ceshi/shengli/particle.effect
+effect/ceshi/shibai/particle.effect
+effect/eff_Ceshi_1/particle/PS_Huo_5/particle.effect
+effect/eff_Reverse/particle/Penguin/PS_ShuiqiuBao_cep/particle.effect
+effect/eff_Reverse/particle/Set/PS_DS_1/particle.effect
+effect/eff_Reverse/particle/Tafang/Werewolf/PS_Werewolf_Spin_Move/particle.effect
+effect/eff_Reverse/particle/Tongyong/SK_Gopher_Watergun/PS_Move_eff_tailing/particle.effect
+effect/eff_Reverse/particle/Tongyong/SK_Gopher_Watergun/PS_Yinying_1/particle.effect
+effect/eff_Reverse/particle/Unknown/Fanjifengbao/PS_Retaliation_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/Fanjifengbao/ps_chuanci_1/particle.effect
+effect/eff_Reverse/particle/Unknown/Fushi/ps_dubaozha_2/particle.effect
+effect/eff_Reverse/particle/Unknown/Hanbingzhen/ps_debuff_3/particle.effect
+effect/eff_Reverse/particle/Unknown/Huishengshu/PS_Huisheng_Hit_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/Jianqi/ps_shouji_1/particle.effect
+effect/eff_Reverse/particle/Unknown/Jianyu/ps_shouji_1/particle.effect
+effect/eff_Reverse/particle/Unknown/Juling/ps_dirensj_1/particle.effect
+effect/eff_Reverse/particle/Unknown/Lianshanfu/PS_Lianshan_Buff_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/Lianshanfu/PS_Liushan_Settlement_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/Lianshanfu/ps_lianshan_buff_eff_copy/particle.effect
+effect/eff_Reverse/particle/Unknown/Light_300/particle.effect
+effect/eff_Reverse/particle/Unknown/Qingzhujian/ps_shouji_1/particle.effect
+effect/eff_Reverse/particle/Unknown/Ranxuemishu/Burning_Blood_Buff_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/Ranxuemishu/Burning_Blood_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/Yanmaishu/ps_huoqiushouji_1/particle.effect
+effect/eff_Reverse/particle/Unknown/Yujianshu/ps_lightning/particle.effect
+effect/eff_Reverse/particle/Unknown/charm_eff/Charm_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/deathspread/deathspread_hit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/drainLife/drainLife_hit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/flamebreath/flamebreath_hit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/foo/foo_hit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/frostnova/FrostNova_Hit_ff/particle.effect
+effect/eff_Reverse/particle/Unknown/gravity/gravity_hit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/huozhuozhen/ps_huozhuozhen_hit/particle.effect
+effect/eff_Reverse/particle/Unknown/hurtlingshadow/HurtlingShadow_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/hurtlingshadow/HurtlingShadow_hit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/jinguangzhen/ps_jinguangzhen_hit/particle.effect
+effect/eff_Reverse/particle/Unknown/magicaftershocks/magicaftershocks_hit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/muhuanzhen/muhuan_debuff/particle.effect
+effect/eff_Reverse/particle/Unknown/soundwave/SoundWave_Eff/particle.effect
+effect/eff_Reverse/particle/Unknown/soundwave/soundwave_hit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/penhuo/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/penhuo_hit/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_bingdong_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_bluntnesshalo_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_demonterritory_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_eatshearthalo_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_jingu_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_senilityhalo_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_xuanyun_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_yishang_dff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_zhimang_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_zhongdu_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_zhongduhit_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tongyong/ps_zhuoshao_eff/particle.effect
+effect/eff_Reverse/particle/Unknown/tuliuzhen/tuliu_debuff/particle.effect
+effect/eff_arpg/BlessingBlade_Buff/particle.effect
+effect/eff_autochess1/particle/BUFF/PS_HuiFu/particle.effect
+effect/eff_autochess1/particle/BUFF/PS_HuiXueHuiLan/particle.effect
+effect/eff_autochess1/particle/DanDao/YingMo_ShuShi/Hit/particle.effect
+effect/eff_autochess1/particle/DanDao/ZhuoErYouXia_LieRen/Hit/particle.effect
+effect/eff_autochess1/particle/buff/ps_huifu/particle.effect
+effect/eff_autochess2/particle/BUFF/PS_WangLing/particle.effect
+effect/eff_autochess2/particle/DanDao/GanRaoZhe_SaManJiSi/DanDao/particle.effect
+effect/eff_autochess2/particle/dandao/judushushi_shushi/dandao/particle.effect
+effect/eff_autochess2/particle/xiugai/h016/h016s1_fx_atk_hit/particle.effect
+effect/eff_battle/particle/Aoshufeidan/PS_ShoujiTX_1/particle.effect
+effect/eff_battle/particle/Chanrao/PS_Huixuanyezi_1/particle.effect
+effect/eff_battle/particle/Daoguang/PS_LirenSJ_1/particle.effect
+effect/eff_battle/particle/Daoguang/PS_LirenSJ_3/particle.effect
+effect/eff_battle/particle/Daoguang/PS_LirenSJ_4/particle.effect
+effect/eff_battle/particle/Daoguang/PS_LirenSJ_5/particle.effect
+effect/eff_battle/particle/Daoguang/PS_LirenSJ_7/particle.effect
+effect/eff_battle/particle/Daoguang/PS_LirenSJ_8/particle.effect
+effect/eff_battle/particle/Feileishen/PS_Jiguang_2/particle.effect
+effect/eff_battle/particle/Huangwu/PS_ShoujiTX_1/particle.effect
+effect/eff_battle/particle/Huoqiushu/PS_HuoqiuDD_1/particle.effect
+effect/eff_battle/particle/Huoqiushu/PS_Huoqiubaozha_1/particle.effect
+effect/eff_battle/particle/Liansuoxianjing/PS_Huoqiuxi_1/particle.effect
+effect/eff_battle/particle/Liansuoxianjing/T_Jiantou_1/particle.effect
+effect/eff_battle/particle/Shandianqiu/PS_Shandianqiu_1/particle.effect
+effect/eff_battle/particle/Shandianqiu/PS_Shandianxuli_1/particle.effect
+effect/eff_battle/particle/Shengji/PS_Shengji_1/particle.effect
+effect/eff_battle/particle/TongyongTX/PS_XuanyunTX_1/particle.effect
+effect/eff_battle/particle/TongyongTX/PS_Xueyeduo_1/particle.effect
+effect/eff_battle/particle/TongyongTX/ShoujiTX/PS_DajiTX_1/particle.effect
+effect/eff_battle/particle/TongyongTX/ShoujiTX/PS_ZhanjiTX_1/particle.effect
+effect/eff_battle/particle/Zhiliao/PS_GongjiTX_2/particle.effect
+effect/eff_battle/particle/Zhiliao/PS_ZhiliaoCX_1/particle.effect
+effect/eff_battle/particle/Zhishi/PS_Yuanxing_1/particle.effect
+effect/eff_battle/particle/Zhutouhuo/PS_Zhutouhuo_1/particle.effect
+effect/eff_battle/particle/aoshufeidan/ps_shoujitx_1/particle.effect
+effect/eff_battle/particle/gongjian/ps_chuanci_1/particle.effect
+effect/eff_battle/particle/gongjian/wanjianqifa/ps_shoujitx_1/particle.effect
+effect/eff_battle/particle/huangwu/ps_shoujitx_1/particle.effect
+effect/eff_battle/particle/shuangshouchui/xuanzhuanchui/ps_xuanzhuanchui_1/particle.effect
+effect/eff_battle/particle/shuangshouchui/zhongji/ps_luodi_1/particle.effect
+effect/eff_battle/particle/tongyongtx/ps_xuanyuntx_1/particle.effect
+effect/eff_battle/particle/zhiliao/ps_shoujitx_1/particle.effect
+effect/eff_common/particle/PS_Spell_Blue_Circle/particle.effect
+effect/eff_diablo/skill_blessinglight/particle.effect
+effect/eff_map/fuwen1/particle.effect
+effect/eff_reverse/particle/arch/ps_chixu_1/particle.effect
+effect/eff_reverse/particle/hades/daoguang/ps_daoguang_1/particle.effect
+effect/eff_reverse/particle/hades/daoguang/ps_daoguang_4/particle.effect
+effect/eff_reverse/particle/piliyishan/tongyong/player_target_point/particle.effect
+effect/eff_reverse/particle/unknown/tongyong/ps_xuanyun_eff/particle.effect
+effect/eff_reverse/particle/yanshi/ps_hudun_chixu_1/particle.effect
+effect/eff_reverse/particle/yanshi/ps_zhuaji_1/particle.effect
+effect/eff_roguelike/frostbolt_eff/frostbolt_eff1/particle.effect
+effect/eff_tank/particle/Indicator/PS_Skill_Effect_001_red/particle.effect
+effect/eff_tank/particle/PS_Skill_Effect_001/particle.effect
+effect/eff_tank/particle/PS_Skill_Effect_002/particle.effect
+effect/eff_tank/particle/PS_Skill_Effect_002_red/particle.effect
+effect/eff_tank/particle/PS_Spell_Blue_Circle/particle.effect
+effect/eff_tank/particle/PS_Spell_Green_Circle_red/particle.effect
+effect/eff_tank/particle/eff_hudun/particle.effect
+effect/eff_tongyong/battery_ray_eff/particle.effect
+effect/eff_tongyong/huoqiu2/particle.effect
+effect/eff_tongyong/huoqiu_blast/particle.effect
+effect/eff_tongyong/ps_daoguang_1/particle.effect
+effect/eff_tongyong/ps_shouji_1/particle.effect
+effect/eff_tongyong/ps_strike_katana_hit/particle.effect
+effect/eff_xujian/eff_fashi_02/eff_fashi_02/particle.effect
+effect/eff_xujian/effect_dilie_001/particle.effect
+effect/eff_xujian/effect_emit_001/particle.effect
+effect/eff_xujian/effect_emiti_003/particle.effect
+effect/eff_xujian/effect_fire_debuff/particle.effect
+effect/eff_xujian/effect_hit_001/particle.effect
+effect/eff_xujian/effect_hit_002/particle.effect
+effect/eff_xujian/effect_hit_004/particle.effect
+effect/eff_xujian/effect_hit_006/particle.effect
+effect/eff_xujian/effect_light_000/particle.effect
+effect/eff_xujian/effect_light_000_0/particle.effect
+effect/eff_xujian/effect_light_002/particle.effect
+effect/eff_xujian/effect_light_01_01/particle.effect
+effect/eff_xujian/effect_light_hit/particle.effect
+effect/eff_xujian/effect_mofashi_01/particle.effect
+effect/eff_xujian/effect_qiangkou_01/particle.effect
+effect/eff_xujian/effect_qiangxie_00_0/particle.effect
+effect/eff_xujian/effect_qiangxie_04_hit/particle.effect
+effect/eff_xujian/effect_qiangxie_06/particle.effect
+effect/eff_xujian/effect_qiangxie_bullet/particle.effect
+effect/eff_xujian/effect_tuowei_001/particle.effect
+effect/eff_xujian/effect_zhanshi_001/particle.effect
+effect/eff_xujian/effect_zhanshi_02/particle.effect
+effect/eff_xujian/effect_zhanshi_03/particle.effect
+effect/eff_xujian/effect_zhanshi_03buff/particle.effect
+effect/eff_xujian/effect_zhanshi_04/particle.effect
+effect/eff_xujian/effect_zhanshi_hit/particle.effect
+effect/eff_xujian/effect_zhanshi_jian01/particle.effect
+effect/effect_new/eff_object/eff_object_pinjie_01/particle.effect
+effect/effect_new/eff_object/eff_object_pinjie_02/particle.effect
+effect/effect_new/eff_object/eff_object_pinjie_03/particle.effect
+effect/effect_new/eff_object/eff_object_pinjie_04/particle.effect
+effect/effect_new/eff_object/eff_object_pinjie_05/particle.effect
+effect/effect_new/effect_emit/eff_fireball_01/particle.effect
+effect/effect_new/effect_hit/eff_hit_01/particle.effect
+effect/effect_new/effect_hit/eff_hit_02/particle.effect
+effect/effect_new/effect_hit/eff_hit_15/particle.effect
+effect/effect_new/effect_hit/eff_lght_hit/particle.effect
+effect/effect_new/effect_ui/eff_ui_biankuang006/particle.effect
+effect/effect_new/effect_zhishiqi/eff_juxing/ps_tou_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_juxing/ps_wei_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_juxing/ps_zhong_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_120_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_120_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_180_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_180_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_30_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_30_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_45_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_45_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_60_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_60_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_90_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_shanxing/ps_shanxing_90_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_biaoji_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_biaoji_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_jineng_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_yuanxing_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_yuanxing_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_zhixiangxing_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_zhixiangxing_red_1/particle.effect
+effect/effect_new/effect_zhishiqi/eff_zhixianxing/ps_tou_1/particle.effect
+effect/effect_new1/eff_keji/eff_keji_qiu1/particle.effect
+effect/samplespells/avatar/avatar/particle.effect
+effect/samplespells/avatar/avatar_caster/particle.effect
+effect/samplespells/blink/Blink_Caster/particle.effect
+effect/samplespells/blink/Blink_Target/particle.effect
+effect/samplespells/blizzard/blizzard/particle.effect
+effect/samplespells/blizzard/blizzard_shard_blast/particle.effect
+effect/samplespells/blizzard/stormbolt_hit/particle.effect
+effect/samplespells/controlmagic/controlmagic/particle.effect
+effect/samplespells/controlmagic/controlmagic_target/particle.effect
+effect/samplespells/curse/curse/particle.effect
+effect/samplespells/curse/curse_miss/particle.effect
+effect/samplespells/devotion/devotionaura/particle.effect
+effect/samplespells/devotion/devotionaura_target/particle.effect
+effect/samplespells/devour magic/devour magic/particle.effect
+effect/samplespells/devour magic/devour magic_attack/particle.effect
+effect/samplespells/devour magic/devour magic_hit1/particle.effect
+effect/samplespells/devour magic/devour magic_hit2/particle.effect
+effect/samplespells/disple/disple/particle.effect
+effect/samplespells/disple/disple_hit/particle.effect
+effect/samplespells/divineshield/divineshield/particle.effect
+effect/samplespells/durability aura/durability aura/particle.effect
+effect/samplespells/earthquake/earthquake/particle.effect
+effect/samplespells/fan_of_knives/fanofknives_hit/particle.effect
+effect/samplespells/fan_of_knives/fanofknives_missile/particle.effect
+effect/samplespells/fog/attackdisabled/particle.effect
+effect/samplespells/fog/fog/particle.effect
+effect/samplespells/fog/fog_charge/particle.effect
+effect/samplespells/frostarmor/frostarmor/particle.effect
+effect/samplespells/frostarmor/frostarmor_hit/particle.effect
+effect/samplespells/frostarmor/frosted/particle.effect
+effect/samplespells/healing/healingaura_heal/particle.effect
+effect/samplespells/hearthstone/hearthstone_end/particle.effect
+effect/samplespells/hearthstone/hearthstone_start/particle.effect
+effect/samplespells/hook/hook_missile/particle.effect
+effect/samplespells/impale/impale1/particle.effect
+effect/samplespells/impale/impale2/particle.effect
+effect/samplespells/impale/impale3/particle.effect
+effect/samplespells/innerfire/innerfire/particle.effect
+effect/samplespells/invisibility/invisibility/particle.effect
+effect/samplespells/invisibility/invisibility_target/particle.effect
+effect/samplespells/life siphon/life siphon1/particle.effect
+effect/samplespells/life siphon/life siphon_2/particle.effect
+effect/samplespells/life siphon/life siphon_bullet1/particle.effect
+effect/samplespells/life siphon/life siphon_bullet2/particle.effect
+effect/samplespells/lightningshield/lightningshield_orb/particle.effect
+effect/samplespells/lightningshield/lightningshield_target/particle.effect
+effect/samplespells/magic  sentry/magic  sentry/particle.effect
+effect/samplespells/magic defend/magic defend/particle.effect
+effect/samplespells/parasite/parasite/particle.effect
+effect/samplespells/parasite/parasite_attack/particle.effect
+effect/samplespells/phoenix/phoenix_attachements/particle.effect
+effect/samplespells/phoenix/phoenix_birth/particle.effect
+effect/samplespells/phoenix/phoenixfire/particle.effect
+effect/samplespells/phoenix/phoenixfire_missile/particle.effect
+effect/samplespells/purge/purge/particle.effect
+effect/samplespells/purge/purge_buff/particle.effect
+effect/samplespells/purge/purge_hit/particle.effect
+effect/samplespells/reflectionshield/reflectionshield/particle.effect
+effect/samplespells/reflectionshield/reflectionshield_start/particle.effect
+effect/samplespells/reincarnation/reincarnation/particle.effect
+effect/samplespells/rejuvenation/rejuvenation/particle.effect
+effect/samplespells/rejuvenation/rejuvenation_caster/particle.effect
+effect/samplespells/repair/repair/particle.effect
+effect/samplespells/resurrection/resurrection/particle.effect
+effect/samplespells/resurrection/resurrection_target/particle.effect
+effect/samplespells/roar/roar/particle.effect
+effect/samplespells/roar/roar_aoe/particle.effect
+effect/samplespells/roar/roar_start/particle.effect
+effect/samplespells/shockwave/shockwave_missile/particle.effect
+effect/samplespells/shockwave/shockwave_missile_blast/particle.effect
+effect/samplespells/slow/slow/particle.effect
+effect/samplespells/slow/slow_target/particle.effect
+effect/samplespells/snake ward/snake ward_attack/particle.effect
+effect/samplespells/snake ward/snake ward_hit/particle.effect
+effect/samplespells/snare/snare/particle.effect
+effect/samplespells/snare/snare_attack/particle.effect
+effect/samplespells/snare/snare_attack1/particle.effect
+effect/samplespells/stasistrap/stasistrap_aoe/particle.effect
+effect/samplespells/stasistrap/stasistrap_target/particle.effect
+effect/samplespells/stormbolt/stormbolt_attachments/particle.effect
+effect/samplespells/taunt/taunt_caster/particle.effect
+effect/samplespells/taunt/taunt_target/particle.effect
+effect/samplespells/unholy freez/unholy freez/particle.effect
+effect/samplespells/vampiric aura/vampiric aura/particle.effect
+effect/samplespells/voodoo/voodoo/particle.effect
+effect/samplespells/voodoo/voodoo_target3/particle.effect
+effect/samplespells/warstomp/warstomp/particle.effect
+effect/samplespells/water/water/particle.effect
+effect/samplespells/water/waterelement_water_birth/particle.effect
+effect/td_eff/bingying/dao3/particle.effect
+eqpt/Weapon/SM_leishenchui/model.prefab
+eqpt/weapon/mofashi_weapon/model.prefab
+eqpt/weapon/sk_nezha2_weapon205/model.prefab
+eqpt/weapon/sm_dr_spear_08_short/model.prefab
+eqpt/weapon/sm_dr_sword_04_02/model.prefab
+image/btn/gf_1_major_active.png
+image/btn/gf_1_minor_active.png
+image/btn/gf_2_major_active.png
+image/btn/gf_2_minor_active.png
+image/btn/gf_3_major_active.png
+image/btn/gf_3_minor_active.png
+image/btn/sci_1_major_active.png
+image/btn/sci_1_minor_active.png
+image/btn/sci_2_major_active.png
+image/btn/sci_2_minor_active.png
+image/btn/sci_3_major_active.png
+image/btn/sci_3_minor_active.png
+image/btn/xf_1_major_active.png
+image/btn/xf_1_minor_active.png
+image/btn/xf_2_major_active.png
+image/btn/xf_2_minor_active.png
+image/btn/xf_3_major_active.png
+image/btn/xf_3_minor_active.png
+soundth_circle_bgm\Mus_TTR_Level_05.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_01.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_02.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_03.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_04.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_05.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_06.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_07.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_08.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_grass_01.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_grass_02.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_grass_03.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_grass_04.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_grass_05.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_grass_06.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_grass_07.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_grass_08.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_rock_01.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_rock_02.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_rock_03.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_rock_04.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_rock_05.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_rock_06.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_rock_07.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_rock_08.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_sand_01.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_sand_02.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_sand_03.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_sand_04.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_sand_05.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_sand_06.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_sand_07.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_sand_08.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_01.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_02.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_03.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_04.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_05.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_06.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_07.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_08.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_01.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_02.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_03.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_04.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_05.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_06.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_07.ogg
+sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_08.ogg
+sound/a2_sfx/fight/magic/sfx_magic_elecball_gen_blast.ogg
+sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Box_Gold_Open.ogg
+sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Box_Ordinary_Open.ogg
+sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Show.ogg
+sound/a2_sfx/ui/general/UI_DrawCard_TenTimes_Box_Open.ogg
+sound/a2_sfx/ui/general/UI_DrawCard_TenTimes_Show_Gold.ogg
+sound/a2_sfx/ui/general/UI_DrawCard_TenTimes_Show_Ordinary_01.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Congratulat_Get.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Equip_Open.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Friend_Add.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Friend_Out.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Gen_Cancel.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Gen_Click.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Gen_Close.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Gen_Confirm.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Page_Level01_Click.ogg
+sound/a2_sfx/ui/general/UI_GameHall_PopUps.ogg
+sound/a2_sfx/ui/general/UI_GameHall_PromptWindow.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Store_Buy_Success.ogg
+sound/a2_sfx/ui/general/UI_GameHall_Store_Open.ogg
+sound/a2_sfx/ui/general/UI_GameHall_System_Open.ogg
+sound/battle_grounds_sound/level_up.ogg
+sound/battle_party_sound/bgm/amb_bp_winner_shout.ogg
+sound/battle_party_sound/bgm/mus_bp_castle.ogg
+sound/battle_party_sound/bgm/mus_bp_forest.ogg
+sound/battle_party_sound/bgm/mus_bp_hall.ogg
+sound/battle_party_sound/bgm/mus_bp_oriental.ogg
+sound/battle_party_sound/bgm/mus_bp_temple.ogg
+sound/battle_party_sound/bgm/mus_bp_wasteland.ogg
+sound/battle_party_sound/game/effect/受击_钝器.ogg
+sound/battle_party_sound/game/other/action_hero_jump_bp.ogg
+sound/battle_party_sound/game/other/action_hero_pickup_coin_bp.ogg
+sound/battle_party_sound/game/other/action_hero_pickup_item_bp.ogg
+sound/battle_party_sound/game/other/fs_hero_shoes_ground_bp.ogg
+sound/battle_party_sound/game/other/obj_field_bottle_broken_bp.ogg
+sound/battle_party_sound/game/skill/action_hero_boxe_bp.ogg
+sound/battle_party_sound/game/skill/action_hero_hurt_bp.ogg
+sound/battle_party_sound/game\effect/飞雷神-扔.ogg
+sound/battle_party_sound/ui_podium.ogg
+sound/best_moment_sound/Ninja/Ninja_Shuriken_Hit.ogg
+sound/best_moment_sound/music_ninja_loop.ogg
+sound/best_moment_sound/music_ninja_outro.ogg
+sound/best_moment_sound/ui/ui_click_button.ogg
+sound/best_moment_sound/ui/ui_window.ogg
+sound/hades_anim_test_sound/冲刺AirshipSprintStart.ogg
+sound/hades_anim_test_sound/大剑_1ZagreusSwordLunge.ogg
+sound/hades_anim_test_sound/大剑_2ZagreusSwordOverhead.ogg
+sound/last_stand_sound/枪支音效_机枪.ogg
+sound/last_stand_sound/错误.ogg
+sound/mover_td_sound/bgm
+sound/mover_td_sound/countdown.ogg
+sound/mover_td_sound/progress.ogg
+sound/presentation_sound/dash.ogg
+sound/presentation_sound/heor_Attack_1.ogg
+sound/presentation_sound/shield-blocking.ogg
+sound/promotion_sound/skill/充电音.ogg
+sound/promotion_sound/skill/冰锥_受击.ogg
+sound/promotion_sound/skill/冰锥_释放.ogg
+sound/promotion_sound/skill/动能护盾_召唤.ogg
+sound/promotion_sound/skill/发射回旋镖.ogg
+sound/promotion_sound/skill/受击_利器.ogg
+sound/promotion_sound/skill/受击_钝器.ogg
+sound/promotion_sound/skill/吟唱.ogg
+sound/promotion_sound/skill/咬苹果的声音.ogg
+sound/promotion_sound/skill/无敌护盾_召唤.ogg
+sound/promotion_sound/skill/火焰燃烧的声音.ogg
+sound/promotion_sound/skill/球碰撞的声音.ogg
+sound/promotion_sound/skill/种下蘑菇的声音.ogg
+sound/promotion_sound/skill/笼子碎裂音.ogg
+sound/promotion_sound/skill/等待读条音.ogg
+sound/promotion_sound/skill/近战攻击.ogg
+sound/promotion_sound/skill/远程射击_弓箭.ogg
+sound/promotion_sound/skill/远程射击_法术.ogg
+sound/promotion_sound/skill/飞雷神_飞.ogg
+sound/promotion_sound/ui/三星结算音效_失败.ogg
+sound/promotion_sound/ui/三星结算音效_胜利.ogg
+sound/promotion_sound/ui/刷怪提示音.ogg
+sound/sword_sound/刀劈.ogg
+sound/sword_sound/命中3.ogg
+sound/trap_sound/旋转.ogg
+sound/trap_sound/爆炸.ogg
+sound/trap_sound/错误.ogg
+sound/unknown_bgm/mus_battle_epic_dramatic_03.ogg
+sound/unknown_bgm/mus_battle_epic_powerful_02.ogg
+sound/unknown_bgm/mus_battle_epic_uplifting_01.ogg
+sound\a2_sfx\ui\hud\ui_hud_award_get_bright_long.ogg
+sound\promotion_sound\ui\三星结算音效_失败.ogg
+sound\promotion_sound\ui\三星结算音效_胜利.ogg
+sound\promotion_sound\ui\交互主按键音.ogg
+sound\promotion_sound\ui\倒计时音效.ogg
+sound\promotion_sound\ui\全局按键提示音.ogg
+sound\promotion_sound\ui\刷怪提示音.ogg
+sound\promotion_sound\ui\宝物提示音.ogg
+sound\promotion_sound\ui\属性升级提示音.ogg
+sound\promotion_sound\ui\拾取音效.ogg
+sound\promotion_sound\ui\沙沙声.ogg
+sound\promotion_sound\ui\等待读条音.ogg
+sound\promotion_sound\ui\错误.ogg
+soundhades_anim_test_sound/矛1SpearThrust1.ogg
+unknown
+unkown

@@ -1,0 +1,1022 @@
+// 游戏血条模板
+{
+	"BloodBarTypes" : {
+		// TypeName 对应UnitData.ini中的BloodBarType(字符串)的值
+		"BLOODBAR_TYPE_HERO" : {
+			// C++中根据 是否玩家控制 阵营 敌友关系 来自动选择一个template
+			// 寻找顺序 Controled Camps Relations Default
+			"Controlled" : "MAIN_HERO_NONE",
+			"Relations" : {
+				"Ally" : "ALLY_HERO_NONE",
+				"Enemy" : "ENEMY_HERO_NONE"
+			},
+			"DefaultDistance" : 1150	// 单位与相机的距离等于这个时，按原始大小显示。不配置或等于0时不缩放
+		},
+		"BLOODBAR_TYPE_HERO_MANA" : {
+			"Controlled" : "MAIN_HERO_MANA",
+			"Relations" : {
+				"Ally" : "ALLY_HERO_MANA",
+				"Enemy" : "ENEMY_HERO_MANA"
+			},
+			"DefaultDistance" : 1150
+		},
+		"BLOODBAR_TYPE_HERO_ANGER" : {
+			"Controlled" : "MAIN_HERO_ANGER",
+			"Relations" : {
+				"Ally" : "ALLY_HERO_ANGER",
+				"Enemy" : "ENEMY_HERO_ANGER"
+			},
+			"DefaultDistance" : 1150
+		},
+		"BLOODBAR_TYPE_HERO_ENERGY" : {
+			"Controlled" : "MAIN_HERO_ENERGY",
+			"Relations" : {
+				"Ally" : "ALLY_HERO_ENERGY",
+				"Enemy" : "ENEMY_HERO_ENERGY"
+			},
+			"DefaultDistance" : 1150
+		},
+		"BLOODBAR_TYPE_NORMAL" : {
+			"Controlled" : "ALLY_NORMAL_NONE",
+			"Relations" : {
+				"Ally" : "ALLY_NORMAL_NONE",
+				"Enemy" : "ENEMY_NORMAL_NONE"
+			},
+			"DefaultDistance" : 1150
+		},
+		"BLOODBAR_TYPE_NORMAL_MANA" : {
+			"Controlled" : "ALLY_NORMAL_MANA",
+			"Relations" : {
+				"Ally" : "ALLY_NORMAL_MANA",
+				"Enemy" : "ENEMY_NORMAL_MANA"
+			},
+			"DefaultDistance" : 1150
+		},
+		"BLOODBAR_TYPE_TITLE" : {
+			"Controlled" : "MAIN_TITLE",
+			"Relations" : {
+				"Ally" : "MAIN_TITLE",
+				"Enemy" : "MAIN_TITLE"
+			},
+			"DefaultDistance" : 1150
+		}
+	},
+
+
+	"Templates":
+	[
+		// 主英雄_无能量
+		{
+			"TemplateName": "MAIN_HERO_NONE",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 4,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-59, -23, 135, 23],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [4, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_绿.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							}
+						]
+					},
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [ -94, -23, 35, 23],
+						"TexturePath": "game_hud/bloodStrip/底框.png"
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -94, -23, 35, 23],
+						"Color": [255, 255, 255, 255],
+						"Value": ["等级"],
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 等级
+					// 血条和魔条
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+
+		// 友方英雄_无能量
+		{
+			"TemplateName": "ALLY_HERO_NONE",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-59, -23, 135, 23],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [4, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_蓝.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							}
+						]
+					},
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [ -94, -23, 35, 23],
+						"TexturePath": "game_hud/bloodStrip/底框.png"
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -94, -23, 35, 23],
+						"Color": [255, 255, 255, 255],
+						"Value": ["等级"],
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+
+		// 敌方英雄_无能量
+		{
+			"TemplateName": "ENEMY_HERO_NONE",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-59, -23, 135, 23],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [4, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_红.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							}
+						]
+					},
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [ -94, -23, 35, 23],
+						"TexturePath": "game_hud/bloodStrip/底框.png"
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -94, -23, 35, 23],
+						"Color": [255, 255, 255, 255],
+						"Value": ["等级"],
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+
+		// 主英雄_魔法
+		{
+			"TemplateName": "MAIN_HERO_MANA",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_绿.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_蓝.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 等级
+					// 血条和魔条
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+
+		// 主英雄_怒气
+		{
+			"TemplateName": "MAIN_HERO_ANGER",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_绿.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_红.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+
+				]
+		},
+
+		// 主英雄_能量
+		{
+			"TemplateName": "MAIN_HERO_ENERGY",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_绿.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_黄.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+
+		
+
+		// 友方英雄_魔法
+		{
+			"TemplateName": "ALLY_HERO_MANA",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_蓝.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_蓝.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+
+				]
+		},
+
+		// 友方英雄_能量
+		{
+			"TemplateName": "ALLY_HERO_ENERGY",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_蓝.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_黄.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+
+				]
+		},
+
+		// 友方英雄_怒气
+		{
+			"TemplateName": "ALLY_HERO_ANGER",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_蓝.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_红.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+
+				]
+		},
+
+		// 敌方英雄_魔法
+		{
+			"TemplateName": "ENEMY_HERO_MANA",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_红.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_蓝.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+
+				]
+		},
+
+		// 敌方英雄_能量
+		{
+			"TemplateName": "ENEMY_HERO_ENERGY",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_红.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_黄.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+
+				]
+		},
+
+		// 敌方英雄_怒气
+		{
+			"TemplateName": "ENEMY_HERO_ANGER",  // 血条类型名
+			"Anchor": [0, 0],          // 锚点位置
+			"Priority": 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 底图
+					{
+						"Name": "Background", // 名称 "英雄名称", 必须用这个名字
+						"Type": "IMAGE",
+						"Rect": [-85, -27, 170, 30],  // x, y, w, h
+						"TexturePath": "game_hud/bloodStrip/底框.png",
+						"Children" :	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 4, 127, 15],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/血条_红.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [39, 22, 127, 4],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_红.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					{
+						"Name": "HeroLevel", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [ -83, -27, 35, 30],  // x"Color": [255, 255, 255, 255], y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["等级"],
+						"FontSize": 15,
+						"Font": "UI/font/Regular/RegularBold.otf" // level
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+
+				]
+		},
+
+		
+
+		// 己方普通单位_无能量条
+		{
+			"TemplateName" : "ALLY_NORMAL_NONE",  // 血条类型名
+			"Anchor" : [0, 0],          // 锚点位置
+			"Priority" : 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 血条和魔条
+					{
+						"Name": "BloodGroup",  // 控件名称(本控件的名字可不填写)
+						"Type": "IMAGE",		// 控件类型
+						"Rect": [-41, -5, 86, 16],  // 该控件位置和宽高 x, y, w, h
+						"TexturePath": "game_hud/bloodstrip/底框.png",
+						"Children":	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [ 3, 3, 80, 10],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodstrip/血条_蓝.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							}
+						]
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+
+		// 敌方普通单位_无能量条
+		{
+			"TemplateName" : "ENEMY_NORMAL_NONE",  // 血条类型名
+			"Anchor" : [0, 0],          // 锚点位置
+			"Priority" : 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 血条和魔条
+					{
+						"Name": "BloodGroup",  // 控件名称(本控件的名字可不填写)
+						"Type": "IMAGE",		// 控件类型
+						"Rect": [-41, -5, 86, 16],  // 该控件位置和宽高 x, y, w, h
+						"TexturePath": "game_hud/bloodstrip/底框.png",
+						"Children":	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [3, 3, 80, 10],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodstrip/血条_红.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							}
+						]
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+		
+
+		// 己方普通单位_无能量条
+		{
+			"TemplateName" : "ALLY_NORMAL_MANA",  // 血条类型名
+			"Anchor" : [0, 0],          // 锚点位置
+			"Priority" : 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 血条和魔条
+					{
+						"Name": "BloodGroup",  // 控件名称(本控件的名字可不填写)
+						"Type": "IMAGE",		// 控件类型
+						"Rect": [-41, -5, 86, 22],  // 该控件位置和宽高 x, y, w, h
+						"TexturePath": "game_hud/bloodstrip/底框.png",
+						"Children":	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [3, 3, 80, 10],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodstrip/血条_蓝.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [3, 16, 80, 3],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_蓝.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+
+		// 敌方普通单位_无能量条
+		{
+			"TemplateName" : "ENEMY_NORMAL_MANA",  // 血条类型名
+			"Anchor" : [0, 0],          // 锚点位置
+			"Priority" : 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 血条和魔条
+					{
+						"Name": "BloodGroup",  // 控件名称(本控件的名字可不填写)
+						"Type": "IMAGE",		// 控件类型
+						"Rect": [-41, -5, 86, 22],  // 该控件位置和宽高 x, y, w, h
+						"TexturePath": "game_hud/bloodstrip/底框.png",
+						"Children":	 // 孩子控件组
+						[
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [3, 3, 80, 10],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodstrip/血条_红.png"
+									],
+								"Value": ["生命"],
+								"Max": ["生命上限"]
+							},
+							{
+								"Name": "HP",  // 名称 "血条" (必须用这个名字)
+								"Type": "INDICATOR",  // 类型 "指示器"
+								"Rect": [3, 16, 80, 3],  // x, y, w, h
+								"Skin":
+									[
+										"game_hud/bloodStrip/能量_蓝.png"
+									],
+								"Value": ["魔法"],
+								"Max": ["魔法上限"]
+							}
+						]
+					},
+					// 英雄名称
+					{
+						"Name": "NickName", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-101, -35, 202, 23],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Text": "",
+						"Value": ["昵称"],
+						"Font": "UI/font/SourceHanSerif/SourceHanSerifBold.otf" // 字体 (这个字体含中英文、韩文、日文)
+					}
+				]
+		},
+
+		// 血条名称图片
+		{
+			"TemplateName" : "MAIN_TITLE",  // 血条类型名
+			"Anchor" : [0, 0],          // 锚点位置
+			"Priority" : 3,				// 血条的优先级，数值越大越显示在前面，默认为0
+			"Layout": 					// 空间布局
+				[
+					// 称号图片
+					{
+						"Name": "BloodTitleBg",  // 控件名称(本控件的名字可不填写)
+						"Type": "IMAGE",		// 控件类型
+						"Rect": [-100, -100, 200, 45],  // 该控件位置和宽高 x, y, w, h
+						"TexturePath": "game_hud/bloodstrip/称号底框.png",
+						"Value": ["称号图片"]
+					},
+					// 称号
+					{
+						"Name": "BloodTitle", // 名称 "英雄名称", 必须用这个名字
+						"Type": "TEXT",
+						"Rect": [-100, -100, 200, 45],  // x, y, w, h
+						"Color": [255, 255, 255, 255], // rgba
+						"Value": ["称号"],
+						"FontSize": 15,
+						"AutoLocalization": true,
+						"Font": "UI/font/Regular.otf"
+					}
+				]
+		}
+	]
+}

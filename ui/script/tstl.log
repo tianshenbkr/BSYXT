@@ -1,0 +1,28 @@
+391.7701999992132:	{"globalClasses":["Array","Present","IEventNotify","Coroutine","Trigger","Item","Timer","Buff","Skill","Player","TriggerParamTable","TriggerEvent","Actor","ScreenPos","Target","EffectParam","EffectParamShared","YPR旋转","DataCache","Unit","Point"],"globalModules":["coroutine","_G","log","base"]}
+1417.6734999865294:	Loaded 0 plugins
+1418.396499991417:	Parsing project settings
+1422.503599986434:	Transforming D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main_1.ts
+1424.6534999907017:	moduleName:
+1424.6619999855757:	busiyixiantu_5n1b
+1425.2265999913216:	exportScope:
+1425.2309999912977:	true
+1435.7861999869347:	Printing D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main_1.ts
+1445.0231999903917:	Transforming D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main.ts
+1446.6113999933004:	Printing D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main.ts
+1449.5702999979258:	Transforming D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_validator.ts
+1450.1645999997854:	moduleName:
+1450.2452999949455:	validator
+1450.64359998703:	exportScope:
+1450.646899998188:	true
+1458.4726999998093:	Printing D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_validator.ts
+1465.0581000000238:	Constructing emit plan
+1465.657499998808:	Resolving dependencies for D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main_1.ts
+1466.2366999983788:	Resolving dependencies for D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main.ts
+1466.8093999922276:	Resolving "./trigger_module_main_1" from D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main.ts
+1467.4347999989986:	Resolved ./trigger_module_main_1 to D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main_1.ts
+1468.4815999865532:	Resolving dependencies for D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_validator.ts
+1469.1375999897718:	Emitting output
+1469.4758999943733:	Emitting D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main_1.lua
+1470.617999985814:	Emitting D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_module_main.lua
+1471.5111999958754:	Emitting D:/星火编辑器/Res/maps/BuSiYiXianTu/ui/script/trigger_validator.lua
+1472.3450999855995:	Emit finished!

@@ -1,0 +1,741 @@
+{
+	"受击": {
+		"AtlasOffset": [
+			0,
+			0
+		],
+		"CharSet": [
+			{
+				"Char": "0",
+				"Rect": {
+					"X": 177,
+					"Y": 193,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "1",
+				"Rect": {
+					"X": 1,
+					"Y": 108,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "2",
+				"Rect": {
+					"X": 155,
+					"Y": 164,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "3",
+				"Rect": {
+					"X": 111,
+					"Y": 164,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "4",
+				"Rect": {
+					"X": 89,
+					"Y": 164,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "5",
+				"Rect": {
+					"X": 67,
+					"Y": 164,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "6",
+				"Rect": {
+					"X": 221,
+					"Y": 150,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "7",
+				"Rect": {
+					"X": 199,
+					"Y": 150,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "8",
+				"Rect": {
+					"X": 45,
+					"Y": 137,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "9",
+				"Rect": {
+					"X": 23,
+					"Y": 137,
+					"Width": 20,
+					"Height": 27
+				}
+			}
+		]
+	},
+	"回血": {
+		"AtlasOffset": [
+			0,
+			0
+		],
+		"CharSet": [
+			{
+				"Char": "+",
+				"Rect": {
+					"X": 1,
+					"Y": 137,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "0",
+				"Rect": {
+					"X": 89,
+					"Y": 106,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "1",
+				"Rect": {
+					"X": 70,
+					"Y": 48,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "2",
+				"Rect": {
+					"X": 222,
+					"Y": 63,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "3",
+				"Rect": {
+					"X": 70,
+					"Y": 77,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "4",
+				"Rect": {
+					"X": 92,
+					"Y": 77,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "5",
+				"Rect": {
+					"X": 114,
+					"Y": 77,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "6",
+				"Rect": {
+					"X": 136,
+					"Y": 77,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "7",
+				"Rect": {
+					"X": 158,
+					"Y": 77,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "8",
+				"Rect": {
+					"X": 180,
+					"Y": 77,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "9",
+				"Rect": {
+					"X": 1,
+					"Y": 79,
+					"Width": 20,
+					"Height": 27
+				}
+			}
+		]
+	},
+	"法伤": {
+		"AtlasOffset": [
+			0,
+			0
+		],
+		"CharSet": [
+			{
+				"Char": "+",
+				"Rect": {
+					"X": 23,
+					"Y": 79,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "0",
+				"Rect": {
+					"X": 45,
+					"Y": 79,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "1",
+				"Rect": {
+					"X": 202,
+					"Y": 92,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "2",
+				"Rect": {
+					"X": 224,
+					"Y": 92,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "3",
+				"Rect": {
+					"X": 67,
+					"Y": 106,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "4",
+				"Rect": {
+					"X": 133,
+					"Y": 164,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "5",
+				"Rect": {
+					"X": 111,
+					"Y": 106,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "6",
+				"Rect": {
+					"X": 133,
+					"Y": 106,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "7",
+				"Rect": {
+					"X": 155,
+					"Y": 106,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "8",
+				"Rect": {
+					"X": 177,
+					"Y": 106,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "9",
+				"Rect": {
+					"X": 155,
+					"Y": 193,
+					"Width": 20,
+					"Height": 27
+				}
+			}
+		]
+	},
+	"法爆": {
+		"AtlasOffset": [
+			0,
+			0
+		],
+		"CharSet": [
+			{
+				"Char": "0",
+				"Rect": {
+					"X": 23,
+					"Y": 108,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "1",
+				"Rect": {
+					"X": 45,
+					"Y": 108,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "2",
+				"Rect": {
+					"X": 199,
+					"Y": 121,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "3",
+				"Rect": {
+					"X": 221,
+					"Y": 121,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "4",
+				"Rect": {
+					"X": 67,
+					"Y": 135,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "5",
+				"Rect": {
+					"X": 89,
+					"Y": 135,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "6",
+				"Rect": {
+					"X": 111,
+					"Y": 135,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "7",
+				"Rect": {
+					"X": 133,
+					"Y": 135,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "8",
+				"Rect": {
+					"X": 155,
+					"Y": 135,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "9",
+				"Rect": {
+					"X": 177,
+					"Y": 135,
+					"Width": 20,
+					"Height": 27
+				}
+			}
+		]
+	},
+	"物爆": {
+		"AtlasOffset": [
+			0,
+			0
+		],
+		"CharSet": [
+			{
+				"Char": "0",
+				"Rect": {
+					"X": 24,
+					"Y": 48,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "1",
+				"Rect": {
+					"X": 1,
+					"Y": 48,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "2",
+				"Rect": {
+					"X": 199,
+					"Y": 46,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "3",
+				"Rect": {
+					"X": 176,
+					"Y": 46,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "4",
+				"Rect": {
+					"X": 153,
+					"Y": 46,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "5",
+				"Rect": {
+					"X": 130,
+					"Y": 46,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "6",
+				"Rect": {
+					"X": 107,
+					"Y": 46,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "7",
+				"Rect": {
+					"X": 222,
+					"Y": 32,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "8",
+				"Rect": {
+					"X": 47,
+					"Y": 48,
+					"Width": 21,
+					"Height": 29
+				}
+			},
+			{
+				"Char": "9",
+				"Rect": {
+					"X": 222,
+					"Y": 1,
+					"Width": 21,
+					"Height": 29
+				}
+			}
+		]
+	},
+	"物理": {
+		"AtlasOffset": [
+			0,
+			0
+		],
+		"CharSet": [
+			{
+				"Char": "0",
+				"Rect": {
+					"X": 177,
+					"Y": 164,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "1",
+				"Rect": {
+					"X": 1,
+					"Y": 166,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "2",
+				"Rect": {
+					"X": 23,
+					"Y": 166,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "3",
+				"Rect": {
+					"X": 45,
+					"Y": 166,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "4",
+				"Rect": {
+					"X": 199,
+					"Y": 179,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "5",
+				"Rect": {
+					"X": 221,
+					"Y": 179,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "6",
+				"Rect": {
+					"X": 67,
+					"Y": 193,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "7",
+				"Rect": {
+					"X": 89,
+					"Y": 193,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "8",
+				"Rect": {
+					"X": 111,
+					"Y": 193,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "9",
+				"Rect": {
+					"X": 133,
+					"Y": 193,
+					"Width": 20,
+					"Height": 27
+				}
+			}
+		]
+	},
+	"状态": {
+		"AtlasOffset": [
+			0,
+			0
+		],
+		"CharSet": [
+			{
+				"Char": "0",
+				"Rect": {
+					"X": 1,
+					"Y": 1,
+					"Width": 104,
+					"Height": 45
+				}
+			},
+			{
+				"Char": "1",
+				"Rect": {
+					"X": 107,
+					"Y": 1,
+					"Width": 113,
+					"Height": 43
+				}
+			}
+		]
+	},
+	"经验": {
+		"AtlasOffset": [
+			0,
+			0
+		],
+		"CharSet": [
+			{
+				"Char": "+",
+				"Rect": {
+					"X": 1,
+					"Y": 195,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "0",
+				"Rect": {
+					"X": 23,
+					"Y": 195,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "1",
+				"Rect": {
+					"X": 45,
+					"Y": 195,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "2",
+				"Rect": {
+					"X": 199,
+					"Y": 208,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "3",
+				"Rect": {
+					"X": 221,
+					"Y": 208,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "4",
+				"Rect": {
+					"X": 67,
+					"Y": 222,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "5",
+				"Rect": {
+					"X": 89,
+					"Y": 222,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "6",
+				"Rect": {
+					"X": 111,
+					"Y": 222,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "7",
+				"Rect": {
+					"X": 133,
+					"Y": 222,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "8",
+				"Rect": {
+					"X": 155,
+					"Y": 222,
+					"Width": 20,
+					"Height": 27
+				}
+			},
+			{
+				"Char": "9",
+				"Rect": {
+					"X": 177,
+					"Y": 222,
+					"Width": 20,
+					"Height": 27
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "dependencies":{
+        "@types/node":"^18.7.1"
+    },
+    "devDependencies":{
+        "typescript-to-lua":"^1.10.0"
+    },
+    "main":"trigger_module_main.lua",
+    "private":true,
+    "scripts":{
+        "build":"tstl",
+        "dev":"tstl --watch"
+    },
+    "types":"trigger_module.d.ts"
+}

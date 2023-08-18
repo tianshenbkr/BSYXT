@@ -1,0 +1,15 @@
+{
+	"MapDisplayName": "空白（单人V2）",
+	"HideTileDeco": false,
+	"EnableGAO": false,
+	"GuideURL": "http://pt.master.sce.xd.com/editor_app.html",
+	"ProjectName": "busiyixiantu_5n1b",
+	"TriggerEditorMode": "V2",
+	"MechanismMode": "BOTH",
+	"TemplateName": "single_simple_ts",
+	"EnableSetScoreName": true,
+	"IsLib": false,
+	"TestMapPath": "",
+	"PackEffect": true,
+	"LibForEditor": false
+}

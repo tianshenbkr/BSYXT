@@ -1,0 +1,9 @@
+{"messageText":"找不到名称“_OBJ__lobby_resource_gain_lobby_resource_gain”。","code":2304,"start":1312,"length":45,"category":1}
+{"messageText":"找不到名称“_OBJ__lobby_resource_lobby_resource”。","code":2304,"start":1577,"length":35,"category":1}
+{"messageText":"找不到名称“ScoreCommitter”。","code":2304,"start":1982,"length":14,"category":1}
+{"messageText":{"messageText":"类型“_OBJ_lib_control_gui_ctrl_技能摇杆”中的属性“event”不可分配给基类型“_OBJ__gui_ctrl_gui_ctrl”中的同一属性。","category":1,"code":2416,"next":[{"messageText":"类型“_OBJ_lib_control_技能摇杆GUIEvent”缺少类型“_OBJ__GUIEvent”的以下属性: on_long_click, on_mouse_down, on_click, on_mouse_up 及其他 11 项。","category":1,"code":2740}]},"code":2416,"start":17535,"length":5,"category":1}
+{"messageText":{"messageText":"类型“_OBJ_lib_control_gui_ctrl_移动摇杆”中的属性“event”不可分配给基类型“_OBJ__gui_ctrl_gui_ctrl”中的同一属性。","category":1,"code":2416,"next":[{"messageText":"类型“_OBJ_lib_control_移动摇杆GUIEvent”缺少类型“_OBJ__GUIEvent”的以下属性: on_long_click, on_mouse_down, on_click, on_mouse_up 及其他 11 项。","category":1,"code":2740}]},"code":2416,"start":19551,"length":5,"category":1}
+{"messageText":"找不到名称“_OBJ__lobby_resource_gain_group_lobby_resource_gain_group”。你是否指的是“_OBJ_smallcard_get_items_lobby_resource_gain_group_Lobby_Resource_Gain_Group”?","code":2552,"start":30080,"length":57,"category":1}
+{"messageText":"找不到名称“_OBJ__inventory_config_inventory_config”。","code":2304,"start":30352,"length":39,"category":1}
+{"messageText":"找不到名称“_OBJ__inventory_config_inventory_config”。","code":2304,"start":30683,"length":39,"category":1}
+{"messageText":"找不到名称“ScoreCommitter”。","code":2304,"start":31921,"length":14,"category":1}
