@@ -1,0 +1,19 @@
+{
+    "[ModuleType][custom_wave].DisplayName":"<防守图>怪物波次",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.AutoScene.DisplayName":"自动转换创建位置和行动路线至玩家当前场景",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.AutoScene.Hint":"转换前后坐标相同",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.Delay.DisplayName":"刷怪延迟",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.Delay.Hint":"生成第一只怪物前的等待时间",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.Line.DisplayName":"怪物行动路线",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.Number.DisplayName":"怪物数量",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.Position.DisplayName":"怪物生成位置",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.Pulse.DisplayName":"怪物生成间隔",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.Pulse.Hint":"生成下一只怪物前的等待时间",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].Data.Game.Unit.DisplayName":"怪物单位",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.SubWave].DisplayName":"怪物配置",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.wave].Data.Game.Clear.DisplayName":"等待怪物清除后生成下一波",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.wave].Data.Game.Loop.DisplayName":"循环生成怪物",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.wave].Data.Game.LoopWait.DisplayName":"循环等待时间",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.wave].Data.Game.SubWave.DisplayName":"怪物配置",
+    "[NodeType][$$busiyixiantu_5n1b.custom_wave.wave].DisplayName":"怪物波次"
+}

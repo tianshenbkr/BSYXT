@@ -1024,12 +1024,12 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_23533341 = function(AI)
+    validator.validator_18953088 = function(AI)
         local result = false
         local 主人 = AI.params:get("master")
         local 新坐标
         local 巡逻范围 = AI.params:get("patrol_range")
-        if AI.params:get("order_move") ~= nil or AI.params:get("target_unit") ~= nil or not AI.params:get("patrol_permit") then
+        if 主人:get_scene_name() ~= AI.unit:get_scene_name() or AI.params:get("order_move") ~= nil or AI.params:get("target_unit") ~= nil or not AI.params:get("patrol_permit") then
             return false
         else
         end
@@ -1058,13 +1058,13 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_144538679 = function(AI)
+    validator.validator_15830840 = function(AI)
         local 新变量
         local result = false
         local 主人 = AI.params:get("master")
         local 巡逻范围 = AI.params:get("patrol_range")
         local 实际范围 = base.math.max(巡逻范围, 200)
-        if AI.params:get("target_unit") ~= nil or AI.params:get("order_move") ~= nil and 主人:get_scene_point():distance(AI.unit:get_scene_point()) <= 实际范围 then
+        if 主人:get_scene_name() ~= AI.unit:get_scene_name() or AI.params:get("target_unit") ~= nil or AI.params:get("order_move") ~= nil and 主人:get_scene_point():distance(AI.unit:get_scene_point()) <= 实际范围 then
             return false
         else
         end
@@ -1083,13 +1083,13 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_55344321 = function(AI)
+    validator.validator_61264335 = function(AI)
         local result = false
         local 主人 = AI.params:get("master")
         local 巡逻距离 = AI.params:get("patrol_range")
         local 搜敌距离 = AI.params:get("search_range")
         local 最远距离 = 搜敌距离 + 巡逻距离
-        if 主人:get_scene_point():distance(AI.unit:get_scene_point()) > 最远距离 then
+        if 主人:get_scene_name() == AI.unit:get_scene_name() and 主人:get_scene_point():distance(AI.unit:get_scene_point()) > 最远距离 then
             AI.params:set("target_unit", nil)
             AI.params:set("next_skill", nil)
             AI.params:set("order_move", nil)
@@ -1099,7 +1099,7 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_245519073 = function(AI)
+    validator.validator_179475718 = function(AI)
         AI.params:set(
             "last_patrol_time",
             base:clock()
@@ -1132,7 +1132,8 @@ do
                 base.timer_loop(
                     0.2,
                     function()
-                        if AI.unit:is_walking() then
+                        local 主人 = AI.params:get("master")
+                        if AI.unit:is_walking() and 主人 ~= nil and 主人:get_scene_name() == AI.unit:get_scene_name() then
                             AI.unit:set_facing(AI.unit:get_scene_point():angle(AI.params:get("master"):get_scene_point()))
                         else
                         end
@@ -1385,6 +1386,48 @@ do
     end
     ---
     -- @noSelf
+    validator.validator_253349852 = function(单位)
+        local result = busiyixiantu_5n1b:玩家单位属性计算("攻击力")
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_150413537 = function(单位)
+        local result = busiyixiantu_5n1b:玩家单位属性计算("防御力")
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_207517527 = function(单位)
+        local result = busiyixiantu_5n1b:玩家单位属性计算("生命值上限")
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_69799481 = function(单位)
+        local result = busiyixiantu_5n1b:玩家单位属性计算("魔法值上限")
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_158477395 = function(单位)
+        local result = busiyixiantu_5n1b:玩家单位属性计算("攻击速度倍率")
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_162427740 = function(单位)
+        local result = busiyixiantu_5n1b:玩家单位属性计算("冷却缩减")
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_135354330 = function(伤害来源, 伤害目标, 伤害类型, 是否暴击, 伤害值, 效果节点, 伤害实例)
+        local result = busiyixiantu_5n1b:普攻伤害计算(伤害目标)
+        return result
+    end
+    ---
+    -- @noSelf
     validator.validator_255597210 = function(治疗量, 效果节点, 治疗实例, 治疗目标, 治疗来源, 是否暴击)
         local 治疗量 = 治疗量
         local 暴击治疗 = 0
@@ -1402,52 +1445,33 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_34781199 = function(伤害来源, 伤害目标, 伤害类型, 是否暴击, 伤害值, 效果节点, 伤害实例)
-        local 伤害 = 伤害值
-        local 伤害倍率 = 1
-        local 暴击伤害 = 伤害来源:get_ex("暴击伤害", 0)
-        local 法术破甲 = 伤害来源:get_ex("法术破甲", 0)
-        local 法术穿透 = 伤害来源:get_ex("法术穿透", 0)
-        local 格挡 = 伤害目标:get_ex("格挡", 0)
-        local 魔抗 = 伤害目标:get_ex("魔抗", 0)
+    validator.validator_98280874 = function(伤害来源, 伤害目标, 伤害类型, 是否暴击, 伤害值, 效果节点, 伤害实例)
+        local 伤害 = busiyixiantu_5n1b:法术技能伤害计算(伤害目标, 伤害值)
         if 伤害目标:has_restriction("魔免") or 伤害目标:has_restriction("无敌") then
             return 0
         else
         end
         if 是否暴击 == true then
-            伤害倍率 = 伤害倍率 * (1 + (暴击伤害 / 100 - 1))
         else
         end
-        if 格挡 > 0 then
-            伤害 = 伤害 - 格挡
+        if true then
         else
         end
-        if 魔抗 > 0 and base.target_filter_validate(
-            base.target_filters:new(";建筑"),
-            伤害目标
-        ) == true then
-            if 法术穿透 < 100 then
-                魔抗 = 魔抗 * (1 - 法术穿透 / 100)
+        if true then
+            if true then
             else
-                魔抗 = 0
             end
-            魔抗 = 魔抗 - 法术破甲
-            if 魔抗 < 0 then
-                魔抗 = 0
+            if true then
             else
             end
         else
         end
-        if 魔抗 < 0 then
-            魔抗 = 0 - 魔抗
-            伤害 = 伤害 * (1 + 0.01 * 魔抗)
+        if true then
         else
-            if 魔抗 > 0 then
-                伤害 = 伤害 / (1 + 0.01 * 魔抗)
+            if true then
             else
             end
         end
-        伤害 = 伤害 * 伤害倍率
         return 伤害
     end
     ---
@@ -1458,52 +1482,33 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_43068806 = function(伤害来源, 伤害目标, 伤害类型, 是否暴击, 伤害值, 效果节点, 伤害实例)
-        local 伤害 = 伤害值
-        local 伤害倍率 = 1
-        local 暴击伤害 = 伤害来源:get_ex("暴击伤害", 0)
-        local 破甲 = 伤害来源:get_ex("破甲", 0)
-        local 穿透 = 伤害来源:get_ex("穿透", 0)
-        local 格挡 = 伤害目标:get_ex("格挡", 0)
-        local 护甲 = 伤害目标:get_ex("护甲", 0)
+    validator.validator_207750772 = function(伤害来源, 伤害目标, 伤害类型, 是否暴击, 伤害值, 效果节点, 伤害实例)
+        local 伤害 = busiyixiantu_5n1b:物理技能伤害计算(伤害目标, 伤害值)
         if 伤害目标:has_restriction("物免") or 伤害目标:has_restriction("无敌") then
             return 0
         else
         end
         if 是否暴击 == true then
-            伤害倍率 = 伤害倍率 * (1 + (暴击伤害 / 100 - 1))
         else
         end
-        if 格挡 > 0 then
-            伤害 = 伤害 - 格挡
+        if true then
         else
         end
-        if 护甲 > 0 and base.target_filter_validate(
-            base.target_filters:new(";建筑"),
-            伤害目标
-        ) == true then
-            if 穿透 < 100 then
-                护甲 = 护甲 * (1 - 穿透 / 100)
+        if true then
+            if true then
             else
-                护甲 = 0
             end
-            护甲 = 护甲 - 破甲
-            if 护甲 < 0 then
-                护甲 = 0
+            if true then
             else
             end
         else
         end
-        if 护甲 < 0 then
-            护甲 = 0 - 护甲
-            伤害 = 伤害 * (1 + 0.01 * 护甲)
+        if true then
         else
-            if 护甲 > 0 then
-                伤害 = 伤害 / (1 + 0.01 * 护甲)
+            if true then
             else
             end
         end
-        伤害 = 伤害 * 伤害倍率
         return 伤害
     end
     ---
@@ -1528,7 +1533,7 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_22685921 = function(伤害来源, 伤害目标, 伤害类型, 是否暴击, 伤害值, 效果节点, 伤害实例)
+    validator.validator_216600710 = function(伤害来源, 伤害目标, 伤害类型, 是否暴击, 伤害值, 效果节点, 伤害实例)
         local 伤害 = 伤害值
         return 伤害
     end
@@ -1653,6 +1658,16 @@ do
     end
     ---
     -- @noSelf
+    validator.validator_130232902 = function(效果节点)
+        local result = false
+        if base.player(1):get_hero():has_buff("$$busiyixiantu_5n1b.buff.不能升级判断.root") then
+        else
+            result = true
+        end
+        return result
+    end
+    ---
+    -- @noSelf
     validator.validator_196209676 = function(效果节点)
         local result = base.eff_param_caster(效果节点):get_ex("攻击", 0)
         return result
@@ -1753,8 +1768,56 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_140350288 = function(效果节点)
+    validator.validator_142888961 = function(效果节点)
         local result = base.player(1):get_hero():get_ex("攻击", 1)
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_15165100 = function(效果节点)
+        local result = base.player(1):get_hero():get_custom("攻击", false) / 100 + 3
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_238476281 = function(效果节点)
+        local result = 1
+        if true then
+            result = 300
+        else
+        end
+        if result <= 1000 and result > 100 then
+            result = 500
+        else
+        end
+        if result <= 10000 and result > 1000 then
+            result = 1000
+        else
+        end
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_190268667 = function(效果节点)
+        local result = base.player(1):get_hero():get_ex("攻击", 1)
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_109296348 = function(效果节点)
+        local result = base.player(1):get_hero():get_ex("搜敌范围", 0)
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_219294026 = function(效果节点)
+        local result = base.player(1):get_hero():get_ex("攻击", 1)
+        return result
+    end
+    ---
+    -- @noSelf
+    validator.validator_24328857 = function(效果节点)
+        local result = base.player(1):get_hero():get_ex("攻击范围", 1)
         return result
     end
     ---
@@ -2433,19 +2496,19 @@ do
         end
         data = base.eff.cache("$$default_units_ts.ai.自定义AI样例.AIBehavior_6")
         if data then
-            data.Behavior = validator.validator_23533341
+            data.Behavior = validator.validator_18953088
         end
         data = base.eff.cache("$$default_units_ts.ai.自定义AI样例.AIBehavior_7")
         if data then
-            data.Behavior = validator.validator_144538679
+            data.Behavior = validator.validator_15830840
         end
         data = base.eff.cache("$$default_units_ts.ai.自定义AI样例.AIBehavior_9")
         if data then
-            data.Behavior = validator.validator_55344321
+            data.Behavior = validator.validator_61264335
         end
         data = base.eff.cache("$$default_units_ts.ai.自定义AI样例.root")
         if data then
-            data.OnAdd = validator.validator_245519073
+            data.OnAdd = validator.validator_179475718
             data.OnRemove = validator.validator_34695145
         end
         data = base.eff.cache("$$default_units_ts.effect.击退.PolarOffset_1")
@@ -2496,6 +2559,34 @@ do
         if data then
             data.Func = validator.validator_180756668
         end
+        data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute")
+        if data then
+            data.Func = validator.validator_253349852
+        end
+        data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_1")
+        if data then
+            data.Func = validator.validator_150413537
+        end
+        data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_2")
+        if data then
+            data.Func = validator.validator_207517527
+        end
+        data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_3")
+        if data then
+            data.Func = validator.validator_69799481
+        end
+        data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_4")
+        if data then
+            data.Func = validator.validator_158477395
+        end
+        data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_5")
+        if data then
+            data.Func = validator.validator_162427740
+        end
+        data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_DamageRule")
+        if data then
+            data.FDamageRule = validator.validator_135354330
+        end
         data = base.eff.cache("$$.gameplay.dflt.default_units_ts_CureRule_1")
         if data then
             data.FCureRule = validator.validator_255597210
@@ -2503,17 +2594,17 @@ do
         end
         data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_3")
         if data then
-            data.FDamageRule = validator.validator_34781199
+            data.FDamageRule = validator.validator_98280874
             data.FCriticalRule = validator.validator_189928549
         end
         data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_4")
         if data then
-            data.FDamageRule = validator.validator_43068806
+            data.FDamageRule = validator.validator_207750772
             data.FCriticalRule = validator.validator_209125194
         end
         data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_5")
         if data then
-            data.FDamageRule = validator.validator_22685921
+            data.FDamageRule = validator.validator_216600710
             data.FCriticalRule = validator.validator_191493992
         end
         data = base.eff.cache("$$.gameplay.dflt.root")
@@ -2530,6 +2621,14 @@ do
             data.Formulas.Time = validator.validator_234228873
         end
         data = base.eff.cache("$$.template@spell.Spell.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$.template@spell.SpellAttackModifier.root")
         if data then
             data.Formulas.Mana = validator.validator_244194926
             data.Formulas.Cooldown = validator.validator_135839809
@@ -2602,6 +2701,78 @@ do
             data.Formulas.Time = validator.validator_234228873
         end
         data = base.eff.cache("$$.template@spell.spell.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$default_units_ts.template@spell.被动法球技能节点.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.万剑诀.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.不能升级.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.剑雨.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.清除小怪.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.献祭.root")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.root")
         if data then
             data.Formulas.Mana = validator.validator_244194926
             data.Formulas.Cooldown = validator.validator_135839809
@@ -3281,6 +3452,14 @@ do
             data.Formulas.Range = validator.validator_63878418
             data.Formulas.Time = validator.validator_234228873
         end
+        data = base.eff.cache("$$busiyixiantu_5n1b.unit.金币怪.Spell")
+        if data then
+            data.Formulas.Mana = validator.validator_244194926
+            data.Formulas.Cooldown = validator.validator_135839809
+            data.Formulas.ChargeMax = validator.validator_211391127
+            data.Formulas.Range = validator.validator_63878418
+            data.Formulas.Time = validator.validator_234228873
+        end
         data = base.eff.cache("$$default_units_ts.unit.感应地雷.Spell")
         if data then
             data.Formulas.Mana = validator.validator_244194926
@@ -3457,13 +3636,46 @@ do
             data.Formulas.Cooldown = validator.validator_214974897
             data.Formulas.Time = validator.validator_214580859
         end
+        data = base.eff.cache("$$busiyixiantu_5n1b.item.小经验瓶.CustomAction")
+        if data then
+            data.Func = validator.validator_130232902
+        end
         data = base.eff.cache("$$default_units_ts.template@spell.通用近战普攻模版.Damage_1")
         if data then
             data.Amount = validator.validator_196209676
         end
+        data = base.eff.cache("$$default_units_ts.unit.6、远程普攻示例英雄.busiyixiantu_5n1b_Damage_1")
+        if data then
+            data.Amount = validator.validator_196209676
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.Damage")
+        if data then
+            data.Amount = validator.validator_142888961
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.Search")
+        if data then
+            data.MaxCount = validator.validator_15165100
+            data.Radius = validator.validator_238476281
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.Damage")
+        if data then
+            data.Amount = validator.validator_190268667
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.EffectDamage")
+        if data then
+            data.Amount = validator.validator_190268667
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.Search")
+        if data then
+            data.Radius = validator.validator_109296348
+        end
         data = base.eff.cache("$$busiyixiantu_5n1b.spell.群锤.Damage")
         if data then
-            data.Amount = validator.validator_140350288
+            data.Amount = validator.validator_219294026
+        end
+        data = base.eff.cache("$$busiyixiantu_5n1b.spell.群锤.Search")
+        if data then
+            data.Radius = validator.validator_24328857
         end
         data = base.eff.cache("$$default_units_ts.spell.三火球.PolarOffset_1")
         if data then

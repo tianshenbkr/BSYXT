@@ -1,0 +1,16 @@
+{
+    "[ModuleType][rpg_challenge_wave].DisplayName":"波次",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.CreateFacing.DisplayName":"创建面向角度",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.CreateRange.DisplayName":"创建随机范围",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.Delay.DisplayName":"延迟",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.Delay.Hint":"开始刷新的延迟",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.IsTask.DisplayName":"是完成任务的条件",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.MaxNumber.DisplayName":"最大数量",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.MaxNumber.Hint":"当[最大数量=0时]只会刷新一次，全部击杀后完成目标\n当[最大数量>0]时，当单位死亡时会继续刷新，直到刷新数量达到[最大数量]个，全部击杀完成目标\n当[最大数量<0]时，会持续刷新，不被视为任务目标",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.Number.DisplayName":"敌人总数",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.Position.DisplayName":"创建位置position",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].Data.Game.Unit.DisplayName":"单位",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgSubWave].DisplayName":"怪物配置",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgWave].Data.Game.rpgSubWave.DisplayName":"怪物配置",
+    "[NodeType][$$busiyixiantu_5n1b.rpg_challenge_wave.rpgWave].DisplayName":"波次"
+}

@@ -1,0 +1,7 @@
+{
+    "[ModuleType][custom_grow].DisplayName":"<防守图>角色成长",
+    "[NodeType][$$busiyixiantu_5n1b.custom_grow.Grow].Data.Game.KillGrow.DisplayName":"击杀成长",
+    "[NodeType][$$busiyixiantu_5n1b.custom_grow.Grow].Data.Game.LevelGrow.DisplayName":"等级成长",
+    "[NodeType][$$busiyixiantu_5n1b.custom_grow.Grow].Data.Game.TimeGrow.DisplayName":"时间成长",
+    "[NodeType][$$busiyixiantu_5n1b.custom_grow.Grow].DisplayName":"角色成长"
+}

@@ -1,0 +1,8 @@
+{
+    "[ModuleType][custom_item].DisplayName":"<防守图>物品",
+    "[NodeType][$$busiyixiantu_5n1b.custom_item.ItemQuality].Data.Game.Quality.DisplayName":"各级物品品质设定",
+    "[NodeType][$$busiyixiantu_5n1b.custom_item.ItemQuality].DisplayName":"<防守图>物品品质设定",
+    "[NodeType][$$busiyixiantu_5n1b.custom_item.Quality].Data.Game.Display.DisplayName":"品质显示名",
+    "[NodeType][$$busiyixiantu_5n1b.custom_item.Quality].Data.Game.Item.DisplayName":"包含的物品",
+    "[NodeType][$$busiyixiantu_5n1b.custom_item.Quality].DisplayName":"<防守图>单一品质设定"
+}

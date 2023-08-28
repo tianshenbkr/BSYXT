@@ -1,7 +1,23 @@
-{"messageText":"找不到名称“_OBJ__lobby_resource_gain_lobby_resource_gain”。","code":2304,"start":1312,"length":45,"category":1}
-{"messageText":"找不到名称“_OBJ__lobby_resource_lobby_resource”。","code":2304,"start":1577,"length":35,"category":1}
-{"messageText":{"messageText":"类型“_OBJ_lib_control_gui_ctrl_技能摇杆”中的属性“event”不可分配给基类型“_OBJ__gui_ctrl_gui_ctrl”中的同一属性。","category":1,"code":2416,"next":[{"messageText":"类型“_OBJ_lib_control_技能摇杆GUIEvent”缺少类型“_OBJ__GUIEvent”的以下属性: on_long_click, on_mouse_down, on_click, on_mouse_up 及其他 11 项。","category":1,"code":2740}]},"code":2416,"start":17535,"length":5,"category":1}
-{"messageText":{"messageText":"类型“_OBJ_lib_control_gui_ctrl_移动摇杆”中的属性“event”不可分配给基类型“_OBJ__gui_ctrl_gui_ctrl”中的同一属性。","category":1,"code":2416,"next":[{"messageText":"类型“_OBJ_lib_control_移动摇杆GUIEvent”缺少类型“_OBJ__GUIEvent”的以下属性: on_long_click, on_mouse_down, on_click, on_mouse_up 及其他 11 项。","category":1,"code":2740}]},"code":2416,"start":19551,"length":5,"category":1}
-{"messageText":"找不到名称“_OBJ__lobby_resource_gain_group_lobby_resource_gain_group”。你是否指的是“_OBJ_smallcard_get_items_lobby_resource_gain_group_Lobby_Resource_Gain_Group”?","code":2552,"start":30080,"length":57,"category":1}
-{"messageText":"找不到名称“_OBJ__inventory_config_inventory_config”。","code":2304,"start":30352,"length":39,"category":1}
-{"messageText":"找不到名称“_OBJ__inventory_config_inventory_config”。","code":2304,"start":30683,"length":39,"category":1}
+{"messageText":"找不到名称“_OBJ__custom_item_custom_item”。","code":2304,"start":4945,"length":29,"category":1}
+{"messageText":"找不到名称“_OBJ__custom_item_custom_item”。","code":2304,"start":5168,"length":29,"category":1}
+{"messageText":"找不到名称“_OBJ__lobby_resource_lobby_resource”。","code":2304,"start":5374,"length":35,"category":1}
+{"messageText":"找不到名称“_OBJ__lobby_resource_gain_lobby_resource_gain”。","code":2304,"start":5958,"length":45,"category":1}
+{"messageText":"找不到名称“_OBJ__lobby_resource_gain_group_lobby_resource_gain_group”。你是否指的是“_OBJ_smallcard_get_items_lobby_resource_gain_group_Lobby_Resource_Gain_Group”?","code":2552,"start":6245,"length":57,"category":1}
+{"messageText":{"messageText":"类型“_OBJ_lib_control_gui_ctrl_移动摇杆”中的属性“event”不可分配给基类型“_OBJ__gui_ctrl_gui_ctrl”中的同一属性。","category":1,"code":2416,"next":[{"messageText":"类型“_OBJ_lib_control_移动摇杆GUIEvent”缺少类型“_OBJ__GUIEvent”的以下属性: on_mouse_leave, on_double_click, on_mouse_down, on_mouse_up 及其他 11 项。","category":1,"code":2740}]},"code":2416,"start":22490,"length":5,"category":1}
+{"messageText":{"messageText":"类型“_OBJ_lib_control_gui_ctrl_技能摇杆”中的属性“event”不可分配给基类型“_OBJ__gui_ctrl_gui_ctrl”中的同一属性。","category":1,"code":2416,"next":[{"messageText":"类型“_OBJ_lib_control_技能摇杆GUIEvent”缺少类型“_OBJ__GUIEvent”的以下属性: on_mouse_leave, on_double_click, on_mouse_down, on_mouse_up 及其他 11 项。","category":1,"code":2740}]},"code":2416,"start":25249,"length":5,"category":1}
+{"messageText":{"messageText":"类型“_OBJ_lib_control_gui_ctrl_摇杆”中的属性“event”不可分配给基类型“_OBJ__gui_ctrl_gui_ctrl”中的同一属性。","category":1,"code":2416,"next":[{"messageText":"不能将类型“_OBJ_lib_control_移动摇杆GUIEvent”分配给类型“_OBJ__GUIEvent”。","category":1,"code":2322}]},"code":2416,"start":27405,"length":5,"category":1}
+{"messageText":"找不到名称“_OBJ__inventory_config_inventory_config”。","code":2304,"start":35201,"length":39,"category":1}
+{"messageText":"找不到名称“_OBJ__inventory_config_inventory_config”。","code":2304,"start":35950,"length":39,"category":1}
+{"messageText":"找不到名称“_OBJ__custom_challenge_custom_challenge”。","code":2304,"start":36272,"length":39,"category":1}
+{"messageText":"找不到名称“_OBJ__custom_challenge_custom_challenge”。","code":2304,"start":36515,"length":39,"category":1}
+{"messageText":"找不到名称“_OBJ__custom_grow_custom_grow”。","code":2304,"start":37082,"length":29,"category":1}
+{"messageText":"找不到名称“_OBJ__rpg_地图数据_rpg_地图数据”。","code":2304,"start":37375,"length":23,"category":1}
+{"messageText":"找不到名称“_OBJ__rpg_地图数据_rpg_地图数据”。","code":2304,"start":37570,"length":23,"category":1}
+{"messageText":"找不到名称“_OBJ__rpg_地图数据_rpg_地图数据”。","code":2304,"start":37751,"length":23,"category":1}
+{"messageText":"找不到名称“_OBJ__rpg_地图数据_rpg_地图数据”。","code":2304,"start":37997,"length":23,"category":1}
+{"messageText":"找不到名称“_OBJ__rpg_challenge_wave_rpg_challenge_wave”。","code":2304,"start":38190,"length":43,"category":1}
+{"messageText":"找不到名称“_OBJ__rpg_challenge_wave_rpg_challenge_wave”。","code":2304,"start":38418,"length":43,"category":1}
+{"messageText":"找不到名称“_OBJ__rpg_challenge_rpg_challenge”。","code":2304,"start":38797,"length":33,"category":1}
+{"messageText":"找不到名称“_OBJ__rpg_challenge_rpg_challenge”。","code":2304,"start":39189,"length":33,"category":1}
+{"messageText":"找不到名称“_OBJ__custom_wave_custom_wave”。","code":2304,"start":39680,"length":29,"category":1}
+{"messageText":"找不到名称“_OBJ__custom_wave_custom_wave”。","code":2304,"start":39926,"length":29,"category":1}

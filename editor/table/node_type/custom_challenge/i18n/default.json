@@ -1,0 +1,18 @@
+{
+    "[ModuleType][custom_challenge].DisplayName":"<防守图>挑战",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.Challenge].Data.Game.Describe.DisplayName":"描述",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.Challenge].Data.Game.SubChallenge.DisplayName":"子挑战",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.Challenge].DisplayName":"挑战",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Award.DisplayName":"挑战奖励",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Cost.DisplayName":"开启挑战的消耗",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Describe.DisplayName":"描述",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Position.DisplayName":"传送位置",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Raid.DisplayName":"副本",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.RaidName.DisplayName":"副本名",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Repeat.DisplayName":"允许重复挑战",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Require.DisplayName":"开启挑战的条件",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Transmit.DisplayName":"开启挑战时传送到指定位置",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Victory.DisplayName":"挑战胜利的条件",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].Data.Game.Wave.DisplayName":"怪物波次",
+    "[NodeType][$$busiyixiantu_5n1b.custom_challenge.SubChallenge].DisplayName":"子挑战"
+}

@@ -1,14 +1,14 @@
 module validator {
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_110618627:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_110618627:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let 正在施法: boolean = AI.is_casting(AI.unit);
 		return 正在施法;
 	}
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_1:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_183853803:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_183853803:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		if (((AI.unit.has_restriction(UnitBehaviorState["失控"]) == true))) {
 			return true;
 		} else {
@@ -18,7 +18,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_10:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_12884627:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_12884627:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 技能: Skill | undefined = AI.params.get("__next_skill");
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
@@ -44,7 +44,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_11:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_71909885:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_71909885:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
 		let 初始点: Point | undefined = AI.params.get("__ai_born");
@@ -82,7 +82,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_2:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_44985790:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_44985790:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 初始点: Point | undefined = AI.params.get("__ai_born");
 		// 超出最大距离就回初始点
@@ -102,7 +102,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_3:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_32200746:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_32200746:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标单位: Unit | undefined = AI.params.get("__ai_battle_walk_target");
 		let 要施放的技能: Skill | undefined = AI.params.get("__next_skill");
@@ -138,7 +138,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_4:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_214424895:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_214424895:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 移动目标点: Point | undefined = AI.params.get("__ai_walk_target");
 		if (((AI.params.get("__ai_target") != undefined))) {
@@ -160,7 +160,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_5:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_77181647:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_77181647:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 初始点: Point | undefined = AI.params.get("__ai_born");
 		if (((AI.unit.has_module(_OBJ__UnitData_Module["移动"]) && (AI.unit.get_scene_point().distance(初始点) > AI.params.get("__ai_max_reset_range"))))) {
@@ -174,7 +174,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_6:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_56391319:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_56391319:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 初始点: Point | undefined = AI.params.get("__ai_born");
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
@@ -201,7 +201,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_7:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_15144200:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_15144200:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
 		let 攻击计时器: Timer | undefined = AI.params.get("__attacked_timer");
@@ -240,7 +240,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_8:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_264289186:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_264289186:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
 		let 原始点: Point | undefined = AI.params.get("__ai_born");
@@ -261,7 +261,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_9:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_62677470:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_62677470:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
 		let 技能: Skill | undefined;
@@ -302,7 +302,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.root:Data.Game.OnAdd
 	/** @noSelf */
-	export let validator_196587954:(AI:lib_common_ai.AI)=>void= (AI:lib_common_ai.AI):void => {
+	export let validator_196587954:(this: void, AI:lib_common_ai.AI)=>void = (this: void, AI:lib_common_ai.AI):void => {
 		let 所属单位: Unit = AI.unit;
 		let 搜敌范围: number = AI.search_radius;
 		let 攻击范围: number = AI.attack_range;
@@ -317,7 +317,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.root:Data.Game.OnProvoke
 	/** @noSelf */
-	export let validator_2653852:(AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean)=>void= (AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean):void => {
+	export let validator_2653852:(this: void, AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean)=>void = (this: void, AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean):void => {
 		let 所属单位: Unit = AI.unit;
 		let 攻击计时器: Timer | undefined;
 		let new_angle: number = 0;
@@ -356,7 +356,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_165491582:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_165491582:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 施法技能: Cast | undefined = AI.unit.current_skill();
 		if ((((施法技能 != undefined) || (AI.unit.has_restriction(UnitBehaviorState["失控"]) == true)))) {
@@ -368,7 +368,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior_1:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_121906544:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_121906544:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 返回反击起点: boolean | undefined = AI.params.get("to_counter_point");
 		let 反击起点: Point | undefined = AI.params.get("counter_point");
@@ -404,7 +404,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior_2:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_30746330:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_30746330:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 战斗移动点: Point | undefined = AI.params.get("target_point_battle");
 		let 要施放的技能: Skill | undefined = AI.params.get("next_skill");
@@ -422,7 +422,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior_3:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_51564695:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_51564695:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("target_unit");
 		let 技能: Skill | undefined = AI.params.get("next_skill");
@@ -458,7 +458,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior_4:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_198778265:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_198778265:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 技能: Skill | undefined = AI.params.get("next_skill");
 		let 目标: Unit | undefined = AI.params.get("target_unit");
@@ -485,7 +485,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior_5:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_87537532:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_87537532:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("target_unit");
 		let 反击起点: Point | undefined = AI.params.get("counter_point");
@@ -544,7 +544,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior_6:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_80352573:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_80352573:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("target_unit");
 		let 目标点: Point | undefined = AI.params.get("target_point");
@@ -566,7 +566,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior_7:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_251720648:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_251720648:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标点: Point | undefined = AI.params.get("target_point");
 		let 发呆时间: number | undefined = AI.params.get("daze_time");
@@ -602,7 +602,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.AIBehavior_8:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_240608409:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_240608409:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 搜敌范围: number | undefined = AI.params.get("attack_range");
 		let 目标: Unit | undefined = AI.params.get("target_unit");
@@ -629,7 +629,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.root:Data.Game.OnAdd
 	/** @noSelf */
-	export let validator_11286101:(AI:lib_common_ai.AI)=>void= (AI:lib_common_ai.AI):void => {
+	export let validator_11286101:(this: void, AI:lib_common_ai.AI)=>void = (this: void, AI:lib_common_ai.AI):void => {
 		let path: Array<Point> = new Array<Point>(AI.unit.get_scene_point());
 		let path_line: Line = AI.params.get("path");
 		let attack_range: number | undefined = AI.params.get("attack_range");
@@ -675,7 +675,7 @@ module validator {
 
 	//$$default_units_ts.ai.沿路线前进ai.root:Data.Game.OnProvoke
 	/** @noSelf */
-	export let validator_76170749:(AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean)=>void= (AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean):void => {
+	export let validator_76170749:(this: void, AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean)=>void = (this: void, AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean):void => {
 		let 发呆计时器: Timer | undefined = AI.params.get("daze_timer");
 		let 追击时间: number | undefined = AI.params.get("pursue_time");
 		let 追击计时器: Timer | undefined = AI.params.get("pursue_timer");
@@ -722,7 +722,7 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_17460945:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_17460945:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 技能: Cast | undefined = AI.unit.current_skill();
 		if (((AI.unit.has_restriction(UnitBehaviorState["失控"]) || AI.unit.has_restriction(UnitBehaviorState["隐藏"]) || (技能 != undefined) || (AI.params.get("master") == undefined)))) {
@@ -734,7 +734,7 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior_1:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_92352474:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_92352474:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("target_unit");
 		let 主人: Unit | undefined = AI.params.get("master");
@@ -780,7 +780,7 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior_2:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_66985415:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_66985415:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 战斗移动点: Point | undefined = AI.params.get("order_move");
 		let 要施放的技能: Skill | undefined = AI.params.get("next_skill");
@@ -798,7 +798,7 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior_3:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_198202659:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_198202659:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("target_unit");
 		let 技能: Skill | undefined = AI.params.get("next_skill");
@@ -838,7 +838,7 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior_4:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_56912231:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_56912231:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 技能: Skill | undefined = AI.params.get("next_skill");
 		let 目标: Unit | undefined = AI.params.get("target_unit");
@@ -867,7 +867,7 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior_5:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_237463119:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_237463119:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("target_unit");
 		let search_dis: number = 0;
@@ -914,12 +914,12 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior_6:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_23533341:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_18953088:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 主人: Unit | undefined = AI.params.get("master");
 		let 新坐标: Point | undefined;
 		let 巡逻范围: number = AI.params.get("patrol_range");
-		if ((((AI.params.get("order_move") != undefined) || (AI.params.get("target_unit") != undefined) || !(AI.params.get("patrol_permit"))))) {
+		if ((((主人.get_scene_name() != AI.unit.get_scene_name()) || (AI.params.get("order_move") != undefined) || (AI.params.get("target_unit") != undefined) || !(AI.params.get("patrol_permit"))))) {
 			return false;
 		} else {
 		}
@@ -940,13 +940,13 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior_7:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_144538679:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_15830840:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let 新变量: any | undefined;
 		let result: boolean = false;
 		let 主人: Unit | undefined = AI.params.get("master");
 		let 巡逻范围: number = AI.params.get("patrol_range");
 		let 实际范围: number = base.math.max(巡逻范围, 200);
-		if ((((AI.params.get("target_unit") != undefined) || ((AI.params.get("order_move") != undefined) && (主人.get_scene_point().distance(AI.unit.get_scene_point()) <= 实际范围))))) {
+		if ((((主人.get_scene_name() != AI.unit.get_scene_name()) || (AI.params.get("target_unit") != undefined) || ((AI.params.get("order_move") != undefined) && (主人.get_scene_point().distance(AI.unit.get_scene_point()) <= 实际范围))))) {
 			return false;
 		} else {
 		}
@@ -960,13 +960,13 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.AIBehavior_9:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_55344321:(AI:lib_common_ai.AI)=>boolean= (AI:lib_common_ai.AI):boolean => {
+	export let validator_61264335:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 主人: Unit | undefined = AI.params.get("master");
 		let 巡逻距离: number = AI.params.get("patrol_range");
 		let 搜敌距离: number = AI.params.get("search_range");
 		let 最远距离: number = (搜敌距离 + 巡逻距离);
-		if (((主人.get_scene_point().distance(AI.unit.get_scene_point()) > 最远距离))) {
+		if (((主人.get_scene_name() == AI.unit.get_scene_name()))&&((主人.get_scene_point().distance(AI.unit.get_scene_point()) > 最远距离))) {
 			AI.params.set("target_unit", undefined);
 			AI.params.set("next_skill", undefined);
 			AI.params.set("order_move", undefined);
@@ -977,7 +977,7 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.root:Data.Game.OnAdd
 	/** @noSelf */
-	export let validator_245519073:(AI:lib_common_ai.AI)=>void= (AI:lib_common_ai.AI):void => {
+	export let validator_179475718:(this: void, AI:lib_common_ai.AI)=>void = (this: void, AI:lib_common_ai.AI):void => {
 		// 上次巡逻的时间
 		AI.params.set("last_patrol_time", base.clock());
 		// 巡逻频率
@@ -1008,7 +1008,8 @@ module validator {
 		AI.params.set("facing_to_master", true);
 		if (((AI.params.get("facing_to_master") == true))) {
 			AI.params.set("facing_to_master_timer", base.timer_loop(0.2, ():void => {
-				if ((AI.unit.is_walking())) {
+				let 主人: Unit | undefined = AI.params.get("master");
+				if ((AI.unit.is_walking())&&((主人 != undefined))&&((主人.get_scene_name() == AI.unit.get_scene_name()))) {
 					AI.unit.set_facing(AI.unit.get_scene_point().angle(AI.params.get("master").get_scene_point()));
 				} else {
 				}
@@ -1028,7 +1029,7 @@ module validator {
 
 	//$$default_units_ts.ai.自定义AI样例.root:Data.Game.OnRemove
 	/** @noSelf */
-	export let validator_34695145:(AI:lib_common_ai.AI)=>void= (AI:lib_common_ai.AI):void => {
+	export let validator_34695145:(this: void, AI:lib_common_ai.AI)=>void = (this: void, AI:lib_common_ai.AI):void => {
 		let 转向计时器: Timer | undefined = AI.params.get("facing_to_master_timer");
 		if (((转向计时器 != undefined))) {
 			转向计时器.remove();
@@ -1038,7 +1039,7 @@ module validator {
 
 	//$$default_units_ts.effect.击退.PolarOffset_1:Data.Game.Distance
 	/** @noSelf */
-	export let validator_126068103:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_126068103:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = 效果节点.skill().cache.SpellAttribute.KnockDistance;
 		if ((((result == 0)))) {
 			result = 100;
@@ -1049,7 +1050,7 @@ module validator {
 
 	//$$.template@func_ref.FuncRefSortUnitBuff.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_33561757:(效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number= (效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
+	export let validator_33561757:(this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number = (this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
 		let result: number = 0;
 		let func_cache: _OBJ__func_ref_FuncRefSortUnitBuff = base.force_as<_OBJ__func_ref_FuncRefSortUnitBuff>(base.eff.cache(过滤函数Id));
 		let Buff_id: IdPreset<"buff_id"> = func_cache.Buff;
@@ -1073,7 +1074,7 @@ module validator {
 
 	//$$default_units_ts.template@func_ref.优先符合过滤的单位.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_99777765:(效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number= (效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
+	export let validator_99777765:(this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number = (this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
 		let result: number = 0;
 		let caster: Unit | undefined = base.eff_param_caster(效果节点);
 		let func_cache: _OBJ__func_ref_FuncRefSortUnitFilter = base.force_as<_OBJ__func_ref_FuncRefSortUnitFilter>(base.eff.cache(过滤函数Id));
@@ -1103,7 +1104,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.lowest_health_rate_unit.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_23451517:(效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number= (效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
+	export let validator_23451517:(this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number = (this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
 		let 血量A: number = (单位A.get_ex(单位属性["生命"], UnitPropertySubType["Final"]) / 单位A.get_ex(单位属性["生命上限"], UnitPropertySubType["Final"]));
 		let 血量B: number = (单位B.get_ex(单位属性["生命"], UnitPropertySubType["Final"]) / 单位B.get_ex(单位属性["生命上限"], UnitPropertySubType["Final"]));
 		let result: number = (血量A - 血量B);
@@ -1112,7 +1113,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.nearest_unit_to_caster.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_97896931:(效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number= (效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
+	export let validator_97896931:(this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number = (this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
 		let 施法者位置: Point = base.eff_param_caster(效果节点).get_scene_point();
 		let 距离A: number = (施法者位置.distance(单位A.get_scene_point()) - 单位A.get_attackable_radius());
 		let 距离B: number = (施法者位置.distance(单位B.get_scene_point()) - 单位B.get_attackable_radius());
@@ -1122,7 +1123,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.nearest_unit_to_target.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_248042905:(效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number= (效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
+	export let validator_248042905:(this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number = (this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
 		let 目标点: Point = base.eff_param_target_point(效果节点);
 		let 距离A: number = (目标点.distance(单位A.get_scene_point()) - 单位A.get_attackable_radius());
 		let 距离B: number = (目标点.distance(单位B.get_scene_point()) - 单位B.get_attackable_radius());
@@ -1132,7 +1133,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.优先上次施法的目标.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_60770996:(效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number= (效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
+	export let validator_60770996:(this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number = (this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
 		let result: number = 1;
 		let last_target: Unit | Point | number | undefined = 效果节点.skill().last_target;
 		if (((单位A == 单位B))) {
@@ -1153,7 +1154,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.优先剩余时间长的Buff.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_256149901:(Buff1:Buff, Buff2:Buff)=>number= (Buff1:Buff, Buff2:Buff):number => {
+	export let validator_256149901:(this: void, Buff1:Buff, Buff2:Buff)=>number = (this: void, Buff1:Buff, Buff2:Buff):number => {
 		let Buff1剩余时间: number = Buff1.get_remain_time();
 		let Buff2剩余时间: number = Buff2.get_remain_time();
 		let delta: number = (Buff2剩余时间 - Buff1剩余时间);
@@ -1166,7 +1167,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.优先施法者正前方120度内的单位.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_145515012:(效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number= (效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
+	export let validator_145515012:(this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number = (this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
 		let result: number = 1;
 		let caster: Unit = base.eff_param_caster(效果节点);
 		let casterPoint: Point = caster.get_scene_point();
@@ -1193,7 +1194,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.优先来自英雄的Buff.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_67320178:(Buff1:Buff, Buff2:Buff)=>number= (Buff1:Buff, Buff2:Buff):number => {
+	export let validator_67320178:(this: void, Buff1:Buff, Buff2:Buff)=>number = (this: void, Buff1:Buff, Buff2:Buff):number => {
 		let buff1的效果节点: EffectParam = Buff1.stack_param;
 		let buff2的效果节点: EffectParam = Buff2.stack_param;
 		let buff1施法者: Unit | undefined = base.eff_param_caster(buff1的效果节点);
@@ -1223,7 +1224,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.优先高等级的Buff.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_110271156:(Buff1:Buff, Buff2:Buff)=>number= (Buff1:Buff, Buff2:Buff):number => {
+	export let validator_110271156:(this: void, Buff1:Buff, Buff2:Buff)=>number = (this: void, Buff1:Buff, Buff2:Buff):number => {
 		let buff1等级: number = Buff1.get_level();
 		let buff2等级: number = Buff2.get_level();
 		if (((buff1等级 == buff2等级))) {
@@ -1239,7 +1240,7 @@ module validator {
 
 	//$$default_units_ts.func_ref.随机的单位.root:Data.Game.Func
 	/** @noSelf */
-	export let validator_180756668:(效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number= (效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
+	export let validator_180756668:(this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">)=>number = (this: void, 效果节点:EffectParam, 单位A:Unit, 单位B:Unit, 过滤函数Id:IdPreset<"func_ref_id">):number => {
 		let result: number = 1;
 		if (((base.math.random_int(1, 100) <= 50))) {
 			result = -1;
@@ -1249,9 +1250,58 @@ module validator {
 		return result;
 	}
 
+	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute:Data.Game.Func
+	/** @noSelf */
+	export let validator_253349852:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+		let result: number = busiyixiantu_5n1b.玩家单位属性计算("攻击力");
+		return result;
+	}
+
+	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_1:Data.Game.Func
+	/** @noSelf */
+	export let validator_150413537:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+		let result: number = busiyixiantu_5n1b.玩家单位属性计算("防御力");
+		return result;
+	}
+
+	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_2:Data.Game.Func
+	/** @noSelf */
+	export let validator_207517527:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+		let result: number = busiyixiantu_5n1b.玩家单位属性计算("生命值上限");
+		return result;
+	}
+
+	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_3:Data.Game.Func
+	/** @noSelf */
+	export let validator_69799481:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+		let result: number = busiyixiantu_5n1b.玩家单位属性计算("魔法值上限");
+		return result;
+	}
+
+	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_4:Data.Game.Func
+	/** @noSelf */
+	export let validator_158477395:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+		let result: number = busiyixiantu_5n1b.玩家单位属性计算("攻击速度倍率");
+		return result;
+	}
+
+	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_5:Data.Game.Func
+	/** @noSelf */
+	export let validator_162427740:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+		let result: number = busiyixiantu_5n1b.玩家单位属性计算("冷却缩减");
+		return result;
+	}
+
+	//$$.gameplay.dflt.busiyixiantu_5n1b_DamageRule:Data.Game.FDamageRule
+	/** @noSelf */
+	export let validator_135354330:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
+		let result: number = busiyixiantu_5n1b.普攻伤害计算(伤害目标);
+		return result;
+	}
+
 	//$$.gameplay.dflt.default_units_ts_CureRule_1:Data.Game.FCureRule
 	/** @noSelf */
-	export let validator_255597210:(治疗量:number, 效果节点:EffectParam, 治疗实例:HealInstance, 治疗目标:Unit, 治疗来源:Unit, 是否暴击:boolean)=>number= (治疗量:number, 效果节点:EffectParam, 治疗实例:HealInstance, 治疗目标:Unit, 治疗来源:Unit, 是否暴击:boolean):number => {
+	export let validator_255597210:(this: void, 治疗量:number, 效果节点:EffectParam, 治疗实例:HealInstance, 治疗目标:Unit, 治疗来源:Unit, 是否暴击:boolean)=>number = (this: void, 治疗量:number, 效果节点:EffectParam, 治疗实例:HealInstance, 治疗目标:Unit, 治疗来源:Unit, 是否暴击:boolean):number => {
 		let 治疗量: number = 治疗量;
 		let 暴击治疗: number = 0;
 		if (((是否暴击 == true))) {
@@ -1263,117 +1313,85 @@ module validator {
 
 	//$$.gameplay.dflt.default_units_ts_CureRule_1:Data.Game.FCriticalRule
 	/** @noSelf */
-	export let validator_148805509:(治疗来源:Unit, 治疗目标:Unit, 治疗实例:HealInstance, 效果节点:EffectParam)=>boolean= (治疗来源:Unit, 治疗目标:Unit, 治疗实例:HealInstance, 效果节点:EffectParam):boolean => {
+	export let validator_148805509:(this: void, 治疗来源:Unit, 治疗目标:Unit, 治疗实例:HealInstance, 效果节点:EffectParam)=>boolean = (this: void, 治疗来源:Unit, 治疗目标:Unit, 治疗实例:HealInstance, 效果节点:EffectParam):boolean => {
 		let 是否暴击: boolean = false;
 		return 是否暴击;
 	}
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_3:Data.Game.FDamageRule
 	/** @noSelf */
-	export let validator_34781199:(伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number= (伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
-		let 伤害: number = 伤害值;
-		let 伤害倍率: number = 1;
-		let 暴击伤害: number = 伤害来源.get_ex(单位属性["暴击伤害"], UnitPropertySubType["Final"]);
-		let 法术破甲: number = 伤害来源.get_ex(单位属性["法术破甲"], UnitPropertySubType["Final"]);
-		let 法术穿透: number = 伤害来源.get_ex(单位属性["法术穿透"], UnitPropertySubType["Final"]);
-		let 格挡: number = 伤害目标.get_ex(单位属性["格挡"], UnitPropertySubType["Final"]);
-		let 魔抗: number = 伤害目标.get_ex(单位属性["魔抗"], UnitPropertySubType["Final"]);
+	export let validator_98280874:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
+		let 伤害: number = busiyixiantu_5n1b.法术技能伤害计算(伤害目标, 伤害值);
 		if (((伤害目标.has_restriction(UnitBehaviorState["魔免"]) || 伤害目标.has_restriction(UnitBehaviorState["无敌"])))) {
 			return 0;
 		} else {
 		}
 		if (((是否暴击 == true))) {
-			伤害倍率 = (伤害倍率 * (1 + ((暴击伤害 / 100) - 1)));
 		} else {
 		}
-		if (((格挡 > 0))) {
-			伤害 = (伤害 - 格挡);
+		if ((true)) {
 		} else {
 		}
-		if ((((魔抗 > 0) && (base.target_filter_validate(base.target_filters.new(";建筑"), 伤害目标) == true)))) {
-			if (((法术穿透 < 100))) {
-				魔抗 = (魔抗 * (1 - (法术穿透 / 100)));
+		if ((true)) {
+			if ((true)) {
 			} else {
-				魔抗 = 0;
 			}
-			魔抗 = (魔抗 - 法术破甲);
-			if (((魔抗 < 0))) {
-				魔抗 = 0;
+			if ((true)) {
 			} else {
 			}
 		} else {
 		}
-		if (((魔抗 < 0))) {
-			魔抗 = (0 - 魔抗);
-			伤害 = (伤害 * (1 + (0.01 * 魔抗)));
+		if ((true)) {
 		} else {
-			if (((魔抗 > 0))) {
-				伤害 = (伤害 / (1 + (0.01 * 魔抗)));
+			if ((true)) {
 			} else {
 			}
 		}
-		伤害 = (伤害 * 伤害倍率);
 		return 伤害;
 	}
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_3:Data.Game.FCriticalRule
 	/** @noSelf */
-	export let validator_189928549:(伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam)=>boolean= (伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam):boolean => {
+	export let validator_189928549:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam)=>boolean = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam):boolean => {
 		let 是否暴击: boolean = false;
 		return 是否暴击;
 	}
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_4:Data.Game.FDamageRule
 	/** @noSelf */
-	export let validator_43068806:(伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number= (伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
-		let 伤害: number = 伤害值;
-		let 伤害倍率: number = 1;
-		let 暴击伤害: number = 伤害来源.get_ex(单位属性["暴击伤害"], UnitPropertySubType["Final"]);
-		let 破甲: number = 伤害来源.get_ex(单位属性["破甲"], UnitPropertySubType["Final"]);
-		let 穿透: number = 伤害来源.get_ex(单位属性["穿透"], UnitPropertySubType["Final"]);
-		let 格挡: number = 伤害目标.get_ex(单位属性["格挡"], UnitPropertySubType["Final"]);
-		let 护甲: number = 伤害目标.get_ex(单位属性["护甲"], UnitPropertySubType["Final"]);
+	export let validator_207750772:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
+		let 伤害: number = busiyixiantu_5n1b.物理技能伤害计算(伤害目标, 伤害值);
 		if (((伤害目标.has_restriction(UnitBehaviorState["物免"]) || 伤害目标.has_restriction(UnitBehaviorState["无敌"])))) {
 			return 0;
 		} else {
 		}
 		if (((是否暴击 == true))) {
-			伤害倍率 = (伤害倍率 * (1 + ((暴击伤害 / 100) - 1)));
 		} else {
 		}
-		if (((格挡 > 0))) {
-			伤害 = (伤害 - 格挡);
+		if ((true)) {
 		} else {
 		}
-		if ((((护甲 > 0) && (base.target_filter_validate(base.target_filters.new(";建筑"), 伤害目标) == true)))) {
-			if (((穿透 < 100))) {
-				护甲 = (护甲 * (1 - (穿透 / 100)));
+		if ((true)) {
+			if ((true)) {
 			} else {
-				护甲 = 0;
 			}
-			护甲 = (护甲 - 破甲);
-			if (((护甲 < 0))) {
-				护甲 = 0;
+			if ((true)) {
 			} else {
 			}
 		} else {
 		}
-		if (((护甲 < 0))) {
-			护甲 = (0 - 护甲);
-			伤害 = (伤害 * (1 + (0.01 * 护甲)));
+		if ((true)) {
 		} else {
-			if (((护甲 > 0))) {
-				伤害 = (伤害 / (1 + (0.01 * 护甲)));
+			if ((true)) {
 			} else {
 			}
 		}
-		伤害 = (伤害 * 伤害倍率);
 		return 伤害;
 	}
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_4:Data.Game.FCriticalRule
 	/** @noSelf */
-	export let validator_209125194:(伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam)=>boolean= (伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam):boolean => {
+	export let validator_209125194:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam)=>boolean = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam):boolean => {
 		let 是否暴击: boolean = false;
 		let 暴击概率: number = 伤害来源.get_ex(单位属性["暴击"], UnitPropertySubType["Final"]);
 		let 随机数: number = base.math.random_int(1, 100);
@@ -1391,21 +1409,21 @@ module validator {
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_5:Data.Game.FDamageRule
 	/** @noSelf */
-	export let validator_22685921:(伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number= (伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
+	export let validator_216600710:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
 		let 伤害: number = 伤害值;
 		return 伤害;
 	}
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_5:Data.Game.FCriticalRule
 	/** @noSelf */
-	export let validator_191493992:(伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam)=>boolean= (伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam):boolean => {
+	export let validator_191493992:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam)=>boolean = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害实例:DamageInstance, 效果节点:EffectParam):boolean => {
 		let 是否暴击: boolean = false;
 		return 是否暴击;
 	}
 
 	//$$.gameplay.dflt.root:Data.Game.XPGrantRule.XPGrant
 	/** @noSelf */
-	export let validator_44065067:(死亡单位:Unit, 击杀者:Unit, 单位死亡类型:DeathType)=>number= (死亡单位:Unit, 击杀者:Unit, 单位死亡类型:DeathType):number => {
+	export let validator_44065067:(this: void, 死亡单位:Unit, 击杀者:Unit, 单位死亡类型:DeathType)=>number = (this: void, 死亡单位:Unit, 击杀者:Unit, 单位死亡类型:DeathType):number => {
 		let 死亡经验: number = 死亡单位.get_ex(单位属性["死亡经验"], UnitPropertySubType["Final"]);
 		if (((单位死亡类型 == DeathType["Remove"]))) {
 			return 0;
@@ -1424,13 +1442,14 @@ module validator {
 
 	//$$.gameplay.dflt.root:Data.Game.XPGrantRule.XPDistributionCheck
 	/** @noSelf */
-	export let validator_166947453:(被分配经验的单位:Unit, 被击杀的单位:Unit, 击杀者:Unit)=>boolean= (被分配经验的单位:Unit, 被击杀的单位:Unit, 击杀者:Unit):boolean => {
+	export let validator_166947453:(this: void, 被分配经验的单位:Unit, 被击杀的单位:Unit, 击杀者:Unit)=>boolean = (this: void, 被分配经验的单位:Unit, 被击杀的单位:Unit, 击杀者:Unit):boolean => {
 		let result: boolean = true;
 		return result;
 	}
 
 	//$$.item.test_potion_heal.SpellRootInstant_1:Data.Game.Formulas.Mana
 	//$$.template@spell.Spell.root:Data.Game.Formulas.Mana
+	//$$.template@spell.SpellAttackModifier.root:Data.Game.Formulas.Mana
 	//$$.template@spell.SpellBuild.root:Data.Game.Formulas.Mana
 	//$$.template@spell.SpellMorph.root:Data.Game.Formulas.Mana
 	//$$.template@spell.SpellRootCircle.root:Data.Game.Formulas.Mana
@@ -1440,6 +1459,15 @@ module validator {
 	//$$.template@spell.SpellRootVector.root:Data.Game.Formulas.Mana
 	//$$.template@spell.SpellToggle.root:Data.Game.Formulas.Mana
 	//$$.template@spell.spell.root:Data.Game.Formulas.Mana
+	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.Mana
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.Mana
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.Mana
@@ -1524,6 +1552,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.Mana
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.Mana
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.Mana
 	//$$default_units_ts.unit.感应地雷.Spell:Data.Game.Formulas.Mana
 	//$$default_units_ts.unit.感应地雷.Spell_1:Data.Game.Formulas.Mana
 	//$$default_units_ts.unit.火龙.Spell:Data.Game.Formulas.Mana
@@ -1531,7 +1560,7 @@ module validator {
 	//$$default_units_ts.unit.火龙.Spell_1:Data.Game.Formulas.Mana
 	//$$default_units_ts.unit.野猪.SpellRootVector_1:Data.Game.Formulas.Mana
 	/** @noSelf */
-	export let validator_244194926:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_244194926:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let result: number = cache.Cost.Mana;
@@ -1540,6 +1569,7 @@ module validator {
 
 	//$$.item.test_potion_heal.SpellRootInstant_1:Data.Game.Formulas.Cooldown
 	//$$.template@spell.Spell.root:Data.Game.Formulas.Cooldown
+	//$$.template@spell.SpellAttackModifier.root:Data.Game.Formulas.Cooldown
 	//$$.template@spell.SpellBuild.root:Data.Game.Formulas.Cooldown
 	//$$.template@spell.SpellMorph.root:Data.Game.Formulas.Cooldown
 	//$$.template@spell.SpellRootCircle.root:Data.Game.Formulas.Cooldown
@@ -1549,6 +1579,15 @@ module validator {
 	//$$.template@spell.SpellRootVector.root:Data.Game.Formulas.Cooldown
 	//$$.template@spell.SpellToggle.root:Data.Game.Formulas.Cooldown
 	//$$.template@spell.spell.root:Data.Game.Formulas.Cooldown
+	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.Cooldown
@@ -1633,6 +1672,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.Cooldown
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.unit.感应地雷.Spell:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.unit.感应地雷.Spell_1:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.unit.火龙.Spell:Data.Game.Formulas.Cooldown
@@ -1640,7 +1680,7 @@ module validator {
 	//$$default_units_ts.unit.火龙.Spell_1:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.unit.野猪.SpellRootVector_1:Data.Game.Formulas.Cooldown
 	/** @noSelf */
-	export let validator_135839809:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_135839809:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let cooldown: number = cache.Cost.Cooldown;
@@ -1660,6 +1700,7 @@ module validator {
 
 	//$$.item.test_potion_heal.SpellRootInstant_1:Data.Game.Formulas.ChargeMax
 	//$$.template@spell.Spell.root:Data.Game.Formulas.ChargeMax
+	//$$.template@spell.SpellAttackModifier.root:Data.Game.Formulas.ChargeMax
 	//$$.template@spell.SpellBuild.root:Data.Game.Formulas.ChargeMax
 	//$$.template@spell.SpellMorph.root:Data.Game.Formulas.ChargeMax
 	//$$.template@spell.SpellRootCircle.root:Data.Game.Formulas.ChargeMax
@@ -1669,7 +1710,16 @@ module validator {
 	//$$.template@spell.SpellRootVector.root:Data.Game.Formulas.ChargeMax
 	//$$.template@spell.SpellToggle.root:Data.Game.Formulas.ChargeMax
 	//$$.template@spell.spell.root:Data.Game.Formulas.ChargeMax
+	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.template@spell.通用近战普攻模版.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.ChargeMax
@@ -1759,6 +1809,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.ChargeMax
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.unit.6、远程普攻示例英雄.Spell:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.unit.sce2号.SpellRootVector_2:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.unit.感应地雷.Spell:Data.Game.Formulas.ChargeMax
@@ -1776,7 +1827,7 @@ module validator {
 	//$$default_units_ts.unit.野猪.SpellRootCircle_1:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.unit.野猪.SpellRootVector_1:Data.Game.Formulas.ChargeMax
 	/** @noSelf */
-	export let validator_211391127:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_211391127:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let result: number = cache.Cost.ChargeMax;
@@ -1785,6 +1836,7 @@ module validator {
 
 	//$$.item.test_potion_heal.SpellRootInstant_1:Data.Game.Formulas.Range
 	//$$.template@spell.Spell.root:Data.Game.Formulas.Range
+	//$$.template@spell.SpellAttackModifier.root:Data.Game.Formulas.Range
 	//$$.template@spell.SpellBuild.root:Data.Game.Formulas.Range
 	//$$.template@spell.SpellMorph.root:Data.Game.Formulas.Range
 	//$$.template@spell.SpellRootCircle.root:Data.Game.Formulas.Range
@@ -1794,7 +1846,16 @@ module validator {
 	//$$.template@spell.SpellRootVector.root:Data.Game.Formulas.Range
 	//$$.template@spell.SpellToggle.root:Data.Game.Formulas.Range
 	//$$.template@spell.spell.root:Data.Game.Formulas.Range
+	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.Range
 	//$$default_units_ts.template@spell.通用近战普攻模版.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.Range
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.Range
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.Range
@@ -1884,6 +1945,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.Range
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.Range
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.Range
 	//$$default_units_ts.unit.6、远程普攻示例英雄.Spell:Data.Game.Formulas.Range
 	//$$default_units_ts.unit.sce2号.SpellRootVector_2:Data.Game.Formulas.Range
 	//$$default_units_ts.unit.感应地雷.Spell:Data.Game.Formulas.Range
@@ -1901,7 +1963,7 @@ module validator {
 	//$$default_units_ts.unit.野猪.SpellRootCircle_1:Data.Game.Formulas.Range
 	//$$default_units_ts.unit.野猪.SpellRootVector_1:Data.Game.Formulas.Range
 	/** @noSelf */
-	export let validator_63878418:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_63878418:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let result: number = cache.Range;
@@ -1910,6 +1972,7 @@ module validator {
 
 	//$$.item.test_potion_heal.SpellRootInstant_1:Data.Game.Formulas.Time
 	//$$.template@spell.Spell.root:Data.Game.Formulas.Time
+	//$$.template@spell.SpellAttackModifier.root:Data.Game.Formulas.Time
 	//$$.template@spell.SpellBuild.root:Data.Game.Formulas.Time
 	//$$.template@spell.SpellMorph.root:Data.Game.Formulas.Time
 	//$$.template@spell.SpellRootCircle.root:Data.Game.Formulas.Time
@@ -1919,6 +1982,15 @@ module validator {
 	//$$.template@spell.SpellRootVector.root:Data.Game.Formulas.Time
 	//$$.template@spell.SpellToggle.root:Data.Game.Formulas.Time
 	//$$.template@spell.spell.root:Data.Game.Formulas.Time
+	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.Time
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.Time
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.Time
@@ -2003,6 +2075,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.Time
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.Time
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.Time
 	//$$default_units_ts.unit.感应地雷.Spell:Data.Game.Formulas.Time
 	//$$default_units_ts.unit.感应地雷.Spell_1:Data.Game.Formulas.Time
 	//$$default_units_ts.unit.火龙.Spell:Data.Game.Formulas.Time
@@ -2010,7 +2083,7 @@ module validator {
 	//$$default_units_ts.unit.火龙.Spell_1:Data.Game.Formulas.Time
 	//$$default_units_ts.unit.野猪.SpellRootVector_1:Data.Game.Formulas.Time
 	/** @noSelf */
-	export let validator_234228873:(效果节点:EffectParam, 阶段:number)=>number= (效果节点:EffectParam, 阶段:number):number => {
+	export let validator_234228873:(this: void, 效果节点:EffectParam, 阶段:number)=>number = (this: void, 效果节点:EffectParam, 阶段:number):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let hasteProp: _OBJ__Spell_attack_speed_attribute = cache.AttributeHaste;
@@ -2034,9 +2107,21 @@ module validator {
 		return s_current;
 	}
 
-	//$$default_units_ts.template@spell.通用近战普攻模版.Damage_1:Data.Game.Amount
+	//$$busiyixiantu_5n1b.item.小经验瓶.CustomAction:Data.Game.Func
 	/** @noSelf */
-	export let validator_196209676:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_130232902:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = false;
+		if ((base.player(1).get_hero().has_buff((("$$busiyixiantu_5n1b.buff.不能升级判断.root") as unknown as IdPreset<"buff_id">)))) {
+		} else {
+			result = true;
+		}
+		return result;
+	}
+
+	//$$default_units_ts.template@spell.通用近战普攻模版.Damage_1:Data.Game.Amount
+	//$$default_units_ts.unit.6、远程普攻示例英雄.busiyixiantu_5n1b_Damage_1:Data.Game.Amount
+	/** @noSelf */
+	export let validator_196209676:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = base.eff_param_caster(效果节点).get_ex(单位属性["攻击"], UnitPropertySubType["Final"]);
 		return result;
 	}
@@ -2058,7 +2143,7 @@ module validator {
 	//$$default_units_ts.unit.秃鹫.SpellRootCircle_1_1:Data.Game.Formulas.Mana
 	//$$default_units_ts.unit.野猪.SpellRootCircle_1:Data.Game.Formulas.Mana
 	/** @noSelf */
-	export let validator_33587127:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_33587127:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let result: number = cache.Cost.Mana;
@@ -2082,7 +2167,7 @@ module validator {
 	//$$default_units_ts.unit.秃鹫.SpellRootCircle_1_1:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.unit.野猪.SpellRootCircle_1:Data.Game.Formulas.Cooldown
 	/** @noSelf */
-	export let validator_214974897:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_214974897:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let cooldown: number = cache.Cost.Cooldown;
@@ -2134,7 +2219,7 @@ module validator {
 	//$$default_units_ts.unit.秃鹫.SpellRootCircle_1_1:Data.Game.Formulas.Time
 	//$$default_units_ts.unit.野猪.SpellRootCircle_1:Data.Game.Formulas.Time
 	/** @noSelf */
-	export let validator_214580859:(效果节点:EffectParam, 阶段:number)=>number= (效果节点:EffectParam, 阶段:number):number => {
+	export let validator_214580859:(this: void, 效果节点:EffectParam, 阶段:number)=>number = (this: void, 效果节点:EffectParam, 阶段:number):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let cooldown: number = cache.Cost.Cooldown;
@@ -2165,10 +2250,65 @@ module validator {
 		return s_current;
 	}
 
+	//$$busiyixiantu_5n1b.spell.哈沙机.Damage:Data.Game.Amount
+	/** @noSelf */
+	export let validator_142888961:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]);
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.spell.哈沙机.Search:Data.Game.MaxCount
+	/** @noSelf */
+	export let validator_15165100:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = ((base.player(1).get_hero().get_custom(单位属性["攻击"], ((false) as unknown as 单位属性子类型)) / 100) + 3);
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.spell.哈沙机.Search:Data.Game.Radius
+	/** @noSelf */
+	export let validator_238476281:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = 1;
+		if (true) {
+			result = 300;
+		} else {
+		}
+		if ((((result <= 1000) && (result > 100)))) {
+			result = 500;
+		} else {
+		}
+		if ((((result <= 10000) && (result > 1000)))) {
+			result = 1000;
+		} else {
+		}
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.spell.群火球.Damage:Data.Game.Amount
+	//$$busiyixiantu_5n1b.spell.群火球.EffectDamage:Data.Game.Amount
+	/** @noSelf */
+	export let validator_190268667:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]);
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.spell.群火球.Search:Data.Game.Radius
+	/** @noSelf */
+	export let validator_109296348:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = base.player(1).get_hero().get_ex(单位属性["搜敌范围"], UnitPropertySubType["Final"]);
+		return result;
+	}
+
 	//$$busiyixiantu_5n1b.spell.群锤.Damage:Data.Game.Amount
 	/** @noSelf */
-	export let validator_140350288:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_219294026:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]);
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.spell.群锤.Search:Data.Game.Radius
+	/** @noSelf */
+	export let validator_24328857:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = base.player(1).get_hero().get_ex(单位属性["攻击范围"], UnitPropertySubType["Base"]);
 		return result;
 	}
 
@@ -2176,7 +2316,7 @@ module validator {
 	//$$default_units_ts.unit.sce2号.PolarOffset_1:Data.Game.PeriodChangeIndex
 	//$$default_units_ts.unit.火龙.PolarOffset_1:Data.Game.PeriodChangeIndex
 	/** @noSelf */
-	export let validator_204988239:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_204988239:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let parent: EffectParam = 效果节点.parent;
 		let cache: _OBJ__effect_EffectPersistLoop = base.force_as<_OBJ__effect_EffectPersistLoop>(parent.cache);
 		let count: number = cache.PeriodicCount(效果节点);
@@ -2186,7 +2326,7 @@ module validator {
 
 	//$$default_units_ts.spell.不死鸟.Set_1:Data.Game.Validators
 	/** @noSelf */
-	export let validator_208749477:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_208749477:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		let 蛋: Unit = base.eff_param_target_unit(效果节点);
 		if (((蛋.is_alive_ex() == true))) {
@@ -2198,7 +2338,7 @@ module validator {
 
 	//$$default_units_ts.spell.不死鸟灼伤.PersistLoop_1_1:Data.Game.PersistValidator
 	/** @noSelf */
-	export let validator_258945007:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_258945007:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		let 鸟: Unit = base.eff_param_target_unit(效果节点);
 		if (((鸟.is_alive_ex() == true))) {
@@ -2210,7 +2350,7 @@ module validator {
 
 	//$$default_units_ts.spell.元素激流.CustomAction_2:Data.Game.Func
 	/** @noSelf */
-	export let validator_40290592:(效果节点:EffectParam)=>boolean= (效果节点:EffectParam):boolean => {
+	export let validator_40290592:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
 		let result: boolean = true;
 		let 技能: Skill = 效果节点.skill();
 		let 已弹射单位组: Array<Unit> = base.object_restore_value(效果节点.root(), "已弹射单位");
@@ -2224,7 +2364,7 @@ module validator {
 
 	//$$default_units_ts.spell.元素激流.CustomAction_3:Data.Game.Func
 	/** @noSelf */
-	export let validator_171995275:(效果节点:EffectParam)=>boolean= (效果节点:EffectParam):boolean => {
+	export let validator_171995275:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
 		let result: boolean = true;
 		let 技能: Skill = 效果节点.skill();
 		let 单位组: Array<Unit> = new Array<any>();
@@ -2234,7 +2374,7 @@ module validator {
 
 	//$$default_units_ts.spell.元素激流.Search_2:Data.Game.SearchValidators
 	/** @noSelf */
-	export let validator_27087888:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_27087888:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		let 技能: Skill = 效果节点.skill();
 		let 已弹射单位组: Array<Unit> = base.object_restore_value(效果节点.root(), "已弹射单位");
@@ -2249,7 +2389,7 @@ module validator {
 
 	//$$default_units_ts.spell.冲锋陷阵.LaunchMissileDash_1:Data.Game.Speed
 	/** @noSelf */
-	export let validator_236306566:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_236306566:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let 时间: number = 0.5;
 		let 距离: number = base.eff_param_caster(效果节点).get_scene_point().distance(base.eff_param_target_point(效果节点));
 		let 速度: number = (距离 / 时间);
@@ -2258,7 +2398,7 @@ module validator {
 
 	//$$default_units_ts.spell.净化.Damage_1:Data.Game.Validators
 	/** @noSelf */
-	export let validator_196723837:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_196723837:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		if ((base.target_filter_validate(base.target_filters.new("敌方,召唤;无敌"), base.eff_param_target_unit(效果节点)))) {
 			result = 验证器代码["OK"];
@@ -2270,7 +2410,7 @@ module validator {
 
 	//$$default_units_ts.spell.后撤步.LaunchMissileDash_1:Data.Game.Speed
 	/** @noSelf */
-	export let validator_220220686:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_220220686:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let 时间: number = 0.37;
 		let 距离: number = base.eff_param_caster(效果节点).get_scene_point().distance(base.eff_param_target_point(效果节点));
 		let 速度: number = (距离 / 时间);
@@ -2279,7 +2419,7 @@ module validator {
 
 	//$$default_units_ts.spell.吞噬魔法.Set_2:Data.Game.Validators
 	/** @noSelf */
-	export let validator_130739784:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_130739784:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["NotSupported"];
 		let buff: boolean = base.eff_param_target_unit(效果节点).has_buff((("$$default_units_ts.spell.吞噬魔法.Buff_1") as unknown as IdPreset<"buff_id">));
 		if (((buff == true))) {
@@ -2291,7 +2431,7 @@ module validator {
 
 	//$$default_units_ts.spell.吸血光环.ResponseDamageAttacker_1:Data.Game.Modification
 	/** @noSelf */
-	export let validator_195133005:(效果节点:EffectParam, 引发响应的效果节点:EffectParam, 原始伤害值:number, 当前伤害值:number)=>number= (效果节点:EffectParam, 引发响应的效果节点:EffectParam, 原始伤害值:number, 当前伤害值:number):number => {
+	export let validator_195133005:(this: void, 效果节点:EffectParam, 引发响应的效果节点:EffectParam, 原始伤害值:number, 当前伤害值:number)=>number = (this: void, 效果节点:EffectParam, 引发响应的效果节点:EffectParam, 原始伤害值:number, 当前伤害值:number):number => {
 		let result: number = 1;
 		base.eff_param_caster(效果节点).add_ex(单位属性["生命"], (原始伤害值 * 0.15), UnitPropertySubType["Final"]);
 		return result;
@@ -2299,7 +2439,7 @@ module validator {
 
 	//$$default_units_ts.spell.怒吼.ResponseDamageDefender_1:Data.Game.Multiplier
 	/** @noSelf */
-	export let validator_58691808:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_58691808:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = 1;
 		let 单位: Unit = base.eff_param_caster(效果节点);
 		let 单位组: Array<Unit> = base.get_area_unit(base.circle(单位.get_scene_point(), 300));
@@ -2321,7 +2461,7 @@ module validator {
 
 	//$$default_units_ts.spell.旋转碰撞回旋镖（被动）.EffectSet:Data.Game.Validators
 	/** @noSelf */
-	export let validator_76703967:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_76703967:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		if (((base.object_restore_value(效果节点.get_parent().var_unit("A"), "DabaojianHitTime") == undefined))) {
 			base.object_store_value(效果节点.get_parent().var_unit("A"), "DabaojianHitTime", 0);
@@ -2337,7 +2477,7 @@ module validator {
 
 	//$$default_units_ts.spell.旋转碰撞回旋镖（被动）.EffectSwitch:Data.Game.CaseArray[1].Validator
 	/** @noSelf */
-	export let validator_110577815:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_110577815:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		let 目标单位: Unit = base.eff_param_target_unit(效果节点);
 		log.info(目标单位.get_name());
@@ -2352,7 +2492,7 @@ module validator {
 
 	//$$default_units_ts.spell.旋转碰撞回旋镖（被动）.EffectSwitch:Data.Game.CaseArray[2].Validator
 	/** @noSelf */
-	export let validator_69151185:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_69151185:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		if ((base.eff_param_caster(效果节点).has_buff((("$$default_units_ts.spell.旋转碰撞回旋镖（被动）.Buff") as unknown as IdPreset<"buff_id">)))) {
 			result = 验证器代码["NotSupported"];
@@ -2363,7 +2503,7 @@ module validator {
 
 	//$$default_units_ts.spell.旋转碰撞回旋镖（被动）.EffectSwitch:Data.Game.CaseArray[3].Validator
 	/** @noSelf */
-	export let validator_153290600:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_153290600:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		if ((base.eff_param_caster(效果节点).has_buff((("$$default_units_ts.spell.旋转碰撞回旋镖（被动）.Buff") as unknown as IdPreset<"buff_id">)))) {
 		} else {
@@ -2374,7 +2514,7 @@ module validator {
 
 	//$$default_units_ts.spell.治疗波.CustomAction_1:Data.Game.Func
 	/** @noSelf */
-	export let validator_56366968:(效果节点:EffectParam)=>boolean= (效果节点:EffectParam):boolean => {
+	export let validator_56366968:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
 		let result: boolean = true;
 		let 根节点: EffectParam = 效果节点.root();
 		let 单位组: Array<Unit> = new Array<any>();
@@ -2384,7 +2524,7 @@ module validator {
 
 	//$$default_units_ts.spell.治疗波.CustomAction_2:Data.Game.Func
 	/** @noSelf */
-	export let validator_108653932:(效果节点:EffectParam)=>boolean= (效果节点:EffectParam):boolean => {
+	export let validator_108653932:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
 		let result: boolean = true;
 		let 根节点: EffectParam = 效果节点.root();
 		let 已弹射单位组: Array<Unit> = base.object_restore_value(根节点, "已弹射单位");
@@ -2398,7 +2538,7 @@ module validator {
 
 	//$$default_units_ts.spell.治疗波.Search_1:Data.Game.SearchValidators
 	/** @noSelf */
-	export let validator_34088597:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_34088597:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		let 技能: Skill = 效果节点.skill();
 		let 已弹射单位组: Array<Unit> = base.object_restore_value(效果节点.root(), "已弹射单位");
@@ -2413,7 +2553,7 @@ module validator {
 
 	//$$default_units_ts.spell.治疗波.UnitModifyAttribute_1:Data.Game.KeyValuePairs[1].Value
 	/** @noSelf */
-	export let validator_157054375:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_157054375:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = 0;
 		let 根节点: EffectParam = 效果节点.root();
 		let 已弹射单位: Array<Unit> = base.object_restore_value(根节点, "已弹射单位");
@@ -2426,7 +2566,7 @@ module validator {
 
 	//$$default_units_ts.spell.法力虹吸.AddBuff_1:Data.Game.Validators
 	/** @noSelf */
-	export let validator_157541609:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_157541609:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		if (((base.eff_param_caster(效果节点).is_ally(base.eff_param_target_unit(效果节点)) == true))) {
 			result = 验证器代码["NotSupported"];
@@ -2438,7 +2578,7 @@ module validator {
 
 	//$$default_units_ts.spell.法力虹吸.AddBuff_2:Data.Game.Validators
 	/** @noSelf */
-	export let validator_67885651:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_67885651:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		if (((base.eff_param_caster(效果节点).is_ally(base.eff_param_target_unit(效果节点)) == true))) {
 			result = 验证器代码["OK"];
@@ -2450,7 +2590,7 @@ module validator {
 
 	//$$default_units_ts.spell.通用攻击-三连击.Buff:Data.Game.PersistValidator
 	/** @noSelf */
-	export let validator_20859394:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_20859394:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		let cast: Cast | undefined = 效果节点.shared.cast;
 		let phase: number | undefined = cast.phase;
@@ -2464,7 +2604,7 @@ module validator {
 
 	//$$default_units_ts.spell.通用攻击-三连击.Damage:Data.Game.Amount
 	/** @noSelf */
-	export let validator_51649446:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_51649446:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let 施法单位: Unit = base.eff_param_caster(效果节点);
 		let 基础伤害: number = 施法单位.get_ex(单位属性["攻击"], UnitPropertySubType["Final"]);
 		let 段数: number = base.eff_param_cast_phase(效果节点);
@@ -2475,7 +2615,7 @@ module validator {
 
 	//$$default_units_ts.spell.通用攻击-三连击.PolarOffset:Data.Game.Validators
 	/** @noSelf */
-	export let validator_236127537:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_236127537:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		let phase: number = base.eff_param_cast_phase(效果节点);
 		if (((phase >= 3))) {
@@ -2488,28 +2628,28 @@ module validator {
 	//$$default_units_ts.spell.通用攻击-刀光.Damage_1:Data.Game.Amount
 	//$$default_units_ts.spell.通用攻击-火球.Damage_1:Data.Game.Amount
 	/** @noSelf */
-	export let validator_223462450:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_223462450:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = base.eff_param_caster(效果节点).get_ex(单位属性["攻击"], UnitPropertySubType["Final"]);
 		return result;
 	}
 
 	//$$default_units_ts.spell.通用攻击-劈砍.Damage_1:Data.Game.Amount
 	/** @noSelf */
-	export let validator_19086676:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_19086676:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = base.eff_param_caster(效果节点).get_ex(单位属性["攻击"], UnitPropertySubType["Final"]);
 		return result;
 	}
 
 	//$$default_units_ts.spell.通用攻击-戳刺.Damage_1:Data.Game.Amount
 	/** @noSelf */
-	export let validator_120343679:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_120343679:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = base.eff_param_caster(效果节点).get_ex(单位属性["攻击"], UnitPropertySubType["Final"]);
 		return result;
 	}
 
 	//$$default_units_ts.spell.重生.Switch_1:Data.Game.CaseArray[1].Validator
 	/** @noSelf */
-	export let validator_255550721:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_255550721:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["NotSupported"];
 		if (((base.eff_param_caster(效果节点).is_alive_ex() == false))&&((base.eff_param_target_unit(base.eff_param_get_by_name(效果节点, (("$$default_units_ts.spell.重生.AddBuff_1") as unknown as IdPreset<"effect_id">))).has_buff((("$$default_units_ts.spell.重生.Buff") as unknown as IdPreset<"buff_id">)) == false))) {
 			result = 验证器代码["OK"];
@@ -2520,7 +2660,7 @@ module validator {
 
 	//$$default_units_ts.spell.钩锁.LaunchMissileDash_1:Data.Game.Speed
 	/** @noSelf */
-	export let validator_222950169:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_222950169:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let 时间: number = 0.5;
 		let 距离: number = base.eff_param_caster(效果节点).get_scene_point().distance(base.eff_param_target_point(效果节点));
 		let 速度: number = (距离 / 时间);
@@ -2529,7 +2669,7 @@ module validator {
 
 	//$$default_units_ts.spell.闪电链.CustomAction_1:Data.Game.Func
 	/** @noSelf */
-	export let validator_228903203:(效果节点:EffectParam)=>boolean= (效果节点:EffectParam):boolean => {
+	export let validator_228903203:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
 		let result: boolean = true;
 		let 根节点: EffectParam = 效果节点.root();
 		let 单位组: Array<Unit> = new Array<any>();
@@ -2539,7 +2679,7 @@ module validator {
 
 	//$$default_units_ts.spell.闪电链.CustomAction_2:Data.Game.Func
 	/** @noSelf */
-	export let validator_2540000:(效果节点:EffectParam)=>boolean= (效果节点:EffectParam):boolean => {
+	export let validator_2540000:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
 		let result: boolean = true;
 		let 根节点: EffectParam = 效果节点.root();
 		let 已弹射单位组: Array<Unit> = base.object_restore_value(根节点, "已弹射单位");
@@ -2553,7 +2693,7 @@ module validator {
 
 	//$$default_units_ts.spell.闪电链.Damage_1:Data.Game.Amount
 	/** @noSelf */
-	export let validator_45382866:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_45382866:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let 根节点: EffectParam = 效果节点.root();
 		let 单位组: Array<Unit> = base.object_restore_value(根节点, "已弹射单位");
 		let 次数: number = 单位组.length;
@@ -2563,7 +2703,7 @@ module validator {
 
 	//$$default_units_ts.spell.闪电链.Search_2:Data.Game.SearchValidators
 	/** @noSelf */
-	export let validator_205128689:(效果节点:EffectParam)=>验证器代码= (效果节点:EffectParam):验证器代码 => {
+	export let validator_205128689:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
 		let result: 验证器代码 = 验证器代码["OK"];
 		let 根节点: EffectParam = 效果节点.root();
 		let 已弹射单位组: Array<Unit> = base.object_restore_value(根节点, "已弹射单位");
@@ -2578,7 +2718,7 @@ module validator {
 
 	//$$default_units_ts.unit.sce2号.Spell:Data.Game.Formulas.Mana
 	/** @noSelf */
-	export let validator_117687348:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_117687348:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let result: number = cache.Cost.Mana;
@@ -2587,7 +2727,7 @@ module validator {
 
 	//$$default_units_ts.unit.sce2号.Spell:Data.Game.Formulas.Cooldown
 	/** @noSelf */
-	export let validator_155076026:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_155076026:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let cooldown: number = cache.Cost.Cooldown;
@@ -2624,7 +2764,7 @@ module validator {
 
 	//$$default_units_ts.unit.sce2号.Spell:Data.Game.Formulas.ChargeMax
 	/** @noSelf */
-	export let validator_117198562:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_117198562:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let result: number = cache.Cost.ChargeMax;
@@ -2633,7 +2773,7 @@ module validator {
 
 	//$$default_units_ts.unit.sce2号.Spell:Data.Game.Formulas.Range
 	/** @noSelf */
-	export let validator_146821332:(效果节点:EffectParam)=>number= (效果节点:EffectParam):number => {
+	export let validator_146821332:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let result: number = cache.Range;
@@ -2642,7 +2782,7 @@ module validator {
 
 	//$$default_units_ts.unit.sce2号.Spell:Data.Game.Formulas.Time
 	/** @noSelf */
-	export let validator_14977813:(效果节点:EffectParam, 阶段:number)=>number= (效果节点:EffectParam, 阶段:number):number => {
+	export let validator_14977813:(this: void, 效果节点:EffectParam, 阶段:number)=>number = (this: void, 效果节点:EffectParam, 阶段:number):number => {
 		let spell: Skill = 效果节点.skill();
 		let cache: _OBJ__spell_spell = spell.cache;
 		let cooldown: number = cache.Cost.Cooldown;
@@ -2675,7 +2815,7 @@ module validator {
 
 	//$$default_units_ts.unit.火龙.MoverFunction:Data.Game.FunctionServer
 	/** @noSelf */
-	export let validator_36377917:(效果节点:EffectParam, 流逝时间:number, 移动器:Mover)=>void= (效果节点:EffectParam, 流逝时间:number, 移动器:Mover):void => {
+	export let validator_36377917:(this: void, 效果节点:EffectParam, 流逝时间:number, 移动器:Mover)=>void = (this: void, 效果节点:EffectParam, 流逝时间:number, 移动器:Mover):void => {
 		let 施法者单位: Unit = base.eff_param_caster(效果节点);
 		let 弹道单位: Unit = base.eff_param_target_unit(效果节点);
 		let 发射点: Point = base.eff_param_origin_point(效果节点);
@@ -2784,16 +2924,16 @@ module validator {
 			data.Behavior = validator_237463119
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.自定义AI样例.AIBehavior_6")) {
-			data.Behavior = validator_23533341
+			data.Behavior = validator_18953088
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.自定义AI样例.AIBehavior_7")) {
-			data.Behavior = validator_144538679
+			data.Behavior = validator_15830840
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.自定义AI样例.AIBehavior_9")) {
-			data.Behavior = validator_55344321
+			data.Behavior = validator_61264335
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.自定义AI样例.root")) {
-			data.OnAdd = validator_245519073
+			data.OnAdd = validator_179475718
 			data.OnRemove = validator_34695145
 		}
 		if (data = base.eff.cache("$$default_units_ts.effect.击退.PolarOffset_1")) {
@@ -2832,20 +2972,41 @@ module validator {
 		if (data = base.eff.cache("$$default_units_ts.func_ref.随机的单位.root")) {
 			data.Func = validator_180756668
 		}
+		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute")) {
+			data.Func = validator_253349852
+		}
+		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_1")) {
+			data.Func = validator_150413537
+		}
+		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_2")) {
+			data.Func = validator_207517527
+		}
+		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_3")) {
+			data.Func = validator_69799481
+		}
+		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_4")) {
+			data.Func = validator_158477395
+		}
+		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_5")) {
+			data.Func = validator_162427740
+		}
+		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_DamageRule")) {
+			data.FDamageRule = validator_135354330
+		}
 		if (data = base.eff.cache("$$.gameplay.dflt.default_units_ts_CureRule_1")) {
 			data.FCureRule = validator_255597210
 			data.FCriticalRule = validator_148805509
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_3")) {
-			data.FDamageRule = validator_34781199
+			data.FDamageRule = validator_98280874
 			data.FCriticalRule = validator_189928549
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_4")) {
-			data.FDamageRule = validator_43068806
+			data.FDamageRule = validator_207750772
 			data.FCriticalRule = validator_209125194
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_5")) {
-			data.FDamageRule = validator_22685921
+			data.FDamageRule = validator_216600710
 			data.FCriticalRule = validator_191493992
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.root")) {
@@ -2860,6 +3021,13 @@ module validator {
 			data.Formulas.Time = validator_234228873
 		}
 		if (data = base.eff.cache("$$.template@spell.Spell.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$.template@spell.SpellAttackModifier.root")) {
 			data.Formulas.Mana = validator_244194926
 			data.Formulas.Cooldown = validator_135839809
 			data.Formulas.ChargeMax = validator_211391127
@@ -2923,6 +3091,69 @@ module validator {
 			data.Formulas.Time = validator_234228873
 		}
 		if (data = base.eff.cache("$$.template@spell.spell.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$default_units_ts.template@spell.被动法球技能节点.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.万剑诀.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.不能升级.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.剑雨.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.清除小怪.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.献祭.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.root")) {
 			data.Formulas.Mana = validator_244194926
 			data.Formulas.Cooldown = validator_135839809
 			data.Formulas.ChargeMax = validator_211391127
@@ -3517,6 +3748,13 @@ module validator {
 			data.Formulas.Range = validator_63878418
 			data.Formulas.Time = validator_234228873
 		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.unit.金币怪.Spell")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
 		if (data = base.eff.cache("$$default_units_ts.unit.感应地雷.Spell")) {
 			data.Formulas.Mana = validator_244194926
 			data.Formulas.Cooldown = validator_135839809
@@ -3671,11 +3909,36 @@ module validator {
 			data.Formulas.Cooldown = validator_214974897
 			data.Formulas.Time = validator_214580859
 		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.item.小经验瓶.CustomAction")) {
+			data.Func = validator_130232902
+		}
 		if (data = base.eff.cache("$$default_units_ts.template@spell.通用近战普攻模版.Damage_1")) {
 			data.Amount = validator_196209676
 		}
+		if (data = base.eff.cache("$$default_units_ts.unit.6、远程普攻示例英雄.busiyixiantu_5n1b_Damage_1")) {
+			data.Amount = validator_196209676
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.Damage")) {
+			data.Amount = validator_142888961
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.Search")) {
+			data.MaxCount = validator_15165100
+			data.Radius = validator_238476281
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.Damage")) {
+			data.Amount = validator_190268667
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.EffectDamage")) {
+			data.Amount = validator_190268667
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.Search")) {
+			data.Radius = validator_109296348
+		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群锤.Damage")) {
-			data.Amount = validator_140350288
+			data.Amount = validator_219294026
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群锤.Search")) {
+			data.Radius = validator_24328857
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.三火球.PolarOffset_1")) {
 			data.PeriodChangeIndex = validator_204988239

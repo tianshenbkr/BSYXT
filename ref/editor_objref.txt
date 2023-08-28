@@ -105,6 +105,9 @@
 @defaultui/image/control/锁定技能框.png
 @defaultui/image/control/默认技能框2.png
 @defaultui/image/panel/底框_快捷键.png
+@demo_p7gb/image/icons/caoxiu_q.png
+@demo_p7gb/image/icons/liubei_q.png
+@demo_p7gb/image/icons/导弹轰炸.png
 @lib_control/image/control/Bth_ingame_gongjidi.png
 @smallcard_choose_one/image/Gedang.png
 @smallcard_choose_one/image/Gongjitisheng.png
@@ -129,6 +132,7 @@ Spellcast
 Spellcast_1
 Spellcast_2
 Spellcast_5
+anim/chinese_ancient/standardmale_anim/sk_bwc/skill_01.ani
 anim/human/barehanded_anim/dart_01/throw_03.ani
 anim/human/barehanded_anim/hand_05/blink_01.ani
 anim/human/barehanded_anim/hand_05/casting_01.ani
@@ -175,6 +179,7 @@ anim/human/sword_anim/DaJianZhanShi/skill_03.ani
 anim/human/sword_anim/DaJianZhanShi/skill_04.ani
 anim/human/sword_anim/dajianzhanshi/skill_01.ani
 anim/human/sword_anim/twohand_04/attack_01.ani
+anim/human/sword_anim/twohand_04/attack_02.ani
 anim/human/sword_anim/twohand_04/attack_04.ani
 born
 characters/Monster/SK_Spider_Burrow_S/model.prefab
@@ -182,7 +187,9 @@ characters/effectanim/xh_model/model.prefab
 characters/general/sk_basic2/model.prefab
 characters/general/sk_gangster/model.prefab
 characters/general/sk_worker/model.prefab
+characters/heartbeat/mori/model.prefab
 characters/monster/sk_ghost/model.prefab
+characters/monster/sk_ghost_bp_bodyhat/model.prefab
 characters/monster/sk_spider_burrow/model.prefab
 characters/monster/sk_spider_burrow_s/model.prefab
 characters/monster/sk_uav/model.prefab
@@ -374,6 +381,7 @@ effect/eff_xujian/effect_zhanshi_03buff/particle.effect
 effect/eff_xujian/effect_zhanshi_04/particle.effect
 effect/eff_xujian/effect_zhanshi_hit/particle.effect
 effect/eff_xujian/effect_zhanshi_jian01/particle.effect
+effect/effect_new/eff_object/eff_diaoxiang_01/particle.effect
 effect/effect_new/eff_object/eff_object_pinjie_01/particle.effect
 effect/effect_new/eff_object/eff_object_pinjie_02/particle.effect
 effect/effect_new/eff_object/eff_object_pinjie_03/particle.effect
@@ -382,8 +390,13 @@ effect/effect_new/eff_object/eff_object_pinjie_05/particle.effect
 effect/effect_new/effect_emit/eff_fireball_01/particle.effect
 effect/effect_new/effect_hit/eff_hit_01/particle.effect
 effect/effect_new/effect_hit/eff_hit_02/particle.effect
+effect/effect_new/effect_hit/eff_hit_09/particle.effect
 effect/effect_new/effect_hit/eff_hit_15/particle.effect
 effect/effect_new/effect_hit/eff_lght_hit/particle.effect
+effect/effect_new/effect_hit/ps_fireball_explode_eff/particle.effect
+effect/effect_new/effect_mofa/eff_jiandown_once/particle.effect
+effect/effect_new/effect_mofa/eff_jianyu_01/particle.effect
+effect/effect_new/effect_mofa/eff_mofa_04/particle.effect
 effect/effect_new/effect_ui/eff_ui_biankuang006/particle.effect
 effect/effect_new/effect_zhishiqi/eff_juxing/ps_tou_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_juxing/ps_wei_1/particle.effect
@@ -409,6 +422,7 @@ effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_zhixiangxing_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_zhixiangxing_red_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_zhixianxing/ps_tou_1/particle.effect
 effect/effect_new1/eff_keji/eff_keji_qiu1/particle.effect
+effect/effect_new1/effect_knief/eff_jianqi/particle.effect
 effect/samplespells/avatar/avatar/particle.effect
 effect/samplespells/avatar/avatar_caster/particle.effect
 effect/samplespells/blink/Blink_Caster/particle.effect
@@ -504,6 +518,7 @@ eqpt/weapon/mofashi_weapon/model.prefab
 eqpt/weapon/sk_nezha2_weapon205/model.prefab
 eqpt/weapon/sm_dr_spear_08_short/model.prefab
 eqpt/weapon/sm_dr_sword_04_02/model.prefab
+image/_0005_移速up.png
 image/btn/gf_1_major_active.png
 image/btn/gf_1_minor_active.png
 image/btn/gf_2_major_active.png
@@ -571,6 +586,7 @@ sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_05.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_06.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_07.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_08.ogg
+sound/a2_sfx/fight/impact/sfx_imp_sword_lit.ogg
 sound/a2_sfx/fight/magic/sfx_magic_elecball_gen_blast.ogg
 sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Box_Gold_Open.ogg
 sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Box_Ordinary_Open.ogg
@@ -670,5 +686,6 @@ sound\promotion_sound\ui\沙沙声.ogg
 sound\promotion_sound\ui\等待读条音.ogg
 sound\promotion_sound\ui\错误.ogg
 soundhades_anim_test_sound/矛1SpearThrust1.ogg
+ui/font/Regular/Regular.otf
 unknown
 unkown

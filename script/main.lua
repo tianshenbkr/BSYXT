@@ -27,20 +27,31 @@ end
 
 ---require lua plus---
 lib_game_options = require"@lib_game_options.main"
-lib_common_sounds = require"@lib_common_sounds.main"
 smallcard_get_items = require"@smallcard_get_items.main"
-smallcard_item_pickup = require"@smallcard_item_pickup.main"
+lib_common_sounds = require"@lib_common_sounds.main"
 lib_region = require"@lib_region.main"
+smallcard_item_pickup = require"@smallcard_item_pickup.main"
 lib_plotdialogue = require"@lib_plotdialogue.main"
-smallcard_mail = require"@smallcard_mail.main".smallcard_mail
-lib_common_ai = require"@lib_common_ai.main".lib_common_ai
-smallcard_inventory = require"@smallcard_inventory.main".smallcard_inventory
-lib_control = require"@lib_control.main".lib_control
-defaultui = require"@defaultui.main".defaultui
 smallcard_choose_one = require"@smallcard_choose_one.main".smallcard_choose_one
 smallcard_unit_attr_panel = require"@smallcard_unit_attr_panel.main".smallcard_unit_attr_panel
+lib_control = require"@lib_control.main".lib_control
+smallcard_mail = require"@smallcard_mail.main".smallcard_mail
+smallcard_inventory = require"@smallcard_inventory.main".smallcard_inventory
+defaultui = require"@defaultui.main".defaultui
+lib_common_ai = require"@lib_common_ai.main".lib_common_ai
 ---origin_main_file---
 
+--一些基础模块
+require 'core'
+
+--一些地图独有的复写模块
+require 'ext'
+
+--对象
+require 'class'
+
+--不知道放哪的综合性功能都放这
+require 'game'
 ---ts_module---
 require "trigger_module_main"require "trigger_validator"
 local ret = {["busiyixiantu_5n1b"] = busiyixiantu_5n1b}

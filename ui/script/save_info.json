@@ -1,10 +1,10 @@
 {
     "default_units_ts":{
-        "time_stamp":4534883766.929500,
+        "time_stamp":5735791916.647500,
         "version":0.500000
     },
     "defaultui":{
-        "time_stamp":4534802182.007300,
+        "time_stamp":5735704253.094300,
         "version":0.500000
     },
     "lib_common_ai":{
@@ -12,24 +12,24 @@
         "version":0.400000
     },
     "lib_control":{
-        "time_stamp":4855586297.471400,
+        "time_stamp":5734680164.088000,
         "version":0.500000
     },
     "script":{
-        "time_stamp":63924029.456200,
+        "time_stamp":999294522.739500,
         "version":0.500000
     },
     "smallcard_choose_one":{
-        "time_stamp":1833043462.939900,
-        "version":0.400000
+        "time_stamp":5734933536.694500,
+        "version":0.500000
     },
     "smallcard_inventory":{
-        "time_stamp":918344972.934600,
-        "version":0.400000
+        "time_stamp":5735125975.669100,
+        "version":0.500000
     },
     "smallcard_mail":{
-        "time_stamp":3319589516.833900,
-        "version":0.400000
+        "time_stamp":5735171349.053300,
+        "version":0.500000
     },
     "smallcard_unit_attr_panel":{
         "time_stamp":1818056849.967900,

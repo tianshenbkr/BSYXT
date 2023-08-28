@@ -1,0 +1,12 @@
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":1885,"length":9,"category":1}
+{"messageText":"标识符“加怪”重复。","code":2300,"start":2103,"length":2,"category":1}
+{"messageText":"标识符“减怪”重复。","code":2300,"start":2281,"length":2,"category":1}
+{"messageText":"标识符“加怪”重复。","code":2300,"start":16652,"length":2,"category":1}
+{"messageText":"标识符“减怪”重复。","code":2300,"start":16830,"length":2,"category":1}
+{"messageText":"无法重新声明块范围变量“加怪了”。","code":2451,"start":17283,"length":3,"category":1}
+{"messageText":"“加怪了”表示值，但在此处用作类型。是否指“类型 加怪了”?","code":2749,"start":17324,"length":3,"category":1}
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":20104,"length":9,"category":1}
+{"messageText":"类型“typeof base”上不存在属性“map_ui”。","code":2339,"start":20127,"length":6,"category":1}
+{"messageText":"属性“link”没有初始化表达式，且未在构造函数中明确赋值。","code":2564,"start":20187,"length":4,"category":1}
+{"messageText":"无法重新声明块范围变量“加怪了”。","code":2451,"start":21719,"length":3,"category":1}
+{"messageText":"类型“typeof 加怪了”上不存在属性“add_event_common”。","code":2339,"start":23427,"length":16,"category":1}

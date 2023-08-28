@@ -9,12 +9,12 @@ local on_unit_prop = require '@common.base.gui.on_unit_prop'
 local ctrl_wrapper = require '@common.base.gui.ctrl_wrapper'
 
 
-local lib_control = require '@lib_control.component'
-local lib_game_options = require '@lib_game_options.component'
-local smallcard_choose_one = require '@smallcard_choose_one.component'
-local smallcard_unit_attr_panel = require '@smallcard_unit_attr_panel.component'
 local smallcard_inventory = require '@smallcard_inventory.component'
+local lib_control = require '@lib_control.component'
 local gameui = require '@gameui.component'
+local smallcard_choose_one = require '@smallcard_choose_one.component'
+local lib_game_options = require '@lib_game_options.component'
+local smallcard_unit_attr_panel = require '@smallcard_unit_attr_panel.component'
 
 return gui_pkg.page_template {
     flatten_template = {
@@ -24,7 +24,7 @@ return gui_pkg.page_template {
                 layout_grid_size = 30,
                 lock = true,
             },
-            color = 'rgba(0,0,0,0)',
+            color = 'rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,0);rgba(0,0,0,0)',
             image = '',
             layout = {
                 grow_height = 1,
@@ -35,6 +35,8 @@ return gui_pkg.page_template {
                 },
             },
             name = 'MainPage',
+            opacity = 1,
+            rotate = 0,
             show = true,
         },0,
         lib_game_options.设置按钮 {
@@ -99,7 +101,7 @@ return gui_pkg.page_template {
             name = '单位属性面板3',
             show = false,
         },1,
-        gameui.sci_1_rect {
+        gameui.xf_3_rect {
             border = {
                 bottom = 0,
                 left = 0,
@@ -151,7 +153,7 @@ return gui_pkg.page_template {
                 },
             },
         },1,
-        gameui.sci_1_rect {
+        gameui.xf_3_rect {
             border = {
                 bottom = 45,
                 left = 45,
@@ -201,6 +203,321 @@ return gui_pkg.page_template {
                     time = 0,
                 },
             },
+        },1,
+        ctrl_wrapper.panel {
+            color = 'rgba(216, 213, 213, 0.7843)',
+            layout = {
+                col_self = 'start',
+                height = 750.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 300.0,
+                    [2] = 150.0,
+                },
+                row_self = 'start',
+                width = 300.0,
+            },
+            name = '新手文字版',
+            rotate = 0,
+            show = false,
+        },1,
+        ctrl_wrapper.panel {
+            color = 'rgba(96, 96, 96, 0.7843)',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.打开人物属性主面板',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 270,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 2040.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '人物属性',
+            show = true,
+        },1,
+        ctrl_wrapper.panel {
+            color = 'rgba(122, 122, 122, 0.7843)',
+            layout = {
+                col_self = 'start',
+                height = 270,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 30.0,
+                    [2] = 2040.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '人物头像',
+            show = true,
+        },1,
+        ctrl_wrapper.button {
+            __EDIT_TIME = {
+                lock = false,
+            },
+            color = '#232323',
+            event = {},
+            layout = {
+                col_self = 'end',
+                height = 210,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = -510.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '修炼室',
+            round_corner_radius = 90,
+            show = true,
+        },1,
+        ctrl_wrapper.panel {
+            color = 'rgba(101, 101, 101, 0.7843)',
+            layout = {
+                col_self = 'start',
+                height = 270,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 240.0,
+                    [2] = 2040.0,
+                },
+                row_self = 'start',
+                width = 600,
+            },
+            name = '人物属性大面板',
+            rotate = 0,
+            show = true,
+        },1,
+        ctrl_wrapper.panel {
+            color = 'rgba(149, 149, 149, 0.7843)',
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 30.0,
+                    [2] = 1980.0,
+                },
+                row_self = 'start',
+                width = 450,
+            },
+            name = '战斗力大面板',
+            rotate = 0,
+            show = true,
+        },1,
+        ctrl_wrapper.panel {
+            __EDIT_TIME = {
+                lock = false,
+            },
+            color = 'rgba(111, 111, 111, 0.7843)',
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 540.0,
+                    [2] = 1980.0,
+                },
+                row_self = 'start',
+                width = 510,
+            },
+            name = '查看卡牌和技能UI',
+            rotate = 0,
+            show = true,
+        },1,
+        ctrl_wrapper.panel {
+            Array = {
+                array = 2,
+                enable = false,
+                template = '$$lib_control.template@gui_ctrl.lib_control_main',
+            },
+            color = 'rgba(58, 58, 58, 0.7843)',
+            layout = {
+                col_self = 'start',
+                height = 390,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 1470.0,
+                },
+                row_self = 'start',
+                width = 1080,
+            },
+            name = '十二个卡牌格子',
+            show = false,
+        },1,
+        ctrl_wrapper.panel {
+            __EDIT_TIME = {
+                lock = false,
+            },
+            color = 'rgba(102, 102, 102, 0.7843)',
+            layout = {
+                col_self = 'start',
+                grow_height = 0,
+                grow_width = 0,
+                height = 1260,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'center',
+                width = 1080,
+            },
+            name = '人物属性主面板',
+            show = false,
+        },1,
+        ctrl_wrapper.button {
+            color = '#232323',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.custom_click',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 120,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 810.0,
+                    [2] = 690.0,
+                },
+                row_self = 'start',
+                width = 270,
+            },
+            name = '挑战测试',
+            show = true,
+        },1,
+        ctrl_wrapper.button {
+            color = '#232323',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.custom_click',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 960.0,
+                    [2] = 960.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = '属性兑换',
+            show = true,
+        },1,
+        ctrl_wrapper.panel {
+            color = 'rgba(90, 90, 90, 0.7843)',
+            layout = {
+                col_self = 'start',
+                height = 450,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 930.0,
+                },
+                row_self = 'start',
+                width = 300,
+            },
+            name = '消息提示',
+            show = true,
+        },1,
+        ctrl_wrapper.button {
+            color = '#232323',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.custom_click',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 960.0,
+                    [2] = 1050.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = '背包',
+            show = true,
+        },1,
+        ctrl_wrapper.button {
+            color = '#232323',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.custom_click',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 960.0,
+                    [2] = 1140.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = '爬塔',
+            show = true,
+        },1,
+        ctrl_wrapper.button {
+            color = '#232323',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.custom_click',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 960.0,
+                    [2] = 1230.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = '不可思议的挑战',
+            show = true,
+        },1,
+        ctrl_wrapper.button {
+            color = '#232323',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.挑战等级突破BOSS',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 960.0,
+                    [2] = 1320.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = '等级突破按钮',
+            show = false,
         },1,
         ctrl_wrapper.label {
             font = {
@@ -420,7 +737,7 @@ return gui_pkg.page_template {
             name = '单位属性4',
             show_mode = 0,
         },5,
-        gameui.gf_1_minor_btn {
+        gameui.sci_2_minor_btn {
             active_image = 'image/btn/sci_1_major_active.png',
             border = {
                 bottom = 30,
@@ -699,6 +1016,2584 @@ return gui_pkg.page_template {
             },
             name = '待定1',
         },7,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                line_height = 1,
+                overflow = 'show',
+                size = 31,
+                vertical_align = 'center',
+                wrap = true,
+            },
+            layout = {
+                col_self = 'start',
+                height = 750,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'center',
+                width = 300,
+            },
+            name = '新手指引信息',
+            rotate = -90,
+            text = '新手任务1:击杀10只仙界黑鸟进度：0/10',
+        },8,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 150.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '法术收益',
+            text = '10倍',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 210.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '额外杀敌',
+            text = '0%',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 120.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '物理收益',
+            text = '10倍',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 180.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '额外金币',
+            text = '500%',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 210.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '额外杀敌：',
+            text = '额外杀敌：',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 120.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '物理收益：',
+            text = '物理收益：',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 150.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '法术收益：',
+            text = '法术收益：',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 180.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '额外金币：',
+            text = '额外金币：',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 90.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '穿甲：',
+            text = '穿甲：',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 30.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '暴击率：',
+            text = '暴击率：',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '攻击频率:',
+            text = '攻击频率:',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 60.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '爆伤：',
+            text = '爆伤：',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 30.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '暴击率',
+            text = '3%',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 90.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '穿甲',
+            text = '10%',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '攻击频率',
+            text = '5%',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 60.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '爆伤',
+            text = '999%',
+        },9,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 25,
+                vertical_align = 'bottom',
+            },
+            layout = {
+                col_self = 'center',
+                height = 270,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'center',
+                width = 210,
+            },
+            name = '人物血量',
+            rotate = 0,
+            text = '99999万/99999万',
+        },10,
+        ctrl_wrapper.label {
+            __EDIT_TIME = {
+                lock = false,
+            },
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.进入修炼室',},
+            },
+            font = {
+                size = 35,
+            },
+            layout = {
+                col_self = 'center',
+                height = 210,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'center',
+                width = 210,
+            },
+            name = '修炼室',
+            rotate = 0,
+            show = true,
+            text = '修炼室传送',
+        },11,
+        ctrl_wrapper.button {
+            color = '#232323',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.加怪',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 120.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 810.0,
+                    [2] = -1050.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '加怪',
+        },11,
+        ctrl_wrapper.button {
+            color = '#232323',
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.减怪',},
+            },
+            layout = {
+                col_self = 'start',
+                height = 120.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 960.0,
+                    [2] = -1050.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '减怪',
+        },11,
+        ctrl_wrapper.button {
+            color = '#232323',
+            layout = {
+                col_self = 'start',
+                height = 120,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 810.0,
+                    [2] = -1080.0,
+                },
+                row_self = 'start',
+                width = 270,
+            },
+            name = '挑战中',
+            show = false,
+        },11,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 930.0,
+                    [2] = -1050.0,
+                },
+                row_self = 'start',
+                width = 30,
+            },
+            name = '当前小兵等级',
+            text = '1',
+        },11,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                bold = true,
+                size = 20,
+                vertical_align = 'center',
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '人物境界文本',
+            rotate = 0,
+            text = '练气1',
+        },12,
+        ctrl_wrapper.panel {
+            color = 'rgba(123, 0, 255, 0.7843)',
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 330,
+            },
+            name = '经验条',
+        },12,
+        ctrl_wrapper.panel {
+            color = 'rgba(255,255,255,0.784)',
+            layout = {
+                col_self = 'start',
+                height = 60.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 30.0,
+                    [2] = 180.0,
+                },
+                row_self = 'start',
+                width = 60.0,
+            },
+            name = '属性2',
+            show = true,
+        },12,
+        ctrl_wrapper.panel {
+            color = 'rgba(255,255,255,0.784)',
+            layout = {
+                col_self = 'start',
+                height = 60.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 30.0,
+                    [2] = 90.0,
+                },
+                row_self = 'start',
+                width = 60.0,
+            },
+            name = '属性1',
+        },12,
+        ctrl_wrapper.panel {
+            color = 'rgba(255,255,255,0.784)',
+            layout = {
+                col_self = 'start',
+                height = 60.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 330.0,
+                    [2] = 150.0,
+                },
+                row_self = 'start',
+                width = 60.0,
+            },
+            name = '属性3',
+        },12,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 450,
+            },
+            name = '战斗力文本',
+            rotate = 0,
+            text = '战斗力：99999999京',
+        },13,
+        ctrl_wrapper.label {
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.查看卡牌',},
+            },
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '查看卡牌',
+            rotate = 0,
+            text = '查看卡牌',
+        },14,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 30.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '查看技能',
+            rotate = 0,
+            text = '查看技能',
+        },14,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 30,
+                vertical_align = 'center',
+                wrap = true,
+            },
+            layout = {
+                col_self = 'center',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = -495.0,
+                    [2] = -600.0,
+                },
+                row_self = 'center',
+                width = 90,
+            },
+            name = '生存',
+            rotate = 0,
+            text = '生存',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 60.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '生存面板文字1',
+            rotate = 0,
+            text = '生命增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 60.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '生命增幅',
+            rotate = 0,
+            text = '100%',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 90.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '生存面板文字2',
+            rotate = 0,
+            text = '生命恢复：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 90.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '生命恢复',
+            rotate = 0,
+            text = '100%',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 120.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '生存面板文字3',
+            rotate = 0,
+            text = '攻击回血：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 120.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '攻击回血',
+            rotate = 0,
+            text = '45%',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 150.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '生存面板文字4',
+            rotate = 0,
+            text = '伤害抵挡：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 180.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '生存面板文字5',
+            rotate = 0,
+            text = '伤害躲避：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 150.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '伤害抵挡',
+            rotate = 0,
+            text = '5',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 180.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '伤害躲避',
+            rotate = 0,
+            text = '50',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 210.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '输出',
+            rotate = 0,
+            text = '输出',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 270.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '输出面板文字1',
+            rotate = 0,
+            text = '物理伤害：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 270.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '物理伤害',
+            rotate = 0,
+            text = '100%',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 300.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '输出面板文字2',
+            rotate = 0,
+            text = '法术伤害：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 300.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '法术伤害',
+            rotate = 0,
+            text = '100%',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 390.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '资源面板文字1',
+            rotate = 0,
+            text = '额外经验：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 330.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '资源',
+            rotate = 0,
+            text = '资源',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 420.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '资源面板文字2',
+            rotate = 0,
+            text = '装备爆率：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 390.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '额外经验',
+            rotate = 0,
+            text = '100%',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 30,
+                vertical_align = 'center',
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 450.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '资源面板文字3',
+            rotate = 0,
+            text = '幸运值：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 420.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '装备爆率',
+            rotate = 0,
+            text = '100%',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 480.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '资源面板文字4',
+            rotate = 0,
+            text = '刷怪效率：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 450.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '幸运值',
+            rotate = 0,
+            text = '1',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 30,
+                vertical_align = 'center',
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 510.0,
+                },
+                row_self = 'start',
+                width = 240,
+            },
+            name = '资源面板文字5',
+            rotate = 0,
+            text = '额外练功怪数量：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 480.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '刷怪效率',
+            rotate = 0,
+            text = '%',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 330.0,
+                    [2] = 510.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '额外练功怪数量',
+            rotate = 0,
+            text = '0',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 540.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '每秒',
+            rotate = 0,
+            text = '每秒',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 630.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '每秒面板文字1',
+            rotate = 0,
+            text = '每秒身法：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 420.0,
+                    [2] = 600.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '每秒补充',
+            rotate = 0,
+            text = '（乘以根骨增幅）',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 600.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '每秒根骨',
+            rotate = 0,
+            text = '50.0',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 660.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '每秒面板文字3',
+            rotate = 0,
+            text = '每秒神念：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 420.0,
+                    [2] = 630.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '每秒补充',
+            rotate = 0,
+            text = '（乘以身法增幅）',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 630.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '每秒身法',
+            rotate = 0,
+            text = '50.0',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 690.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '每秒面板文字4',
+            rotate = 0,
+            text = '每秒生命：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 420.0,
+                    [2] = 660.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '每秒补充',
+            rotate = 0,
+            text = '（乘以神念增幅）',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 660.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '每秒神念',
+            rotate = 0,
+            text = '50.0',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 720.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '每秒面板文字5',
+            rotate = 0,
+            text = '每秒攻击：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 420.0,
+                    [2] = 690.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '每秒补充',
+            rotate = 0,
+            text = '（乘以生命增幅）',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 600.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '每秒面板文字2',
+            rotate = 0,
+            text = '每秒根骨：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 690.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '每秒生命',
+            rotate = 0,
+            text = '50.0',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 720.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '每秒攻击',
+            rotate = 0,
+            text = '50.0',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 420.0,
+                    [2] = 720.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '每秒补充',
+            rotate = 0,
+            text = '（乘以攻击增幅）',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 750.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '每秒面板文字6',
+            rotate = 0,
+            text = '每秒防御：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 750.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '每秒防御',
+            rotate = 0,
+            text = '50.0',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 840.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '杀敌面板文字',
+            rotate = 0,
+            text = '杀敌根骨：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 780.0,
+                },
+                row_self = 'start',
+                width = 90,
+            },
+            name = '杀敌',
+            rotate = 0,
+            text = '杀敌',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 870.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '杀敌面板文字',
+            rotate = 0,
+            text = '杀敌身法：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 840.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '杀敌根骨',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 900.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '杀敌面板文字',
+            rotate = 0,
+            text = '杀敌神念：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 870.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '杀敌身法',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 900.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '杀敌神念',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 930.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '杀敌面板文字',
+            rotate = 0,
+            text = '杀敌生命：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 930.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '杀敌生命',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 960.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '杀敌面板文字',
+            rotate = 0,
+            text = '杀敌攻击：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 960.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '杀敌攻击',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 990.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '基础增幅',
+            rotate = 0,
+            text = '基础增幅',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 1050.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '生命增幅',
+            rotate = 0,
+            show = false,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 1050.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '基础增幅面板文字',
+            rotate = 0,
+            show = false,
+            text = '生命增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 1050.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '伤害增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 1050.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '存档面板文字',
+            rotate = 0,
+            text = '伤害增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 1110.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '存档面板文字',
+            rotate = 0,
+            text = '神念增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 1080.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '根骨增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 1080.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '存档面板文字',
+            rotate = 0,
+            text = '根骨增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 1110.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '神念增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 1140.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '存档面板文字',
+            rotate = 0,
+            text = '身法增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 270.0,
+                    [2] = 1140.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '身法增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 540.0,
+                    [2] = 780.0,
+                },
+                row_self = 'start',
+                width = 150,
+            },
+            name = '最终增幅',
+            rotate = 0,
+            text = '最终增幅',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 630.0,
+                    [2] = 870.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '增幅面板文字',
+            rotate = 0,
+            text = '最终伤害增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 840.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '最终生命增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 630.0,
+                    [2] = 900.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '增幅面板文字',
+            rotate = 0,
+            text = '最终物穿增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 870.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '最终伤害增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 630.0,
+                    [2] = 930.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '增幅面板文字',
+            rotate = 0,
+            text = '最终法穿增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 900.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '最终物穿增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 630.0,
+                    [2] = 960.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '增幅面板文字',
+            rotate = 0,
+            text = '最终物爆增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 930.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '最终法穿增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 630.0,
+                    [2] = 990.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '增幅面板文字',
+            rotate = 0,
+            text = '最终法爆增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 960.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '最终物爆增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 630.0,
+                    [2] = 1020.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '增幅面板文字',
+            rotate = 0,
+            text = '最终普攻增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 630.0,
+                    [2] = 1050.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '增幅面板文字',
+            rotate = 0,
+            text = '最终技能增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 990.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '最终法爆增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 1020.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '最终普攻增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 630.0,
+                    [2] = 840.0,
+                },
+                row_self = 'start',
+                width = 210,
+            },
+            name = '增幅面板文字',
+            rotate = 0,
+            text = '最终生命增幅：',
+        },16,
+        ctrl_wrapper.label {
+            font = {
+                size = 30,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 840.0,
+                    [2] = 1050.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '最终技能增幅',
+            rotate = 0,
+            text = '8.59',
+        },16,
+        ctrl_wrapper.label {
+            event = {
+                on_click = call{client = '@busiyixiantu_5n1b.gui.ui_response.关闭人物属性主面板',},
+            },
+            font = {
+                size = 40,
+            },
+            layout = {
+                col_self = 'start',
+                height = 120.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 960.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = '关闭',
+            rotate = 0,
+            text = '关闭',
+        },16,
+        ctrl_wrapper.label {
+            event = {},
+            font = {
+                size = 22,
+            },
+            layout = {
+                col_self = 'start',
+                height = 120,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 270,
+            },
+            name = 'labelb4',
+            text = '主线挑战xxxxx',
+        },17,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 25,
+                vertical_align = 'center',
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = 'labelbb',
+            rotate = 0,
+            text = '属性兑换',
+        },18,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 30,
+                vertical_align = 'center',
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = 'labelc2',
+            rotate = 0,
+            text = '消息提示：',
+        },19,
+        ctrl_wrapper.label {
+            font = {
+                align = 'left',
+                size = 25,
+                vertical_align = 'top',
+            },
+            layout = {
+                col_self = 'start',
+                height = 390,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 60.0,
+                },
+                row_self = 'start',
+                width = 300,
+            },
+            name = '消息文本',
+            rotate = 0,
+            show = false,
+            text = '消耗50金币攻击力+100',
+        },19,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 25,
+                vertical_align = 'center',
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = 'labelbb',
+            rotate = 0,
+            text = '背包',
+        },20,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 25,
+                vertical_align = 'center',
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = 'labelbb',
+            rotate = 0,
+            text = '爬塔',
+        },21,
+        ctrl_wrapper.label {
+            event = {},
+            font = {
+                align = 'center',
+                size = 25,
+                vertical_align = 'center',
+                wrap = true,
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = 'labelbb',
+            rotate = 0,
+            text = '不可思议的挑战',
+        },22,
+        ctrl_wrapper.label {
+            font = {
+                align = 'center',
+                size = 25,
+                vertical_align = 'center',
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 90,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120,
+            },
+            name = 'labelbb',
+            rotate = 0,
+            show = true,
+            text = '等级突破',
+        },23,
         smallcard_choose_one.N选1_选项 {
             border = {
                 bottom = 0,
@@ -724,7 +3619,7 @@ return gui_pkg.page_template {
                 width = 316,
             },
             name = 'N选1_选项6',
-        },11,
+        },27,
         smallcard_choose_one.N选1_选项 {
             border = {
                 bottom = 0,
@@ -750,7 +3645,7 @@ return gui_pkg.page_template {
                 width = 316,
             },
             name = 'N选1_选项6',
-        },11,
+        },27,
         smallcard_choose_one.N选1_选项 {
             border = {
                 bottom = 0,
@@ -776,7 +3671,7 @@ return gui_pkg.page_template {
                 width = 316,
             },
             name = 'N选1_选项6',
-        },11,
+        },27,
         smallcard_choose_one.N选1_选项 {
             border = {
                 bottom = 0,
@@ -802,7 +3697,7 @@ return gui_pkg.page_template {
                 width = 316,
             },
             name = 'N选1_选项6',
-        },11,
+        },27,
         smallcard_choose_one.N选1_选项 {
             border = {
                 bottom = 0,
@@ -828,7 +3723,7 @@ return gui_pkg.page_template {
                 width = 316,
             },
             name = 'N选1_选项6',
-        },11,
+        },27,
         ctrl_wrapper.panel {
             color = 'rgba(255,255,255,0.784)',
             layout = {
@@ -844,7 +3739,7 @@ return gui_pkg.page_template {
                 width = 78.979797363281,
             },
             name = 'panel2d',
-        },19,
+        },35,
         ctrl_wrapper.label {
             font = {
                 color = 'rgba(17, 12, 12, 1.0000)',
@@ -866,7 +3761,7 @@ return gui_pkg.page_template {
             name = '体力信息',
             rotate = -90,
             text = '12/13',
-        },19,
+        },35,
         ctrl_wrapper.panel {
             color = 'rgba(255,255,255,0.784)',
             layout = {
@@ -882,7 +3777,7 @@ return gui_pkg.page_template {
                 width = 78.979797363281,
             },
             name = 'panel2d',
-        },20,
+        },36,
         ctrl_wrapper.label {
             font = {
                 color = 'rgba(17, 12, 12, 1.0000)',
@@ -904,7 +3799,7 @@ return gui_pkg.page_template {
             name = '体力信息',
             rotate = -90,
             text = '12/13',
-        },20,
+        },36,
         ctrl_wrapper.panel {
             color = 'rgba(255,255,255,0.784)',
             layout = {
@@ -920,7 +3815,7 @@ return gui_pkg.page_template {
                 width = 78.979797363281,
             },
             name = 'panel2d',
-        },22,
+        },38,
         ctrl_wrapper.label {
             font = {
                 color = 'rgba(17, 12, 12, 1.0000)',
@@ -942,7 +3837,324 @@ return gui_pkg.page_template {
             name = '体力信息',
             rotate = -90,
             text = '12/13',
-        },22,
+        },38,
+        ctrl_wrapper.label {
+            font = {
+                size = 35,
+            },
+            layout = {
+                col_self = 'start',
+                height = 120.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = 'label45',
+            rotate = 0,
+            text = '升小兵',
+        },69,
+        ctrl_wrapper.label {
+            font = {
+                size = 35,
+            },
+            layout = {
+                col_self = 'start',
+                height = 120.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 120.0,
+            },
+            name = 'label45',
+            rotate = 0,
+            text = '降小兵',
+        },70,
+        ctrl_wrapper.label {
+            font = {
+                size = 45,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 120,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 270,
+            },
+            name = 'labelc0',
+            rotate = 0,
+            text = '挑战中',
+        },71,
+        ctrl_wrapper.label {
+            font = {
+                bold = true,
+                size = 20,
+                wrap = false,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 300,
+            },
+            name = '经验条文本',
+            rotate = 0,
+            text = '经验条',
+        },74,
+        ctrl_wrapper.panel {
+            color = 'rgba(112, 248, 255, 0.7843)',
+            layout = {
+                col_self = 'end',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 0.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 330,
+            },
+            name = '经验长度',
+            rotate = 0,
+        },74,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '防御力文本',
+            rotate = 0,
+            text = '防御力：10%9999',
+        },75,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 60,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 180,
+            },
+            name = '攻击力文本',
+            rotate = 0,
+            text = '攻击力：10%99999',
+        },76,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 60.0,
+                    [2] = 60.0,
+                },
+                row_self = 'start',
+                width = 60,
+            },
+            name = '神念',
+            text = '神念：',
+        },77,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 60.0,
+                    [2] = -60.0,
+                },
+                row_self = 'start',
+                width = 60,
+            },
+            name = '根骨',
+            text = '根骨：',
+        },77,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 60.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 60,
+            },
+            name = '身法',
+            text = '身法：',
+        },77,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 120.0,
+                    [2] = 60.0,
+                },
+                row_self = 'start',
+                width = 60.0,
+            },
+            name = '神念百分比',
+            text = '0%',
+        },77,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 120.0,
+                    [2] = -60.0,
+                },
+                row_self = 'start',
+                width = 60.0,
+            },
+            name = '根骨百分比',
+            text = '0%',
+        },77,
+        ctrl_wrapper.label {
+            font = {
+                size = 14,
+            },
+            layout = {
+                col_self = 'start',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 120.0,
+                    [2] = 0.0,
+                },
+                row_self = 'start',
+                width = 60.0,
+            },
+            name = '身法百分比',
+            text = '0%',
+        },77,
+        ctrl_wrapper.label {
+            font = {
+                align = 'left',
+                size = 14,
+                vertical_align = 'center',
+            },
+            layout = {
+                col_self = 'center',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 75.0,
+                },
+                row_self = 'center',
+                width = 120.0,
+            },
+            name = '神念实际值',
+            text = '9999999',
+        },77,
+        ctrl_wrapper.label {
+            font = {
+                align = 'left',
+                size = 14,
+                vertical_align = 'center',
+            },
+            layout = {
+                col_self = 'center',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = -45.0,
+                },
+                row_self = 'center',
+                width = 120.0,
+            },
+            name = '根骨实际值',
+            text = '9999999',
+        },77,
+        ctrl_wrapper.label {
+            font = {
+                align = 'left',
+                size = 14,
+                vertical_align = 'center',
+            },
+            layout = {
+                col_self = 'center',
+                height = 30.0,
+                position = {},
+                ratio = {},
+                relative = {
+                    [1] = 90.0,
+                    [2] = 15.0,
+                },
+                row_self = 'center',
+                width = 120.0,
+            },
+            name = '身法实际值',
+            text = '9999999',
+        },77,
         smallcard_choose_one.N选1_选项名称 {
             font = {
                 bold = true,
@@ -962,7 +4174,7 @@ return gui_pkg.page_template {
                 width = -1,
             },
             name = 'N选1_选项名称7',
-        },34,
+        },174,
         smallcard_choose_one.N选1_选项图标 {
             layout = {
                 col_self = 'start',
@@ -979,7 +4191,7 @@ return gui_pkg.page_template {
             mask_image = '@smallcard_choose_one/image/icon_mask.png',
             name = 'N选1_选项图标8',
             show = true,
-        },34,
+        },174,
         smallcard_choose_one.N选1_选项描述 {
             font = {
                 align = 'center',
@@ -1000,7 +4212,7 @@ return gui_pkg.page_template {
                 width = 260,
             },
             name = 'N选1_选项描述9',
-        },34,
+        },174,
         smallcard_choose_one.N选1_选项名称 {
             font = {
                 bold = true,
@@ -1020,7 +4232,7 @@ return gui_pkg.page_template {
                 width = -1,
             },
             name = 'N选1_选项名称7',
-        },35,
+        },175,
         smallcard_choose_one.N选1_选项图标 {
             layout = {
                 col_self = 'start',
@@ -1036,7 +4248,7 @@ return gui_pkg.page_template {
             },
             mask_image = '@smallcard_choose_one/image/icon_mask.png',
             name = 'N选1_选项图标8',
-        },35,
+        },175,
         smallcard_choose_one.N选1_选项描述 {
             font = {
                 align = 'center',
@@ -1057,7 +4269,7 @@ return gui_pkg.page_template {
                 width = 260,
             },
             name = 'N选1_选项描述9',
-        },35,
+        },175,
         smallcard_choose_one.N选1_选项名称 {
             font = {
                 bold = true,
@@ -1077,7 +4289,7 @@ return gui_pkg.page_template {
                 width = -1,
             },
             name = 'N选1_选项名称7',
-        },36,
+        },176,
         smallcard_choose_one.N选1_选项图标 {
             layout = {
                 col_self = 'start',
@@ -1093,7 +4305,7 @@ return gui_pkg.page_template {
             },
             mask_image = '@smallcard_choose_one/image/icon_mask.png',
             name = 'N选1_选项图标8',
-        },36,
+        },176,
         smallcard_choose_one.N选1_选项描述 {
             font = {
                 align = 'center',
@@ -1114,7 +4326,7 @@ return gui_pkg.page_template {
                 width = 260,
             },
             name = 'N选1_选项描述9',
-        },36,
+        },176,
         smallcard_choose_one.N选1_选项名称 {
             font = {
                 bold = true,
@@ -1134,7 +4346,7 @@ return gui_pkg.page_template {
                 width = -1,
             },
             name = 'N选1_选项名称7',
-        },37,
+        },177,
         smallcard_choose_one.N选1_选项图标 {
             layout = {
                 col_self = 'start',
@@ -1150,7 +4362,7 @@ return gui_pkg.page_template {
             },
             mask_image = '@smallcard_choose_one/image/icon_mask.png',
             name = 'N选1_选项图标8',
-        },37,
+        },177,
         smallcard_choose_one.N选1_选项描述 {
             font = {
                 align = 'center',
@@ -1171,7 +4383,7 @@ return gui_pkg.page_template {
                 width = 260,
             },
             name = 'N选1_选项描述9',
-        },37,
+        },177,
         smallcard_choose_one.N选1_选项名称 {
             font = {
                 bold = true,
@@ -1191,7 +4403,7 @@ return gui_pkg.page_template {
                 width = -1,
             },
             name = 'N选1_选项名称7',
-        },38,
+        },178,
         smallcard_choose_one.N选1_选项图标 {
             layout = {
                 col_self = 'start',
@@ -1207,7 +4419,7 @@ return gui_pkg.page_template {
             },
             mask_image = '@smallcard_choose_one/image/icon_mask.png',
             name = 'N选1_选项图标8',
-        },38,
+        },178,
         smallcard_choose_one.N选1_选项描述 {
             font = {
                 align = 'center',
@@ -1228,6 +4440,6 @@ return gui_pkg.page_template {
                 width = 260,
             },
             name = 'N选1_选项描述9',
-        },38,
+        },178,
     }
 }

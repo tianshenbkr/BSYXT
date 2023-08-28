@@ -30,6 +30,7 @@
             "contents":{
             }
         },
+        "tips":"",
         "type":{
             "ElementName":"SimpleType",
             "breakPointInfo":{
@@ -45,7 +46,8 @@
                 "__TYPE":"Array",
                 "contents":{
                 }
-            }
+            },
+            "tips":""
         }
     },
     "displayName":"jj",
@@ -72,6 +74,7 @@
                                 "contents":{
                                 }
                             },
+                            "tips":"",
                             "valueSource":{
                                 "ElementName":"Source",
                                 "targetUninit":{
@@ -97,11 +100,13 @@
                                 "s_or_c":"client"
                             }
                         },
+                        "s_or_c":"client",
                         "staticWarningMsgs":{
                             "__TYPE":"Array",
                             "contents":{
                             }
-                        }
+                        },
+                        "tips":""
                     },
                     {
                         "ElementName":"Index",
@@ -120,6 +125,7 @@
                                 "contents":{
                                 }
                             },
+                            "tips":"",
                             "valueSource":{
                                 "ElementName":"Source",
                                 "targetUninit":{
@@ -145,11 +151,13 @@
                                 "s_or_c":"client"
                             }
                         },
+                        "s_or_c":"client",
                         "staticWarningMsgs":{
                             "__TYPE":"Array",
                             "contents":{
                             }
-                        }
+                        },
+                        "tips":""
                     }
                 ]
             }
@@ -167,6 +175,7 @@
                 },
                 "displayName":"",
                 "flags":{
+                    "noTypeIcon":true
                 },
                 "funcSource":{
                     "ElementName":"Source",
@@ -195,6 +204,7 @@
                                 "contents":{
                                 }
                             },
+                            "tips":"",
                             "valueSource":{
                                 "ElementName":"Source",
                                 "targetUninit":{
@@ -212,6 +222,7 @@
                     "contents":{
                     }
                 },
+                "tips":"",
                 "typeParameters":{
                     "__TYPE":"Array",
                     "contents":{
@@ -226,7 +237,7 @@
     "keyword":"",
     "name":"jj",
     "packageName":"busiyixiantu_5n1b",
-    "rankOrder":1,
+    "rankOrder":11,
     "realType":{
         "ElementName":"InstanceType",
         "breakPointInfo":{
@@ -250,6 +261,7 @@
             "contents":{
             }
         },
+        "tips":"",
         "typeArgs":{
             "__TYPE":"Array",
             "contents":{
@@ -297,6 +309,7 @@
                 "contents":{
                 }
             },
+            "tips":"",
             "types":{
                 "__TYPE":"Array",
                 "contents":[
@@ -323,6 +336,7 @@
                             "contents":{
                             }
                         },
+                        "tips":"",
                         "typeArgs":{
                             "__TYPE":"Array",
                             "contents":{
@@ -401,6 +415,7 @@
                                     "contents":{
                                     }
                                 },
+                                "tips":"",
                                 "typeParameters":{
                                     "__TYPE":"Array",
                                     "contents":{
@@ -423,6 +438,7 @@
                                     "contents":{
                                     }
                                 },
+                                "tips":"",
                                 "type":{
                                     "ElementName":"SimpleType",
                                     "breakPointInfo":{
@@ -438,7 +454,8 @@
                                         "__TYPE":"Array",
                                         "contents":{
                                         }
-                                    }
+                                    },
+                                    "tips":""
                                 },
                                 "value":"面板-科技"
                             }
@@ -450,6 +467,7 @@
                         "contents":{
                         }
                     },
+                    "tips":"",
                     "typeParameters":{
                         "__TYPE":"Array",
                         "contents":[
@@ -468,18 +486,21 @@
                                     "__TYPE":"Array",
                                     "contents":{
                                     }
-                                }
+                                },
+                                "tips":""
                             }
                         ]
                     }
                 },
                 "displayName":"面板",
                 "flags":{
+                    "noTypeIcon":true
                 },
                 "id":"Variable:新变量:3358722651",
                 "keyword":"",
                 "name":"面板",
                 "packageName":"busiyixiantu_5n1b",
+                "rankOrder":0,
                 "realType":{
                     "ElementName":"InstanceType",
                     "breakPointInfo":{
@@ -503,6 +524,7 @@
                         "contents":{
                         }
                     },
+                    "tips":"",
                     "typeArgs":{
                         "__TYPE":"Array",
                         "contents":{
