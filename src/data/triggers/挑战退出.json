@@ -12,6 +12,7 @@
                 },
                 "displayName":"",
                 "flags":{
+                    "enabled":false,
                     "noTypeIcon":true
                 },
                 "funcSource":{

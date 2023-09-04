@@ -1,20 +1,35 @@
+@busiyixiantu_5n1b/image/icons/011_t.png
+@busiyixiantu_5n1b/image/icons/013_t.png
+@busiyixiantu_5n1b/image/icons/024_t.png
+@busiyixiantu_5n1b/image/icons/040_t.png
+@busiyixiantu_5n1b/image/icons/041_t.png
+@busiyixiantu_5n1b/image/icons/044_t.png
 @default_units_ts/image/09_t.png
 @default_units_ts/image/ScrollsAndBooks_add_003_t.png
 @default_units_ts/image/icons/冲锋陷阵 (1).png
+@default_units_ts/image/icons/刀光 (1).png
 @default_units_ts/image/icons/刀扇 (1).png
 @default_units_ts/image/icons/剑刃风暴 (3).png
 @default_units_ts/image/icons/怒吼 (1).png
+@default_units_ts/image/icons/戳刺 (1).png
 @default_units_ts/image/icons/火球术 (1).png
 @default_units_ts/image/icons/盾击 (2).png
 @default_units_ts/image/icons/肉钩 (3).png
 @default_units_ts/image/icons/蛇棒攻击 (1).png
 @default_units_ts/image/icons/血焰之剑 (1).png
+@default_units_ts/image/icons/闪电链 (1).png
+@default_units_ts/image/icons/震荡波 (1).png
 Attack
 anim/human/barehanded_anim/hand_05/skill_01.ani
 anim/human/barehanded_anim/hand_05/skill_011.ani
 anim/human/barehanded_anim/hand_05/skill_02.ani
 anim/human/barehanded_anim/hand_05/skill_025.ani
+anim/human/barehanded_anim/hand_05/skill_028.ani
+anim/human/blade_anim/twohand_01/attack_03.ani
+anim/human/gun_anim/qiangxiezhanshi/skill_04.ani
+anim/human/magic_anim/MoFaShi/skill_01.ani
 anim/human/sword_anim/DaJianZhanShi/skill_04.ani
+anim/human/sword_anim/twohand_04/attack_02.ani
 born
 characters/Monster/SK_Spider_Burrow_S/model.prefab
 characters/general/sk_basic2/model.prefab
@@ -22,6 +37,7 @@ characters/heartbeat/mori/model.prefab
 characters/monster/sk_spider_burrow_s/model.prefab
 characters/monster/sk_vulture_bird/model.prefab
 characters/monster/sk_werewolf/model.prefab
+characters/monster_westfantasy/sk_jryg/model.prefab
 characters/tramcar_td/jinbi/model.prefab
 deco/engine/SM_Plane_A01/model.prefab
 deco/engine/SM_Plane_A02/model.prefab
@@ -29,6 +45,8 @@ deco/engine/SM_Plane_A03/model.prefab
 deco/engine/fake_shadow/model.prefab
 deco/handpaintedvol2_campsite/sm_backpack_01_base/model.prefab
 effect/SampleSpells/Hook/Hook_Hit/particle.effect
+effect/bp/shandain_dandao/shandiandandao_1/particle.effect
+effect/bp/shandain_dandao/shandiandandao_3/particle.effect
 effect/bp/yuan/ps_zhishi_1/particle.effect
 effect/bp/yuan/ps_zhishi_5/particle.effect
 effect/bp/yuan/ps_zhishi_7/particle.effect
@@ -37,6 +55,7 @@ effect/ceshi/shengli/particle.effect
 effect/ceshi/shibai/particle.effect
 effect/eff_Ceshi_1/particle/PS_Huo_5/particle.effect
 effect/eff_battle/particle/Zhishi/PS_Yuanxing_1/particle.effect
+effect/eff_reverse/particle/hades/daoguang/ps_daoguang_4/particle.effect
 effect/eff_reverse/particle/unknown/tongyong/ps_xuanyun_eff/particle.effect
 effect/eff_tank/particle/Indicator/PS_Skill_Effect_001_red/particle.effect
 effect/eff_tank/particle/PS_Skill_Effect_001/particle.effect
@@ -49,8 +68,10 @@ effect/eff_tongyong/huoqiu_blast/particle.effect
 effect/eff_tongyong/ps_daoguang_1/particle.effect
 effect/eff_tongyong/ps_shouji_1/particle.effect
 effect/eff_xujian/effect_dilie_001/particle.effect
+effect/eff_xujian/effect_emiti_003/particle.effect
 effect/eff_xujian/effect_fire_debuff/particle.effect
 effect/eff_xujian/effect_hit_001/particle.effect
+effect/eff_xujian/effect_light_01_01/particle.effect
 effect/eff_xujian/effect_tuowei_001/particle.effect
 effect/eff_xujian/effect_zhanshi_001/particle.effect
 effect/eff_xujian/effect_zhanshi_02/particle.effect
@@ -60,6 +81,14 @@ effect/eff_xujian/effect_zhanshi_04/particle.effect
 effect/eff_xujian/effect_zhanshi_hit/particle.effect
 effect/eff_xujian/effect_zhanshi_jian01/particle.effect
 effect/effect_new/eff_object/eff_diaoxiang_01/particle.effect
+effect/effect_new/effect_buff/eff_zhizhu_buff_01/particle.effect
+effect/effect_new/effect_hit/eff_hit_15/particle.effect
+effect/effect_new/effect_hit/ps_lightarrows_hit_eff/particle.effect
+effect/effect_new/effect_hit/ps_whirlingblade_hit_eff/particle.effect
+effect/effect_new/effect_knief/ps_swordbreath_eff/particle.effect
+effect/effect_new/effect_mofa/eff_mofa_05/particle.effect
+effect/effect_new/effect_mofa/eff_purplehit_01/particle.effect
+effect/effect_new/effect_scene/1/particle.effect
 effect/effect_new/effect_ui/eff_ui_biankuang006/particle.effect
 effect/effect_new/effect_zhishiqi/eff_juxing/ps_tou_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_juxing/ps_wei_1/particle.effect
@@ -84,19 +113,23 @@ effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_yuanxing_red_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_zhixiangxing_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_zhixiangxing_red_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_zhixianxing/ps_tou_1/particle.effect
+effect/effect_new1/effect_emit/eff_sacred_ray/particle.effect
 effect/samplespells/avatar/avatar_caster/particle.effect
 effect/samplespells/devotion/devotionaura/particle.effect
-effect/samplespells/fan_of_knives/fanofknives_hit/particle.effect
-effect/samplespells/fan_of_knives/fanofknives_missile/particle.effect
 effect/samplespells/hook/hook_missile/particle.effect
 effect/samplespells/snake ward/snake ward_attack/particle.effect
 effect/samplespells/snake ward/snake ward_hit/particle.effect
 eqpt/weapon/sk_nezha2_weapon205/model.prefab
 eqpt/weapon/sm_dr_sword_04_02/model.prefab
+image/_0005_移速up.png
+maps/busiyixiantu_5n1b/anim/mori/anim/human/blade_anim/twohand_01/attack_01.ani
 maps/busiyixiantu_5n1b/anim/sk_basic2/anim/human/sword_anim/DaJianZhanShi/skill_02.ani
 maps/busiyixiantu_5n1b/anim/sk_basic2/anim/human/sword_anim/DaJianZhanShi/skill_03.ani
 maps/busiyixiantu_5n1b/anim/sk_basic2/anim/human/sword_anim/DaJianZhanShi/skill_04.ani
 maps/busiyixiantu_5n1b/anim/sk_basic2/anim/human/sword_anim/dajianzhanshi/skill_01.ani
+maps/busiyixiantu_5n1b/anim/sk_jryg/anim/human/blade_anim/twohand_01/attack_03.ani
+maps/busiyixiantu_5n1b/anim/sk_spider_burrow_s/anim/human/blade_anim/twohand_01/attack_01.ani
+maps/busiyixiantu_5n1b/anim/sk_spider_burrow_s/anim/human/blade_anim/twohand_01/attack_03.ani
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_01.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_02.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_dirt_03.ogg
@@ -137,6 +170,9 @@ sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_05.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_06.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_07.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_water_08.ogg
+sound/a2_sfx/fight/impact/sfx_imp_sword_lit.ogg
+sound/a2_sfx/fight/magic/sfx_magic_casi_dark_flight_01.ogg
+sound/a2_sfx/fight/statuseffect/sfx_magicbeam_flash_03.ogg
 sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Box_Gold_Open.ogg
 sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Box_Ordinary_Open.ogg
 sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Show.ogg

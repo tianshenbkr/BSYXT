@@ -1,8 +1,8 @@
 local ____lualib = base.tsc
+local __TS__New = ____lualib.__TS__New
 local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__SuperTypeArgumentsFuncWrapper = ____lualib.__TS__SuperTypeArgumentsFuncWrapper
-local __TS__New = ____lualib.__TS__New
 local __TS__TypeReference = ____lualib.__TS__TypeReference
 local __TS__Keyword = ____lualib.__TS__Keyword
 local __TS__Class2 = ____lualib.__TS__Class2
@@ -83,6 +83,125 @@ Present = base.tsc.CLASSES.Present or __TS__Class2("Present")
 Array = base.tsc.CLASSES.Array or __TS__Class2("Array")
 busiyixiantu_5n1b = busiyixiantu_5n1b or ({})
 do
+    busiyixiantu_5n1b.ll = base.trigger_new(
+        function(当前触发器, e)
+            local 局部存档 = __TS__New(busiyixiantu_5n1b.玩家数据, {})
+            if true then
+                repeat
+                    local ____switch5 = e.key_keyboard
+                    local ____cond5 = ____switch5 == "H"
+                    if ____cond5 then
+                        do
+                            break
+                        end
+                    end
+                    ____cond5 = ____cond5 or ____switch5 == "G"
+                    if ____cond5 then
+                        do
+                            busiyixiantu_5n1b.玩家的主控单位:kill(busiyixiantu_5n1b.玩家的主控单位)
+                            break
+                        end
+                    end
+                    ____cond5 = ____cond5 or ____switch5 == "F"
+                    if ____cond5 then
+                        do
+                            base.create_item_on_unit(
+                                "$$busiyixiantu_5n1b.item.装备LV1.root",
+                                base.player(1):get_hero()
+                            )
+                            break
+                        end
+                    end
+                    ____cond5 = ____cond5 or ____switch5 == "D"
+                    if ____cond5 then
+                        do
+                            base.score_get_v2(
+                                __TS__New(
+                                    ScoreGetParam,
+                                    {},
+                                    base.player(1):user_id(),
+                                    "玩家数据"
+                                ),
+                                function(查询结果_数据集合)
+                                    local 新变量 = __TS__New(
+                                        ScoreSetParam,
+                                        {},
+                                        base.player(1):user_id(),
+                                        "玩家数据",
+                                        局部存档
+                                    )
+                                    local 查询结果_单一数据 = 查询结果_数据集合[1]
+                                    local 查询结果_值 = 查询结果_单一数据.value
+                                    __TS__New(ScoreCommitter, {})
+                                    新变量 = __TS__New(
+                                        ScoreSetParam,
+                                        {},
+                                        base.player(1):user_id(),
+                                        "玩家数据",
+                                        局部存档
+                                    )
+                                    base.get_last_created_score_committer():set(新变量)
+                                    base.get_last_created_score_committer():commit(
+                                        function()
+                                            log.debug(
+                                                __TS__New(
+                                                    ScoreGetParam,
+                                                    {},
+                                                    base.player(1):user_id(),
+                                                    "玩家数据"
+                                                ),
+                                                "success"
+                                            )
+                                        end,
+                                        function(错误码, 错误信息)
+                                            log.debug(错误信息)
+                                        end
+                                    )
+                                end,
+                                function(错误代码, 错误信息)
+                                    log.debug(错误信息)
+                                end
+                            )
+                            break
+                        end
+                    end
+                    ____cond5 = ____cond5 or ____switch5 == "C"
+                    if ____cond5 then
+                        do
+                            base.player(1):add("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond5 = ____cond5 or ____switch5 == "A"
+                    if ____cond5 then
+                        do
+                            base.add_skill_simple(
+                                base.player(1):get_hero(),
+                                "$$busiyixiantu_5n1b.spell.不能升级.root"
+                            )
+                            break
+                        end
+                    end
+                    ____cond5 = ____cond5 or ____switch5 == "B"
+                    if ____cond5 then
+                        do
+                            base.player(1):get_hero():find_skill("$$busiyixiantu_5n1b.spell.不能升级.root"):disable()
+                            break
+                        end
+                    end
+                    do
+                        do
+                            break
+                        end
+                    end
+                until true
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
     busiyixiantu_5n1b.小黑鸟的数量 = 0
     busiyixiantu_5n1b.修改提示怪物死亡数量UI文字 = __TS__Class()
     local 修改提示怪物死亡数量UI文字 = busiyixiantu_5n1b.修改提示怪物死亡数量UI文字
@@ -121,19 +240,6 @@ do
             if e.unit:get_name() == "$$busiyixiantu_5n1b.unit.小黑鸟.root" then
                 base.send_custom_event(__TS__New(busiyixiantu_5n1b.修改提示怪物死亡数量UI文字, {}, base.game))
                 busiyixiantu_5n1b.小黑鸟的数量 = busiyixiantu_5n1b.小黑鸟的数量 + 1
-                base.player_create_unit_ai(
-                    base.player(2),
-                    "$$busiyixiantu_5n1b.unit.金币怪.root",
-                    e.unit:get_scene_point(),
-                    0,
-                    true
-                )
-                base.timer_wait(
-                    1,
-                    function()
-                        base.get_last_created_unit():remove()
-                    end
-                )
                 if busiyixiantu_5n1b.小黑鸟的数量 == 10 then
                     busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_point("default", "大黑鸟的传送点", _G.present))
                     base.player_set_camera(
@@ -160,6 +266,30 @@ do
                     "$$busiyixiantu_5n1b.camera_property.新手任务区域3.root",
                     0.5
                 )
+                busiyixiantu_5n1b:给玩家升仙令(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.rpg_地图数据.升仙令测试.root"
+                )
+                base.add_skill_simple(
+                    base.player(1):get_hero(),
+                    "$$busiyixiantu_5n1b.spell.哈沙机.root"
+                )
+                base.add_skill_simple(
+                    base.player(1):get_hero(),
+                    "$$default_units_ts.spell.震荡波.root"
+                )
+                base.add_skill_simple(
+                    base.player(1):get_hero(),
+                    "$$busiyixiantu_5n1b.spell.超级激光.root"
+                )
+                base.add_skill_simple(
+                    base.player(1):get_hero(),
+                    "$$default_units_ts.spell.元素激流.root"
+                )
+                base.add_skill_simple(
+                    base.player(1):get_hero(),
+                    "$$default_units_ts.spell.刀扇.root"
+                )
             end
         end,
         {},
@@ -170,13 +300,14 @@ do
     busiyixiantu_5n1b.玩家单位设置初始化 = base.trigger_new(
         function(当前触发器, e)
             if true then
-                base.player(1):set_num("技能急速", 1)
+                base.player(1):set_num("技能急速", 100)
                 base.player(1):set_num("物理收益", 1)
                 base.player(1):set_num("身法", 100)
                 base.player(1):set_num("神念", 100)
                 base.player(1):set_num("根骨", 100)
                 base.player(1):set_num("生命增幅", 1)
                 base.player(1):get_hero():find_skill("$$busiyixiantu_5n1b.spell.不能升级.root"):disable()
+                base.player(1):get_hero():find_skill("$$busiyixiantu_5n1b.spell.复活时嘲讽.root"):disable()
             end
         end,
         {},
@@ -184,23 +315,8 @@ do
         nil,
         true
     )
-    busiyixiantu_5n1b.玩家的主控单位 = base.get_default_unit("初始地图_1", "[默认]远程英雄样例")
-    busiyixiantu_5n1b.清除怪物 = function()
-        base.player_create_unit_ai(
-            base.player(1),
-            "$$busiyixiantu_5n1b.unit.清除周围生物.root",
-            busiyixiantu_5n1b.玩家的主控单位:get_scene_point(),
-            0,
-            true
-        )
-        base.get_last_created_unit():remove()
-        base.timer_wait(
-            0.5,
-            function()
-                base.get_last_created_unit():remove()
-            end
-        )
-    end
+    busiyixiantu_5n1b.玩家的主控单位 = base.get_default_unit("初始地图_1", "[默认]远程英雄样例", "default")
+    busiyixiantu_5n1b.是否在主城 = true
     busiyixiantu_5n1b.加怪的怪物类型 = "$$busiyixiantu_5n1b.unit.小黑鸟.root"
     busiyixiantu_5n1b.刷怪判定 = true
     busiyixiantu_5n1b.刷怪数量 = 0
@@ -330,6 +446,7 @@ do
         function(当前触发器, e)
             if true then
                 base.add_skill_simple(e.unit, "$$busiyixiantu_5n1b.spell.献祭.root")
+                base.add_skill_simple(e.unit, "$$default_units_ts.spell.通用攻击-戳刺.root")
             end
         end,
         {},
@@ -340,28 +457,39 @@ do
     busiyixiantu_5n1b.玩家死亡 = base.trigger_new(
         function(当前触发器, e)
             if e.unit:get_name() == "$$busiyixiantu_5n1b.unit.修炼室小怪.root" then
-                busiyixiantu_5n1b:清除怪物()
+                busiyixiantu_5n1b:清除怪物(busiyixiantu_5n1b.玩家的主控单位:get_scene_point())
                 busiyixiantu_5n1b.玩家的主控单位:kill(busiyixiantu_5n1b.玩家的主控单位)
                 busiyixiantu_5n1b.刷怪判定 = false
             end
         end,
         {},
-        false,
+        true,
         nil,
         true
     )
     busiyixiantu_5n1b.进入修炼室 = base.trigger_new(
         function(当前触发器, e)
             if true then
+                if busiyixiantu_5n1b.是否在主城 ~= true then
+                    busiyixiantu_5n1b:清除怪物(busiyixiantu_5n1b.玩家的主控单位:get_scene_point())
+                else
+                    busiyixiantu_5n1b.是否在主城 = false
+                end
+                if busiyixiantu_5n1b.达到当前最高等级 == true then
+                    base.send_custom_event(__TS__New(busiyixiantu_5n1b.等级突破显示, {}, base.game, nil))
+                else
+                end
                 busiyixiantu_5n1b.刷怪判定 = true
+                busiyixiantu_5n1b.是否在加怪升级中 = false
+                busiyixiantu_5n1b.加怪的通关判定:disable()
+                busiyixiantu_5n1b.加怪记录 = 0
                 busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_area("default", "circle", "Circles_0", _G.present):get_scene_point())
                 base.player_set_camera(
                     base.player(1),
                     "$$busiyixiantu_5n1b.camera_property.修炼室.root",
                     0.1
                 )
-                busiyixiantu_5n1b.玩家的主控单位:add_custom("搜敌范围", false, 4500)
-                busiyixiantu_5n1b.玩家的主控单位:add_custom("攻击范围", false, 4500)
+                busiyixiantu_5n1b:修改玩家攻击距离(3300)
                 base.unit_add_ai(
                     busiyixiantu_5n1b.玩家的主控单位,
                     "default_ai",
@@ -389,7 +517,7 @@ do
             if true then
                 if busiyixiantu_5n1b.刷怪数量 < busiyixiantu_5n1b.加怪升级记录 then
                     busiyixiantu_5n1b.刷怪数量 = busiyixiantu_5n1b.刷怪数量 + 1
-                    busiyixiantu_5n1b:清除怪物()
+                    busiyixiantu_5n1b:清除怪物(busiyixiantu_5n1b.玩家的主控单位:get_scene_point())
                     base.timer_sleep(0.6)
                     busiyixiantu_5n1b.当前关卡刷怪数据 = base.eff.cache_ts(
                         __TS__Keyword("any"),
@@ -403,7 +531,7 @@ do
                         busiyixiantu_5n1b.刷怪判定 = false
                         busiyixiantu_5n1b.加怪的通关判定:enable()
                         busiyixiantu_5n1b.加怪的怪物类型 = 怪物数据.monster
-                        busiyixiantu_5n1b:清除怪物()
+                        busiyixiantu_5n1b:清除怪物(busiyixiantu_5n1b.玩家的主控单位:get_scene_point())
                         base.send_custom_event(__TS__New(busiyixiantu_5n1b.加怪挑战中, {}, base.game))
                         计时器 = base.timer_loop(
                             怪物数据.pulse,
@@ -443,7 +571,7 @@ do
             if true then
                 if busiyixiantu_5n1b.刷怪数量 >= 1 then
                     busiyixiantu_5n1b.刷怪数量 = busiyixiantu_5n1b.刷怪数量 - 1
-                    busiyixiantu_5n1b:清除怪物()
+                    busiyixiantu_5n1b:清除怪物(busiyixiantu_5n1b.玩家的主控单位:get_scene_point())
                     base.timer_sleep(0.6)
                     busiyixiantu_5n1b.当前关卡刷怪数据 = base.eff.cache_ts(
                         __TS__Keyword("any"),
@@ -495,9 +623,9 @@ do
     )
     busiyixiantu_5n1b.攻击力修改 = base.trigger_new(
         function(当前触发器, e)
-            if true then
+            if base.player(1):get_hero():is_alive_ex() then
                 base.player(1):get_hero():add_custom(
-                    "攻击",
+                    "额外攻击力",
                     false,
                     base.player(1):get_num("每秒攻击")
                 )
@@ -508,21 +636,11 @@ do
         nil,
         true
     )
-    busiyixiantu_5n1b.每秒攻击力修改 = base.trigger_new(
-        function(当前触发器, e)
-            if e.key_keyboard == "A" then
-                base.player(1):add("每秒攻击", 10)
-            end
-        end,
-        {},
-        true,
-        nil,
-        true
-    )
     busiyixiantu_5n1b.等级突破 = base.trigger_new(
         function(当前触发器, e)
             if e.unit == base.player(1):get_hero() and e.unit:get_level() == busiyixiantu_5n1b.等级数组[busiyixiantu_5n1b.玩家当前等级阶层 + 1] then
                 base.player(1):get_hero():find_skill("$$busiyixiantu_5n1b.spell.不能升级.root"):enable()
+                busiyixiantu_5n1b.达到当前最高等级 = true
                 base.send_custom_event(__TS__New(busiyixiantu_5n1b.等级突破显示, {}, base.game, nil))
             end
         end,
@@ -541,7 +659,7 @@ do
             if true then
                 busiyixiantu_5n1b.刷怪判定 = false
                 busiyixiantu_5n1b.是否在挑战等级突破BOSS = true
-                busiyixiantu_5n1b:清除怪物()
+                busiyixiantu_5n1b:清除怪物(base.get_scene_point("default", "Point_5", _G.present))
                 base.timer_wait(
                     1,
                     function()
@@ -560,6 +678,7 @@ do
                         )
                     end
                 )
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.打开修炼室UI, {}, base.game))
             end
         end,
         {},
@@ -575,10 +694,17 @@ do
                 BOSS数据列表[busiyixiantu_5n1b.玩家当前等级阶层 + 1]
             )
             if busiyixiantu_5n1b.是否在挑战等级突破BOSS == true and e.killer == busiyixiantu_5n1b.玩家的主控单位 and e.unit:get_name() == BOSS数据.monster then
-                base.send_custom_event(__TS__New(busiyixiantu_5n1b.等级突破显示, {}, base.game, busiyixiantu_5n1b.等级数组[busiyixiantu_5n1b.玩家当前等级阶层 + 1 + 1]))
+                if busiyixiantu_5n1b.特殊等级限制 == 0 then
+                    busiyixiantu_5n1b.特殊等级限制 = busiyixiantu_5n1b.特殊等级限制 + 1
+                else
+                end
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.显示等级, {}, base.game, busiyixiantu_5n1b.等级数组[busiyixiantu_5n1b.玩家当前等级阶层 + 1 + 1]))
                 base.player(1):get_hero():find_skill("$$busiyixiantu_5n1b.spell.不能升级.root"):disable()
                 busiyixiantu_5n1b.玩家当前等级阶层 = busiyixiantu_5n1b.玩家当前等级阶层 + 1
+                busiyixiantu_5n1b.达到当前最高等级 = false
                 busiyixiantu_5n1b.是否在挑战等级突破BOSS = false
+                base.timer_sleep(0.5)
+                busiyixiantu_5n1b:进入修炼室和修改UI()
             end
         end,
         {},
@@ -586,11 +712,30 @@ do
         nil,
         true
     )
+    busiyixiantu_5n1b.等级突破启用 = base.trigger_new(
+        function(当前触发器, e)
+            if true then
+                base.timer_sleep(0.6)
+                if busiyixiantu_5n1b.玩家当前等级阶层 == 0 and busiyixiantu_5n1b.升仙令等级 >= 2 and busiyixiantu_5n1b.特殊等级限制 == 0 then
+                    base.send_custom_event(__TS__New(busiyixiantu_5n1b.等级突破显示, {}, base.game, nil))
+                else
+                end
+                if busiyixiantu_5n1b.升仙令等级 >= 4 and base.player(1):get_hero():get_level() == busiyixiantu_5n1b.等级数组[busiyixiantu_5n1b.升仙令等级 - 3 + 1] then
+                    base.send_custom_event(__TS__New(busiyixiantu_5n1b.等级突破显示, {}, base.game, nil))
+                else
+                end
+            end
+        end,
+        {},
+        true,
+        nil,
+        true
+    )
     busiyixiantu_5n1b.等级数组 = __TS__New(
         Array,
         {__TS__Keyword("number")},
-        3,
         9,
+        19,
         29,
         39,
         49,
@@ -603,6 +748,8 @@ do
     busiyixiantu_5n1b.玩家当前等级阶层 = 0
     busiyixiantu_5n1b.BOSS怪物列表 = base.eff.cache("$$busiyixiantu_5n1b.wave.等级突破BOSS.root")
     busiyixiantu_5n1b.是否在挑战等级突破BOSS = false
+    busiyixiantu_5n1b.达到当前最高等级 = false
+    busiyixiantu_5n1b.特殊等级限制 = 0
     busiyixiantu_5n1b.等级突破显示 = __TS__Class()
     local 等级突破显示 = busiyixiantu_5n1b.等级突破显示
     等级突破显示.name = "等级突破显示"
@@ -620,87 +767,338 @@ do
         self.event_name = "等级突破显示"
         self.autoForward = true
     end
-    busiyixiantu_5n1b.ll = base.trigger_new(
+    busiyixiantu_5n1b.显示等级 = __TS__Class()
+    local 显示等级 = busiyixiantu_5n1b.显示等级
+    显示等级.name = "显示等级"
+    __TS__ClassExtends(
+        显示等级,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 显示等级.prototype.____constructor(self, obj, 等级)
+        __TS__SuperTypeArgumentsFuncWrapper(显示等级, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.等级 = 等级
+        self.event_name = "显示等级"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.清除怪物 = function(____, 清除中心点)
+        local 单位 = base.unit(0)
+        单位 = base.player_create_unit_ai(
+            base.player(1),
+            "$$busiyixiantu_5n1b.unit.清除周围生物.root",
+            清除中心点,
+            0,
+            false
+        )
+        base.timer_wait(
+            0.3,
+            function()
+                单位:remove()
+            end
+        )
+    end
+    busiyixiantu_5n1b.给玩家升仙令 = function(____, py, link)
+        base.sxl:create(py, link)
+    end
+    busiyixiantu_5n1b.修改玩家攻击距离 = function(____, 距离)
+        busiyixiantu_5n1b.玩家的主控单位:set_custom("攻击范围", false, 距离)
+        busiyixiantu_5n1b.玩家的主控单位:set_custom("搜敌范围", false, 距离)
+    end
+    busiyixiantu_5n1b.进入修炼室和修改UI = function()
+        base.trigger_call(busiyixiantu_5n1b.进入修炼室, e, true)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.进入修炼室消息事件, {}, base.game))
+    end
+    busiyixiantu_5n1b.trg挑战注册 = base.trigger_new(
         function(当前触发器, e)
-            local 新变量_2 = true
-            local 局部存档 = __TS__New(busiyixiantu_5n1b.玩家数据, {})
+            if true then
+                busiyixiantu_5n1b:func_创建rpg_挑战(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.rpg_challenge.主线挑战.root"
+                )
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.挑战退出 = base.trigger_new(
+        function(当前触发器, e)
+            if true then
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.镜头跟随 = base.trigger_new(
+        function(当前触发器, e)
+            if e.rpg_challenge.link == "$$busiyixiantu_5n1b.rpg_challenge.主线挑战.root" then
+                busiyixiantu_5n1b.刷怪判定 = false
+                busiyixiantu_5n1b:清除怪物(base.get_scene_point("default", "Point_5", _G.present))
+                base.timer_sleep(0.5)
+                busiyixiantu_5n1b:修改玩家攻击距离(1900)
+                busiyixiantu_5n1b.是否在主城 = true
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.主线任务关闭ui, {}, base.game, e.id))
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.打开修炼室UI, {}, base.game))
+                if e.id <= 5 then
+                    base.player_set_camera(
+                        base.player(1),
+                        "$$busiyixiantu_5n1b.camera_property.主线任务-草原.root",
+                        0.1
+                    )
+                    busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_point("default", "草原玩家", _G.present))
+                else
+                end
+                if e.id >= 6 and e.id <= 10 then
+                    busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_point("default", "沙漠玩家", _G.present))
+                    base.player_set_camera(
+                        base.player(1),
+                        "$$busiyixiantu_5n1b.camera_property.主线任务-沙漠.root",
+                        0.1
+                    )
+                else
+                end
+                if e.id >= 11 and e.id <= 15 then
+                    busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_point("default", "熔岩玩家", _G.present))
+                    base.player_set_camera(
+                        base.player(1),
+                        "$$busiyixiantu_5n1b.camera_property.主线任务-熔岩.root",
+                        0.1
+                    )
+                else
+                end
+                if e.id >= 16 and e.id <= 20 then
+                    busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_point("default", "区域4玩家", _G.present))
+                    base.player_set_camera(
+                        base.player(1),
+                        "$$busiyixiantu_5n1b.camera_property.主线任务-区域4.root",
+                        0.1
+                    )
+                else
+                end
+                if e.id >= 21 and e.id <= 25 then
+                    busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_point("default", "区域5玩家", _G.present))
+                    base.player_set_camera(
+                        base.player(1),
+                        "$$busiyixiantu_5n1b.camera_property.主线任务-区域5.root",
+                        0.1
+                    )
+                else
+                end
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.主线挑战属性奖励 = base.trigger_new(
+        function(当前触发器, e)
             if true then
                 repeat
-                    local ____switch66 = e.key_keyboard
-                    local ____cond66 = ____switch66 == "D"
-                    if ____cond66 then
+                    local ____switch110 = e.关卡数
+                    local ____cond110 = ____switch110 == 1
+                    if ____cond110 then
                         do
-                            base.score_get_v2(
-                                __TS__New(
-                                    ScoreGetParam,
-                                    {},
-                                    base.player(1):user_id(),
-                                    "玩家数据"
-                                ),
-                                function(查询结果_数据集合)
-                                    local 新变量 = __TS__New(
-                                        ScoreSetParam,
-                                        {},
-                                        base.player(1):user_id(),
-                                        "玩家数据",
-                                        局部存档
-                                    )
-                                    local 查询结果_单一数据 = 查询结果_数据集合[1]
-                                    local 查询结果_值 = 查询结果_单一数据.value
-                                    __TS__New(ScoreCommitter, {})
-                                    新变量 = __TS__New(
-                                        ScoreSetParam,
-                                        {},
-                                        base.player(1):user_id(),
-                                        "玩家数据",
-                                        局部存档
-                                    )
-                                    base.get_last_created_score_committer():set(新变量)
-                                    base.get_last_created_score_committer():commit(
-                                        function()
-                                            log.debug(
-                                                __TS__New(
-                                                    ScoreGetParam,
-                                                    {},
-                                                    base.player(1):user_id(),
-                                                    "玩家数据"
-                                                ),
-                                                "success"
-                                            )
-                                        end,
-                                        function(错误码, 错误信息)
-                                            log.debug(错误信息)
-                                        end
-                                    )
-                                end,
-                                function(错误代码, 错误信息)
-                                    log.debug(错误信息)
-                                end
-                            )
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
                             break
                         end
                     end
-                    ____cond66 = ____cond66 or ____switch66 == "C"
-                    if ____cond66 then
+                    ____cond110 = ____cond110 or ____switch110 == 2
+                    if ____cond110 then
                         do
-                            base.player(1):add("每秒攻击", 10)
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
                             break
                         end
                     end
-                    ____cond66 = ____cond66 or ____switch66 == "A"
-                    if ____cond66 then
+                    ____cond110 = ____cond110 or ____switch110 == 3
+                    if ____cond110 then
                         do
-                            base.add_skill_simple(
-                                base.player(1):get_hero(),
-                                "$$busiyixiantu_5n1b.spell.不能升级.root"
-                            )
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
                             break
                         end
                     end
-                    ____cond66 = ____cond66 or ____switch66 == "B"
-                    if ____cond66 then
+                    ____cond110 = ____cond110 or ____switch110 == 4
+                    if ____cond110 then
                         do
-                            base.player(1):get_hero():find_skill("$$busiyixiantu_5n1b.spell.不能升级.root"):disable()
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 5
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 6
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 7
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 8
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 9
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 10
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 11
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 12
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 13
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 14
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 15
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 16
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 17
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 18
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 19
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 20
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 21
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 22
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 23
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 24
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
+                            break
+                        end
+                    end
+                    ____cond110 = ____cond110 or ____switch110 == 25
+                    if ____cond110 then
+                        do
+                            base.player(1):set_num("每秒攻击", 100)
+                            base.player(1):set_num("每秒攻击", 100)
                             break
                         end
                     end
@@ -717,51 +1115,37 @@ do
         nil,
         true
     )
-    busiyixiantu_5n1b.trg挑战注册 = base.trigger_new(
-        function(当前触发器, e)
-            if true then
-                log.debug(
-                    "测试-注册挑战",
-                    base.player(1),
-                    "$$busiyixiantu_5n1b.rpg_challenge.挑战测试.root"
-                )
-                busiyixiantu_5n1b:func_创建rpg_挑战(
-                    base.player(1),
-                    "$$busiyixiantu_5n1b.rpg_challenge.挑战测试.root"
-                )
-            end
-        end,
-        {},
-        false,
-        nil,
-        true
-    )
-    busiyixiantu_5n1b.挑战退出 = base.trigger_new(
-        function(当前触发器, e)
-            if true then
-                log.debug("挑战退出", e.player)
-            end
-        end,
-        {},
-        false,
-        nil,
-        true
-    )
-    busiyixiantu_5n1b.玩家_完成rpg挑战自动退出 = __TS__Class()
-    local 玩家_完成rpg挑战自动退出 = busiyixiantu_5n1b.玩家_完成rpg挑战自动退出
-    玩家_完成rpg挑战自动退出.name = "玩家_完成rpg挑战自动退出"
+    busiyixiantu_5n1b.客户端关闭爬塔UI = __TS__Class()
+    local 客户端关闭爬塔UI = busiyixiantu_5n1b.客户端关闭爬塔UI
+    客户端关闭爬塔UI.name = "客户端关闭爬塔UI"
     __TS__ClassExtends(
-        玩家_完成rpg挑战自动退出,
+        客户端关闭爬塔UI,
         TriggerEvent,
         function()
             return {}
         end
     )
-    function 玩家_完成rpg挑战自动退出.prototype.____constructor(self, obj, player)
-        __TS__SuperTypeArgumentsFuncWrapper(玩家_完成rpg挑战自动退出, {}, TriggerEvent.prototype.____constructor)(self)
+    function 客户端关闭爬塔UI.prototype.____constructor(self, obj)
+        __TS__SuperTypeArgumentsFuncWrapper(客户端关闭爬塔UI, {}, TriggerEvent.prototype.____constructor)(self)
         self.obj = obj
-        self.player = player
-        self.event_name = "玩家_完成rpg挑战自动退出"
+        self.event_name = "客户端关闭爬塔UI"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.主线挑战完成 = __TS__Class()
+    local 主线挑战完成 = busiyixiantu_5n1b.主线挑战完成
+    主线挑战完成.name = "主线挑战完成"
+    __TS__ClassExtends(
+        主线挑战完成,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 主线挑战完成.prototype.____constructor(self, obj, 关卡数)
+        __TS__SuperTypeArgumentsFuncWrapper(主线挑战完成, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.关卡数 = 关卡数
+        self.event_name = "主线挑战完成"
         self.autoForward = false
     end
     busiyixiantu_5n1b.func_测试面板注册按钮 = function(____, text, func, 列)
@@ -785,6 +1169,42 @@ do
         self.每秒攻击 = 10
         self.每秒防御 = 12
     end
+    busiyixiantu_5n1b.玩家_rpg挑战开始 = __TS__Class()
+    local 玩家_rpg挑战开始 = busiyixiantu_5n1b.玩家_rpg挑战开始
+    玩家_rpg挑战开始.name = "玩家_rpg挑战开始"
+    __TS__ClassExtends(
+        玩家_rpg挑战开始,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 玩家_rpg挑战开始.prototype.____constructor(self, obj, player, rpg_challenge, id)
+        __TS__SuperTypeArgumentsFuncWrapper(玩家_rpg挑战开始, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.player = player
+        self.rpg_challenge = rpg_challenge
+        self.id = id
+        self.event_name = "玩家_rpg挑战开始"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.玩家_完成rpg挑战自动退出 = __TS__Class()
+    local 玩家_完成rpg挑战自动退出 = busiyixiantu_5n1b.玩家_完成rpg挑战自动退出
+    玩家_完成rpg挑战自动退出.name = "玩家_完成rpg挑战自动退出"
+    __TS__ClassExtends(
+        玩家_完成rpg挑战自动退出,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 玩家_完成rpg挑战自动退出.prototype.____constructor(self, obj, player)
+        __TS__SuperTypeArgumentsFuncWrapper(玩家_完成rpg挑战自动退出, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.player = player
+        self.event_name = "玩家_完成rpg挑战自动退出"
+        self.autoForward = true
+    end
     busiyixiantu_5n1b.造成伤害前 = __TS__Class()
     local 造成伤害前 = busiyixiantu_5n1b.造成伤害前
     造成伤害前.name = "造成伤害前"
@@ -801,6 +1221,89 @@ do
         self.伤害大小 = 伤害大小
         self.伤害来源 = 伤害来源
         self.event_name = "造成伤害前"
+        self.autoForward = false
+    end
+    busiyixiantu_5n1b.主线任务关闭ui = __TS__Class()
+    local 主线任务关闭ui = busiyixiantu_5n1b.主线任务关闭ui
+    主线任务关闭ui.name = "主线任务关闭ui"
+    __TS__ClassExtends(
+        主线任务关闭ui,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 主线任务关闭ui.prototype.____constructor(self, obj, 关卡数)
+        __TS__SuperTypeArgumentsFuncWrapper(主线任务关闭ui, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.关卡数 = 关卡数
+        self.event_name = "主线任务关闭ui"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.升仙令挑战 = __TS__Class()
+    local 升仙令挑战 = busiyixiantu_5n1b.升仙令挑战
+    升仙令挑战.name = "升仙令挑战"
+    __TS__ClassExtends(
+        升仙令挑战,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 升仙令挑战.prototype.____constructor(self, obj, player)
+        __TS__SuperTypeArgumentsFuncWrapper(升仙令挑战, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.player = player
+        self.event_name = "升仙令挑战"
+        self.autoForward = false
+    end
+    busiyixiantu_5n1b.打开修炼室UI = __TS__Class()
+    local 打开修炼室UI = busiyixiantu_5n1b.打开修炼室UI
+    打开修炼室UI.name = "打开修炼室UI"
+    __TS__ClassExtends(
+        打开修炼室UI,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 打开修炼室UI.prototype.____constructor(self, obj)
+        __TS__SuperTypeArgumentsFuncWrapper(打开修炼室UI, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.event_name = "打开修炼室UI"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.进入修炼室消息事件 = __TS__Class()
+    local 进入修炼室消息事件 = busiyixiantu_5n1b.进入修炼室消息事件
+    进入修炼室消息事件.name = "进入修炼室消息事件"
+    __TS__ClassExtends(
+        进入修炼室消息事件,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 进入修炼室消息事件.prototype.____constructor(self, obj)
+        __TS__SuperTypeArgumentsFuncWrapper(进入修炼室消息事件, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.event_name = "进入修炼室消息事件"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.特殊UI修改需求服务器端 = __TS__Class()
+    local 特殊UI修改需求服务器端 = busiyixiantu_5n1b.特殊UI修改需求服务器端
+    特殊UI修改需求服务器端.name = "特殊UI修改需求服务器端"
+    __TS__ClassExtends(
+        特殊UI修改需求服务器端,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 特殊UI修改需求服务器端.prototype.____constructor(self, obj, index)
+        __TS__SuperTypeArgumentsFuncWrapper(特殊UI修改需求服务器端, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.index = index
+        self.event_name = "特殊UI修改需求服务器端"
         self.autoForward = false
     end
     busiyixiantu_5n1b.玩家单位属性更新 = base.trigger_new(
@@ -846,44 +1349,44 @@ do
     busiyixiantu_5n1b.玩家单位属性计算 = function(____, 需要返回的数据)
         local result = 0
         repeat
-            local ____switch90 = 需要返回的数据
-            local ____cond90 = ____switch90 == "攻击力"
-            if ____cond90 then
+            local ____switch155 = 需要返回的数据
+            local ____cond155 = ____switch155 == "攻击力"
+            if ____cond155 then
                 do
                     result = (busiyixiantu_5n1b.玩家的主控单位:get_ex("基础攻击力", 1) + (busiyixiantu_5n1b.玩家的主控单位:get_ex("攻击力修正", 1) + base.player(1):get_num("身法") * 0.3 + base.player(1):get_num("主属性") * busiyixiantu_5n1b.玩家的主控单位:get_ex("攻击系数", 1))) * (1 + base.player(1):get_num("攻击力增幅")) + busiyixiantu_5n1b.玩家的主控单位:get_ex("额外攻击力", 1)
                     break
                 end
             end
-            ____cond90 = ____cond90 or ____switch90 == "防御力"
-            if ____cond90 then
+            ____cond155 = ____cond155 or ____switch155 == "防御力"
+            if ____cond155 then
                 do
                     result = busiyixiantu_5n1b.玩家的主控单位:get_ex("基础防御力", 1) + busiyixiantu_5n1b.玩家的主控单位:get_ex("防御力修正", 1)
                     break
                 end
             end
-            ____cond90 = ____cond90 or ____switch90 == "生命值上限"
-            if ____cond90 then
+            ____cond155 = ____cond155 or ____switch155 == "生命值上限"
+            if ____cond155 then
                 do
                     result = ((busiyixiantu_5n1b.玩家的主控单位:get_ex("基础生命值", 1) + (busiyixiantu_5n1b.玩家的主控单位:get_ex("生命值修正", 1) + base.player(1):get_num("根骨") * 1)) * (1 + base.player(1):get_num("生命增幅")) + busiyixiantu_5n1b.玩家的主控单位:get_ex("额外生命值", 1)) * (base.player(1):get_num("最终生命增幅") + 1)
                     break
                 end
             end
-            ____cond90 = ____cond90 or ____switch90 == "魔法值上限"
-            if ____cond90 then
+            ____cond155 = ____cond155 or ____switch155 == "魔法值上限"
+            if ____cond155 then
                 do
                     result = ((busiyixiantu_5n1b.玩家的主控单位:get_ex("基础魔法值", 1) + (busiyixiantu_5n1b.玩家的主控单位:get_ex("魔法值修正", 1) + base.player(1):get_num("神念") * 1)) * (1 + base.player(1):get_num("魔法增幅")) + busiyixiantu_5n1b.玩家的主控单位:get_ex("额外魔法值", 1)) * (base.player(1):get_num("最终魔法增幅") + 1)
                     break
                 end
             end
-            ____cond90 = ____cond90 or ____switch90 == "攻击速度倍率"
-            if ____cond90 then
+            ____cond155 = ____cond155 or ____switch155 == "攻击速度倍率"
+            if ____cond155 then
                 do
                     result = 1 / (busiyixiantu_5n1b.玩家的主控单位:get_ex("攻击前摇", 1) / (1 + base.player(1):get_num("攻击速度")) + busiyixiantu_5n1b.玩家的主控单位:get_ex("攻击后摇", 1) * 100 / (100 + base.player(1):get_num("攻击急速")) + 0.1)
                     break
                 end
             end
-            ____cond90 = ____cond90 or ____switch90 == "冷却缩减"
-            if ____cond90 then
+            ____cond155 = ____cond155 or ____switch155 == "冷却缩减"
+            if ____cond155 then
                 do
                     result = base.player(1):get_num("技能急速") / (100 + base.player(1):get_num("技能急速"))
                     break
@@ -972,6 +1475,835 @@ do
         end
         return 计算最终伤害2
     end
+    busiyixiantu_5n1b.攻击回血 = base.trigger_new(
+        function(当前触发器, e)
+            if e.unit == busiyixiantu_5n1b.玩家的主控单位 then
+                if busiyixiantu_5n1b.玩家的主控单位:get_ex("生命", 0) ~= busiyixiantu_5n1b.玩家的主控单位:get_ex("生命上限", 0) then
+                    busiyixiantu_5n1b.玩家的主控单位:add_custom(
+                        "生命",
+                        false,
+                        busiyixiantu_5n1b.玩家的主控单位:get_ex("生命上限", 0) * (busiyixiantu_5n1b.玩家的主控单位:get_ex("攻击回血", 0) / 100)
+                    )
+                    base.unit_texttag(
+                        base.player(1):get_hero(),
+                        busiyixiantu_5n1b.玩家的主控单位,
+                        base.force_as(
+                            __TS__Keyword("string"),
+                            busiyixiantu_5n1b.玩家的主控单位:get_ex("生命上限", 0) * (busiyixiantu_5n1b.玩家的主控单位:get_ex("攻击回血", 0) / 100)
+                        ),
+                        "生命恢复",
+                        "ally|sight",
+                        0,
+                        255,
+                        0,
+                        3
+                    )
+                else
+                end
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.升仙令挑战完成 = __TS__Class()
+    local 升仙令挑战完成 = busiyixiantu_5n1b.升仙令挑战完成
+    升仙令挑战完成.name = "升仙令挑战完成"
+    __TS__ClassExtends(
+        升仙令挑战完成,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 升仙令挑战完成.prototype.____constructor(self, obj)
+        __TS__SuperTypeArgumentsFuncWrapper(升仙令挑战完成, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.event_name = "升仙令挑战完成"
+        self.autoForward = false
+    end
+    busiyixiantu_5n1b.升仙令选择主属性 = __TS__Class()
+    local 升仙令选择主属性 = busiyixiantu_5n1b.升仙令选择主属性
+    升仙令选择主属性.name = "升仙令选择主属性"
+    __TS__ClassExtends(
+        升仙令选择主属性,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 升仙令选择主属性.prototype.____constructor(self, obj)
+        __TS__SuperTypeArgumentsFuncWrapper(升仙令选择主属性, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.event_name = "升仙令选择主属性"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.升仙令客户端消息 = __TS__Class()
+    local 升仙令客户端消息 = busiyixiantu_5n1b.升仙令客户端消息
+    升仙令客户端消息.name = "升仙令客户端消息"
+    __TS__ClassExtends(
+        升仙令客户端消息,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 升仙令客户端消息.prototype.____constructor(self, obj, 等级)
+        __TS__SuperTypeArgumentsFuncWrapper(升仙令客户端消息, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.等级 = 等级
+        self.event_name = "升仙令客户端消息"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.升仙令等级 = 1
+    busiyixiantu_5n1b.升仙令 = base.trigger_new(
+        function(当前触发器, e)
+            if true then
+                base.timer_sleep(0.5)
+                busiyixiantu_5n1b.升仙令等级 = busiyixiantu_5n1b.升仙令等级 + 1
+                busiyixiantu_5n1b:修改玩家攻击距离(1300)
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.升仙令客户端消息, {}, base.game, busiyixiantu_5n1b.升仙令等级))
+                repeat
+                    local ____switch187 = busiyixiantu_5n1b.升仙令等级
+                    local ____cond187 = ____switch187 == 2
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV2.root"
+                            )
+                            base.player(1):add("每秒攻击", 100)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 47500)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 3
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV3.root"
+                            )
+                            base.player(1):add("每秒攻击", 400)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 192000)
+                            base.send_custom_event(__TS__New(busiyixiantu_5n1b.升仙令选择主属性, {}, base.game))
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 4
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV4.root"
+                            )
+                            base.player(1):add("每秒攻击", 500)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 400000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 5
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV5.root"
+                            )
+                            base.player(1):add("每秒攻击", 1000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 420000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 6
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV6.root"
+                            )
+                            base.player(1):add("每秒攻击", 5000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 2520000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 7
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV7.root"
+                            )
+                            base.player(1):add("每秒攻击", 2500)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 1980000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 8
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV8.root"
+                            )
+                            base.player(1):add("每秒攻击", 12500)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 4000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 9
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV9.root"
+                            )
+                            base.player(1):add("每秒攻击", 10000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 6000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 10
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 90000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 18000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 11
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.11升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 135000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 20000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 12
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.12升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 405000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 30000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 13
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.13升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 600000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 60000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 14
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.14升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 900000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 180000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 15
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.15升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 2700000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 210000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 16
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.16升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 3950000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 500000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 17
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.17升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 12000000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 2000000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 18
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.18升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 18000000)
+                            base.player(1):get_hero():add_custom("额外生命值", false, 10000000000)
+                            break
+                        end
+                    end
+                    ____cond187 = ____cond187 or ____switch187 == 19
+                    if ____cond187 then
+                        do
+                            busiyixiantu_5n1b:给玩家升仙令(
+                                base.player(1),
+                                "$$busiyixiantu_5n1b.rpg_地图数据.19升仙令.root"
+                            )
+                            base.player(1):set_num("每秒攻击", 77777777)
+                            break
+                        end
+                    end
+                    do
+                        do
+                            break
+                        end
+                    end
+                until true
+                busiyixiantu_5n1b:进入修炼室和修改UI()
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.升仙令挑战开始 = base.trigger_new(
+        function(当前触发器, e)
+            if true then
+                busiyixiantu_5n1b.刷怪判定 = false
+                busiyixiantu_5n1b:清除怪物(busiyixiantu_5n1b.玩家的主控单位:get_scene_point())
+                base.timer_sleep(0.5)
+                base.player_set_camera(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.camera_property.升仙令.root",
+                    0.1
+                )
+                busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_point("default", "升仙令玩家", _G.present))
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.打开修炼室UI, {}, base.game))
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.合成装备 = base.trigger_new(
+        function(当前触发器, e)
+            local 玩家物品 = base.player(1):get_hero():all_items()
+            local 需要删除的物品 = __TS__New(
+                Array,
+                {__TS__TypeReference(Item, {})}
+            )
+            if 玩家物品 ~= nil then
+                repeat
+                    local ____switch211 = e.index
+                    local ____cond211 = ____switch211 == 0
+                    if ____cond211 then
+                        do
+                            do
+                                local 索引 = 0
+                                while 索引 <= 4 do
+                                    local 三个物品 = 0
+                                    if 玩家物品 ~= nil then
+                                        for 遍历到的数组索引, 遍历到的数组元素 in base.ArrayIterator(玩家物品) do
+                                            local 删除物品 = 0
+                                            if base.force_as(
+                                                __TS__Keyword("number"),
+                                                遍历到的数组元素:get_quality()
+                                            ) == 索引 + 1 and base.force_as(
+                                                __TS__Keyword("number"),
+                                                遍历到的数组元素:get_quality()
+                                            ) ~= 5 then
+                                                三个物品 = 三个物品 + 1
+                                                log.info(三个物品)
+                                                log.info(#需要删除的物品)
+                                                需要删除的物品[#需要删除的物品 + 1] = 遍历到的数组元素
+                                                if 三个物品 % 3 == 0 then
+                                                    log.info(三个物品, 三个物品 % 3 == 0)
+                                                    if 需要删除的物品 ~= nil then
+                                                        for 遍历到的数组索引, 遍历到的数组元素 in base.ArrayIterator(需要删除的物品) do
+                                                            if 遍历到的数组元素:get_quality() == 索引 + 1 then
+                                                                需要删除的物品[遍历到的数组索引 + 1]:remove()
+                                                                删除物品 = 删除物品 + 1
+                                                                if 删除物品 == 3 then
+                                                                    repeat
+                                                                        local ____switch222 = 索引
+                                                                        local ____cond222 = ____switch222 == 0
+                                                                        if ____cond222 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV2.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        ____cond222 = ____cond222 or ____switch222 == 1
+                                                                        if ____cond222 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV3.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        ____cond222 = ____cond222 or ____switch222 == 2
+                                                                        if ____cond222 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV4.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        ____cond222 = ____cond222 or ____switch222 == 3
+                                                                        if ____cond222 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV5.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        ____cond222 = ____cond222 or ____switch222 == 4
+                                                                        if ____cond222 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV6.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        do
+                                                                            do
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                    until true
+                                                                    return nil
+                                                                else
+                                                                end
+                                                            else
+                                                            end
+                                                        end
+                                                    else
+                                                        log.warn("不能遍历：需要删除的物品")
+                                                    end
+                                                else
+                                                end
+                                            else
+                                            end
+                                        end
+                                    else
+                                        log.warn("不能遍历：玩家物品")
+                                    end
+                                    索引 = 索引 + 1
+                                end
+                            end
+                            break
+                        end
+                    end
+                    ____cond211 = ____cond211 or ____switch211 == 1
+                    if ____cond211 then
+                        do
+                            do
+                                local 索引 = 0
+                                while 索引 <= 4 do
+                                    local 三个物品 = 0
+                                    if 玩家物品 ~= nil then
+                                        for 遍历到的数组索引, 遍历到的数组元素 in base.ArrayIterator(玩家物品) do
+                                            local 删除物品 = 0
+                                            if base.force_as(
+                                                __TS__Keyword("number"),
+                                                遍历到的数组元素:get_quality()
+                                            ) == 索引 + 1 and base.force_as(
+                                                __TS__Keyword("number"),
+                                                遍历到的数组元素:get_quality()
+                                            ) ~= 5 then
+                                                三个物品 = 三个物品 + 1
+                                                log.info(三个物品)
+                                                log.info(#需要删除的物品)
+                                                需要删除的物品[#需要删除的物品 + 1] = 遍历到的数组元素
+                                                if 三个物品 % 3 == 0 then
+                                                    log.info(三个物品, 三个物品 % 3 == 0)
+                                                    if 需要删除的物品 ~= nil then
+                                                        for 遍历到的数组索引, 遍历到的数组元素 in base.ArrayIterator(需要删除的物品) do
+                                                            if 遍历到的数组元素:get_quality() == 索引 + 1 then
+                                                                需要删除的物品[遍历到的数组索引 + 1]:remove()
+                                                                删除物品 = 删除物品 + 1
+                                                                if 删除物品 == 3 then
+                                                                    repeat
+                                                                        local ____switch245 = 索引
+                                                                        local ____cond245 = ____switch245 == 0
+                                                                        if ____cond245 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV2.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        ____cond245 = ____cond245 or ____switch245 == 1
+                                                                        if ____cond245 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV3.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        ____cond245 = ____cond245 or ____switch245 == 2
+                                                                        if ____cond245 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV4.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        ____cond245 = ____cond245 or ____switch245 == 3
+                                                                        if ____cond245 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV5.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        ____cond245 = ____cond245 or ____switch245 == 4
+                                                                        if ____cond245 then
+                                                                            do
+                                                                                base.create_item_on_unit(
+                                                                                    "$$busiyixiantu_5n1b.item.装备LV6.root",
+                                                                                    base.player(1):get_hero()
+                                                                                )
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                        do
+                                                                            do
+                                                                                break
+                                                                            end
+                                                                        end
+                                                                    until true
+                                                                else
+                                                                end
+                                                            else
+                                                            end
+                                                        end
+                                                    else
+                                                        log.warn("不能遍历：需要删除的物品")
+                                                    end
+                                                else
+                                                end
+                                            else
+                                            end
+                                        end
+                                    else
+                                        log.warn("不能遍历：玩家物品")
+                                    end
+                                    索引 = 索引 + 1
+                                end
+                            end
+                            break
+                        end
+                    end
+                    do
+                        do
+                            break
+                        end
+                    end
+                until true
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.怪物进攻 = base.trigger_new(
+        function(当前触发器, e)
+            local 刷怪 = base.timer_loop(
+                1,
+                function()
+                end
+            )
+            if true then
+                base.send_custom_event(__TS__New(
+                    busiyixiantu_5n1b.进攻怪消息,
+                    {},
+                    base.game,
+                    busiyixiantu_5n1b.进攻怪关数 + 1,
+                    busiyixiantu_5n1b.当前进攻关卡刷怪数据.pulse
+                ))
+                刷怪 = base.timer_loop(
+                    busiyixiantu_5n1b.当前进攻关卡刷怪数据.pulse,
+                    function()
+                        busiyixiantu_5n1b.进攻怪关数 = busiyixiantu_5n1b.进攻怪关数 + 1
+                        do
+                            local 索引 = 1
+                            while 索引 <= busiyixiantu_5n1b.当前进攻关卡刷怪数据.times do
+                                if true then
+                                    base.unit_add_ai(
+                                        base.player_create_unit_ai(
+                                            base.player(2),
+                                            busiyixiantu_5n1b.当前进攻关卡刷怪数据.monster,
+                                            base.get_scene_area("default", "rect", "进攻怪物", _G.present):scene_random_point(),
+                                            0,
+                                            false
+                                        ),
+                                        "$$default_units_ts.ai.testai.root",
+                                        base:table_new()
+                                    )
+                                else
+                                end
+                                索引 = 索引 + 1
+                            end
+                        end
+                        busiyixiantu_5n1b.当前进攻关卡刷怪数据 = base.eff.cache_ts(
+                            __TS__Keyword("any"),
+                            busiyixiantu_5n1b.进攻怪总数据.wave_data[busiyixiantu_5n1b.进攻怪关数 + 1]
+                        )
+                        base.send_custom_event(__TS__New(
+                            busiyixiantu_5n1b.进攻怪消息,
+                            {},
+                            base.game,
+                            busiyixiantu_5n1b.进攻怪关数 + 1,
+                            busiyixiantu_5n1b.当前进攻关卡刷怪数据.pulse
+                        ))
+                        刷怪:set_remaining_time(busiyixiantu_5n1b.当前进攻关卡刷怪数据.pulse)
+                    end
+                )
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.返回主城 = base.trigger_new(
+        function(当前触发器, e)
+            if true then
+                busiyixiantu_5n1b.刷怪判定 = false
+                busiyixiantu_5n1b.是否在主城 = true
+                busiyixiantu_5n1b:清除怪物(busiyixiantu_5n1b.玩家的主控单位:get_scene_point())
+                busiyixiantu_5n1b:修改玩家攻击距离(2200)
+                base.timer_sleep(0.2)
+                busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_point("default", "新手任务区域3", _G.present))
+                base.player_set_camera(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.camera_property.新手任务区域3.root",
+                    0.1
+                )
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.游戏失败 = base.trigger_new(
+        function(当前触发器, e)
+            if e.unit == base.get_default_unit("初始地图_13", "火龙", "default") then
+                base.timer_sleep(1)
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.游戏失败消息, {}, base.game))
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.游戏胜利 = base.trigger_new(
+        function(当前触发器, e)
+            if e.unit == base.eff.cache_ts(
+                __TS__Keyword("any"),
+                busiyixiantu_5n1b.进攻怪总数据.wave_data[#busiyixiantu_5n1b.进攻怪总数据.wave_data]
+            ) then
+                base.timer_sleep(1)
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.游戏胜利消息, {}, base.game))
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.退出游戏 = base.trigger_new(
+        function(当前触发器, e)
+            if true then
+                base.game:set_winner(1)
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.进攻怪总数据 = base.eff.cache("$$busiyixiantu_5n1b.wave.进攻怪.root")
+    busiyixiantu_5n1b.当前进攻关卡刷怪数据 = base.eff.cache("$$busiyixiantu_5n1b.spawner.第一波怪物.root")
+    busiyixiantu_5n1b.进攻怪关数 = 0
+    busiyixiantu_5n1b.进攻怪消息 = __TS__Class()
+    local 进攻怪消息 = busiyixiantu_5n1b.进攻怪消息
+    进攻怪消息.name = "进攻怪消息"
+    __TS__ClassExtends(
+        进攻怪消息,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 进攻怪消息.prototype.____constructor(self, obj, 波次, 时间)
+        __TS__SuperTypeArgumentsFuncWrapper(进攻怪消息, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.波次 = 波次
+        self.时间 = 时间
+        self.event_name = "进攻怪消息"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.游戏失败消息 = __TS__Class()
+    local 游戏失败消息 = busiyixiantu_5n1b.游戏失败消息
+    游戏失败消息.name = "游戏失败消息"
+    __TS__ClassExtends(
+        游戏失败消息,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 游戏失败消息.prototype.____constructor(self, obj)
+        __TS__SuperTypeArgumentsFuncWrapper(游戏失败消息, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.event_name = "游戏失败消息"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.游戏胜利消息 = __TS__Class()
+    local 游戏胜利消息 = busiyixiantu_5n1b.游戏胜利消息
+    游戏胜利消息.name = "游戏胜利消息"
+    __TS__ClassExtends(
+        游戏胜利消息,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 游戏胜利消息.prototype.____constructor(self, obj)
+        __TS__SuperTypeArgumentsFuncWrapper(游戏胜利消息, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.event_name = "游戏胜利消息"
+        self.autoForward = true
+    end
+    busiyixiantu_5n1b.爬塔镜头跟随 = base.trigger_new(
+        function(当前触发器, e)
+            if e.rpg_challenge.link == "$$busiyixiantu_5n1b.rpg_challenge.盲盒怪.root" or e.rpg_challenge.link == "$$busiyixiantu_5n1b.rpg_challenge.秘宝怪.root" or e.rpg_challenge.link == "$$busiyixiantu_5n1b.rpg_challenge.其他怪.root" then
+                busiyixiantu_5n1b.玩家的主控单位:blink_ex(base.get_scene_area("default", "circle", "Circles_0", _G.present):get_scene_point())
+                base.player_set_camera(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.camera_property.修炼室.root",
+                    0.1
+                )
+                base.send_custom_event(__TS__New(busiyixiantu_5n1b.客户端关闭爬塔UI, {}, base.game))
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.创建挑战 = base.trigger_new(
+        function(当前触发器, e)
+            if true then
+                busiyixiantu_5n1b:func_创建rpg_挑战(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.rpg_challenge.盲盒怪.root"
+                )
+                busiyixiantu_5n1b:func_创建rpg_挑战(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.rpg_challenge.秘宝怪.root"
+                )
+                busiyixiantu_5n1b:func_创建rpg_挑战(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.rpg_challenge.其他怪.root"
+                )
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.复活玩家 = base.trigger_new(
+        function(当前触发器, e)
+            if e.unit == busiyixiantu_5n1b.玩家的主控单位 then
+                base.timer_sleep(3)
+                busiyixiantu_5n1b.刷怪判定 = false
+                busiyixiantu_5n1b.是否在主城 = true
+                e.unit:reborn(base.get_scene_point("default", "新手任务区域3", _G.present))
+                base.player_set_camera(
+                    base.player(1),
+                    "$$busiyixiantu_5n1b.camera_property.新手任务区域3.root",
+                    0.1
+                )
+                busiyixiantu_5n1b:修改玩家攻击距离(2600)
+                busiyixiantu_5n1b.玩家的主控单位:find_skill("$$busiyixiantu_5n1b.spell.复活时嘲讽.root"):enable()
+                base.timer_sleep(1)
+                busiyixiantu_5n1b.玩家的主控单位:find_skill("$$busiyixiantu_5n1b.spell.复活时嘲讽.root"):disable()
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
+    busiyixiantu_5n1b.测试用 = base.trigger_new(
+        function(当前触发器, e)
+            if base.player(1):get_hero():is_enemy(e.unit) then
+                base.player(1):add("金钱", 10)
+                base.player(1):add("击杀", 10)
+            end
+        end,
+        {},
+        false,
+        nil,
+        true
+    )
     local 减怪 = __TS__Class()
     减怪.name = "减怪"
     __TS__ClassExtends(
@@ -1004,6 +2336,23 @@ do
         self.event_name = "加怪"
         self.autoForward = false
     end
+    local 合成装备 = __TS__Class()
+    合成装备.name = "合成装备"
+    __TS__ClassExtends(
+        合成装备,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 合成装备.prototype.____constructor(self, obj, index, player_slot_id)
+        __TS__SuperTypeArgumentsFuncWrapper(合成装备, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.index = index
+        self.player_slot_id = player_slot_id
+        self.event_name = "合成装备"
+        self.autoForward = false
+    end
     busiyixiantu_5n1b.挑战等级突破BOSS = __TS__Class()
     local 挑战等级突破BOSS = busiyixiantu_5n1b.挑战等级突破BOSS
     挑战等级突破BOSS.name = "挑战等级突破BOSS"
@@ -1019,6 +2368,39 @@ do
         self.obj = obj
         self.player_slot_id = player_slot_id
         self.event_name = "挑战等级突破BOSS"
+        self.autoForward = false
+    end
+    busiyixiantu_5n1b.点击游戏胜利或者失败 = __TS__Class()
+    local 点击游戏胜利或者失败 = busiyixiantu_5n1b.点击游戏胜利或者失败
+    点击游戏胜利或者失败.name = "点击游戏胜利或者失败"
+    __TS__ClassExtends(
+        点击游戏胜利或者失败,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 点击游戏胜利或者失败.prototype.____constructor(self, obj, player_slot_id)
+        __TS__SuperTypeArgumentsFuncWrapper(点击游戏胜利或者失败, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.player_slot_id = player_slot_id
+        self.event_name = "点击游戏胜利或者失败"
+        self.autoForward = false
+    end
+    local 返回主城 = __TS__Class()
+    返回主城.name = "返回主城"
+    __TS__ClassExtends(
+        返回主城,
+        TriggerEvent,
+        function()
+            return {}
+        end
+    )
+    function 返回主城.prototype.____constructor(self, obj, player_slot_id)
+        __TS__SuperTypeArgumentsFuncWrapper(返回主城, {}, TriggerEvent.prototype.____constructor)(self)
+        self.obj = obj
+        self.player_slot_id = player_slot_id
+        self.event_name = "返回主城"
         self.autoForward = false
     end
     local 进入修炼室 = __TS__Class()
@@ -1037,6 +2419,7 @@ do
         self.event_name = "进入修炼室"
         self.autoForward = false
     end
+    busiyixiantu_5n1b.ll:add_event_common({obj = base.any_player, event_name = "玩家-按键按下"})
     busiyixiantu_5n1b.移动到大黑鸟:add_event_common({obj = base.any_unit, event_name = "单位-死亡"})
     busiyixiantu_5n1b.大黑鸟死亡:add_event_common({obj = base.any_unit, event_name = "单位-死亡"})
     busiyixiantu_5n1b.玩家单位设置初始化:add_event_common({obj = base.game, event_name = "游戏-开始"})
@@ -1054,12 +2437,28 @@ do
     busiyixiantu_5n1b.减怪:add_event_common({obj = base.game, event_name = "减怪"})
     busiyixiantu_5n1b.加怪的通关判定:add_event_common({obj = base.any_unit, event_name = "单位-死亡"})
     busiyixiantu_5n1b.攻击力修改:add_event_common({periodic = true, time = 2})
-    busiyixiantu_5n1b.每秒攻击力修改:add_event_common({obj = base.any_player, event_name = "玩家-按键按下"})
     busiyixiantu_5n1b.等级突破:add_event_common({obj = base.any_unit, event_name = "单位-升级"})
     busiyixiantu_5n1b.刷突破BOSS:add_event_common({obj = base.game, event_name = "挑战等级突破BOSS"})
     busiyixiantu_5n1b.等级突破BOSS死亡:add_event_common({obj = base.any_unit, event_name = "单位-死亡"})
-    busiyixiantu_5n1b.ll:add_event_common({obj = base.any_player, event_name = "玩家-按键按下"})
+    busiyixiantu_5n1b.等级突破启用:add_event_common({obj = base.game, event_name = "进入修炼室"})
+    busiyixiantu_5n1b.等级突破启用:add_event_common({obj = base.game, event_name = "升仙令挑战完成"})
+    busiyixiantu_5n1b.等级突破启用:add_event_common({obj = base.any_unit, event_name = "单位-升级"})
     busiyixiantu_5n1b.trg挑战注册:add_event_common({obj = base.game, event_name = "游戏-开始"})
     busiyixiantu_5n1b.挑战退出:add_event_common({obj = base.game, event_name = "玩家_完成rpg挑战自动退出"})
+    busiyixiantu_5n1b.镜头跟随:add_event_common({obj = base.game, event_name = "玩家_rpg挑战开始"})
+    busiyixiantu_5n1b.主线挑战属性奖励:add_event_common({obj = base.game, event_name = "主线挑战完成"})
     busiyixiantu_5n1b.玩家单位属性更新:add_event_common({obj = base.game, event_name = "游戏-帧"})
+    busiyixiantu_5n1b.攻击回血:add_event_common({obj = base.any_unit, event_name = "造成伤害"})
+    busiyixiantu_5n1b.升仙令:add_event_common({obj = base.game, event_name = "升仙令挑战完成"})
+    busiyixiantu_5n1b.升仙令挑战开始:add_event_common({obj = base.game, event_name = "升仙令挑战"})
+    busiyixiantu_5n1b.合成装备:add_event_common({obj = base.game, event_name = "合成装备"})
+    busiyixiantu_5n1b.怪物进攻:add_event_common({obj = base.game, event_name = "游戏-开始"})
+    busiyixiantu_5n1b.返回主城:add_event_common({obj = base.game, event_name = "返回主城"})
+    busiyixiantu_5n1b.游戏失败:add_event_common({obj = base.any_unit, event_name = "单位-死亡"})
+    busiyixiantu_5n1b.游戏胜利:add_event_common({obj = base.any_unit, event_name = "单位-死亡"})
+    busiyixiantu_5n1b.退出游戏:add_event_common({obj = base.game, event_name = "点击游戏胜利或者失败"})
+    busiyixiantu_5n1b.爬塔镜头跟随:add_event_common({obj = base.game, event_name = "玩家_rpg挑战开始"})
+    busiyixiantu_5n1b.创建挑战:add_event_common({obj = base.game, event_name = "游戏-开始"})
+    busiyixiantu_5n1b.复活玩家:add_event_common({obj = base.any_unit, event_name = "单位-死亡"})
+    busiyixiantu_5n1b.测试用:add_event_common({obj = base.any_unit, event_name = "单位-死亡"})
 end

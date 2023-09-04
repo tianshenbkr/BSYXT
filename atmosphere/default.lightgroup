@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<node origin="Editor/Light/Engine/default.lightgroup" id="54400">
-	<component type="Zone" id="25564">
+<node origin="Editor/Light/Engine/default.lightgroup" id="61330">
+	<component type="Zone" id="30407">
 		<attribute name="Bounding Box Min" value="-100000.00 -100000.00 -100000.00" />
 		<attribute name="Bounding Box Max" value="100000.00 100000.00 100000.00" />
 		<attribute name="Ambient Color" value="0 0.01717 0.05 1" />
@@ -28,7 +28,7 @@
 		<attribute name="Role SphericalHarmonicsL2" value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
 		<attribute name="Using Water Reflection Param" value="true" />
 	</component>
-	<node id="54401">
+	<node id="61331">
 		<attribute name="Is Enabled" value="true" />
 		<attribute name="Name" value="" />
 		<attribute name="Tags" />
@@ -36,7 +36,7 @@
 		<attribute name="Rotation" value="0.165611 -0.052217 -0.939228 -0.296137" />
 		<attribute name="Scale" value="1.00 1.00 1.00" />
 		<attribute name="Variables" />
-		<component type="Light" id="25565">
+		<component type="Light" id="30408">
 			<attribute name="Light Type" value="Directional" />
 			<attribute name="Color" value="1 0.92736 0.9 1" />
 			<attribute name="Brightness Multiplier" value="3" />

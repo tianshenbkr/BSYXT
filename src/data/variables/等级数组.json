@@ -60,7 +60,7 @@
                         },
                         "tips":""
                     },
-                    "value":3
+                    "value":9
                 },
                 {
                     "ElementName":"Instant",
@@ -96,7 +96,7 @@
                         },
                         "tips":""
                     },
-                    "value":9
+                    "value":19
                 },
                 {
                     "ElementName":"Instant",
@@ -426,7 +426,7 @@
     "keyword":"",
     "name":"等级数组",
     "packageName":"busiyixiantu_5n1b",
-    "rankOrder":4,
+    "rankOrder":5,
     "realType":{
         "ElementName":"InstanceType",
         "breakPointInfo":{

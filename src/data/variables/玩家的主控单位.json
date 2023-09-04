@@ -97,6 +97,42 @@
                         "tips":""
                     },
                     "value":"[默认]远程英雄样例"
+                },
+                {
+                    "ElementName":"Instant",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":"",
+                    "type":{
+                        "ElementName":"SimpleType",
+                        "breakPointInfo":{
+                            "disabled":false,
+                            "hasBreakPoint":false,
+                            "type":2
+                        },
+                        "displayName":"字符串",
+                        "flags":{
+                        },
+                        "name":"string",
+                        "staticWarningMsgs":{
+                            "__TYPE":"Array",
+                            "contents":{
+                            }
+                        },
+                        "tips":""
+                    },
+                    "value":"default"
                 }
             ]
         },

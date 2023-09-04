@@ -276,7 +276,20 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_31628852 = function(ctrl, mouse_btn_id)
+    validator.validator_140376133 = function(ctrl, mouse_btn_id)
+    end
+    ---
+    -- @noSelf
+    validator.validator_59636906 = function(ctrl, mouse_btn_id)
+    end
+    ---
+    -- @noSelf
+    validator.validator_263363057 = function(ctrl, mouse_btn_id)
+        base.gui_get_part_as(
+            __TS__TypeReference(_OBJ_smallcard_inventory_gui_ctrl_自定义背包面板, {}),
+            base.gui_get_main_page(),
+            "背包"
+        ).show = true
     end
     ---
     -- @noSelf
@@ -294,7 +307,21 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_148110389 = function(ctrl, mouse_btn_id)
+    validator.validator_124600748 = function(ctrl, mouse_btn_id)
+        base.gui_get_part_as(
+            __TS__TypeReference(_OBJ__gui_ctrl_panel, {}),
+            base.gui_get_main_page(),
+            "爬塔面板"
+        ).show = false
+    end
+    ---
+    -- @noSelf
+    validator.validator_191977985 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.关闭背包, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_67645632 = function(ctrl, mouse_btn_id)
         base.send_custom_event(__TS__New(busiyixiantu_5n1b.减怪, {}, base.game))
     end
     ---
@@ -304,20 +331,25 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_67552673 = function(ctrl, mouse_btn_id)
+    validator.validator_72546884 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.加怪, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_217787262 = function(ctrl, mouse_btn_id)
         if base.gui_get_part_as(
-            __TS__TypeReference(_OBJ__gui_ctrl_panel, {}),
+            __TS__TypeReference(_OBJ__gui_ctrl_button, {}),
             base.gui_get_main_page(),
             "人物属性主面板"
         ).show == true then
             base.gui_get_part_as(
-                __TS__TypeReference(_OBJ__gui_ctrl_panel, {}),
+                __TS__TypeReference(_OBJ__gui_ctrl_button, {}),
                 base.gui_get_main_page(),
                 "人物属性主面板"
             ).show = false
         else
             base.gui_get_part_as(
-                __TS__TypeReference(_OBJ__gui_ctrl_panel, {}),
+                __TS__TypeReference(_OBJ__gui_ctrl_button, {}),
                 base.gui_get_main_page(),
                 "人物属性主面板"
             ).show = true
@@ -325,12 +357,23 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_226993677 = function(ctrl, mouse_btn_id)
+    validator.validator_211722441 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.打开爬塔, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_30125432 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.关闭背包, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_4442961 = function(ctrl, mouse_btn_id)
+        ctrl.show = false
         base.send_custom_event(__TS__New(busiyixiantu_5n1b.挑战等级突破BOSS, {}, base.game))
     end
     ---
     -- @noSelf
-    validator.validator_97954689 = function(ctrl, mouse_btn_id)
+    validator.validator_79025070 = function(ctrl, mouse_btn_id)
         if base.gui_get_part_as(
             __TS__TypeReference(_OBJ__gui_ctrl_panel, {}),
             base.gui_get_main_page(),
@@ -351,8 +394,58 @@ do
     end
     ---
     -- @noSelf
-    validator.validator_47974069 = function(ctrl, mouse_btn_id)
+    validator.validator_226313769 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.合成装备, {}, base.game, 1))
+    end
+    ---
+    -- @noSelf
+    validator.validator_241699491 = function(ctrl, mouse_btn_id)
+        log.warn("不能生成语句: 未找到元素：[TRG_ENV: client, packageName: busiyixiantu_5n1b, id: CustomEvent:确认:4130446664:Constructor]")
+    end
+    ---
+    -- @noSelf
+    validator.validator_140731327 = function(ctrl, mouse_btn_id)
         base.send_custom_event(__TS__New(busiyixiantu_5n1b.进入修炼室, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_253268302 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.减怪, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_44643084 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.返回主城, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_205931717 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.合成装备, {}, base.game, 0))
+    end
+    ---
+    -- @noSelf
+    validator.validator_75208694 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.进入修炼室, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_143570264 = function(ctrl, mouse_btn_id)
+        base.send_custom_event(__TS__New(busiyixiantu_5n1b.点击游戏胜利或者失败, {}, base.game))
+    end
+    ---
+    -- @noSelf
+    validator.validator_111214720 = function(ctrl, mouse_btn_id)
+        log.warn("不能生成语句: 未找到元素：[TRG_ENV: client, packageName: busiyixiantu_5n1b, id: CustomEvent:选择敏捷:1934544489:Constructor]")
+    end
+    ---
+    -- @noSelf
+    validator.validator_6167014 = function(ctrl, mouse_btn_id)
+        log.warn("不能生成语句: 未找到元素：[TRG_ENV: client, packageName: busiyixiantu_5n1b, id: CustomEvent:选择根骨:3533676526:Constructor]")
+    end
+    ---
+    -- @noSelf
+    validator.validator_108273333 = function(ctrl, mouse_btn_id)
+        log.warn("不能生成语句: 未找到元素：[TRG_ENV: client, packageName: busiyixiantu_5n1b, id: CustomEvent:选择神念:1352440991:Constructor]")
     end
     local function init_validator_0(self)
         local data = nil

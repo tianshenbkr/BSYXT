@@ -48,7 +48,7 @@
     "keyword":"",
     "name":"玩家当前等级阶层",
     "packageName":"busiyixiantu_5n1b",
-    "rankOrder":5,
+    "rankOrder":6,
     "realType":{
         "ElementName":"SimpleType",
         "breakPointInfo":{

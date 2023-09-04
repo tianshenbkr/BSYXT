@@ -163,6 +163,64 @@
                 },
                 "tips":"",
                 "uiText":""
+            },
+            {
+                "ElementName":"ClassProperty",
+                "_uiList":{
+                    "__TYPE":"Array",
+                    "contents":{
+                    }
+                },
+                "_uiText":"",
+                "breakPointInfo":{
+                    "disabled":false,
+                    "hasBreakPoint":false,
+                    "type":2
+                },
+                "description":"",
+                "displayName":"link",
+                "flags":{
+                    "isDeclare":true
+                },
+                "id":"Class:rpg_challenge:2515388537, ClassProperty:link",
+                "keyword":"",
+                "label":"默认",
+                "name":"link",
+                "packageName":"busiyixiantu_5n1b",
+                "rankOrder":3,
+                "realType":{
+                    "ElementName":"PresetType",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "presetSource":{
+                        "ElementName":"Source",
+                        "targetUninit":{
+                            "id":"Preset:rpg_challenge_id",
+                            "packageName":"__common__",
+                            "s_or_c":"common"
+                        }
+                    },
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                "s_or_c":"server",
+                "staticWarningMsgs":{
+                    "__TYPE":"Array",
+                    "contents":{
+                    }
+                },
+                "tips":"",
+                "uiText":""
             }
         ]
     },
@@ -188,6 +246,14 @@
                     "ElementName":"Source",
                     "targetUninit":{
                         "id":"Class:mxh_challenge:1158249914, ClassProperty:player",
+                        "packageName":"busiyixiantu_5n1b",
+                        "s_or_c":"server"
+                    }
+                },
+                {
+                    "ElementName":"Source",
+                    "targetUninit":{
+                        "id":"Class:rpg_challenge:2515388537, ClassProperty:link",
                         "packageName":"busiyixiantu_5n1b",
                         "s_or_c":"server"
                     }

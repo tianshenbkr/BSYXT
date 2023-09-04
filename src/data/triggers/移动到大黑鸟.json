@@ -348,6 +348,7 @@
                 },
                 "displayName":"",
                 "flags":{
+                    "enabled":false,
                     "noTypeIcon":true
                 },
                 "funcSource":{
@@ -650,6 +651,7 @@
                 },
                 "displayName":"",
                 "flags":{
+                    "enabled":false,
                     "noTypeIcon":true
                 },
                 "funcSource":{
@@ -843,6 +845,7 @@
                         }
                     ]
                 },
+                "s_or_c":"server",
                 "staticWarningMsgs":{
                     "__TYPE":"Array",
                     "contents":{

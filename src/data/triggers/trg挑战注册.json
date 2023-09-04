@@ -12,6 +12,7 @@
                 },
                 "displayName":"",
                 "flags":{
+                    "enabled":false,
                     "noTypeIcon":true
                 },
                 "funcSource":{
@@ -157,7 +158,7 @@
                                     "packageName":"__common__",
                                     "prefix":"current_project",
                                     "s_or_c":"common",
-                                    "short_link":"$$$$.rpg_challenge.挑战测试.root"
+                                    "short_link":"$$$$.rpg_challenge.主线挑战.root"
                                 }
                             }
                         }
@@ -294,7 +295,7 @@
                                     "packageName":"__common__",
                                     "prefix":"current_project",
                                     "s_or_c":"common",
-                                    "short_link":"$$$$.rpg_challenge.挑战测试.root"
+                                    "short_link":"$$$$.rpg_challenge.主线挑战.root"
                                 }
                             }
                         }

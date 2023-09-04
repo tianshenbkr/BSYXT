@@ -18,7 +18,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_10:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_12884627:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
+	export let validator_79682420:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 技能: Skill | undefined = AI.params.get("__next_skill");
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
@@ -102,7 +102,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_3:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_32200746:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
+	export let validator_26381087:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标单位: Unit | undefined = AI.params.get("__ai_battle_walk_target");
 		let 要施放的技能: Skill | undefined = AI.params.get("__next_skill");
@@ -138,7 +138,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_4:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_214424895:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
+	export let validator_28572082:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 移动目标点: Point | undefined = AI.params.get("__ai_walk_target");
 		if (((AI.params.get("__ai_target") != undefined))) {
@@ -174,7 +174,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_6:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_56391319:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
+	export let validator_150307427:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 初始点: Point | undefined = AI.params.get("__ai_born");
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
@@ -201,7 +201,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.default_units_ts_AIBehavior_7:Data.Game.Behavior
 	/** @noSelf */
-	export let validator_15144200:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
+	export let validator_68175113:(this: void, AI:lib_common_ai.AI)=>boolean = (this: void, AI:lib_common_ai.AI):boolean => {
 		let result: boolean = false;
 		let 目标: Unit | undefined = AI.params.get("__ai_target");
 		let 攻击计时器: Timer | undefined = AI.params.get("__attacked_timer");
@@ -302,7 +302,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.root:Data.Game.OnAdd
 	/** @noSelf */
-	export let validator_196587954:(this: void, AI:lib_common_ai.AI)=>void = (this: void, AI:lib_common_ai.AI):void => {
+	export let validator_163867330:(this: void, AI:lib_common_ai.AI)=>void = (this: void, AI:lib_common_ai.AI):void => {
 		let 所属单位: Unit = AI.unit;
 		let 搜敌范围: number = AI.search_radius;
 		let 攻击范围: number = AI.attack_range;
@@ -317,7 +317,7 @@ module validator {
 
 	//$$default_units_ts.ai.testai.root:Data.Game.OnProvoke
 	/** @noSelf */
-	export let validator_2653852:(this: void, AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean)=>void = (this: void, AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean):void => {
+	export let validator_106746038:(this: void, AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean)=>void = (this: void, AI:lib_common_ai.AI, 发出刺激的单位:Unit, 激怒预期:boolean, 逃跑预期:boolean):void => {
 		let 所属单位: Unit = AI.unit;
 		let 攻击计时器: Timer | undefined;
 		let new_angle: number = 0;
@@ -1252,56 +1252,56 @@ module validator {
 
 	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute:Data.Game.Func
 	/** @noSelf */
-	export let validator_253349852:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+	export let validator_70669729:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
 		let result: number = busiyixiantu_5n1b.玩家单位属性计算("攻击力");
 		return result;
 	}
 
 	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_1:Data.Game.Func
 	/** @noSelf */
-	export let validator_150413537:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+	export let validator_168097416:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
 		let result: number = busiyixiantu_5n1b.玩家单位属性计算("防御力");
 		return result;
 	}
 
 	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_2:Data.Game.Func
 	/** @noSelf */
-	export let validator_207517527:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+	export let validator_206362702:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
 		let result: number = busiyixiantu_5n1b.玩家单位属性计算("生命值上限");
 		return result;
 	}
 
 	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_3:Data.Game.Func
 	/** @noSelf */
-	export let validator_69799481:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+	export let validator_41257296:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
 		let result: number = busiyixiantu_5n1b.玩家单位属性计算("魔法值上限");
 		return result;
 	}
 
 	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_4:Data.Game.Func
 	/** @noSelf */
-	export let validator_158477395:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+	export let validator_41511180:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
 		let result: number = busiyixiantu_5n1b.玩家单位属性计算("攻击速度倍率");
 		return result;
 	}
 
 	//$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_5:Data.Game.Func
 	/** @noSelf */
-	export let validator_162427740:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
+	export let validator_90399969:(this: void, 单位:Unit)=>number = (this: void, 单位:Unit):number => {
 		let result: number = busiyixiantu_5n1b.玩家单位属性计算("冷却缩减");
 		return result;
 	}
 
 	//$$.gameplay.dflt.busiyixiantu_5n1b_DamageRule:Data.Game.FDamageRule
 	/** @noSelf */
-	export let validator_135354330:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
+	export let validator_611503:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
 		let result: number = busiyixiantu_5n1b.普攻伤害计算(伤害目标);
 		return result;
 	}
 
 	//$$.gameplay.dflt.default_units_ts_CureRule_1:Data.Game.FCureRule
 	/** @noSelf */
-	export let validator_255597210:(this: void, 治疗量:number, 效果节点:EffectParam, 治疗实例:HealInstance, 治疗目标:Unit, 治疗来源:Unit, 是否暴击:boolean)=>number = (this: void, 治疗量:number, 效果节点:EffectParam, 治疗实例:HealInstance, 治疗目标:Unit, 治疗来源:Unit, 是否暴击:boolean):number => {
+	export let validator_212688257:(this: void, 治疗量:number, 效果节点:EffectParam, 治疗实例:HealInstance, 治疗目标:Unit, 治疗来源:Unit, 是否暴击:boolean)=>number = (this: void, 治疗量:number, 效果节点:EffectParam, 治疗实例:HealInstance, 治疗目标:Unit, 治疗来源:Unit, 是否暴击:boolean):number => {
 		let 治疗量: number = 治疗量;
 		let 暴击治疗: number = 0;
 		if (((是否暴击 == true))) {
@@ -1320,7 +1320,7 @@ module validator {
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_3:Data.Game.FDamageRule
 	/** @noSelf */
-	export let validator_98280874:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
+	export let validator_77827946:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
 		let 伤害: number = busiyixiantu_5n1b.法术技能伤害计算(伤害目标, 伤害值);
 		if (((伤害目标.has_restriction(UnitBehaviorState["魔免"]) || 伤害目标.has_restriction(UnitBehaviorState["无敌"])))) {
 			return 0;
@@ -1359,7 +1359,7 @@ module validator {
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_4:Data.Game.FDamageRule
 	/** @noSelf */
-	export let validator_207750772:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
+	export let validator_143372892:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
 		let 伤害: number = busiyixiantu_5n1b.物理技能伤害计算(伤害目标, 伤害值);
 		if (((伤害目标.has_restriction(UnitBehaviorState["物免"]) || 伤害目标.has_restriction(UnitBehaviorState["无敌"])))) {
 			return 0;
@@ -1409,7 +1409,7 @@ module validator {
 
 	//$$.gameplay.dflt.default_units_ts_DamageRule_5:Data.Game.FDamageRule
 	/** @noSelf */
-	export let validator_216600710:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
+	export let validator_60931312:(this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance)=>number = (this: void, 伤害来源:Unit, 伤害目标:Unit, 伤害类型:string, 是否暴击:boolean, 伤害值:number, 效果节点:EffectParam, 伤害实例:DamageInstance):number => {
 		let 伤害: number = 伤害值;
 		return 伤害;
 	}
@@ -1423,8 +1423,12 @@ module validator {
 
 	//$$.gameplay.dflt.root:Data.Game.XPGrantRule.XPGrant
 	/** @noSelf */
-	export let validator_44065067:(this: void, 死亡单位:Unit, 击杀者:Unit, 单位死亡类型:DeathType)=>number = (this: void, 死亡单位:Unit, 击杀者:Unit, 单位死亡类型:DeathType):number => {
+	export let validator_74554678:(this: void, 死亡单位:Unit, 击杀者:Unit, 单位死亡类型:DeathType)=>number = (this: void, 死亡单位:Unit, 击杀者:Unit, 单位死亡类型:DeathType):number => {
 		let 死亡经验: number = 死亡单位.get_ex(单位属性["死亡经验"], UnitPropertySubType["Final"]);
+		if ((击杀者.has_buff((("$$busiyixiantu_5n1b.buff.不能升级判断.root") as unknown as IdPreset<"buff_id">)))) {
+			return 0;
+		} else {
+		}
 		if (((单位死亡类型 == DeathType["Remove"]))) {
 			return 0;
 		} else {
@@ -1460,15 +1464,20 @@ module validator {
 	//$$.template@spell.SpellToggle.root:Data.Game.Formulas.Mana
 	//$$.template@spell.spell.root:Data.Game.Formulas.Mana
 	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.01紫色技能.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.19级BOSS技能.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.复活.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.复活时嘲讽.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.spell.超级激光.root:Data.Game.Formulas.Mana
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.Mana
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.Mana
 	//$$default_units_ts.spell.不死鸟灼伤.root:Data.Game.Formulas.Mana
@@ -1552,6 +1561,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.Mana
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.Mana
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.Mana
+	//$$busiyixiantu_5n1b.unit.火龙.Spell:Data.Game.Formulas.Mana
 	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.Mana
 	//$$default_units_ts.unit.感应地雷.Spell:Data.Game.Formulas.Mana
 	//$$default_units_ts.unit.感应地雷.Spell_1:Data.Game.Formulas.Mana
@@ -1580,15 +1590,20 @@ module validator {
 	//$$.template@spell.SpellToggle.root:Data.Game.Formulas.Cooldown
 	//$$.template@spell.spell.root:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.01紫色技能.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.19级BOSS技能.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.复活.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.复活时嘲讽.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.spell.超级激光.root:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.spell.不死鸟灼伤.root:Data.Game.Formulas.Cooldown
@@ -1672,6 +1687,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.Cooldown
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.Cooldown
+	//$$busiyixiantu_5n1b.unit.火龙.Spell:Data.Game.Formulas.Cooldown
 	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.unit.感应地雷.Spell:Data.Game.Formulas.Cooldown
 	//$$default_units_ts.unit.感应地雷.Spell_1:Data.Game.Formulas.Cooldown
@@ -1712,15 +1728,20 @@ module validator {
 	//$$.template@spell.spell.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.template@spell.通用近战普攻模版.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.01紫色技能.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.19级BOSS技能.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.复活.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.复活时嘲讽.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.spell.超级激光.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.spell.不死鸟灼伤.root:Data.Game.Formulas.ChargeMax
@@ -1809,6 +1830,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.ChargeMax
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.ChargeMax
+	//$$busiyixiantu_5n1b.unit.火龙.Spell:Data.Game.Formulas.ChargeMax
 	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.unit.6、远程普攻示例英雄.Spell:Data.Game.Formulas.ChargeMax
 	//$$default_units_ts.unit.sce2号.SpellRootVector_2:Data.Game.Formulas.ChargeMax
@@ -1848,15 +1870,20 @@ module validator {
 	//$$.template@spell.spell.root:Data.Game.Formulas.Range
 	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.Range
 	//$$default_units_ts.template@spell.通用近战普攻模版.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.01紫色技能.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.19级BOSS技能.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.复活.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.复活时嘲讽.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.spell.超级激光.root:Data.Game.Formulas.Range
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.Range
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.Range
 	//$$default_units_ts.spell.不死鸟灼伤.root:Data.Game.Formulas.Range
@@ -1945,6 +1972,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.Range
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.Range
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.Range
+	//$$busiyixiantu_5n1b.unit.火龙.Spell:Data.Game.Formulas.Range
 	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.Range
 	//$$default_units_ts.unit.6、远程普攻示例英雄.Spell:Data.Game.Formulas.Range
 	//$$default_units_ts.unit.sce2号.SpellRootVector_2:Data.Game.Formulas.Range
@@ -1983,15 +2011,20 @@ module validator {
 	//$$.template@spell.SpellToggle.root:Data.Game.Formulas.Time
 	//$$.template@spell.spell.root:Data.Game.Formulas.Time
 	//$$default_units_ts.template@spell.被动法球技能节点.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.01紫色技能.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.19级BOSS技能.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.万剑诀.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.不能升级.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.剑雨.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.哈沙机.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.复活.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.复活时嘲讽.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.测试_杀怪BUFF.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.清除小怪.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.献祭.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.群火球.root:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.spell.群锤.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.spell.超级激光.root:Data.Game.Formulas.Time
 	//$$default_units_ts.spell.三火球.root:Data.Game.Formulas.Time
 	//$$default_units_ts.spell.不死鸟.root:Data.Game.Formulas.Time
 	//$$default_units_ts.spell.不死鸟灼伤.root:Data.Game.Formulas.Time
@@ -2075,6 +2108,7 @@ module validator {
 	//$$default_units_ts.spell.魔法免疫（被动）_1.root:Data.Game.Formulas.Time
 	//$$default_units_ts.spell.魔法防御（可开关）.root:Data.Game.Formulas.Time
 	//$$smallcard_choose_one.spell.示例技能.root:Data.Game.Formulas.Time
+	//$$busiyixiantu_5n1b.unit.火龙.Spell:Data.Game.Formulas.Time
 	//$$busiyixiantu_5n1b.unit.金币怪.Spell:Data.Game.Formulas.Time
 	//$$default_units_ts.unit.感应地雷.Spell:Data.Game.Formulas.Time
 	//$$default_units_ts.unit.感应地雷.Spell_1:Data.Game.Formulas.Time
@@ -2109,12 +2143,245 @@ module validator {
 
 	//$$busiyixiantu_5n1b.item.小经验瓶.CustomAction:Data.Game.Func
 	/** @noSelf */
-	export let validator_130232902:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+	export let validator_9756175:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
 		let result: boolean = false;
 		if ((base.player(1).get_hero().has_buff((("$$busiyixiantu_5n1b.buff.不能升级判断.root") as unknown as IdPreset<"buff_id">)))) {
 		} else {
 			result = true;
 		}
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.CustomAction:Data.Game.Func
+	/** @noSelf */
+	export let validator_170201841:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 1));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction:Data.Game.Func
+	/** @noSelf */
+	export let validator_151264882:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 2));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_1:Data.Game.Func
+	/** @noSelf */
+	export let validator_132327923:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 3));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_10:Data.Game.Func
+	/** @noSelf */
+	export let validator_169510833:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 12));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_11:Data.Game.Func
+	/** @noSelf */
+	export let validator_150573874:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 13));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_12:Data.Game.Func
+	/** @noSelf */
+	export let validator_131636915:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 14));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_13:Data.Game.Func
+	/** @noSelf */
+	export let validator_112699956:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 15));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_14:Data.Game.Func
+	/** @noSelf */
+	export let validator_93762997:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 16));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_15:Data.Game.Func
+	/** @noSelf */
+	export let validator_74826038:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 17));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_16:Data.Game.Func
+	/** @noSelf */
+	export let validator_55889079:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 18));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_17:Data.Game.Func
+	/** @noSelf */
+	export let validator_36952120:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 19));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_18:Data.Game.Func
+	/** @noSelf */
+	export let validator_12666222:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 20));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_19:Data.Game.Func
+	/** @noSelf */
+	export let validator_262164719:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 21));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_2:Data.Game.Func
+	/** @noSelf */
+	export let validator_113390964:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 4));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_20:Data.Game.Func
+	/** @noSelf */
+	export let validator_243227760:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 22));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_21:Data.Game.Func
+	/** @noSelf */
+	export let validator_224290801:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 23));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_22:Data.Game.Func
+	/** @noSelf */
+	export let validator_205353842:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 24));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_23:Data.Game.Func
+	/** @noSelf */
+	export let validator_186416883:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 25));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_3:Data.Game.Func
+	/** @noSelf */
+	export let validator_94454005:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 5));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_4:Data.Game.Func
+	/** @noSelf */
+	export let validator_75517046:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 6));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_5:Data.Game.Func
+	/** @noSelf */
+	export let validator_56580087:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 7));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_6:Data.Game.Func
+	/** @noSelf */
+	export let validator_37643128:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 8));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_7:Data.Game.Func
+	/** @noSelf */
+	export let validator_18706169:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 9));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_8:Data.Game.Func
+	/** @noSelf */
+	export let validator_207384751:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 10));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_9:Data.Game.Func
+	/** @noSelf */
+	export let validator_188447792:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.主线挑战完成(((base.game) as unknown as base.Game), 11));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_地图数据.11升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.12升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.13升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.14升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.15升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.16升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.17升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.18升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.19升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV6.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV7.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV8.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV9.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令测试.CustomAction:Data.Game.Func
+	/** @noSelf */
+	export let validator_8010782:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.升仙令挑战完成(((base.game) as unknown as base.Game)));
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV2.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV3.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV4.EffectCustomAction:Data.Game.Func
+	//$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV5.EffectCustomAction:Data.Game.Func
+	/** @noSelf */
+	export let validator_199547804:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+		let result: boolean = true;
+		base.send_custom_event(new busiyixiantu_5n1b.升仙令挑战完成(((base.game) as unknown as base.Game)));
 		return result;
 	}
 
@@ -2250,23 +2517,40 @@ module validator {
 		return s_current;
 	}
 
+	//$$busiyixiantu_5n1b.spell.01紫色技能.EffectDamage:Data.Game.Amount
+	//$$busiyixiantu_5n1b.spell.01紫色技能.EffectDamage_1:Data.Game.Amount
+	//$$busiyixiantu_5n1b.spell.群火球.EffectDamage:Data.Game.Amount
+	/** @noSelf */
+	export let validator_50103613:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]);
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.spell.19级BOSS技能.EffectDamage:Data.Game.Amount
+	//$$default_units_ts.spell.通用攻击-戳刺.Damage_1:Data.Game.Amount
+	/** @noSelf */
+	export let validator_120343679:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = base.eff_param_caster(效果节点).get_ex(单位属性["攻击"], UnitPropertySubType["Final"]);
+		return result;
+	}
+
 	//$$busiyixiantu_5n1b.spell.哈沙机.Damage:Data.Game.Amount
 	/** @noSelf */
-	export let validator_142888961:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
-		let result: number = base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]);
+	export let validator_235521762:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = (base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]) * 0.25);
 		return result;
 	}
 
 	//$$busiyixiantu_5n1b.spell.哈沙机.Search:Data.Game.MaxCount
 	/** @noSelf */
-	export let validator_15165100:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+	export let validator_43174593:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = ((base.player(1).get_hero().get_custom(单位属性["攻击"], ((false) as unknown as 单位属性子类型)) / 100) + 3);
 		return result;
 	}
 
 	//$$busiyixiantu_5n1b.spell.哈沙机.Search:Data.Game.Radius
 	/** @noSelf */
-	export let validator_238476281:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+	export let validator_115740368:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = 1;
 		if (true) {
 			result = 300;
@@ -2284,17 +2568,9 @@ module validator {
 	}
 
 	//$$busiyixiantu_5n1b.spell.群火球.Damage:Data.Game.Amount
-	//$$busiyixiantu_5n1b.spell.群火球.EffectDamage:Data.Game.Amount
 	/** @noSelf */
-	export let validator_190268667:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+	export let validator_104181693:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]);
-		return result;
-	}
-
-	//$$busiyixiantu_5n1b.spell.群火球.Search:Data.Game.Radius
-	/** @noSelf */
-	export let validator_109296348:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
-		let result: number = base.player(1).get_hero().get_ex(单位属性["搜敌范围"], UnitPropertySubType["Final"]);
 		return result;
 	}
 
@@ -2309,6 +2585,14 @@ module validator {
 	/** @noSelf */
 	export let validator_24328857:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
 		let result: number = base.player(1).get_hero().get_ex(单位属性["攻击范围"], UnitPropertySubType["Base"]);
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.spell.超级激光.EffectDamage:Data.Game.Amount
+	//$$default_units_ts.spell.弹无虚发.Damage_1:Data.Game.Amount
+	/** @noSelf */
+	export let validator_239334154:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = (base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]) * 0.25);
 		return result;
 	}
 
@@ -2350,12 +2634,12 @@ module validator {
 
 	//$$default_units_ts.spell.元素激流.CustomAction_2:Data.Game.Func
 	/** @noSelf */
-	export let validator_40290592:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
+	export let validator_124297247:(this: void, 效果节点:EffectParam)=>boolean = (this: void, 效果节点:EffectParam):boolean => {
 		let result: boolean = true;
 		let 技能: Skill = 效果节点.skill();
 		let 已弹射单位组: Array<Unit> = base.object_restore_value(效果节点.root(), "已弹射单位");
 		已弹射单位组.push(base.eff_param_target_unit(效果节点));
-		if (((已弹射单位组.length >= 4))) {
+		if (((已弹射单位组.length >= 10))) {
 			result = false;
 		} else {
 		}
@@ -2369,6 +2653,13 @@ module validator {
 		let 技能: Skill = 效果节点.skill();
 		let 单位组: Array<Unit> = new Array<any>();
 		base.object_store_value(效果节点.root(), "已弹射单位", 单位组);
+		return result;
+	}
+
+	//$$default_units_ts.spell.元素激流.Damage_1:Data.Game.Amount
+	/** @noSelf */
+	export let validator_17976078:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = (base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]) * 0.25);
 		return result;
 	}
 
@@ -2405,6 +2696,13 @@ module validator {
 		} else {
 			result = 验证器代码["NotSupported"];
 		}
+		return result;
+	}
+
+	//$$default_units_ts.spell.刀扇.Damage_1:Data.Game.Amount
+	/** @noSelf */
+	export let validator_116289933:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = (base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]) * 0.25);
 		return result;
 	}
 
@@ -2509,6 +2807,13 @@ module validator {
 		} else {
 			result = 验证器代码["NotSupported"];
 		}
+		return result;
+	}
+
+	//$$default_units_ts.spell.暴风雪.Damage_1:Data.Game.Amount
+	/** @noSelf */
+	export let validator_47791311:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = (base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]) * 0.25);
 		return result;
 	}
 
@@ -2640,13 +2945,6 @@ module validator {
 		return result;
 	}
 
-	//$$default_units_ts.spell.通用攻击-戳刺.Damage_1:Data.Game.Amount
-	/** @noSelf */
-	export let validator_120343679:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
-		let result: number = base.eff_param_caster(效果节点).get_ex(单位属性["攻击"], UnitPropertySubType["Final"]);
-		return result;
-	}
-
 	//$$default_units_ts.spell.重生.Switch_1:Data.Game.CaseArray[1].Validator
 	/** @noSelf */
 	export let validator_255550721:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
@@ -2713,6 +3011,24 @@ module validator {
 			} else {
 			}
 		});
+		return result;
+	}
+
+	//$$default_units_ts.spell.震荡波.Damage_1:Data.Game.Amount
+	/** @noSelf */
+	export let validator_11246126:(this: void, 效果节点:EffectParam)=>number = (this: void, 效果节点:EffectParam):number => {
+		let result: number = (base.player(1).get_hero().get_ex(单位属性["攻击"], UnitPropertySubType["Base"]) * 0.25);
+		return result;
+	}
+
+	//$$busiyixiantu_5n1b.unit.火龙.EffectUnitModifyAttribute:Data.Game.Validators
+	/** @noSelf */
+	export let validator_234691062:(this: void, 效果节点:EffectParam)=>验证器代码 = (this: void, 效果节点:EffectParam):验证器代码 => {
+		let result: 验证器代码 = 验证器代码["NotSupported"];
+		if (((效果节点.shared.caster.get_ex(单位属性["生命"], UnitPropertySubType["Base"]) < 效果节点.shared.caster.get_ex(单位属性["生命上限"], UnitPropertySubType["Base"])))) {
+			result = 验证器代码["OK"];
+		} else {
+		}
 		return result;
 	}
 
@@ -2841,7 +3157,7 @@ module validator {
 			data.Behavior = validator_183853803
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.default_units_ts_AIBehavior_10")) {
-			data.Behavior = validator_12884627
+			data.Behavior = validator_79682420
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.default_units_ts_AIBehavior_11")) {
 			data.Behavior = validator_71909885
@@ -2850,19 +3166,19 @@ module validator {
 			data.Behavior = validator_44985790
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.default_units_ts_AIBehavior_3")) {
-			data.Behavior = validator_32200746
+			data.Behavior = validator_26381087
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.default_units_ts_AIBehavior_4")) {
-			data.Behavior = validator_214424895
+			data.Behavior = validator_28572082
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.default_units_ts_AIBehavior_5")) {
 			data.Behavior = validator_77181647
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.default_units_ts_AIBehavior_6")) {
-			data.Behavior = validator_56391319
+			data.Behavior = validator_150307427
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.default_units_ts_AIBehavior_7")) {
-			data.Behavior = validator_15144200
+			data.Behavior = validator_68175113
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.default_units_ts_AIBehavior_8")) {
 			data.Behavior = validator_264289186
@@ -2871,8 +3187,8 @@ module validator {
 			data.Behavior = validator_62677470
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.testai.root")) {
-			data.OnAdd = validator_196587954
-			data.OnProvoke = validator_2653852
+			data.OnAdd = validator_163867330
+			data.OnProvoke = validator_106746038
 		}
 		if (data = base.eff.cache("$$default_units_ts.ai.沿路线前进ai.AIBehavior")) {
 			data.Behavior = validator_165491582
@@ -2973,44 +3289,44 @@ module validator {
 			data.Func = validator_180756668
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute")) {
-			data.Func = validator_253349852
+			data.Func = validator_70669729
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_1")) {
-			data.Func = validator_150413537
+			data.Func = validator_168097416
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_2")) {
-			data.Func = validator_207517527
+			data.Func = validator_206362702
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_3")) {
-			data.Func = validator_69799481
+			data.Func = validator_41257296
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_4")) {
-			data.Func = validator_158477395
+			data.Func = validator_41511180
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_CustomUnitAttribute_5")) {
-			data.Func = validator_162427740
+			data.Func = validator_90399969
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.busiyixiantu_5n1b_DamageRule")) {
-			data.FDamageRule = validator_135354330
+			data.FDamageRule = validator_611503
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.default_units_ts_CureRule_1")) {
-			data.FCureRule = validator_255597210
+			data.FCureRule = validator_212688257
 			data.FCriticalRule = validator_148805509
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_3")) {
-			data.FDamageRule = validator_98280874
+			data.FDamageRule = validator_77827946
 			data.FCriticalRule = validator_189928549
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_4")) {
-			data.FDamageRule = validator_207750772
+			data.FDamageRule = validator_143372892
 			data.FCriticalRule = validator_209125194
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.default_units_ts_DamageRule_5")) {
-			data.FDamageRule = validator_216600710
+			data.FDamageRule = validator_60931312
 			data.FCriticalRule = validator_191493992
 		}
 		if (data = base.eff.cache("$$.gameplay.dflt.root")) {
-			data.XPGrantRule.XPGrant = validator_44065067
+			data.XPGrantRule.XPGrant = validator_74554678
 			data.XPGrantRule.XPDistributionCheck = validator_166947453
 		}
 		if (data = base.eff.cache("$$.item.test_potion_heal.SpellRootInstant_1")) {
@@ -3104,6 +3420,20 @@ module validator {
 			data.Formulas.Range = validator_63878418
 			data.Formulas.Time = validator_234228873
 		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.01紫色技能.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.19级BOSS技能.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.万剑诀.root")) {
 			data.Formulas.Mana = validator_244194926
 			data.Formulas.Cooldown = validator_135839809
@@ -3126,6 +3456,20 @@ module validator {
 			data.Formulas.Time = validator_234228873
 		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.复活.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.复活时嘲讽.root")) {
 			data.Formulas.Mana = validator_244194926
 			data.Formulas.Cooldown = validator_135839809
 			data.Formulas.ChargeMax = validator_211391127
@@ -3161,6 +3505,13 @@ module validator {
 			data.Formulas.Time = validator_234228873
 		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群锤.root")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.超级激光.root")) {
 			data.Formulas.Mana = validator_244194926
 			data.Formulas.Cooldown = validator_135839809
 			data.Formulas.ChargeMax = validator_211391127
@@ -3748,6 +4099,13 @@ module validator {
 			data.Formulas.Range = validator_63878418
 			data.Formulas.Time = validator_234228873
 		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.unit.火龙.Spell")) {
+			data.Formulas.Mana = validator_244194926
+			data.Formulas.Cooldown = validator_135839809
+			data.Formulas.ChargeMax = validator_211391127
+			data.Formulas.Range = validator_63878418
+			data.Formulas.Time = validator_234228873
+		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.unit.金币怪.Spell")) {
 			data.Formulas.Mana = validator_244194926
 			data.Formulas.Cooldown = validator_135839809
@@ -3910,7 +4268,139 @@ module validator {
 			data.Formulas.Time = validator_214580859
 		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.item.小经验瓶.CustomAction")) {
-			data.Func = validator_130232902
+			data.Func = validator_9756175
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.CustomAction")) {
+			data.Func = validator_170201841
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction")) {
+			data.Func = validator_151264882
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_1")) {
+			data.Func = validator_132327923
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_10")) {
+			data.Func = validator_169510833
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_11")) {
+			data.Func = validator_150573874
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_12")) {
+			data.Func = validator_131636915
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_13")) {
+			data.Func = validator_112699956
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_14")) {
+			data.Func = validator_93762997
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_15")) {
+			data.Func = validator_74826038
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_16")) {
+			data.Func = validator_55889079
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_17")) {
+			data.Func = validator_36952120
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_18")) {
+			data.Func = validator_12666222
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_19")) {
+			data.Func = validator_262164719
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_2")) {
+			data.Func = validator_113390964
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_20")) {
+			data.Func = validator_243227760
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_21")) {
+			data.Func = validator_224290801
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_22")) {
+			data.Func = validator_205353842
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_23")) {
+			data.Func = validator_186416883
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_3")) {
+			data.Func = validator_94454005
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_4")) {
+			data.Func = validator_75517046
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_5")) {
+			data.Func = validator_56580087
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_6")) {
+			data.Func = validator_37643128
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_7")) {
+			data.Func = validator_18706169
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_8")) {
+			data.Func = validator_207384751
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_challenge.主线挑战.EffectCustomAction_9")) {
+			data.Func = validator_188447792
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.11升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.12升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.13升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.14升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.15升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.16升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.17升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.18升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.19升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV6.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV7.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV8.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV9.EffectCustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令测试.CustomAction")) {
+			data.Func = validator_8010782
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV2.EffectCustomAction")) {
+			data.Func = validator_199547804
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV3.EffectCustomAction")) {
+			data.Func = validator_199547804
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV4.EffectCustomAction")) {
+			data.Func = validator_199547804
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.rpg_地图数据.升仙令LV5.EffectCustomAction")) {
+			data.Func = validator_199547804
 		}
 		if (data = base.eff.cache("$$default_units_ts.template@spell.通用近战普攻模版.Damage_1")) {
 			data.Amount = validator_196209676
@@ -3918,27 +4408,42 @@ module validator {
 		if (data = base.eff.cache("$$default_units_ts.unit.6、远程普攻示例英雄.busiyixiantu_5n1b_Damage_1")) {
 			data.Amount = validator_196209676
 		}
-		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.Damage")) {
-			data.Amount = validator_142888961
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.01紫色技能.EffectDamage")) {
+			data.Amount = validator_50103613
 		}
-		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.Search")) {
-			data.MaxCount = validator_15165100
-			data.Radius = validator_238476281
-		}
-		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.Damage")) {
-			data.Amount = validator_190268667
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.01紫色技能.EffectDamage_1")) {
+			data.Amount = validator_50103613
 		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.EffectDamage")) {
-			data.Amount = validator_190268667
+			data.Amount = validator_50103613
 		}
-		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.Search")) {
-			data.Radius = validator_109296348
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.19级BOSS技能.EffectDamage")) {
+			data.Amount = validator_120343679
+		}
+		if (data = base.eff.cache("$$default_units_ts.spell.通用攻击-戳刺.Damage_1")) {
+			data.Amount = validator_120343679
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.Damage")) {
+			data.Amount = validator_235521762
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.哈沙机.Search")) {
+			data.MaxCount = validator_43174593
+			data.Radius = validator_115740368
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群火球.Damage")) {
+			data.Amount = validator_104181693
 		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群锤.Damage")) {
 			data.Amount = validator_219294026
 		}
 		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.群锤.Search")) {
 			data.Radius = validator_24328857
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.spell.超级激光.EffectDamage")) {
+			data.Amount = validator_239334154
+		}
+		if (data = base.eff.cache("$$default_units_ts.spell.弹无虚发.Damage_1")) {
+			data.Amount = validator_239334154
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.三火球.PolarOffset_1")) {
 			data.PeriodChangeIndex = validator_204988239
@@ -3956,10 +4461,13 @@ module validator {
 			data.PersistValidator = validator_258945007
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.元素激流.CustomAction_2")) {
-			data.Func = validator_40290592
+			data.Func = validator_124297247
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.元素激流.CustomAction_3")) {
 			data.Func = validator_171995275
+		}
+		if (data = base.eff.cache("$$default_units_ts.spell.元素激流.Damage_1")) {
+			data.Amount = validator_17976078
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.元素激流.Search_2")) {
 			data.SearchValidators = validator_27087888
@@ -3969,6 +4477,9 @@ module validator {
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.净化.Damage_1")) {
 			data.Validators = validator_196723837
+		}
+		if (data = base.eff.cache("$$default_units_ts.spell.刀扇.Damage_1")) {
+			data.Amount = validator_116289933
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.后撤步.LaunchMissileDash_1")) {
 			data.Speed = validator_220220686
@@ -3989,6 +4500,9 @@ module validator {
 			data.CaseArray[1].Validator = validator_110577815
 			data.CaseArray[2].Validator = validator_69151185
 			data.CaseArray[3].Validator = validator_153290600
+		}
+		if (data = base.eff.cache("$$default_units_ts.spell.暴风雪.Damage_1")) {
+			data.Amount = validator_47791311
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.治疗波.CustomAction_1")) {
 			data.Func = validator_56366968
@@ -4026,9 +4540,6 @@ module validator {
 		if (data = base.eff.cache("$$default_units_ts.spell.通用攻击-劈砍.Damage_1")) {
 			data.Amount = validator_19086676
 		}
-		if (data = base.eff.cache("$$default_units_ts.spell.通用攻击-戳刺.Damage_1")) {
-			data.Amount = validator_120343679
-		}
 		if (data = base.eff.cache("$$default_units_ts.spell.重生.Switch_1")) {
 			data.CaseArray[1].Validator = validator_255550721
 		}
@@ -4046,6 +4557,12 @@ module validator {
 		}
 		if (data = base.eff.cache("$$default_units_ts.spell.闪电链.Search_2")) {
 			data.SearchValidators = validator_205128689
+		}
+		if (data = base.eff.cache("$$default_units_ts.spell.震荡波.Damage_1")) {
+			data.Amount = validator_11246126
+		}
+		if (data = base.eff.cache("$$busiyixiantu_5n1b.unit.火龙.EffectUnitModifyAttribute")) {
+			data.Validators = validator_234691062
 		}
 		if (data = base.eff.cache("$$default_units_ts.unit.sce2号.Spell")) {
 			data.Formulas.Mana = validator_117687348

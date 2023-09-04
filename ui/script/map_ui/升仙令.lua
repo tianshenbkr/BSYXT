@@ -8,7 +8,7 @@ local move_to_new_parent = require('@common.base.gui.control_util').move_to_new_
 local inventory = require '@smallcard_inventory.inventory.main'
 local bag_main_panel = inventory.main_panel
 
-local img_btm = 'image/common/bantouming.png'
+local img_btm = ''--'image/common/bantouming.png'
 local font = {
     size = 20,
     color = 'rgba(255,255,255,0.85)',
@@ -16,12 +16,12 @@ local font = {
 
 local is_show = false
 local panel = nil
+--[[
 local function init( id, list)
-
     local template = component {
         base.ui.panel 'bt_panel'{
             layout = {
-                relative = {50,220},
+                relative = {50,275},
                 row_self = 'start',
                 col_self = 'start',
                 margin = {
@@ -35,7 +35,7 @@ local function init( id, list)
             text = 'test',
             font = font,
 
-            array = 6,
+            array = 1,
             base.ui.button 'bts' {
                 layout = {
                     width = 128,
@@ -68,7 +68,6 @@ local function init( id, list)
                 swallow_events = 'on_click',
                 event = {
                     on_click = function()
-                        log.info('click')
                     end,
                 },
             },
@@ -76,22 +75,20 @@ local function init( id, list)
         swallow_events = 'on_click',
         event = {
             on_click = function()
-                log.info('click')
             end,
         },
         method = {
             init = function(self)
-                move_to_new_parent(self, bag_main_panel)
+                local parent = utils.get_ui_by_name('背包格子1')
+                if parent then
+                    move_to_new_parent(self, parent)
+                end
             end,
         }
     }
 
     panel = template:new()
     panel['@bt_panel.show'] = false
-    --panel['@bt_panel.array'] = 6
-    --panel['@bt_top.event.on_click'] = function(self)
-    --    panel['@bt_panel.show'] = not panel['@bt_panel.show']
-    --end
 
     local bts = panel.part.bts
     for k,bt in ipairs(bts) do
@@ -109,7 +106,6 @@ end
 init()
 
 base.proto.rpg_sxl_link = function (msg)
-    log.info('rpg_sxl_link----------------------------------')
     local list = msg.list
     local bts = panel.part.bts
     local txt = panel.part.txt
@@ -138,7 +134,6 @@ end
 base.proto.rpg_sxl_num = function (msg)
     local id = msg.id
     local num = msg.num
-    log.info('rpg_sxl_num', id, num)
     set( panel.part.txt[id], 'text', num)
     if num <= 0 then
         set( panel.part.txt[id], 'show', false)
@@ -148,8 +143,6 @@ base.proto.rpg_sxl_num = function (msg)
 end
 
 
-
---[[
 local img_btm = 'image/common/bantouming.png'
 local button = component {
     base.ui.button 'bt_top' {
@@ -187,30 +180,60 @@ bt['@bt_top.event.on_click'] = function(self)
 end
 ]]
 
+local bts = {
+    utils.get_ui_by_name('升仙令'),
+    utils.get_ui_by_name('升仙令1'),
+}
+local txt = {
+    utils.get_ui_by_name('升仙令计数'),
+    utils.get_ui_by_name('升仙令计数1'),
+}
 
-local function open()
-    panel['@bt_panel.show'] = true
-    smallcard_inventory.open_inventory()
-    is_show = true
+for k,bt in ipairs(bts) do
+    local index = 1
+    bt.event.on_click = function()
+        base.game:server 'rpg_sxl_click' {
+            id = index,
+        }
+    end
+    local new_x = (k-1)%2*136
+    local new_y = math.ceil(k/2)*136
+    --set( bt, {'layout','relative'}, { new_x, new_y})
 end
 
-local function close()
-    panel['@bt_panel.show'] = false
-    is_show = false
-end
 
-local bt = utils.get_ui_by_name('背包')
-bt.event.on_click = function(self)
-    if is_show then
-        smallcard_inventory.close_inventory()
-        close()
-    else
-        open()
+base.proto.rpg_sxl_link = function (msg)
+    local list = msg.list
+    for k,bt in ipairs(bts) do
+    --for k,v in ipairs( list) do
+        if list[1] then
+            local link = list[1][1]
+            local need = list[1][2]
+
+            local cache = base.eff.cache( link)
+            set( bt, 'image', cache.Icon)
+            if need > 0 then
+                set( txt[k], 'text', need)
+                set( txt[k], 'show', true)
+            else
+                set( txt[k], 'show', false)
+            end
+        else
+            set( bt, 'image', img_btm)
+            set( txt[k], 'text', need)
+            set( txt[k], 'show', false)
+        end
     end
 end
 
-
-
-base.game:event('背包界面-关闭', function ()
-    close()
-end)
+base.proto.rpg_sxl_num = function (msg)
+    local num = msg.num
+    for id,label in ipairs(txt) do
+        set( label, 'text', num)
+        if num <= 0 then
+            set( label, 'show', false)
+        else
+            set( label, 'show', true)
+        end
+    end
+end

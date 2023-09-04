@@ -187,7 +187,7 @@ function mt:create_enemy( task_info)
             v.MaxNumber = v.Number
         elseif v.MaxNumber < 0 then
         end
-        log.info('Wave', _, v.Unit, v.Number, v.MaxNumber)
+        --log.info('Wave', _, v.Unit, v.Number, v.MaxNumber)
     end
     base.game:event_notify('挑战刷怪数据准备', self.player, self, Wave)
     --过一遍所有的敌人信息
@@ -212,7 +212,7 @@ end
 --开始挑战关卡
 function mt:start_challenge()
     if self.need_kill > 0 then
-        log.info('杀敌没杀完-无法挑战')
+        --log.info('杀敌没杀完-无法挑战')
         return
     end
     self:clear()
@@ -226,7 +226,7 @@ function mt:start_challenge()
     setmetatable( challenge, challenge)
 
     if not challenge then
-        log.error('[升仙令]没有找到对应关卡link', self.link, id)
+        --log.error('[升仙令]没有找到对应关卡link', self.link, id)
         return
     end
 
@@ -234,29 +234,34 @@ function mt:start_challenge()
     local pid = py:get_slot_id()
     local hero = py:get_hero()
     if hero:is_alive_ex() == false then
-        log.info('英雄死亡，无法挑战')
+        --log.info('英雄死亡，无法挑战')
         return
     end
     --有玩家点，把玩家英雄穿进去
     local enter_point = challenge.PlayerPosition and challenge.PlayerPosition[1]()
     local scene = enter_point and enter_point:get_scene() or info.TaskScene
     if scene then
-        log.info('scene', scene)
+        --log.info('scene', scene)
         base.player_jump_scene( py, scene, true)
     end
     if enter_point then
-        log.info('enter_point', enter_point)
+        --log.info('enter_point', enter_point)
         hero:blink_ex( enter_point)
     end
+    base.game:event_notify('升仙令挑战', {
+        player = self.player,
+        --rpg_challenge = self,
+        --id = id,
+    })
     --镜头不确定，反正先挪过去，后面看需求改
-    py:set_camera
-    {
-        position = enter_point,
-        rotation = { -80, 0, 0},
-        focus_distance = 1500,
-        time = 100,--ms
-    }
-    log.info('camera_focus', py, hero)
+    --py:set_camera
+    --{
+    --  position = enter_point,
+    --  rotation = { -80, 0, 0},
+    --  focus_distance = 1500,
+    --    time = 100,--ms
+    --}
+    --log.info('camera_focus', py, hero)
 
 
     --创建敌人
@@ -274,13 +279,14 @@ function mt:init()
 
     if need_kill > 0 then
         trgs[#trgs+1] = base.game:event('单位-死亡', function(_, dead, killer)
-            if killer and killer:get_owner() == py then
+            if killer:get_owner() == dead:get_owner() then return end
+            if killer and killer:get_owner() == py and dead:is_item() == false then
                 need_kill = need_kill - 1
                 self.need_kill = need_kill
                 py:sync_sxl_num( self.slot, need_kill)
-                log.info('kill', need_kill)
+                --log.info('kill', need_kill)
                 if need_kill <= 0 then
-                    log.info('前置杀敌完成')
+                    --log.info('前置杀敌完成')
                     _:remove()
                 end
             end
@@ -325,14 +331,14 @@ function base.runtime.player:sync_sxl_link()
             v.link,
             v.need_kill,
         }
-        log.info('send',v.link, v.need_kill)
+        --log.info('send',v.link, v.need_kill)
     end
     self:ui 'rpg_sxl_link' {
         list = send,
     }
 end
 function base.runtime.player:sync_sxl_num( id, num)
-    log.info('sync_sxl_num', id, num)
+    --log.info('sync_sxl_num', id, num)
     self:ui 'rpg_sxl_num' {
         id = id,
         num = num,

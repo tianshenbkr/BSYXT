@@ -104,7 +104,7 @@ function mt:task_finish()
     if self.cache.AutoNext == true then
         --自动继续
         if self.task_info[level+1] then
-            base.wait(self.AutoDelay*1000,function()
+            base.wait(self.cache.AutoDelay*1000,function()
                 self:start_task()
             end)
         end
@@ -217,6 +217,7 @@ function mt:create_enemy( id)
     end
     tt[#tt+1] = base.game:event('单位-死亡', function( _, unit, killer)
         if unit._task_bind == task_bind then
+            log.info('kill', unit, killer,debug.traceback())
             kill( unit)
         end
     end)
@@ -276,6 +277,12 @@ function mt:start_task(id)
         link = self.link,
         id = id,
     }
+
+    base.game:event_notify('玩家_rpg挑战开始', {
+        player = self.player,
+        rpg_challenge = self,
+        id = id,
+    })
 
     --创建敌人
     self:create_enemy( id)
@@ -479,7 +486,6 @@ rpg_challenge.create = function( player, link)
 
     player:sync_rpg_challenge_link()
     
-    log.info('rpg_challenge.create', player, link)
     return mc
 end
 

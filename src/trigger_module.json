@@ -20,6 +20,14 @@
             "__TYPE":"Array",
             "contents":[
                 {
+                    "ElementName":"Source",
+                    "targetUninit":{
+                        "id":"Trigger:ll:3509013233",
+                        "packageName":"busiyixiantu_5n1b",
+                        "s_or_c":"server"
+                    }
+                },
+                {
                     "ElementName":"Folder",
                     "breakPointInfo":{
                         "disabled":false,
@@ -83,8 +91,7 @@
                     "flags":{
                     },
                     "name":"新手指引",
-                    "rankOrder":1,
-                    "s_or_c":"server",
+                    "rankOrder":2,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -113,7 +120,7 @@
                             {
                                 "ElementName":"Source",
                                 "targetUninit":{
-                                    "id":"FunctionDefine:清除怪物:1430479131",
+                                    "id":"Variable:是否在主城:1852693884",
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"server"
                                 }
@@ -124,7 +131,7 @@
                     "flags":{
                     },
                     "name":"通用变量",
-                    "rankOrder":2,
+                    "rankOrder":3,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -332,7 +339,8 @@
                     "flags":{
                     },
                     "name":"修炼室",
-                    "rankOrder":3,
+                    "rankOrder":4,
+                    "s_or_c":"server",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -357,14 +365,6 @@
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"server"
                                 }
-                            },
-                            {
-                                "ElementName":"Source",
-                                "targetUninit":{
-                                    "id":"Trigger:每秒攻击力修改:3981520475",
-                                    "packageName":"busiyixiantu_5n1b",
-                                    "s_or_c":"server"
-                                }
                             }
                         ]
                     },
@@ -372,7 +372,7 @@
                     "flags":{
                     },
                     "name":"属性修改",
-                    "rankOrder":4,
+                    "rankOrder":5,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -417,6 +417,14 @@
                             {
                                 "ElementName":"Source",
                                 "targetUninit":{
+                                    "id":"Trigger:等级突破启用:2632384149",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
                                     "id":"Variable:等级数组:2021923286",
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"server"
@@ -449,7 +457,31 @@
                             {
                                 "ElementName":"Source",
                                 "targetUninit":{
+                                    "id":"Variable:达到当前最高等级:2673637037",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Variable:特殊等级限制:1634921449",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
                                     "id":"CustomEvent:等级突破显示:2322663292",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:显示等级:4054146341",
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"server"
                                 }
@@ -460,21 +492,14 @@
                     "flags":{
                     },
                     "name":"等级突破",
-                    "rankOrder":5,
+                    "rankOrder":6,
+                    "s_or_c":"server",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
                         }
                     },
                     "tips":""
-                },
-                {
-                    "ElementName":"Source",
-                    "targetUninit":{
-                        "id":"Trigger:ll:3509013233",
-                        "packageName":"busiyixiantu_5n1b",
-                        "s_or_c":"server"
-                    }
                 },
                 {
                     "ElementName":"Folder",
@@ -485,14 +510,47 @@
                     },
                     "contents":{
                         "__TYPE":"Array",
-                        "contents":{
-                        }
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"FunctionDefine:清除怪物:1430479131",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"FunctionDefine:给玩家升仙令:4211356085",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"FunctionDefine:修改玩家攻击距离:874396032",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"FunctionDefine:进入修炼室和修改UI:87145107",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            }
+                        ]
                     },
                     "displayName":"",
                     "flags":{
                     },
                     "name":"通用函数",
                     "rankOrder":7,
+                    "s_or_c":"server",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -525,6 +583,38 @@
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"server"
                                 }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:镜头跟随:1639203560",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:主线挑战属性奖励:2046688947",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:客户端关闭爬塔UI:698372840",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:主线挑战完成:4135326807",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
                             }
                         ]
                     },
@@ -533,46 +623,6 @@
                     },
                     "name":"挑战",
                     "rankOrder":8,
-                    "staticWarningMsgs":{
-                        "__TYPE":"Array",
-                        "contents":{
-                        }
-                    },
-                    "tips":""
-                },
-                {
-                    "ElementName":"Folder",
-                    "breakPointInfo":{
-                        "disabled":false,
-                        "hasBreakPoint":false,
-                        "type":2
-                    },
-                    "contents":{
-                        "__TYPE":"Array",
-                        "contents":[
-                            {
-                                "ElementName":"Source",
-                                "targetUninit":{
-                                    "id":"CustomEvent:玩家_完成rpg挑战自动退出:4086149018",
-                                    "packageName":"busiyixiantu_5n1b",
-                                    "s_or_c":"server"
-                                }
-                            },
-                            {
-                                "ElementName":"Source",
-                                "targetUninit":{
-                                    "id":"CustomEvent:玩家_完成mxh挑战自动退出:4086149018",
-                                    "packageName":"busiyixiantu_5n1b",
-                                    "s_or_c":"server"
-                                }
-                            }
-                        ]
-                    },
-                    "displayName":"",
-                    "flags":{
-                    },
-                    "name":"事件",
-                    "rankOrder":9,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -628,7 +678,8 @@
                     "flags":{
                     },
                     "name":"函数",
-                    "rankOrder":10,
+                    "rankOrder":9,
+                    "s_or_c":"server",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -660,7 +711,8 @@
                     "flags":{
                     },
                     "name":"类",
-                    "rankOrder":11,
+                    "rankOrder":10,
+                    "s_or_c":"server",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -692,7 +744,8 @@
                     "flags":{
                     },
                     "name":"云变量",
-                    "rankOrder":12,
+                    "rankOrder":11,
+                    "s_or_c":"server",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -713,7 +766,63 @@
                             {
                                 "ElementName":"Source",
                                 "targetUninit":{
+                                    "id":"CustomEvent:玩家_rpg挑战开始:3488048439",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:玩家_完成rpg挑战自动退出:4086149018",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
                                     "id":"CustomEvent:造成伤害前:3450482188",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:主线任务关闭ui:2187034412",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:升仙令挑战:3758319742",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:打开修炼室UI:1866322789",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:进入修炼室消息事件:4167310315",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:特殊UI修改需求服务器端:1043714473",
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"server"
                                 }
@@ -724,7 +833,8 @@
                     "flags":{
                     },
                     "name":"通用事件",
-                    "rankOrder":13,
+                    "rankOrder":12,
+                    "s_or_c":"server",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -775,7 +885,6 @@
                                 },
                                 "name":"属性计算",
                                 "rankOrder":1,
-                                "s_or_c":"server",
                                 "staticWarningMsgs":{
                                     "__TYPE":"Array",
                                     "contents":{
@@ -824,13 +933,20 @@
                                 },
                                 "name":"伤害计算",
                                 "rankOrder":2,
-                                "s_or_c":"server",
                                 "staticWarningMsgs":{
                                     "__TYPE":"Array",
                                     "contents":{
                                     }
                                 },
                                 "tips":""
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:攻击回血:1795625569",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
                             }
                         ]
                     },
@@ -838,8 +954,305 @@
                     "flags":{
                     },
                     "name":"数值计算",
-                    "rankOrder":14,
+                    "rankOrder":13,
                     "s_or_c":"server",
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:升仙令挑战完成:1494579436",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:升仙令选择主属性:2573131131",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:升仙令客户端消息:3531887812",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Variable:升仙令等级:2878855943",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:升仙令:3588874703",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:升仙令挑战开始:3496285145",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"升仙令配置",
+                    "rankOrder":14,
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:合成装备:2983084093",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"合成装备",
+                    "rankOrder":15,
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:怪物进攻:143283455",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:返回主城:181516983",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:游戏失败:2846206796",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:游戏胜利:1869032360",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:退出游戏:3124913665",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Variable:进攻怪总数据:71808410",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Variable:当前进攻关卡刷怪数据:44412515",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Variable:进攻怪关数:2235925510",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:进攻怪消息:1037639151",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:游戏失败消息:196154388",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:游戏胜利消息:2002697930",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"守城",
+                    "rankOrder":16,
+                    "s_or_c":"server",
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:爬塔镜头跟随:983219617",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:创建挑战:576855661",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"爬塔",
+                    "rankOrder":17,
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:复活玩家:4041195397",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:测试用:91970509",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"server"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"通用触发",
+                    "rankOrder":18,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{

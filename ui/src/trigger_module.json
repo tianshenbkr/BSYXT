@@ -60,6 +60,14 @@
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"client"
                                 }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:游戏初始化:4267759343",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
                             }
                         ]
                     },
@@ -74,22 +82,6 @@
                         }
                     },
                     "tips":""
-                },
-                {
-                    "ElementName":"Source",
-                    "targetUninit":{
-                        "id":"Variable:消息提示文本UI:3654078666",
-                        "packageName":"busiyixiantu_5n1b",
-                        "s_or_c":"client"
-                    }
-                },
-                {
-                    "ElementName":"Source",
-                    "targetUninit":{
-                        "id":"FunctionDefine:消息文本修改:2120962098",
-                        "packageName":"busiyixiantu_5n1b",
-                        "s_or_c":"client"
-                    }
                 },
                 {
                     "ElementName":"Folder",
@@ -140,6 +132,14 @@
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"client"
                                 }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:返回主城:2691010666",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
                             }
                         ]
                     },
@@ -147,7 +147,7 @@
                     "flags":{
                     },
                     "name":"通用事件",
-                    "rankOrder":4,
+                    "rankOrder":2,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -195,8 +195,7 @@
                     "flags":{
                     },
                     "name":"UI持续更新",
-                    "rankOrder":5,
-                    "s_or_c":"client",
+                    "rankOrder":3,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -269,6 +268,38 @@
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"client"
                                 }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:主城修炼室隐藏:1819676625",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:修炼室UI显示:4251087537",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:打开修炼室UI:1158803525",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:特殊UI修改需求:784510973",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
                             }
                         ]
                     },
@@ -276,7 +307,7 @@
                     "flags":{
                     },
                     "name":"修炼室UI",
-                    "rankOrder":6,
+                    "rankOrder":4,
                     "s_or_c":"client",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
@@ -310,6 +341,14 @@
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"client"
                                 }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:显示等级:2924390159",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
                             }
                         ]
                     },
@@ -317,7 +356,8 @@
                     "flags":{
                     },
                     "name":"等级突破BOSS",
-                    "rankOrder":7,
+                    "rankOrder":5,
+                    "s_or_c":"client",
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -338,6 +378,14 @@
                             {
                                 "ElementName":"Source",
                                 "targetUninit":{
+                                    "id":"FunctionDefine:消息文本修改:2120962098",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
                                     "id":"FunctionDefine:func_属性兑换面板显示:3215672134",
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"client"
@@ -349,7 +397,7 @@
                     "flags":{
                     },
                     "name":"函数",
-                    "rankOrder":8,
+                    "rankOrder":6,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -389,7 +437,7 @@
                     "flags":{
                     },
                     "name":"类",
-                    "rankOrder":9,
+                    "rankOrder":7,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -422,13 +470,111 @@
                                     "packageName":"busiyixiantu_5n1b",
                                     "s_or_c":"client"
                                 }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:UI修改:1111512643",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Variable:奖励文本:1780464640",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
                             }
                         ]
                     },
                     "displayName":"",
                     "flags":{
                     },
-                    "name":"测试",
+                    "name":"主线挑战",
+                    "rankOrder":8,
+                    "s_or_c":"client",
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:选择主属性:231419812",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:升仙令修改消息:3359200989",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"升仙令",
+                    "rankOrder":9,
+                    "s_or_c":"client",
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:关闭背包:2062790977",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:关背包:4106843599",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"背包",
                     "rankOrder":10,
                     "staticWarningMsgs":{
                         "__TYPE":"Array",
@@ -438,12 +584,197 @@
                     "tips":""
                 },
                 {
-                    "ElementName":"Source",
-                    "targetUninit":{
-                        "id":"Trigger:jj:3268552832",
-                        "packageName":"busiyixiantu_5n1b",
-                        "s_or_c":"client"
-                    }
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:合成装备:1737153792",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"合成装备",
+                    "rankOrder":11,
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:进攻怪消息:430851677",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:游戏胜利消息:2312437140",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:游戏失败消息:2695311379",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:总计时:3905678810",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:点击游戏胜利或者失败:444752820",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:老家掉血提示:2119511027",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"守家",
+                    "rankOrder":12,
+                    "s_or_c":"client",
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:爬塔:1149237289",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"CustomEvent:打开爬塔:4146636647",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Trigger:爬塔UI:2741875974",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"爬塔",
+                    "rankOrder":13,
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
+                },
+                {
+                    "ElementName":"Folder",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "contents":{
+                        "__TYPE":"Array",
+                        "contents":[
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Variable:消息提示文本UI:3654078666",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            },
+                            {
+                                "ElementName":"Source",
+                                "targetUninit":{
+                                    "id":"Variable:消息计时器:3896802015",
+                                    "packageName":"busiyixiantu_5n1b",
+                                    "s_or_c":"client"
+                                }
+                            }
+                        ]
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "name":"通用变量",
+                    "rankOrder":14,
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":""
                 }
             ]
         },

@@ -12,7 +12,6 @@
                 },
                 "displayName":"",
                 "flags":{
-                    "noTypeIcon":true
                 },
                 "funcSource":{
                     "ElementName":"Source",
@@ -105,7 +104,6 @@
                 },
                 "displayName":"text",
                 "flags":{
-                    "noTypeIcon":true
                 },
                 "id":"Variable:新参数:3008383492",
                 "keyword":"",
@@ -266,7 +264,6 @@
                 },
                 "displayName":"func",
                 "flags":{
-                    "noTypeIcon":true
                 },
                 "id":"Variable:新参数_1:4089541624",
                 "keyword":"",
@@ -376,7 +373,6 @@
                 },
                 "displayName":"列",
                 "flags":{
-                    "noTypeIcon":true,
                     "questionToken":true
                 },
                 "id":"Variable:新参数:4173822478",

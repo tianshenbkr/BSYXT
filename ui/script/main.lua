@@ -29,18 +29,18 @@ end
 
 ---require lua plus---
 lib_game_options = require"@lib_game_options.main"
-smallcard_get_items = require"@smallcard_get_items.main"
 lib_common_sounds = require"@lib_common_sounds.main"
 lib_region = require"@lib_region.main"
 smallcard_item_pickup = require"@smallcard_item_pickup.main"
 lib_plotdialogue = require"@lib_plotdialogue.main"
+lib_common_ai = require"@lib_common_ai.main".lib_common_ai
 smallcard_choose_one = require"@smallcard_choose_one.main".smallcard_choose_one
-smallcard_unit_attr_panel = require"@smallcard_unit_attr_panel.main".smallcard_unit_attr_panel
 lib_control = require"@lib_control.main".lib_control
+smallcard_unit_attr_panel = require"@smallcard_unit_attr_panel.main".smallcard_unit_attr_panel
+smallcard_get_items = require"@smallcard_get_items.main".smallcard_get_items
+defaultui = require"@defaultui.main".defaultui
 smallcard_mail = require"@smallcard_mail.main".smallcard_mail
 smallcard_inventory = require"@smallcard_inventory.main".smallcard_inventory
-defaultui = require"@defaultui.main".defaultui
-lib_common_ai = require"@lib_common_ai.main".lib_common_ai
 
 ---gui---
 do

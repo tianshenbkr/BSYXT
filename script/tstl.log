@@ -1,28 +1,28 @@
-409.58290004730225:	{"globalClasses":["Array","Present","IEventNotify","Coroutine","Actor","Team","Timer","Snapshot","EffectParamShared","TriggerParamTable","Item","Region","ScreenPos","Target","UnitTable","EffectParam","Point","Mover","Unit","Buff","HealInstance","TriggerEvent","DamageInstance","Slot","Skill","Inventory","Player","Trigger","Line","UnitGroup","Sight","DataCache","AISearcher","ScoreCommitter","ScoreObjData","ScoreGetParam","UserID","ScoreData","ScoreSetParam","ScoreAddParam","ScoreMoneyData","ScoreListAddParam","ScoreListModifyParam","ScoreListDeleteParam","ScoreListData","ScoreMsgSendParam","ScoreMsgQueryParam","ScoreNameNewParam","ScoreNameSearchParam","ScoreChannelMsgData","ScoreGetRankListParam","ScoreGetUserRankParam","ScoreGetRankListData","ScoreGetUserRankData","ScoreGetRankTotalData","ScoreGetRankTotalParam","ScoreMsgData","ScoreListID","ScoreID","ScoreNameData","ScoreMsgID","ScoreMoneyParam","os","DateTime","UnitBuff","autotest_log","ScoreRankSetParam","ScoreRankAddParam","UnitPropertyBonus","SceneObject","Quest","QuestCondition","RegionRect","RegionCircle","Cast"],"globalModules":["coroutine","_G","log","base"]}
-2164.0516999959946:	Loaded 0 plugins
-2165.208699941635:	Parsing project settings
-2172.3867000341415:	Transforming C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.ts
-2175.070799946785:	moduleName:
-2175.0767999887466:	busiyixiantu_5n1b
-2175.696599960327:	exportScope:
-2175.7021000385284:	true
-2339.832999944687:	Printing C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.ts
-2385.2260999679565:	Transforming C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.ts
-2387.5509999990463:	Printing C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.ts
-2403.527899980545:	Transforming C:/Users/XD/Documents/project_bsyxt/script/trigger_validator.ts
-2404.6861000061035:	moduleName:
-2404.6993000507355:	validator
-2405.4025000333786:	exportScope:
-2405.4079999923706:	true
-2956.2036999464035:	Printing C:/Users/XD/Documents/project_bsyxt/script/trigger_validator.ts
-3035.569000005722:	Constructing emit plan
-3036.4040999412537:	Resolving dependencies for C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.ts
-3037.1868000030518:	Resolving dependencies for C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.ts
-3037.904899954796:	Resolving "./trigger_module_main_1" from C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.ts
-3038.643900036812:	Resolved ./trigger_module_main_1 to C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.ts
-3040.0377999544144:	Resolving dependencies for C:/Users/XD/Documents/project_bsyxt/script/trigger_validator.ts
-3041.4322999715805:	Emitting output
-3041.9715000391006:	Emitting C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.lua
-3044.227399945259:	Emitting C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.lua
-3045.5032999515533:	Emitting C:/Users/XD/Documents/project_bsyxt/script/trigger_validator.lua
-3047.2319999933243:	Emit finished!
+392.2617000006139:	{"globalClasses":["Array","Present","IEventNotify","Coroutine","Actor","Team","Timer","Snapshot","EffectParamShared","TriggerParamTable","Item","Region","ScreenPos","Target","UnitTable","EffectParam","Point","Mover","Unit","Buff","HealInstance","TriggerEvent","DamageInstance","Slot","Skill","Inventory","Player","Trigger","Line","UnitGroup","Sight","DataCache","AISearcher","ScoreCommitter","ScoreObjData","ScoreGetParam","UserID","ScoreData","ScoreSetParam","ScoreAddParam","ScoreMoneyData","ScoreListAddParam","ScoreListModifyParam","ScoreListDeleteParam","ScoreListData","ScoreMsgSendParam","ScoreMsgQueryParam","ScoreNameNewParam","ScoreNameSearchParam","ScoreChannelMsgData","ScoreGetRankListParam","ScoreGetUserRankParam","ScoreGetRankListData","ScoreGetUserRankData","ScoreGetRankTotalData","ScoreGetRankTotalParam","ScoreMsgData","ScoreListID","ScoreID","ScoreNameData","ScoreMsgID","ScoreMoneyParam","os","DateTime","UnitBuff","autotest_log","ScoreRankSetParam","ScoreRankAddParam","UnitPropertyBonus","SceneObject","Quest","QuestCondition","RegionRect","RegionCircle","Cast"],"globalModules":["coroutine","_G","log","base"]}
+2309.8744999989867:	Loaded 0 plugins
+2310.918299999088:	Parsing project settings
+2318.935300000012:	Transforming C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.ts
+2325.4295000005513:	moduleName:
+2325.438500000164:	busiyixiantu_5n1b
+2326.204700000584:	exportScope:
+2326.2125000003725:	true
+2599.0482999999076:	Printing C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.ts
+2670.0380000006407:	Transforming C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.ts
+2673.5983000006527:	Printing C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.ts
+2687.3235999997705:	Transforming C:/Users/XD/Documents/project_bsyxt/script/trigger_validator.ts
+2688.471300000325:	moduleName:
+2688.4802999999374:	validator
+2689.040500000119:	exportScope:
+2689.04659999907:	true
+3358.2239999994636:	Printing C:/Users/XD/Documents/project_bsyxt/script/trigger_validator.ts
+3424.076500000432:	Constructing emit plan
+3424.905600000173:	Resolving dependencies for C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.ts
+3425.837700000033:	Resolving dependencies for C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.ts
+3426.5320999994874:	Resolving "./trigger_module_main_1" from C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.ts
+3427.2830999996513:	Resolved ./trigger_module_main_1 to C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.ts
+3428.7880000006407:	Resolving dependencies for C:/Users/XD/Documents/project_bsyxt/script/trigger_validator.ts
+3431.265799999237:	Emitting output
+3431.6623999997973:	Emitting C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main_1.lua
+3433.407800000161:	Emitting C:/Users/XD/Documents/project_bsyxt/script/trigger_module_main.lua
+3434.6426999997348:	Emitting C:/Users/XD/Documents/project_bsyxt/script/trigger_validator.lua
+3436.4890000000596:	Emit finished!

@@ -349,6 +349,7 @@
         ]
     },
     "flags":{
+        "initOn":false
     },
     "id":"Trigger:挑战测试:3421821507",
     "keyword":"",

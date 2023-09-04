@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<node origin="" id="0">
+	<component type="Zone" id="0">
+		<attribute name="Bounding Box Min" value="-100000.00 -100000.00 -100000.00" />
+		<attribute name="Bounding Box Max" value="100000.00 100000.00 100000.00" />
+		<attribute name="Ambient Color" value="0.203 0.298 0.389 1" />
+		<attribute name="Fog Color" value="0.102 0.297 0.588 1" />
+		<attribute name="Depth Fog Density" value="1" />
+		<attribute name="Depth Fog Start" value="4500" />
+		<attribute name="Depth Fog End" value="15000" />
+		<attribute name="Depth Fog AutoCompute" value="true" />
+		<attribute name="Height Fog Density" value="1" />
+		<attribute name="Height Fog Falloff" value="0.085" />
+		<attribute name="Height Fog Height" value="-2200" />
+		<attribute name="Height Fog Enable" value="true" />
+		<attribute name="Env Diff Texture" value="TextureX;cube/day/daydiffusehdr.dds" />
+		<attribute name="Env Spec Texture" value="TextureX;cube/day/dayspecularhdr.dds" />
+		<attribute name="SphericalHarmonicsL2" value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+		<attribute name="Role SphericalHarmonicsL2" value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+	</component>
+	<node id="0">
+		<attribute name="Is Enabled" value="true" />
+		<attribute name="Name" value="" />
+		<attribute name="Tags" />
+		<attribute name="Position" value="0.00 0.00 0.00" />
+		<attribute name="Rotation" value="0.084186 -0.0225575 -0.96225 -0.257834" />
+		<attribute name="Scale" value="1.00 1.00 1.00" />
+		<attribute name="Variables" />
+		<component type="Light" id="0">
+			<attribute name="Light Type" value="Directional" />
+			<attribute name="Brightness Multiplier" value="1.9" />
+			<attribute name="Cast Shadows" value="true" />
+			<attribute name="Shadow Intensity" value="0.2" />
+			<attribute name="Shadow Resolution" value="0.6" />
+			<attribute name="CSM Splits" value="100 1000 5000 32000" />
+			<attribute name="CSM Fade Start" value="1" />
+			<attribute name="Depth Constant Bias" value="0.00025" />
+			<attribute name="Depth Slope Bias" value="5" />
+			<attribute name="Max Extrusion" value="5000" />
+			<attribute name="Auto Shadow Cascade" value="true" />
+			<attribute name="Num Auto Shadow Cascade" value="4" />
+			<attribute name="Absorption Intensity" value="0.1" />
+			<attribute name="Volumetric Blend" value="1" />
+		</component>
+	</node>
+</node>

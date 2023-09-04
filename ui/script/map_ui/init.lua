@@ -1,6 +1,11 @@
 
 base.map_ui = {}
 
+--隐藏默认的背包入口
+local im = require '@smallcard_inventory.inventory.main'
+local ent = im.entrance
+ent.show = false
+
 --data
 require 'map_ui.data'
 

@@ -1,13 +1,6 @@
 @demo_p7gb/image/icons/导弹轰炸.png
-Spellcast_1
-Spellcast_2
-Spellcast_5
 characters/monster/sm_huolong/model.prefab
 characters1/jiangziya_e49b/model.prefab
 effect/effect_new/effect_hit/ps_fireball_explode_eff/particle.effect
-effect/effect_new/effect_mofa/eff_mofa_04/particle.effect
-effect/effect_new1/effect_knief/eff_jianqi/particle.effect
 eqpt/weapon/mofashi_weapon/model.prefab
 maps/busiyixiantu_5n1b/anim/jiangziya_e49b/anim/human/barehanded_anim/hand_05/skill_025.ani
-maps/busiyixiantu_5n1b/anim/jiangziya_e49b/anim/human/sword_anim/twohand_04/attack_02.ani
-sound/a2_sfx/fight/impact/sfx_imp_sword_lit.ogg

@@ -1,12 +1,32 @@
-{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":1885,"length":9,"category":1}
-{"messageText":"标识符“加怪”重复。","code":2300,"start":2103,"length":2,"category":1}
-{"messageText":"标识符“减怪”重复。","code":2300,"start":2281,"length":2,"category":1}
-{"messageText":"标识符“加怪”重复。","code":2300,"start":16652,"length":2,"category":1}
-{"messageText":"标识符“减怪”重复。","code":2300,"start":16830,"length":2,"category":1}
-{"messageText":"无法重新声明块范围变量“加怪了”。","code":2451,"start":17283,"length":3,"category":1}
-{"messageText":"“加怪了”表示值，但在此处用作类型。是否指“类型 加怪了”?","code":2749,"start":17324,"length":3,"category":1}
-{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":20104,"length":9,"category":1}
-{"messageText":"类型“typeof base”上不存在属性“map_ui”。","code":2339,"start":20127,"length":6,"category":1}
-{"messageText":"属性“link”没有初始化表达式，且未在构造函数中明确赋值。","code":2564,"start":20187,"length":4,"category":1}
-{"messageText":"无法重新声明块范围变量“加怪了”。","code":2451,"start":21719,"length":3,"category":1}
-{"messageText":"类型“typeof 加怪了”上不存在属性“add_event_common”。","code":2339,"start":23427,"length":16,"category":1}
+{"messageText":"标识符“加怪”重复。","code":2300,"start":1807,"length":2,"category":1}
+{"messageText":"标识符“减怪”重复。","code":2300,"start":1985,"length":2,"category":1}
+{"messageText":"标识符“加怪”重复。","code":2300,"start":14850,"length":2,"category":1}
+{"messageText":"标识符“减怪”重复。","code":2300,"start":15028,"length":2,"category":1}
+{"messageText":"无法重新声明块范围变量“加怪了”。","code":2451,"start":15481,"length":3,"category":1}
+{"messageText":"“加怪了”表示值，但在此处用作类型。是否指“类型 加怪了”?","code":2749,"start":15522,"length":3,"category":1}
+{"messageText":"无法重新声明块范围变量“打开修炼室UI”。","code":2451,"start":20194,"length":7,"category":1}
+{"messageText":"“打开修炼室UI”表示值，但在此处用作类型。是否指“类型 打开修炼室UI”?","code":2749,"start":20239,"length":7,"category":1}
+{"messageText":"无法重新声明块范围变量“显示等级”。","code":2451,"start":21095,"length":4,"category":1}
+{"messageText":"“显示等级”表示值，但在此处用作类型。是否指“类型 显示等级”?","code":2749,"start":21137,"length":4,"category":1}
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":21443,"length":9,"category":1}
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":21613,"length":9,"category":1}
+{"messageText":"类型“typeof base”上不存在属性“map_ui”。","code":2339,"start":21636,"length":6,"category":1}
+{"messageText":"属性“link”没有初始化表达式，且未在构造函数中明确赋值。","code":2564,"start":21696,"length":4,"category":1}
+{"messageText":"无法重新声明块范围变量“进攻怪消息”。","code":2451,"start":25799,"length":5,"category":1}
+{"messageText":"“进攻怪消息”表示值，但在此处用作类型。是否指“类型 进攻怪消息”?","code":2749,"start":25842,"length":5,"category":1}
+{"messageText":"无法重新声明块范围变量“游戏胜利消息”。","code":2451,"start":27028,"length":6,"category":1}
+{"messageText":"“游戏胜利消息”表示值，但在此处用作类型。是否指“类型 游戏胜利消息”?","code":2749,"start":27072,"length":6,"category":1}
+{"messageText":"无法重新声明块范围变量“游戏失败消息”。","code":2451,"start":27481,"length":6,"category":1}
+{"messageText":"“游戏失败消息”表示值，但在此处用作类型。是否指“类型 游戏失败消息”?","code":2749,"start":27525,"length":6,"category":1}
+{"messageText":"无法重新声明块范围变量“加怪了”。","code":2451,"start":31752,"length":3,"category":1}
+{"messageText":"无法重新声明块范围变量“打开修炼室UI”。","code":2451,"start":33109,"length":7,"category":1}
+{"messageText":"无法重新声明块范围变量“显示等级”。","code":2451,"start":33296,"length":4,"category":1}
+{"messageText":"无法重新声明块范围变量“游戏失败消息”。","code":2451,"start":33495,"length":6,"category":1}
+{"messageText":"无法重新声明块范围变量“游戏胜利消息”。","code":2451,"start":33680,"length":6,"category":1}
+{"messageText":"无法重新声明块范围变量“进攻怪消息”。","code":2451,"start":34765,"length":5,"category":1}
+{"messageText":"类型“typeof 加怪了”上不存在属性“add_event_common”。","code":2339,"start":35795,"length":16,"category":1}
+{"messageText":"类型“typeof 打开修炼室UI”上不存在属性“add_event_common”。","code":2339,"start":36462,"length":16,"category":1}
+{"messageText":"类型“typeof 显示等级”上不存在属性“add_event_common”。","code":2339,"start":36651,"length":16,"category":1}
+{"messageText":"类型“typeof 进攻怪消息”上不存在属性“add_event_common”。","code":2339,"start":37335,"length":16,"category":1}
+{"messageText":"类型“typeof 游戏胜利消息”上不存在属性“add_event_common”。","code":2339,"start":37430,"length":16,"category":1}
+{"messageText":"类型“typeof 游戏失败消息”上不存在属性“add_event_common”。","code":2339,"start":37526,"length":16,"category":1}

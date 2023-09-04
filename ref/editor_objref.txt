@@ -1,4 +1,11 @@
+@busiyixiantu_5n1b/image/_0009_统帅护卫.png
+@busiyixiantu_5n1b/image/icons/011_t.png
+@busiyixiantu_5n1b/image/icons/013_t.png
 @busiyixiantu_5n1b/image/icons/01_q_1.png
+@busiyixiantu_5n1b/image/icons/024_t.png
+@busiyixiantu_5n1b/image/icons/040_t.png
+@busiyixiantu_5n1b/image/icons/041_t.png
+@busiyixiantu_5n1b/image/icons/044_t.png
 @default_units_ts/image/09_t.png
 @default_units_ts/image/108_t.png
 @default_units_ts/image/37.png
@@ -157,10 +164,10 @@ anim/human/barehanded_anim/hand_05/skill_05.ani
 anim/human/barehanded_anim/hand_05/skill_07.ani
 anim/human/barehanded_anim/hand_05/skill_08.ani
 anim/human/barehanded_anim/hand_05/skill_09.ani
-anim/human/barehanded_anim/hand_05/skill_blizzard_logic.ani
 anim/human/barehanded_anim/hand_05/skill_dafengche.ani
 anim/human/barehanded_anim/hand_07/skill_01.ani
 anim/human/barehanded_anim/hand_07/skill_02.ani
+anim/human/barehanded_anim/hand_24/skill_01.ani
 anim/human/blade_anim/doublehold_02/attack_02.ani
 anim/human/blade_anim/doublehold_02/attack_03.ani
 anim/human/blade_anim/twohand_01/attack_01.ani
@@ -199,6 +206,7 @@ characters/monster/sk_wild_boar/model.prefab
 characters/monster/sm_huolong/model.prefab
 characters/monster/undeadbird/model.prefab
 characters/monster/undeadbird_egg/model.prefab
+characters/monster_westfantasy/sk_jryg/model.prefab
 characters/tramcar_td/jinbi/model.prefab
 characters1/jiangziya_e49b/model.prefab
 characters1/linghunfashi_rmhb/model.prefab
@@ -226,7 +234,9 @@ effect/SampleSpells/Thunder/ThunderClap/particle.effect
 effect/SampleSpells/Thunder/ThunderClap_Hit/particle.effect
 effect/SampleSpells/Thunder/thunderclap_aoe/particle.effect
 effect/SampleSpells/innerfire/InnerFire_Target1/particle.effect
+effect/bp/shandain_dandao/shandiandandao_1/particle.effect
 effect/bp/shandain_dandao/shandiandandao_2/particle.effect
+effect/bp/shandain_dandao/shandiandandao_3/particle.effect
 effect/bp/yuan/ps_zhishi_1/particle.effect
 effect/bp/yuan/ps_zhishi_5/particle.effect
 effect/bp/yuan/ps_zhishi_7/particle.effect
@@ -361,8 +371,6 @@ effect/eff_xujian/effect_fire_debuff/particle.effect
 effect/eff_xujian/effect_hit_001/particle.effect
 effect/eff_xujian/effect_hit_002/particle.effect
 effect/eff_xujian/effect_hit_004/particle.effect
-effect/eff_xujian/effect_hit_006/particle.effect
-effect/eff_xujian/effect_light_000/particle.effect
 effect/eff_xujian/effect_light_000_0/particle.effect
 effect/eff_xujian/effect_light_002/particle.effect
 effect/eff_xujian/effect_light_01_01/particle.effect
@@ -387,6 +395,8 @@ effect/effect_new/eff_object/eff_object_pinjie_02/particle.effect
 effect/effect_new/eff_object/eff_object_pinjie_03/particle.effect
 effect/effect_new/eff_object/eff_object_pinjie_04/particle.effect
 effect/effect_new/eff_object/eff_object_pinjie_05/particle.effect
+effect/effect_new/effect_boss/eff_zhizhu_02/particle.effect
+effect/effect_new/effect_buff/eff_zhizhu_buff_01/particle.effect
 effect/effect_new/effect_emit/eff_fireball_01/particle.effect
 effect/effect_new/effect_hit/eff_hit_01/particle.effect
 effect/effect_new/effect_hit/eff_hit_02/particle.effect
@@ -394,9 +404,14 @@ effect/effect_new/effect_hit/eff_hit_09/particle.effect
 effect/effect_new/effect_hit/eff_hit_15/particle.effect
 effect/effect_new/effect_hit/eff_lght_hit/particle.effect
 effect/effect_new/effect_hit/ps_fireball_explode_eff/particle.effect
+effect/effect_new/effect_hit/ps_lightarrows_hit_eff/particle.effect
+effect/effect_new/effect_hit/ps_whirlingblade_hit_eff/particle.effect
+effect/effect_new/effect_knief/ps_swordbreath_eff/particle.effect
 effect/effect_new/effect_mofa/eff_jiandown_once/particle.effect
 effect/effect_new/effect_mofa/eff_jianyu_01/particle.effect
-effect/effect_new/effect_mofa/eff_mofa_04/particle.effect
+effect/effect_new/effect_mofa/eff_mofa_05/particle.effect
+effect/effect_new/effect_mofa/eff_purplehit_01/particle.effect
+effect/effect_new/effect_scene/1/particle.effect
 effect/effect_new/effect_ui/eff_ui_biankuang006/particle.effect
 effect/effect_new/effect_zhishiqi/eff_juxing/ps_tou_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_juxing/ps_wei_1/particle.effect
@@ -422,7 +437,7 @@ effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_zhixiangxing_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_zhishiqi/ps_zhixiangxing_red_1/particle.effect
 effect/effect_new/effect_zhishiqi/eff_zhixianxing/ps_tou_1/particle.effect
 effect/effect_new1/eff_keji/eff_keji_qiu1/particle.effect
-effect/effect_new1/effect_knief/eff_jianqi/particle.effect
+effect/effect_new1/effect_emit/eff_sacred_ray/particle.effect
 effect/samplespells/avatar/avatar/particle.effect
 effect/samplespells/avatar/avatar_caster/particle.effect
 effect/samplespells/blink/Blink_Caster/particle.effect
@@ -445,8 +460,6 @@ effect/samplespells/disple/disple_hit/particle.effect
 effect/samplespells/divineshield/divineshield/particle.effect
 effect/samplespells/durability aura/durability aura/particle.effect
 effect/samplespells/earthquake/earthquake/particle.effect
-effect/samplespells/fan_of_knives/fanofknives_hit/particle.effect
-effect/samplespells/fan_of_knives/fanofknives_missile/particle.effect
 effect/samplespells/fog/attackdisabled/particle.effect
 effect/samplespells/fog/fog/particle.effect
 effect/samplespells/fog/fog_charge/particle.effect
@@ -491,8 +504,6 @@ effect/samplespells/resurrection/resurrection_target/particle.effect
 effect/samplespells/roar/roar/particle.effect
 effect/samplespells/roar/roar_aoe/particle.effect
 effect/samplespells/roar/roar_start/particle.effect
-effect/samplespells/shockwave/shockwave_missile/particle.effect
-effect/samplespells/shockwave/shockwave_missile_blast/particle.effect
 effect/samplespells/slow/slow/particle.effect
 effect/samplespells/slow/slow_target/particle.effect
 effect/samplespells/snake ward/snake ward_attack/particle.effect
@@ -587,7 +598,9 @@ sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_06.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_07.ogg
 sound/a2_sfx/action/moveaction/footsteps/fs_gen_2feet_wood_08.ogg
 sound/a2_sfx/fight/impact/sfx_imp_sword_lit.ogg
+sound/a2_sfx/fight/magic/sfx_magic_casi_dark_flight_01.ogg
 sound/a2_sfx/fight/magic/sfx_magic_elecball_gen_blast.ogg
+sound/a2_sfx/fight/statuseffect/sfx_magicbeam_flash_03.ogg
 sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Box_Gold_Open.ogg
 sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Box_Ordinary_Open.ogg
 sound/a2_sfx/ui/general/UI_DrawCard_OneTimes_Show.ogg

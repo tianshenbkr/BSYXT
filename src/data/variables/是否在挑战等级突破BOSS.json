@@ -48,7 +48,7 @@
     "keyword":"",
     "name":"是否在挑战等级突破BOSS",
     "packageName":"busiyixiantu_5n1b",
-    "rankOrder":7,
+    "rankOrder":8,
     "realType":{
         "ElementName":"SimpleType",
         "breakPointInfo":{

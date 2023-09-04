@@ -642,9 +642,72 @@
                                         },
                                         "parameters":{
                                             "__TYPE":"Array",
-                                            "contents":{
-                                            }
+                                            "contents":[
+                                                {
+                                                    "ElementName":"FunctionCall",
+                                                    "breakPointInfo":{
+                                                        "disabled":false,
+                                                        "hasBreakPoint":false,
+                                                        "type":2
+                                                    },
+                                                    "caller":{
+                                                        "ElementName":"SourceValue",
+                                                        "breakPointInfo":{
+                                                            "disabled":false,
+                                                            "hasBreakPoint":false,
+                                                            "type":2
+                                                        },
+                                                        "displayName":"",
+                                                        "flags":{
+                                                        },
+                                                        "s_or_c":"server",
+                                                        "staticWarningMsgs":{
+                                                            "__TYPE":"Array",
+                                                            "contents":{
+                                                            }
+                                                        },
+                                                        "tips":"",
+                                                        "valueSource":{
+                                                            "ElementName":"Source",
+                                                            "targetUninit":{
+                                                                "id":"Variable:玩家的主控单位:1872362639",
+                                                                "packageName":"busiyixiantu_5n1b",
+                                                                "s_or_c":"server"
+                                                            }
+                                                        }
+                                                    },
+                                                    "displayName":"",
+                                                    "flags":{
+                                                    },
+                                                    "funcSource":{
+                                                        "ElementName":"Source",
+                                                        "targetUninit":{
+                                                            "id":"FunctionDefine:283",
+                                                            "packageName":"__server__",
+                                                            "s_or_c":"server"
+                                                        }
+                                                    },
+                                                    "parameters":{
+                                                        "__TYPE":"Array",
+                                                        "contents":{
+                                                        }
+                                                    },
+                                                    "s_or_c":"server",
+                                                    "staticWarningMsgs":{
+                                                        "__TYPE":"Array",
+                                                        "contents":{
+                                                        }
+                                                    },
+                                                    "tips":"",
+                                                    "typeParameters":{
+                                                        "__TYPE":"Array",
+                                                        "contents":{
+                                                        }
+                                                    }
+                                                }
+                                            ]
                                         },
+                                        "s_or_c":"server",
                                         "staticWarningMsgs":{
                                             "__TYPE":"Array",
                                             "contents":{
@@ -2467,9 +2530,72 @@
                             },
                             "parameters":{
                                 "__TYPE":"Array",
-                                "contents":{
-                                }
+                                "contents":[
+                                    {
+                                        "ElementName":"FunctionCall",
+                                        "breakPointInfo":{
+                                            "disabled":false,
+                                            "hasBreakPoint":false,
+                                            "type":2
+                                        },
+                                        "caller":{
+                                            "ElementName":"SourceValue",
+                                            "breakPointInfo":{
+                                                "disabled":false,
+                                                "hasBreakPoint":false,
+                                                "type":2
+                                            },
+                                            "displayName":"",
+                                            "flags":{
+                                            },
+                                            "s_or_c":"server",
+                                            "staticWarningMsgs":{
+                                                "__TYPE":"Array",
+                                                "contents":{
+                                                }
+                                            },
+                                            "tips":"",
+                                            "valueSource":{
+                                                "ElementName":"Source",
+                                                "targetUninit":{
+                                                    "id":"Variable:玩家的主控单位:1872362639",
+                                                    "packageName":"busiyixiantu_5n1b",
+                                                    "s_or_c":"server"
+                                                }
+                                            }
+                                        },
+                                        "displayName":"",
+                                        "flags":{
+                                        },
+                                        "funcSource":{
+                                            "ElementName":"Source",
+                                            "targetUninit":{
+                                                "id":"FunctionDefine:283",
+                                                "packageName":"__server__",
+                                                "s_or_c":"server"
+                                            }
+                                        },
+                                        "parameters":{
+                                            "__TYPE":"Array",
+                                            "contents":{
+                                            }
+                                        },
+                                        "s_or_c":"server",
+                                        "staticWarningMsgs":{
+                                            "__TYPE":"Array",
+                                            "contents":{
+                                            }
+                                        },
+                                        "tips":"",
+                                        "typeParameters":{
+                                            "__TYPE":"Array",
+                                            "contents":{
+                                            }
+                                        }
+                                    }
+                                ]
                             },
+                            "s_or_c":"server",
                             "staticWarningMsgs":{
                                 "__TYPE":"Array",
                                 "contents":{

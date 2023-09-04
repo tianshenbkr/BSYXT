@@ -49,6 +49,7 @@
                                             "contents":{
                                             }
                                         },
+                                        "tips":"",
                                         "type":{
                                             "ElementName":"SimpleType",
                                             "breakPointInfo":{
@@ -64,7 +65,8 @@
                                                 "__TYPE":"Array",
                                                 "contents":{
                                                 }
-                                            }
+                                            },
+                                            "tips":""
                                         },
                                         "value":"eq"
                                     },
@@ -121,6 +123,7 @@
                                                             "contents":{
                                                             }
                                                         },
+                                                        "tips":"",
                                                         "typeParameters":{
                                                             "__TYPE":"Array",
                                                             "contents":{
@@ -143,6 +146,7 @@
                                                             "contents":{
                                                             }
                                                         },
+                                                        "tips":"",
                                                         "type":{
                                                             "ElementName":"SimpleType",
                                                             "breakPointInfo":{
@@ -158,7 +162,8 @@
                                                                 "__TYPE":"Array",
                                                                 "contents":{
                                                                 }
-                                                            }
+                                                            },
+                                                            "tips":""
                                                         },
                                                         "value":"人物属性主面板"
                                                     }
@@ -170,6 +175,7 @@
                                                 "contents":{
                                                 }
                                             },
+                                            "tips":"",
                                             "typeParameters":{
                                                 "__TYPE":"Array",
                                                 "contents":[
@@ -186,7 +192,7 @@
                                                         "source":{
                                                             "ElementName":"Source",
                                                             "targetUninit":{
-                                                                "id":"Class:_OBJ__gui_ctrl_panel",
+                                                                "id":"Class:_OBJ__gui_ctrl_button",
                                                                 "packageName":"__client__",
                                                                 "s_or_c":"client"
                                                             }
@@ -196,6 +202,7 @@
                                                             "contents":{
                                                             }
                                                         },
+                                                        "tips":"",
                                                         "typeArgs":{
                                                             "__TYPE":"Array",
                                                             "contents":{
@@ -227,7 +234,8 @@
                                             "__TYPE":"Array",
                                             "contents":{
                                             }
-                                        }
+                                        },
+                                        "tips":""
                                     },
                                     {
                                         "ElementName":"Instant",
@@ -244,6 +252,7 @@
                                             "contents":{
                                             }
                                         },
+                                        "tips":"",
                                         "type":{
                                             "ElementName":"SimpleType",
                                             "breakPointInfo":{
@@ -259,7 +268,8 @@
                                                 "__TYPE":"Array",
                                                 "contents":{
                                                 }
-                                            }
+                                            },
+                                            "tips":""
                                         },
                                         "value":true
                                     }
@@ -271,6 +281,7 @@
                                 "contents":{
                                 }
                             },
+                            "tips":"",
                             "typeParameters":{
                                 "__TYPE":"Array",
                                 "contents":{
@@ -346,6 +357,7 @@
                                                     "contents":{
                                                     }
                                                 },
+                                                "tips":"",
                                                 "typeParameters":{
                                                     "__TYPE":"Array",
                                                     "contents":{
@@ -368,6 +380,7 @@
                                                     "contents":{
                                                     }
                                                 },
+                                                "tips":"",
                                                 "type":{
                                                     "ElementName":"SimpleType",
                                                     "breakPointInfo":{
@@ -383,7 +396,8 @@
                                                         "__TYPE":"Array",
                                                         "contents":{
                                                         }
-                                                    }
+                                                    },
+                                                    "tips":""
                                                 },
                                                 "value":"人物属性主面板"
                                             }
@@ -395,6 +409,7 @@
                                         "contents":{
                                         }
                                     },
+                                    "tips":"",
                                     "typeParameters":{
                                         "__TYPE":"Array",
                                         "contents":[
@@ -411,7 +426,7 @@
                                                 "source":{
                                                     "ElementName":"Source",
                                                     "targetUninit":{
-                                                        "id":"Class:_OBJ__gui_ctrl_panel",
+                                                        "id":"Class:_OBJ__gui_ctrl_button",
                                                         "packageName":"__client__",
                                                         "s_or_c":"client"
                                                     }
@@ -421,6 +436,7 @@
                                                     "contents":{
                                                     }
                                                 },
+                                                "tips":"",
                                                 "typeArgs":{
                                                     "__TYPE":"Array",
                                                     "contents":{
@@ -452,7 +468,8 @@
                                     "__TYPE":"Array",
                                     "contents":{
                                     }
-                                }
+                                },
+                                "tips":""
                             },
                             "right":{
                                 "ElementName":"Instant",
@@ -469,6 +486,7 @@
                                     "contents":{
                                     }
                                 },
+                                "tips":"",
                                 "type":{
                                     "ElementName":"SimpleType",
                                     "breakPointInfo":{
@@ -484,7 +502,8 @@
                                         "__TYPE":"Array",
                                         "contents":{
                                         }
-                                    }
+                                    },
+                                    "tips":""
                                 },
                                 "value":true
                             },
@@ -493,7 +512,8 @@
                                 "__TYPE":"Array",
                                 "contents":{
                                 }
-                            }
+                            },
+                            "tips":""
                         }
                     ]
                 },
@@ -505,6 +525,7 @@
                     "contents":{
                     }
                 },
+                "tips":"",
                 "trueActions":{
                     "__TYPE":"Array",
                     "contents":[
@@ -571,6 +592,7 @@
                                                     "contents":{
                                                     }
                                                 },
+                                                "tips":"",
                                                 "typeParameters":{
                                                     "__TYPE":"Array",
                                                     "contents":{
@@ -593,6 +615,7 @@
                                                     "contents":{
                                                     }
                                                 },
+                                                "tips":"",
                                                 "type":{
                                                     "ElementName":"SimpleType",
                                                     "breakPointInfo":{
@@ -608,7 +631,8 @@
                                                         "__TYPE":"Array",
                                                         "contents":{
                                                         }
-                                                    }
+                                                    },
+                                                    "tips":""
                                                 },
                                                 "value":"人物属性主面板"
                                             }
@@ -620,6 +644,7 @@
                                         "contents":{
                                         }
                                     },
+                                    "tips":"",
                                     "typeParameters":{
                                         "__TYPE":"Array",
                                         "contents":[
@@ -636,7 +661,7 @@
                                                 "source":{
                                                     "ElementName":"Source",
                                                     "targetUninit":{
-                                                        "id":"Class:_OBJ__gui_ctrl_panel",
+                                                        "id":"Class:_OBJ__gui_ctrl_button",
                                                         "packageName":"__client__",
                                                         "s_or_c":"client"
                                                     }
@@ -646,6 +671,7 @@
                                                     "contents":{
                                                     }
                                                 },
+                                                "tips":"",
                                                 "typeArgs":{
                                                     "__TYPE":"Array",
                                                     "contents":{
@@ -677,7 +703,8 @@
                                     "__TYPE":"Array",
                                     "contents":{
                                     }
-                                }
+                                },
+                                "tips":""
                             },
                             "right":{
                                 "ElementName":"Instant",
@@ -694,6 +721,7 @@
                                     "contents":{
                                     }
                                 },
+                                "tips":"",
                                 "type":{
                                     "ElementName":"SimpleType",
                                     "breakPointInfo":{
@@ -709,7 +737,8 @@
                                         "__TYPE":"Array",
                                         "contents":{
                                         }
-                                    }
+                                    },
+                                    "tips":""
                                 },
                                 "value":false
                             },
@@ -718,7 +747,8 @@
                                 "__TYPE":"Array",
                                 "contents":{
                                 }
-                            }
+                            },
+                            "tips":""
                         }
                     ]
                 }
@@ -786,6 +816,7 @@
                         "contents":{
                         }
                     },
+                    "tips":"",
                     "typeArgs":{
                         "__TYPE":"Array",
                         "contents":{
@@ -829,7 +860,8 @@
                         "__TYPE":"Array",
                         "contents":{
                         }
-                    }
+                    },
+                    "tips":""
                 },
                 "s_or_c":"client",
                 "staticWarningMsgs":{
@@ -857,7 +889,8 @@
             "__TYPE":"Array",
             "contents":{
             }
-        }
+        },
+        "tips":""
     },
     "s_or_c":"client",
     "staticWarningMsgs":{

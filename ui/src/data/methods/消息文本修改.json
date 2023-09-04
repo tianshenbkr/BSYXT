@@ -12,6 +12,7 @@
                 },
                 "displayName":"",
                 "flags":{
+                    "enabled":false,
                     "noTypeIcon":true
                 },
                 "left":{
@@ -215,286 +216,49 @@
                     "hasBreakPoint":false,
                     "type":2
                 },
+                "caller":{
+                    "ElementName":"SourceValue",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "s_or_c":"client",
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":"",
+                    "valueSource":{
+                        "ElementName":"Source",
+                        "targetUninit":{
+                            "id":"Variable:消息计时器:3896802015",
+                            "packageName":"busiyixiantu_5n1b",
+                            "s_or_c":"client"
+                        }
+                    }
+                },
                 "displayName":"",
                 "flags":{
+                    "fromOop":true,
                     "noTypeIcon":true
                 },
                 "funcSource":{
                     "ElementName":"Source",
                     "targetUninit":{
-                        "id":"FunctionDefine:timer_wait2480930816.0",
+                        "id":"Class:Timer, MethodDefine:restart",
                         "packageName":"__client__",
                         "s_or_c":"client"
                     }
                 },
                 "parameters":{
                     "__TYPE":"Array",
-                    "contents":[
-                        {
-                            "ElementName":"Instant",
-                            "breakPointInfo":{
-                                "disabled":false,
-                                "hasBreakPoint":false,
-                                "type":2
-                            },
-                            "displayName":"",
-                            "flags":{
-                            },
-                            "staticWarningMsgs":{
-                                "__TYPE":"Array",
-                                "contents":{
-                                }
-                            },
-                            "tips":"",
-                            "type":{
-                                "ElementName":"SimpleType",
-                                "breakPointInfo":{
-                                    "disabled":false,
-                                    "hasBreakPoint":false,
-                                    "type":2
-                                },
-                                "displayName":"数值",
-                                "flags":{
-                                },
-                                "name":"number",
-                                "staticWarningMsgs":{
-                                    "__TYPE":"Array",
-                                    "contents":{
-                                    }
-                                },
-                                "tips":""
-                            },
-                            "value":5
-                        },
-                        {
-                            "ElementName":"ArrowFunction",
-                            "actions":{
-                                "__TYPE":"Array",
-                                "contents":[
-                                    {
-                                        "ElementName":"SetValue",
-                                        "breakPointInfo":{
-                                            "disabled":false,
-                                            "hasBreakPoint":false,
-                                            "type":2
-                                        },
-                                        "displayName":"",
-                                        "flags":{
-                                        },
-                                        "left":{
-                                            "ElementName":"Index",
-                                            "baseValue":{
-                                                "ElementName":"SourceValue",
-                                                "breakPointInfo":{
-                                                    "disabled":false,
-                                                    "hasBreakPoint":false,
-                                                    "type":2
-                                                },
-                                                "displayName":"",
-                                                "flags":{
-                                                },
-                                                "s_or_c":"client",
-                                                "staticWarningMsgs":{
-                                                    "__TYPE":"Array",
-                                                    "contents":{
-                                                    }
-                                                },
-                                                "tips":"",
-                                                "valueSource":{
-                                                    "ElementName":"Source",
-                                                    "targetUninit":{
-                                                        "id":"Variable:消息提示文本UI:3654078666",
-                                                        "packageName":"busiyixiantu_5n1b",
-                                                        "s_or_c":"client"
-                                                    }
-                                                }
-                                            },
-                                            "breakPointInfo":{
-                                                "disabled":false,
-                                                "hasBreakPoint":false,
-                                                "type":2
-                                            },
-                                            "displayName":"",
-                                            "flags":{
-                                                "fromOop":true
-                                            },
-                                            "indexSource":{
-                                                "ElementName":"Source",
-                                                "targetUninit":{
-                                                    "id":"Class:_OBJ__gui_ctrl_label, ClassProperty:show",
-                                                    "packageName":"__client__",
-                                                    "s_or_c":"client"
-                                                }
-                                            },
-                                            "s_or_c":"client",
-                                            "staticWarningMsgs":{
-                                                "__TYPE":"Array",
-                                                "contents":{
-                                                }
-                                            },
-                                            "tips":""
-                                        },
-                                        "right":{
-                                            "ElementName":"Instant",
-                                            "breakPointInfo":{
-                                                "disabled":false,
-                                                "hasBreakPoint":false,
-                                                "type":2
-                                            },
-                                            "displayName":"",
-                                            "flags":{
-                                            },
-                                            "staticWarningMsgs":{
-                                                "__TYPE":"Array",
-                                                "contents":{
-                                                }
-                                            },
-                                            "tips":"",
-                                            "type":{
-                                                "ElementName":"SimpleType",
-                                                "breakPointInfo":{
-                                                    "disabled":false,
-                                                    "hasBreakPoint":false,
-                                                    "type":2
-                                                },
-                                                "displayName":"布尔值",
-                                                "flags":{
-                                                },
-                                                "name":"boolean",
-                                                "staticWarningMsgs":{
-                                                    "__TYPE":"Array",
-                                                    "contents":{
-                                                    }
-                                                },
-                                                "tips":""
-                                            },
-                                            "value":false
-                                        },
-                                        "s_or_c":"client",
-                                        "staticWarningMsgs":{
-                                            "__TYPE":"Array",
-                                            "contents":{
-                                            }
-                                        },
-                                        "tips":""
-                                    }
-                                ]
-                            },
-                            "breakPointInfo":{
-                                "disabled":false,
-                                "hasBreakPoint":false,
-                                "type":2
-                            },
-                            "displayName":"回调函数",
-                            "flags":{
-                                "pop":true
-                            },
-                            "packageName":"",
-                            "parameters":{
-                                "__TYPE":"Array",
-                                "contents":[
-                                    {
-                                        "ElementName":"Parameter",
-                                        "breakPointInfo":{
-                                            "disabled":false,
-                                            "hasBreakPoint":false,
-                                            "type":2
-                                        },
-                                        "displayName":"计时器",
-                                        "flags":{
-                                            "enableDisplayName":true
-                                        },
-                                        "id":"Variable:计时器:3903682815",
-                                        "keyword":"",
-                                        "name":"计时器",
-                                        "packageName":"",
-                                        "realType":{
-                                            "ElementName":"InstanceType",
-                                            "breakPointInfo":{
-                                                "disabled":false,
-                                                "hasBreakPoint":false,
-                                                "type":2
-                                            },
-                                            "displayName":"",
-                                            "flags":{
-                                            },
-                                            "source":{
-                                                "ElementName":"Source",
-                                                "targetUninit":{
-                                                    "id":"Class:Timer",
-                                                    "packageName":"__client__",
-                                                    "s_or_c":"client"
-                                                }
-                                            },
-                                            "staticWarningMsgs":{
-                                                "__TYPE":"Array",
-                                                "contents":{
-                                                }
-                                            },
-                                            "tips":"",
-                                            "typeArgs":{
-                                                "__TYPE":"Array",
-                                                "contents":{
-                                                }
-                                            }
-                                        },
-                                        "s_or_c":"client",
-                                        "staticWarningMsgs":{
-                                            "__TYPE":"Array",
-                                            "contents":{
-                                            }
-                                        },
-                                        "tips":""
-                                    }
-                                ]
-                            },
-                            "realReturnType":{
-                                "ElementName":"SimpleType",
-                                "breakPointInfo":{
-                                    "disabled":false,
-                                    "hasBreakPoint":false,
-                                    "type":2
-                                },
-                                "displayName":"void",
-                                "flags":{
-                                },
-                                "name":"void",
-                                "staticWarningMsgs":{
-                                    "__TYPE":"Array",
-                                    "contents":{
-                                    }
-                                },
-                                "tips":""
-                            },
-                            "s_or_c":"client",
-                            "staticWarningMsgs":{
-                                "__TYPE":"Array",
-                                "contents":{
-                                }
-                            },
-                            "subsections":{
-                                "__TYPE":"Array",
-                                "contents":{
-                                }
-                            },
-                            "tips":"",
-                            "typeParameters":{
-                                "__TYPE":"Array",
-                                "contents":{
-                                }
-                            },
-                            "typeParametersExtends":{
-                                "__TYPE":"Map",
-                                "contents":{
-                                }
-                            },
-                            "variables":{
-                                "__TYPE":"Array",
-                                "contents":{
-                                }
-                            }
-                        }
-                    ]
+                    "contents":{
+                    }
                 },
                 "s_or_c":"client",
                 "staticWarningMsgs":{
@@ -574,7 +338,7 @@
             }
         ]
     },
-    "rankOrder":3,
+    "rankOrder":1,
     "realReturnType":{
         "ElementName":"SimpleType",
         "breakPointInfo":{

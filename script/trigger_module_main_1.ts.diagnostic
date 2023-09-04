@@ -1,33 +1,53 @@
-{"messageText":"对象可能为“未定义”。","code":2532,"start":2338,"length":114,"category":1}
-{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":2615,"length":9,"category":1}
-{"messageText":"“进入修炼室”表示值，但在此处用作类型。是否指“类型 进入修炼室”?","code":2749,"start":4736,"length":5,"category":1}
-{"messageText":"无法重新声明块范围变量“进入修炼室”。","code":2451,"start":5888,"length":5,"category":1}
-{"messageText":"“进入修炼室”表示值，但在此处用作类型。是否指“类型 进入修炼室”?","code":2749,"start":5931,"length":5,"category":1}
-{"messageText":"类型“typeof base”上不存在属性“table_new”。","code":2339,"start":6537,"length":9,"category":1}
-{"messageText":"无法重新声明块范围变量“加怪”。","code":2451,"start":6633,"length":2,"category":1}
-{"messageText":"“加怪”表示值，但在此处用作类型。是否指“类型 加怪”?","code":2749,"start":6673,"length":2,"category":1}
-{"messageText":"无法重新声明块范围变量“减怪”。","code":2451,"start":8402,"length":2,"category":1}
-{"messageText":"“减怪”表示值，但在此处用作类型。是否指“类型 减怪”?","code":2749,"start":8442,"length":2,"category":1}
-{"messageText":"对象可能为“未定义”。","code":2532,"start":10956,"length":114,"category":1}
-{"messageText":"对象可能为“未定义”。","code":2532,"start":12722,"length":114,"category":1}
-{"messageText":"对象可能为“未定义”。","code":2532,"start":14991,"length":114,"category":1}
-{"messageText":"无法重新声明块范围变量“func_测试面板注册按钮”。","code":2451,"start":16050,"length":13,"category":1}
-{"messageText":"类型“typeof base”上不存在属性“rpg_test”。","code":2339,"start":16238,"length":8,"category":1}
-{"messageText":"找不到名称“id”。","code":2304,"start":16270,"length":2,"category":1}
-{"messageText":"无法重新声明块范围变量“func_测试面板注册按钮”。","code":2451,"start":16292,"length":13,"category":1}
-{"messageText":"类型“typeof base”上不存在属性“rpg_test”。","code":2339,"start":16480,"length":8,"category":1}
-{"messageText":"找不到名称“id”。","code":2304,"start":16512,"length":2,"category":1}
-{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":16685,"length":31,"category":1}
-{"messageText":"类型“typeof base”上不存在属性“rpg_challenge”。","code":2339,"start":16730,"length":13,"category":1}
-{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"护盾？\"\" 和 \"\"护盾\"\" 没有重叠。","code":2367,"start":23358,"length":13,"category":1}
-{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"暴击？\"\" 和 \"\"字符串\"\" 没有重叠。","code":2367,"start":23804,"length":14,"category":1}
-{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"护盾？\"\" 和 \"\"字符串\"\" 没有重叠。","code":2367,"start":24873,"length":14,"category":1}
-{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"暴击？\"\" 和 \"\"字符串\"\" 没有重叠。","code":2367,"start":25320,"length":14,"category":1}
-{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"护盾？\"\" 和 \"\"字符串\"\" 没有重叠。","code":2367,"start":26389,"length":14,"category":1}
-{"messageText":"无法重新声明块范围变量“减怪”。","code":2451,"start":26570,"length":2,"category":1}
-{"messageText":"无法重新声明块范围变量“加怪”。","code":2451,"start":26779,"length":2,"category":1}
-{"messageText":"无法重新声明块范围变量“进入修炼室”。","code":2451,"start":27213,"length":5,"category":1}
-{"messageText":"类型“typeof 进入修炼室”上不存在属性“add_event_common”。","code":2339,"start":28065,"length":16,"category":1}
-{"messageText":"类型“typeof 加怪”上不存在属性“add_event_common”。","code":2339,"start":28156,"length":16,"category":1}
-{"messageText":"类型“typeof 减怪”上不存在属性“add_event_common”。","code":2339,"start":28244,"length":16,"category":1}
-{"messageText":{"messageText":"类型“{ periodic: boolean; time: number; }”的参数不能赋给类型“EventRegister”的参数。","category":1,"code":2345,"next":[{"messageText":"对象文字只能指定已知的属性，但“periodic”中不存在类型“EventRegister”。是否要写入 peridic?","category":1,"code":2561}]},"code":2345,"start":28458,"length":14,"category":1}
+{"messageText":"对象可能为“未定义”。","code":2532,"start":1815,"length":114,"category":1}
+{"messageText":"对象可能为“未定义”。","code":2532,"start":4893,"length":114,"category":1}
+{"messageText":"对象可能为“未定义”。","code":2532,"start":5023,"length":115,"category":1}
+{"messageText":"“进入修炼室”表示值，但在此处用作类型。是否指“类型 进入修炼室”?","code":2749,"start":7105,"length":5,"category":1}
+{"messageText":"无法重新声明块范围变量“进入修炼室”。","code":2451,"start":8414,"length":5,"category":1}
+{"messageText":"“进入修炼室”表示值，但在此处用作类型。是否指“类型 进入修炼室”?","code":2749,"start":8457,"length":5,"category":1}
+{"messageText":"类型“typeof base”上不存在属性“table_new”。","code":2339,"start":9380,"length":9,"category":1}
+{"messageText":"无法重新声明块范围变量“加怪”。","code":2451,"start":9476,"length":2,"category":1}
+{"messageText":"“加怪”表示值，但在此处用作类型。是否指“类型 加怪”?","code":2749,"start":9516,"length":2,"category":1}
+{"messageText":"无法重新声明块范围变量“减怪”。","code":2451,"start":11331,"length":2,"category":1}
+{"messageText":"“减怪”表示值，但在此处用作类型。是否指“类型 减怪”?","code":2749,"start":11371,"length":2,"category":1}
+{"messageText":"对象可能为“未定义”。","code":2532,"start":13755,"length":114,"category":1}
+{"messageText":"对象可能为“未定义”。","code":2532,"start":15838,"length":114,"category":1}
+{"messageText":"“进入修炼室”表示值，但在此处用作类型。是否指“类型 进入修炼室”?","code":2749,"start":16274,"length":5,"category":1}
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":17796,"length":9,"category":1}
+{"messageText":{"messageText":"不能将类型“Unit | undefined”分配给类型“Unit”。","category":1,"code":2322,"next":[{"messageText":"不能将类型“undefined”分配给类型“Unit”。","category":1,"code":2322}]},"code":2322,"start":17846,"length":2,"category":1}
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":18172,"length":9,"category":1}
+{"messageText":"类型“typeof base”上不存在属性“sxl”。","code":2339,"start":18195,"length":3,"category":1}
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":18281,"length":9,"category":1}
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":18527,"length":9,"category":1}
+{"messageText":"找不到名称“e”。","code":2304,"start":18590,"length":1,"category":1}
+{"messageText":"无法重新声明块范围变量“func_测试面板注册按钮”。","code":2451,"start":25328,"length":13,"category":1}
+{"messageText":"类型“typeof base”上不存在属性“rpg_test”。","code":2339,"start":25516,"length":8,"category":1}
+{"messageText":"找不到名称“id”。","code":2304,"start":25548,"length":2,"category":1}
+{"messageText":"无法重新声明块范围变量“func_测试面板注册按钮”。","code":2451,"start":25570,"length":13,"category":1}
+{"messageText":"类型“typeof base”上不存在属性“rpg_test”。","code":2339,"start":25758,"length":8,"category":1}
+{"messageText":"找不到名称“id”。","code":2304,"start":25790,"length":2,"category":1}
+{"messageText":"其声明类型不为 \"void\" 或 \"any\" 的函数必须返回值。","code":2355,"start":25963,"length":31,"category":1}
+{"messageText":"类型“typeof base”上不存在属性“rpg_challenge”。","code":2339,"start":26008,"length":13,"category":1}
+{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"护盾？\"\" 和 \"\"护盾\"\" 没有重叠。","code":2367,"start":34210,"length":13,"category":1}
+{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"暴击？\"\" 和 \"\"字符串\"\" 没有重叠。","code":2367,"start":34656,"length":14,"category":1}
+{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"护盾？\"\" 和 \"\"字符串\"\" 没有重叠。","code":2367,"start":35725,"length":14,"category":1}
+{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"暴击？\"\" 和 \"\"字符串\"\" 没有重叠。","code":2367,"start":36172,"length":14,"category":1}
+{"messageText":"此条件将始终返回 \"false\"，因为类型 \"\"护盾？\"\" 和 \"\"字符串\"\" 没有重叠。","code":2367,"start":37241,"length":14,"category":1}
+{"messageText":"无法重新声明块范围变量“合成装备”。","code":2451,"start":45842,"length":4,"category":1}
+{"messageText":"“合成装备”表示值，但在此处用作类型。是否指“类型 合成装备”?","code":2749,"start":45884,"length":4,"category":1}
+{"messageText":{"messageText":"类型“Unit | undefined”的参数不能赋给类型“Unit”的参数。","category":1,"code":2345,"next":[{"messageText":"不能将类型“undefined”分配给类型“Unit”。","category":1,"code":2322}]},"code":2345,"start":51555,"length":171,"category":1}
+{"messageText":"类型“typeof base”上不存在属性“table_new”。","code":2339,"start":51808,"length":9,"category":1}
+{"messageText":"无法重新声明块范围变量“返回主城”。","code":2451,"start":52291,"length":4,"category":1}
+{"messageText":"“返回主城”表示值，但在此处用作类型。是否指“类型 返回主城”?","code":2749,"start":52333,"length":4,"category":1}
+{"messageText":"对象可能为“未定义”。","code":2532,"start":56535,"length":115,"category":1}
+{"messageText":"对象可能为“未定义”。","code":2532,"start":56690,"length":115,"category":1}
+{"messageText":"无法重新声明块范围变量“减怪”。","code":2451,"start":57130,"length":2,"category":1}
+{"messageText":"无法重新声明块范围变量“加怪”。","code":2451,"start":57339,"length":2,"category":1}
+{"messageText":"无法重新声明块范围变量“合成装备”。","code":2451,"start":57548,"length":4,"category":1}
+{"messageText":"无法重新声明块范围变量“返回主城”。","code":2451,"start":58232,"length":4,"category":1}
+{"messageText":"无法重新声明块范围变量“进入修炼室”。","code":2451,"start":58445,"length":5,"category":1}
+{"messageText":"类型“typeof 进入修炼室”上不存在属性“add_event_common”。","code":2339,"start":59402,"length":16,"category":1}
+{"messageText":"类型“typeof 加怪”上不存在属性“add_event_common”。","code":2339,"start":59493,"length":16,"category":1}
+{"messageText":"类型“typeof 减怪”上不存在属性“add_event_common”。","code":2339,"start":59581,"length":16,"category":1}
+{"messageText":{"messageText":"类型“{ periodic: boolean; time: number; }”的参数不能赋给类型“EventRegister”的参数。","category":1,"code":2345,"next":[{"messageText":"对象文字只能指定已知的属性，但“periodic”中不存在类型“EventRegister”。是否要写入 peridic?","category":1,"code":2561}]},"code":2345,"start":59795,"length":14,"category":1}
+{"messageText":"类型“typeof 合成装备”上不存在属性“add_event_common”。","code":2339,"start":61213,"length":16,"category":1}
+{"messageText":"类型“typeof 返回主城”上不存在属性“add_event_common”。","code":2339,"start":61398,"length":16,"category":1}

@@ -146,7 +146,7 @@
                                 "source":{
                                     "ElementName":"Source",
                                     "targetUninit":{
-                                        "id":"Class:_OBJ__gui_ctrl_gui_ctrl",
+                                        "id":"Class:_OBJ__gui_ctrl_panel",
                                         "packageName":"__client__",
                                         "s_or_c":"client"
                                     }
@@ -256,7 +256,7 @@
     "keyword":"",
     "name":"消息提示文本UI",
     "packageName":"busiyixiantu_5n1b",
-    "rankOrder":2,
+    "rankOrder":1,
     "realType":{
         "ElementName":"InstanceType",
         "breakPointInfo":{

@@ -154,7 +154,7 @@
                             "valueSource":{
                                 "ElementName":"Source",
                                 "targetUninit":{
-                                    "id":"PresetPropertyId:(Preset:单位属性, Linkspace:default, PresetKey:攻击)",
+                                    "id":"PresetPropertyId:(Preset:单位属性, Linkspace:default, PresetKey:额外攻击力)",
                                     "packageName":"__common__",
                                     "s_or_c":"common"
                                 }
@@ -344,8 +344,154 @@
     },
     "conditions":{
         "__TYPE":"Array",
-        "contents":{
-        }
+        "contents":[
+            {
+                "ElementName":"FunctionCall",
+                "breakPointInfo":{
+                    "disabled":false,
+                    "hasBreakPoint":false,
+                    "type":2
+                },
+                "caller":{
+                    "ElementName":"FunctionCall",
+                    "breakPointInfo":{
+                        "disabled":false,
+                        "hasBreakPoint":false,
+                        "type":2
+                    },
+                    "caller":{
+                        "ElementName":"FunctionCall",
+                        "breakPointInfo":{
+                            "disabled":false,
+                            "hasBreakPoint":false,
+                            "type":2
+                        },
+                        "displayName":"",
+                        "flags":{
+                            "enableDisplayName":true
+                        },
+                        "funcSource":{
+                            "ElementName":"Source",
+                            "targetUninit":{
+                                "id":"FunctionDefine:256",
+                                "packageName":"__server__",
+                                "s_or_c":"server"
+                            }
+                        },
+                        "parameters":{
+                            "__TYPE":"Array",
+                            "contents":[
+                                {
+                                    "ElementName":"Instant",
+                                    "breakPointInfo":{
+                                        "disabled":false,
+                                        "hasBreakPoint":false,
+                                        "type":2
+                                    },
+                                    "displayName":"",
+                                    "flags":{
+                                        "enableDisplayName":true
+                                    },
+                                    "staticWarningMsgs":{
+                                        "__TYPE":"Array",
+                                        "contents":{
+                                        }
+                                    },
+                                    "tips":"",
+                                    "type":{
+                                        "ElementName":"SimpleType",
+                                        "breakPointInfo":{
+                                            "disabled":false,
+                                            "hasBreakPoint":false,
+                                            "type":2
+                                        },
+                                        "displayName":"数值",
+                                        "flags":{
+                                        },
+                                        "name":"number",
+                                        "staticWarningMsgs":{
+                                            "__TYPE":"Array",
+                                            "contents":{
+                                            }
+                                        },
+                                        "tips":""
+                                    },
+                                    "value":1
+                                }
+                            ]
+                        },
+                        "s_or_c":"server",
+                        "staticWarningMsgs":{
+                            "__TYPE":"Array",
+                            "contents":{
+                            }
+                        },
+                        "tips":"",
+                        "typeParameters":{
+                            "__TYPE":"Array",
+                            "contents":{
+                            }
+                        }
+                    },
+                    "displayName":"",
+                    "flags":{
+                    },
+                    "funcSource":{
+                        "ElementName":"Source",
+                        "targetUninit":{
+                            "id":"FunctionDefine:25",
+                            "packageName":"__server__",
+                            "s_or_c":"server"
+                        }
+                    },
+                    "parameters":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "s_or_c":"server",
+                    "staticWarningMsgs":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    },
+                    "tips":"",
+                    "typeParameters":{
+                        "__TYPE":"Array",
+                        "contents":{
+                        }
+                    }
+                },
+                "displayName":"",
+                "flags":{
+                },
+                "funcSource":{
+                    "ElementName":"Source",
+                    "targetUninit":{
+                        "id":"FunctionDefine:290",
+                        "packageName":"__server__",
+                        "s_or_c":"server"
+                    }
+                },
+                "parameters":{
+                    "__TYPE":"Array",
+                    "contents":{
+                    }
+                },
+                "s_or_c":"server",
+                "staticWarningMsgs":{
+                    "__TYPE":"Array",
+                    "contents":{
+                    }
+                },
+                "tips":"",
+                "typeParameters":{
+                    "__TYPE":"Array",
+                    "contents":{
+                    }
+                }
+            }
+        ]
     },
     "defaultValue":{
         "ElementName":"Instant",

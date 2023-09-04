@@ -408,6 +408,7 @@
         }
     },
     "flags":{
+        "autoForward":true
     },
     "folder":{
         "ElementName":"Folder",
@@ -1047,7 +1048,7 @@
     "keyword":"",
     "name":"玩家_完成rpg挑战自动退出",
     "packageName":"busiyixiantu_5n1b",
-    "rankOrder":1,
+    "rankOrder":2,
     "s_or_c":"server",
     "staticWarningMsgs":{
         "__TYPE":"Array",
